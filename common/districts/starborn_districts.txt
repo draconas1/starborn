@@ -1,0 +1,109 @@
+@hab_cost = 500
+@hab_maintenance = 2
+
+district_starborn_starting_scavenger = {
+	base_buildtime = 240
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		is_planet_class = pc_starborn_habitat_start
+	}
+	
+	potential = {
+		is_planet_class = pc_starborn_habitat_start
+	}
+	
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @hab_cost
+		}
+		upkeep = {
+			energy = @hab_maintenance
+		}		
+	}
+	
+	planet_modifier = {
+		job_starborn_tombworld_scavenger_add = 2
+	}
+
+	triggered_desc = {
+		text = job_starborn_tombworld_scavenger_effect_desc
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+
+district_starborn_starting_preserve = {
+	base_buildtime = 240
+	is_capped_by_modifier = no
+	
+	show_on_uncolonized = {
+		is_planet_class = pc_starborn_habitat_start
+	}
+	
+	potential = {
+		is_planet_class = pc_starborn_habitat_start
+	}
+	
+	conversion_ratio = 1
+	
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @hab_cost
+		}
+		upkeep = {
+			energy = @hab_maintenance
+		}
+	}
+	
+	planet_modifier = {
+		job_starborn_preserve_ranger_add = 2
+	}
+
+	triggered_desc = {
+		text = job_starborn_preserve_ranger_effect_desc
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+district_starborn_starting_solar = {
+	base_buildtime = 240
+	is_capped_by_modifier = no
+	
+	show_on_uncolonized = {
+		is_planet_class = pc_starborn_habitat_start
+	}
+	
+	potential = {
+		is_planet_class = pc_starborn_habitat_start
+	}
+	
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @hab_cost
+		}
+		upkeep = {		
+		}		
+	}
+				
+	planet_modifier = {
+		job_starborn_solar_technician_add = 2
+	}
+	
+	triggered_desc = {
+		text = job_starborn_solar_technician_effect_desc
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}

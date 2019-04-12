@@ -1,0 +1,25 @@
+namespace = starborn
+
+country_event = {
+        id = starborn.1
+        hide_window = yes
+        is_triggered_only = yes
+
+        trigger = {
+                is_ai = no
+                has_civic = civic_starborn
+        }
+
+        immediate = {
+                home_planet = {
+                        set_planet_size = 16
+                        clear_blockers = yes
+                        clear_deposits = yes
+                        starborn_remove_all_districts = yes
+                        starborn_setup_starting_world = yes
+                }
+        }
+}
+
+
+

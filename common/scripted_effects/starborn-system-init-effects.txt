@@ -1,0 +1,47 @@
+starborn_setup_starting_world = {
+    clear_deposits = yes
+    
+    add_district = district_hab_housing
+    add_district = district_hab_housing
+    add_district = district_hab_housing
+
+    add_district = district_starborn_starting_scavenger
+    add_district = district_starborn_starting_scavenger
+    add_district = district_starborn_starting_preserve
+    add_district = district_starborn_starting_preserve
+    add_district = district_starborn_starting_solar
+    add_district = district_starborn_starting_solar
+}
+
+
+
+starborn_remove_all_districts = {
+    remove_district = district_city
+    remove_district = district_city
+    remove_district = district_city
+    remove_district = district_city
+    remove_district = district_city
+	remove_district = district_city
+	remove_district = district_city
+	remove_district = district_city
+	remove_district = district_city
+	remove_district = district_city
+
+    remove_district = district_farming
+    remove_district = district_farming
+    remove_district = district_farming
+    remove_district = district_farming
+    remove_district = district_farming
+	
+    remove_district = district_generator
+    remove_district = district_generator
+    remove_district = district_generator
+    remove_district = district_generator
+    remove_district = district_generator
+
+    remove_district = district_mining
+    remove_district = district_mining
+    remove_district = district_mining
+    remove_district = district_mining
+    remove_district = district_mining
+}

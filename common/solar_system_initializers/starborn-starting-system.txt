@@ -1,0 +1,294 @@
+starborn_system_initializer = {
+
+	class = "sc_g"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 145
+	}
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 290
+	}
+	
+	flags = { empire_home_system sol_system sol }
+	
+	usage = custom_empire
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		
+		generate_home_system_resources = yes
+	}
+	
+	planet = {		
+		class = "pc_g_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+
+		init_effect = {
+			prevent_anomaly = yes
+			set_planet_flag = starting_deposit
+		}
+
+		moon = {
+			class = "pc_habitat"
+			size = 3
+			orbit_distance = 10
+			orbit_angle = 40
+			has_ring = no
+			starting_planet = no
+			
+			init_effect = {
+				prevent_anomaly = yes
+				set_planet_flag = starting_deposit
+			}
+        }
+	}
+	
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 40
+		orbit_angle = 15
+		size = 10
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+		orbit_distance = 25
+		orbit_angle = 125
+		size = 20
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Paradise Lost"
+		class = "pc_nuked"
+		orbit_distance = 25
+		orbit_angle = 120
+		size = 18
+		has_ring = no
+		deposit_blockers = none
+		modifiers = none
+		starting_planet = no
+		
+		
+		init_effect = {
+			prevent_anomaly = yes
+			set_planet_flag = starting_deposit
+			add_deposit = d_tomb_world_ruins
+			add_deposit = d_tomb_world_ruins
+			add_deposit = d_tomb_world_ruins
+			add_deposit = d_tomb_world_wasteland
+			add_deposit = d_tomb_world_wasteland
+			add_deposit = d_tomb_world_wasteland		
+		}
+      
+        moon = {
+			class = "pc_starborn_habitat_start"
+			size = 10
+			orbit_distance = 8
+			orbit_angle = 40
+			has_ring = no
+			starting_planet = yes
+			
+			init_effect = {
+				prevent_anomaly = yes
+				set_planet_flag = starting_deposit
+			}
+        }
+        
+        moon = {
+			class = "pc_barren_cold"
+			size = 5
+			orbit_distance = 30
+			orbit_angle = 200
+			has_ring = no
+			entity = "cold_barren_planet_luna_entity"
+        }
+	}
+	
+	planet = {
+		class = "pc_barren"
+		orbit_distance = 25
+		orbit_angle = 60
+		size = 13
+		has_ring = no
+		entity = "barren_planet_mars_entity"
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 30
+		orbit_angle = -210
+		size = 6
+		has_ring = no
+
+		init_effect = {
+			prevent_anomaly = yes
+			set_planet_flag = starting_deposit
+		}
+
+		moon = {
+			class = "pc_habitat"
+			size = 3
+			orbit_distance = 10
+			orbit_angle = 40
+			has_ring = no
+			starting_planet = no
+			
+			init_effect = {
+				prevent_anomaly = yes
+				set_planet_flag = starting_deposit
+			}
+        }
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 4
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 3
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = -160
+		size = 35
+		has_ring = no
+		entity = "gas_giant_jupiter_entity"
+		change_orbit = 6
+		
+		moon = {
+			class = "pc_molten"
+			size = 6
+			orbit_distance = 10
+			orbit_angle = 110
+			has_ring = no
+		}
+		moon = {
+			class = "pc_frozen"
+			size = 6
+			orbit_distance = 2.5
+			orbit_angle = 10
+			has_ring = no
+		}
+		moon = {
+			class = "pc_frozen"
+			size = 9
+			orbit_distance = 2.5
+			orbit_angle = 80
+			has_ring = no
+		}
+		moon = {
+			class = "pc_frozen"
+			size = 7
+			orbit_distance = 2.5
+			orbit_angle = -155
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 25
+		orbit_angle = 170
+		size = 30
+		has_ring = yes
+		entity = "gas_giant_05_entity"
+		change_orbit = 7
+		
+		moon = {
+			name = "NAME_Titan"
+			class = "pc_frozen"
+			size = 8
+			orbit_distance = 12
+			orbit_angle = 320
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 25
+		orbit_angle = 125
+		size = 20
+		has_ring = no
+		entity = "gas_giant_03_entity"
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 25
+		orbit_angle = -195
+		size = 20
+		has_ring = no
+		entity = "gas_giant_02_entity"
+		change_orbit = 4
+		
+		moon = {
+			class = "pc_frozen"
+			size = 6
+			orbit_distance = 7
+			orbit_angle = 115
+			has_ring = no
+		}
+	}
+
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 30
+		orbit_angle = -210
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+}

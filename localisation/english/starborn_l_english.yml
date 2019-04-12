@@ -1,0 +1,55 @@
+﻿l_english:
+
+ civic_starborn:0 "Starborn"
+ civic_starborn_desc:0 "This civilisation starts in an enormous orbital city above the ruins of their homeworld.  They are skilled at orbital construction, but generations of living in artifical environments have made the natural ecosystems of planets undesirable to their physiology"
+ civic_tooltip_starborn_effects:0 "Starting world is an §Y$pc_starborn_habitat_start$§! in orbit of a §Y$pc_nuked$§! and have the ability to build basic §Y$pc_habitat$§!s immiedately that have different districts or bonsues depending on the planet or orbital deposits they are built around, but all planets are uninhabitable"
+
+ starborn_system_initializer_NAME:0 "Starborn"
+ starborn_system_initializer_DESC:0 "Starborn Initaliser, sets everything up for use with the §Y$civic_starborn$§! civic.  Using this without starborn is not recommended"
+
+ pc_starborn_habitat_start:0 "Orbital City"
+ pc_starborn_habitat_start_desc:0 "It was the crowning glory of our technological achievement, that became the arc that saved our civilisation"
+ mod_pc_starborn_habitat_start_habitability:0 "$pc_starborn_habitat_start$"
+
+ trait_pc_starborn_habitat_start_preference:0 "$pc_starborn_habitat_start$ Preference"
+ trait_pc_starborn_habitat_start_preference_desc:0 "We've lived on the Orbital City for so long we have lost the ability to live on planets"
+
+ job_starborn_tombworld_scavenger:0 "Scavenger"
+ job_starborn_tombworld_scavenger_plural:0 "Scavengers"
+ job_starborn_tombworld_scavenger_desc:0 "Going down to the planet to scavenge things that can be recyled into useful resources"
+ job_starborn_tombworld_scavenger_effect_desc:0 "£job_starborn_tombworld_scavenger£ $job_starborn_tombworld_scavenger_plural$ produce £minerals£ §Y$minerals$§! and some £alloys£ §Y$alloys$§! and £engineering£ §YResearch Points§!"
+ mod_job_starborn_tombworld_scavenger_add:0 "$job_starborn_tombworld_scavenger$ Jobs"
+ mod_job_starborn_tombworld_scavenger_per_pop:0 "§G+1§! $job_starborn_tombworld_scavenger$ Job per $VALUE$ Pops"
+ mod_job_starborn_tombworld_scavenger_per_pop_short:0 "\n§G+1§! £mod_job_starborn_tombworld_scavenger_add£ per $VALUE$ £pop£"
+
+ job_starborn_preserve_ranger:0 "Preserve Ranger"
+ job_starborn_preserve_ranger_plural:0 "Preserve Rangers"
+ job_starborn_preserve_ranger_desc:0 "Managing the delicate ecosystem in the preserve"
+ job_starborn_preserve_ranger_effect_desc:0 "£job_starborn_preserve_ranger£ $job_starborn_preserve_ranger_plural$ produce  £food£ §Y$food$§! and some £society£ §YResearch Points§!"
+ mod_job_starborn_preserve_ranger_add:0 "$job_starborn_preserve_ranger$ Jobs"
+ mod_job_starborn_preserve_ranger_per_pop:0  "§G+1§! $job_starborn_preserve_ranger$ Job per $VALUE$ Pops"
+ mod_job_starborn_preserve_rangerr_per_pop_short:0 "\n§G+1§! £mod_job_starborn_preserve_ranger_add£ per $VALUE$ £pop£"
+
+ job_starborn_solar_technician:0 "Solar Technican"
+ job_starborn_solar_technician_plural:0 "Solar Technicans"
+ job_starborn_solar_technician_desc:0 "Repairing and enhancing the massive network of solar panels and station power grid"
+ job_starborn_solar_technician_effect_desc:0 "£job_starborn_solar_technician£ $job_starborn_solar_technician_plural$ produce £energy£ §Y$energy$§! and some £physics£ §YResearch Points§!"
+ mod_job_starborn_solar_technician_add:0 "$job_starborn_solar_technician$ Jobs"
+ mod_job_starborn_solar_technician:0  "§G+1§! $job_starborn_solar_technician$ Job per $VALUE$ Pops"
+ mod_job_starborn_solar_technician_short:0 "\n§G+1§! £mod_job_starborn_solar_technician_add£ per $VALUE$ £pop£"
+
+ district_starborn_starting_scavenger:0 "Planetary Scavenger District"
+ district_starborn_starting_scavenger_plural:0 "Planetary Scavenger Districts"
+ district_starborn_starting_scavenger_desc:0 "The ruins of the planet below provide an almost infinite, if very dangerous, supply of resources.  This district contains everything needed to launch and manage expeditions, then recycle the salvage into usable materials"
+
+ district_starborn_starting_preserve:0 "Nature Preserve District"
+ district_starborn_starting_preserve:0 "Nature Preserve Districts"
+ district_starborn_starting_preserve_desc:0 "We built a massive nature park into the city for recreation and science.  Now careful management of the ecosystem turns it into a source of food"
+
+ district_starborn_starting_solar:0 "Solar Panel District"
+ district_starborn_starting_solar_plural:0 "Solar Panel Districts"
+ district_starborn_starting_solar_desc:0 "Our power needs are met by massive arrays of solar panels, maintaining and optimising the panels and cabling network requires a large cadre of technicians"
+
+
+
+ START_SCREEN_STARBORN:0 "Our civilisation was outgrowing its cradle and reaching for the stars.  We had begun our conquest of our solar system and were poised on the brink of hyperlane travel.\n\nTo celebrate our brilliance we built a gigantic orbital city above our homeworld.  A feat of engineering and international cooperation never before seen.\n\nBut Pride Comes Before A Fall\n\nWe do not know who fired the first shot, or why it escalated so quickly to armageddon, but a simmering border skirmish turned into global thermonuclear war in the space of a day\n\nThe planet was ravaged, civilisation collapsed, the only ones that survived were our ancestors orbiting above in their city.\n\nLife for our forefathers was hard, the city had not been designed to be the new cradle of life and drastic changes were needed quickly, several times we were nearly snuffed out by accidents, civil unrest and dispair.  But through it all our people survived, and now we reap the rewards of their grit and tears and are ready once again to venture out into the black.\n\nBut it is not without cost.  Our people have spent so long living in our artifical city with its recycled air and carefully controlled environment that our immune systems have weakened and our bodies changed such that planetary environments are hostile to us, we can no longer live on natures cradles.  We must make our own homes among the stars."

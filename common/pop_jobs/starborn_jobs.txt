@@ -1,0 +1,241 @@
+starborn_tombworld_scavenger = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	building_icon = building_foundry_3
+	clothes_texture_index = 2
+
+	possible = {
+		complex_worker_job_check_trigger = yes
+	}
+	
+	resources = {
+		category = planet_miners
+		produces = {
+			minerals = 3
+			engineering_research = 1
+			alloys = 1
+		}
+		upkeep = {
+			energy = 4
+		}
+	}
+	
+	weight = {
+		weight = @worker_job_weight
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait = trait_industrious
+				has_trait = trait_robot_power_drills
+			}		
+		}
+		modifier = {
+			factor = 10
+			is_enslaved = yes
+			can_take_servant_job = no
+		}	
+		modifier = {
+			factor = 2
+			OR = {	
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+			owner = { has_technology = tech_droid_workers }
+		}	
+		modifier = {
+			factor = 10
+			OR = {	
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+			owner = { NOT = { has_technology = tech_droid_workers } }
+		}		
+		modifier = {
+			factor = 0.25
+			can_take_servant_job = yes
+		}		
+		modifier = {
+			factor = 2
+			species = {
+				has_species_flag = racket_species_flag
+			}
+		}		
+		modifier = {
+			factor = 1.2
+			has_trait = trait_very_strong
+		}
+		modifier = {
+			factor = 1.1
+			has_trait = trait_strong
+		}	
+		modifier = {
+			factor = 0.9
+			has_trait = trait_weak
+		}	
+		modifier = {
+			factor = 2
+			has_trait = trait_syncretic_proles
+		}
+	}
+}
+
+starborn_preserve_ranger = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	building_icon = building_xeno_zoo
+	clothes_texture_index = 2
+
+	possible = {
+		complex_worker_job_check_trigger = yes
+	}
+	
+	resources = {
+		category = planet_farmers
+		produces = {
+			food = 5
+			society_research = 1			
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+	
+	weight = {
+		weight = @worker_job_weight
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait = trait_robot_harvesters
+				has_trait = trait_agrarian
+			}
+		}
+		modifier = {
+			factor = 1.1
+			owner = { has_valid_civic = civic_agrarian_idyll }
+		}
+		modifier = {
+			factor = 10
+			is_enslaved = yes
+			can_take_servant_job = no
+		}	
+		modifier = {
+			factor = 2
+			OR = {	
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+			owner = { has_technology = tech_droid_workers }
+		}	
+		modifier = {
+			factor = 10
+			OR = {	
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+			owner = { NOT = { has_technology = tech_droid_workers } }
+		}
+		modifier = {
+			factor = 0.25
+			can_take_servant_job = yes
+		}	
+		modifier = {
+			factor = 2
+			has_trait = trait_syncretic_proles
+		}	
+		modifier = {
+			factor = 1.2
+			has_trait = trait_very_strong
+		}
+		modifier = {
+			factor = 1.1
+			has_trait = trait_strong
+		}	
+		modifier = {
+			factor = 0.9
+			has_trait = trait_weak
+		}			
+	}
+}
+
+starborn_solar_technician = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	building_icon = building_power_plant
+	clothes_texture_index = 2
+	
+	possible = {
+		hidden_trigger = { exists = owner }
+		complex_worker_job_check_trigger = yes
+		owner = { 
+			is_gestalt = no
+			is_fallen_empire_spiritualist = no
+		}
+	}
+
+	resources = {
+		category = planet_technician
+		produces = {
+			energy = 6
+			physics_research = 1
+		}		
+	}	
+
+	weight = {
+		weight = @worker_job_weight
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait = trait_robot_superconductive
+				has_trait = trait_ingenious
+				has_trait = trait_nuumismatic_administration
+			}		
+		}
+		modifier = {
+			factor = 8
+			is_enslaved = yes
+			can_take_servant_job = no
+		}
+		modifier = {
+			factor = 2
+			OR = {	
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}		
+			can_take_servant_job = no
+		}
+		modifier = {
+			factor = 0.25
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 2
+			has_trait = trait_syncretic_proles
+		}
+		modifier = {
+			factor = 4
+			species = {
+				has_species_flag = racket_species_flag
+			}
+		}	
+		modifier = {
+			factor = 1.2
+			has_trait = trait_very_strong
+		}
+		modifier = {
+			factor = 1.1
+			has_trait = trait_strong
+		}	
+		modifier = {
+			factor = 0.9
+			has_trait = trait_weak
+		}			
+	}
+}
+
+
+
+
