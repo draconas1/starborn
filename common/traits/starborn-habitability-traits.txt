@@ -1,0 +1,14 @@
+trait_pc_starborn_habitat_start_preference = {
+	icon = "gfx/interface/icons/traits/trait_pc_ring_preference.dds"
+	modification = no
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	sorting_priority = 30
+	modifier = {
+		pc_habitat_habitability = 1.0
+		pc_ringworld_habitable_habitability = 1.0
+		pc_starborn_habitat_start_habitability = 1.0
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
