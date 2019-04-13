@@ -61,21 +61,17 @@ district_starborn_starting_scavenger = {
 	show_on_uncolonized = {
 		OR = {
 			is_planet_class = pc_starborn_habitat_start
-			AND = {
-				is_planet_class = pc_habitat
-				has_deposit = d_starborn_tomb_surface
-			}
+			is_planet_class = pc_habitat
 		}
+		has_deposit = d_starborn_tomb_surface
 	}
 	
 	potential = {
 		OR = {
 			is_planet_class = pc_starborn_habitat_start
-			AND = {
-				is_planet_class = pc_habitat
-				has_deposit = d_starborn_tomb_surface
-			}
+			is_planet_class = pc_habitat
 		}
+		has_deposit = d_starborn_tomb_surface
 	}
 	
 	resources = {

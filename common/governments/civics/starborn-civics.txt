@@ -17,6 +17,7 @@ civic_starborn = {
 			}
 		}
 	}
+
 	modification = no
 	random_weight = {
 		base = 0 

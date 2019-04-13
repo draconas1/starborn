@@ -5,7 +5,7 @@ d_starborn_energy = {
 	category = deposit_cat_energy
 	
 	planet_modifier = { 
-		district_starborn_solar = 1
+		district_starborn_solar_max = 1
 	}
 	
 	drop_weight = {
@@ -20,7 +20,7 @@ d_starborn_mineral_surface = {
 	category = deposit_cat_minerals
 	
 	planet_modifier = { 
-		district_starborn_surface_mining = 1
+		district_starborn_surface_mining_max = 1
 	}
 	
 	drop_weight = {
@@ -35,7 +35,7 @@ d_starborn_alloy_surface = {
 	category = deposit_cat_minerals
 	
 	planet_modifier = { 
-		district_starborn_surface_alloys = 1
+		district_starborn_surface_alloys_max = 1
 	}
 	
 	drop_weight = {

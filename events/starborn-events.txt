@@ -11,6 +11,8 @@ country_event = {
         }
 
         immediate = {
+                set_country_flag = custom_start_screen
+
                 home_planet = {
                         set_planet_size = 16
                         clear_blockers = yes

@@ -1,6 +1,8 @@
 starborn_setup_starting_world = {
     clear_deposits = yes
     
+    add_deposit = d_starborn_tomb_surface
+
     add_district = district_starborn_starting_hab_housing
     add_district = district_starborn_starting_hab_housing
     add_district = district_starborn_starting_hab_housing

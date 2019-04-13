@@ -20,7 +20,7 @@
  starborn_habitat_MEGASTRUCTURE_DETAILS:1 "A §Y$starborn_habitat$§! is a new orbital habitat to allow our people to expand"
  starborn_habitat_CONSTRUCTION_INFO_DELAYED:2 "A §Y$starborn_habitat$§! can be built around any stellar body"
  starborn_habitat:0 "Starborn Orbital Habitat"
- starborn_habitat_DESC:0 "A Habitation station in orbit of a star, planet, moon or in an asteroid field capable of housing a number of our §HPops§! and §HBuildings§! while allowing us to take advantage of the natural features of the parent body."
+ starborn_habitat_DESC:0 "A Habitation station in orbit of a star, planet, moon or in ankz asteroid field capable of housing a number of our §HPops§! and §HBuildings§! while allowing us to take advantage of the natural features of the parent body."
 
 
  job_starborn_tombworld_scavenger:0 "Scavenger"
@@ -165,7 +165,12 @@
  starborn_engineering_25:0 "Unusual Materials"
  starborn_engineering_25_desc:0 "The planet this $pc_habitat$ is has unexpected material structures, the studying them improves our own research"
 
-
-
- START_SCREEN_STARBORN:0 "Our civilisation was outgrowing its cradle and reaching for the stars.  We had begun our conquest of our solar system and were poised on the brink of hyperlane travel.\n\nTo celebrate our brilliance we built a gigantic orbital city above our homeworld.  A feat of engineering and international cooperation never before seen.\n\nBut Pride Comes Before A Fall\n\nWe do not know who fired the first shot, or why it escalated so quickly to armageddon, but a simmering border skirmish turned into global thermonuclear war in the space of a day\n\nThe planet was ravaged, civilisation collapsed, the only ones that survived were our ancestors orbiting above in their city.\n\nLife for our forefathers was hard, the city had not been designed to be the new cradle of life and drastic changes were needed quickly, several times we were nearly snuffed out by accidents, civil unrest and dispair.  But through it all our people survived, and now we reap the rewards of their grit and tears and are ready once again to venture out into the black.\n\nBut it is not without cost.  Our people have spent so long living in our artifical city with its recycled air and carefully controlled environment that our immune systems have weakened and our bodies changed such that planetary environments are hostile to us, we can no longer live on natures cradles.  We must make our own homes among the stars."
- START_SCREEN_STARBORN_2:0 "But through it all our people survived, and now we reap the rewards of their sacrifice and tears and are ready once again to venture out into the black, the first new $pc_habitat$s have been constructed around the richest resources in our solar system and are ready for their first colonists.\n\nBut it is not without cost.  Our people have spent so long living in our artifical city with its recycled air and carefully controlled environment that our immune systems have weakened and our bodies changed such that planetary environments are hostile to us, we can no longer live on natures cradles.  We must make our own homes among the stars."
+ START_SCREEN_STARBORN:0 "$START_SCREEN_STARBORN_1$$START_SCREEN_STARBORN_2$$START_SCREEN_STARBORN_3$$START_SCREEN_STARBORN_4$$START_SCREEN_STARBORN_5$$START_SCREEN_STARBORN_6$$START_SCREEN_STARBORN_7$"
+ START_SCREEN_STARBORN_1:0 "Our civilisation was outgrowing its cradle and reaching for the stars. We had begun our conquest of our solar system and were poised on the brink of hyperlane travel.\n\n"
+ START_SCREEN_STARBORN_2:0 "To celebrate our brilliance we built a gigantic orbital city above our homeworld.  A feat of engineering and international cooperation never before seen.\n\n"
+ START_SCREEN_STARBORN_3:0 "But Pride Comes Before A Fall\n\n"
+ START_SCREEN_STARBORN_4:0 "We do not know who fired the first shot, or why it escalated so quickly to armageddon, but a simmering border skirmish turned into global thermonuclear war in the space of a day\n\n"
+ START_SCREEN_STARBORN_5:0 "The planet was ravaged, civilisation collapsed, the only ones that survived were our ancestors orbiting above in their city.\n\n"
+ START_SCREEN_STARBORN_6:0 "Life for our forefathers was hard, the city had not been designed to be the new cradle of life and drastic changes were needed quickly, several times we were nearly snuffed out by accidents, civil unrest and dispair.  They perserveered, survived, prospered and now we reap the rewards of their sacrifice and are ready once again to venture out into the black.\n\n"
+ START_SCREEN_STARBORN_7:0 "The first new $pc_habitat$s have been constructed around the richest resources in our solar system and are ready for their first colonists.\n\n"
+ START_SCREEN_STARBORN_7:0 "But it is not without cost.  Our people have spent so long living in our artifical city with its recycled air and carefully controlled environment that our immune systems have weakened and our bodies changed such that planetary environments are hostile to us, we can no longer live on natures cradles.\n\n   We must make our own homes among the stars."
