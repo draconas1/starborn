@@ -165,7 +165,7 @@
  starborn_engineering_25:0 "Unusual Materials"
  starborn_engineering_25_desc:0 "The planet this $pc_habitat$ is has unexpected material structures, the studying them improves our own research"
 
- START_SCREEN_STARBORN:0 "$START_SCREEN_STARBORN_1$$START_SCREEN_STARBORN_2$$START_SCREEN_STARBORN_3$$START_SCREEN_STARBORN_4$$START_SCREEN_STARBORN_5$$START_SCREEN_STARBORN_6$$START_SCREEN_STARBORN_7$"
+ START_SCREEN_STARBORN:0 "$START_SCREEN_STARBORN_1$$START_SCREEN_STARBORN_2$$START_SCREEN_STARBORN_3$$START_SCREEN_STARBORN_4$$START_SCREEN_STARBORN_5$$START_SCREEN_STARBORN_6$$START_SCREEN_STARBORN_7$$START_SCREEN_STARBORN_8$"
  START_SCREEN_STARBORN_1:0 "Our civilisation was outgrowing its cradle and reaching for the stars. We had begun our conquest of our solar system and were poised on the brink of hyperlane travel.\n\n"
  START_SCREEN_STARBORN_2:0 "To celebrate our brilliance we built a gigantic orbital city above our homeworld.  A feat of engineering and international cooperation never before seen.\n\n"
  START_SCREEN_STARBORN_3:0 "But Pride Comes Before A Fall\n\n"
@@ -173,4 +173,4 @@
  START_SCREEN_STARBORN_5:0 "The planet was ravaged, civilisation collapsed, the only ones that survived were our ancestors orbiting above in their city.\n\n"
  START_SCREEN_STARBORN_6:0 "Life for our forefathers was hard, the city had not been designed to be the new cradle of life and drastic changes were needed quickly, several times we were nearly snuffed out by accidents, civil unrest and dispair.  They perserveered, survived, prospered and now we reap the rewards of their sacrifice and are ready once again to venture out into the black.\n\n"
  START_SCREEN_STARBORN_7:0 "The first new $pc_habitat$s have been constructed around the richest resources in our solar system and are ready for their first colonists.\n\n"
- START_SCREEN_STARBORN_7:0 "But it is not without cost.  Our people have spent so long living in our artifical city with its recycled air and carefully controlled environment that our immune systems have weakened and our bodies changed such that planetary environments are hostile to us, we can no longer live on natures cradles.\n\n   We must make our own homes among the stars."
+ START_SCREEN_STARBORN_8:0 "But it is not without cost.  Our people have spent so long living in our artifical city with its recycled air and carefully controlled environment that our immune systems have weakened and our bodies changed such that planetary environments are hostile to us, we can no longer live on natures cradles.\n\n   We must make our own homes among the stars."
