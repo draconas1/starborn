@@ -1,9 +1,9 @@
 starborn_setup_starting_world = {
     clear_deposits = yes
     
-    add_district = district_hab_housing
-    add_district = district_hab_housing
-    add_district = district_hab_housing
+    add_district = district_starborn_starting_hab_housing
+    add_district = district_starborn_starting_hab_housing
+    add_district = district_starborn_starting_hab_housing
 
     add_district = district_starborn_starting_scavenger
     add_district = district_starborn_starting_scavenger

@@ -6,3 +6,11 @@ part = {
                has_civic = civic_starborn
         }		
 }
+
+part = {
+    location = 1
+    localization = "START_SCREEN_STARBORN_2"	
+    trigger = {
+           has_civic = civic_starborn
+    }		
+}

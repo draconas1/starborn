@@ -22,8 +22,6 @@ pc_starborn_habitat_start = {
 	starting_planet = no
 	orbit_lines = no
 	has_colonization_influence_cost = no			# applies when within own borders
-
-	picture = pc_tropical
 	
 	modifier = {
 		planet_colony_development_speed_mult = 2.0 # Habitats should be fast to colonize

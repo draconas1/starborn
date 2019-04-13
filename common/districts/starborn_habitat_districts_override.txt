@@ -1,18 +1,32 @@
 @hab_cost = 500
 @hab_maintenance = 2
-
-district_hab_housing = {
+# override to stop this district from appearing when we have better ones
+district_hab_cultural = {
 	base_buildtime = 240
 	is_capped_by_modifier = no
 	
 	show_on_uncolonized = {
 		is_planet_class = pc_habitat
-        is_planet_class = pc_starborn_habitat_start
+		from = { is_gestalt = no }
+		NOR = {
+			has_deposit = d_starborn_energy
+			has_deposit = d_starborn_mineral_surface
+			has_deposit = d_starborn_alloy_surface
+			has_deposit = d_starborn_habitable_surface
+			has_deposit = d_starborn_tomb_surface
+        }
 	}
 	
 	potential = {
 		is_planet_class = pc_habitat
-        is_planet_class = pc_starborn_habitat_start
+		owner = { is_gestalt = no }
+		NOR = {
+			has_deposit = d_starborn_energy
+			has_deposit = d_starborn_mineral_surface
+			has_deposit = d_starborn_alloy_surface
+			has_deposit = d_starborn_habitable_surface
+			has_deposit = d_starborn_tomb_surface
+        }
 	}
 	
 	resources = {
@@ -24,34 +38,34 @@ district_hab_housing = {
 			energy = @hab_maintenance
 		}		
 	}
-	
+		
 	planet_modifier = {
-		planet_housing_add = 10
-	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		modifier = {
-			job_maintenance_drone_add = 2
-		}
+		job_entertainer_add = 2
+		job_culture_worker_add = 1
 	}
 	
 	triggered_desc = {
-		trigger = { 
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		text = job_maintenance_drone_effect_desc
+		text = job_entertainer_effect_desc
+	}	
+	
+	triggered_desc = {
+		text = job_culture_worker_effect_desc
 	}	
 	
 	ai_weight = {
 		weight = 1
-		modifier = {
-			factor = 12
-			free_housing < 0
+
+		modifier = 
+		{
+			factor = 3
+			free_amenities < 2
+		}
+	}
+
+	ai_resource_production = {
+		unity = 1
+		trigger = {
+			always = yes
 		}
 	}
 }

@@ -1,0 +1,69 @@
+d_starborn_energy = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	
+	category = deposit_cat_energy
+	
+	planet_modifier = { 
+		district_starborn_solar = 1
+	}
+	
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_starborn_mineral_surface = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	
+	category = deposit_cat_minerals
+	
+	planet_modifier = { 
+		district_starborn_surface_mining = 1
+	}
+	
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_starborn_alloy_surface = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	
+	category = deposit_cat_minerals
+	
+	planet_modifier = { 
+		district_starborn_surface_alloys = 1
+	}
+	
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_starborn_tomb_surface = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	
+	category = deposit_cat_minerals
+	
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_starborn_habitable_surface = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	
+	category = deposit_cat_food
+	
+	drop_weight = {
+		weight = 0
+	}
+}
+
+
+
