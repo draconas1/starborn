@@ -1,0 +1,272 @@
+#More Districts on starting habitat
+decision_starborn_increase_starting_hab_district_1 = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_starborn_expand_habitat
+	prerequisites = { "tech_starbase_3" }
+	
+	resources = {
+		category = decisions
+		cost = { 
+			alloys = 500 
+			energy = 500
+		}
+	}
+
+	enactment_time = 360
+	
+	potential = {
+		is_planet_class = pc_habitat
+		NOT = { has_modifier = starborn_starting_habitat_districts_1 }
+	}
+	
+	effect = {
+		custom_tooltip = starborn_starting_habitat_districts_1_desc
+		add_modifier = { 
+			modifier = starborn_starting_habitat_districts_1 
+			days = -1 
+		}
+	}
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			free_district_slots > 0
+		}
+	}
+}
+
+decision_starborn_increase_starting_hab_district_2 = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_starborn_expand_habitat
+	prerequisites = { "tech_starbase_4" }
+	
+	resources = {
+		category = decisions
+		cost = { 
+			alloys = 500 
+			energy = 500
+		}
+	}
+
+	enactment_time = 360
+	
+	potential = {
+		is_planet_class = pc_habitat
+		NOT = { has_modifier = starborn_starting_habitat_districts_2 }
+		has_modifier = decision_starborn_increase_starting_hab_district_1
+	}
+	
+	effect = {
+		custom_tooltip = starborn_starting_habitat_districts_2_desc
+		add_modifier = { 
+			modifier = starborn_starting_habitat_districts_2 
+			days = -1 
+		}
+	}
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			free_district_slots > 0
+		}
+	}
+}
+
+decision_starborn_increase_starting_hab_district_3 = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_starborn_expand_habitat
+	prerequisites = { "tech_starbase_5" }
+	
+	resources = {
+		category = decisions
+		cost = { 
+			alloys = 500 
+			energy = 500
+		}
+	}
+
+	enactment_time = 360
+	
+	potential = {
+		is_planet_class = pc_habitat
+		NOT = { has_modifier = starborn_starting_habitat_districts_3 }
+		has_modifier = decision_starborn_increase_starting_hab_district_2
+	}
+	
+	effect = {
+		custom_tooltip = starborn_starting_habitat_districts_3_desc
+		add_modifier = { 
+			modifier = starborn_starting_habitat_districts_3 
+			days = -1 
+		}
+	}
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			free_district_slots > 0
+		}
+	}
+}
+
+decision_starborn_increase_starting_hab_district_4 = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_starborn_expand_habitat
+	prerequisites = { "tech_mega_engineering" }
+	
+	resources = {
+		category = decisions
+		cost = { 
+			alloys = 500 
+			energy = 500
+		}
+	}
+
+	enactment_time = 360
+	
+	potential = {
+		is_planet_class = pc_habitat
+		NOT = { has_modifier = starborn_starting_habitat_districts_4 }
+		has_modifier = decision_starborn_increase_starting_hab_district_3
+	}
+	
+	effect = {
+		custom_tooltip = starborn_starting_habitat_districts_4_desc
+		add_modifier = { 
+			modifier = starborn_starting_habitat_districts_4 
+			days = -1 
+		}
+	}
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			free_district_slots > 0
+		}
+	}
+}
+
+decision_starborn_increase_starting_hab_district_voidborn = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_starborn_expand_habitat
+	prerequisites = { "tech_starborn_expand_starting_habitat_voidborn" }
+	
+	resources = {
+		category = decisions
+		cost = { 
+			alloys = 1000 
+			energy = 1000
+		}
+	}
+
+	enactment_time = 360
+	
+	potential = {
+		is_planet_class = pc_habitat
+		has_modifier = starborn_starting_habitat_districts_3
+		NOT = { has_modifier = starborn_increase_starting_hab_district_voidborn }
+	}
+	
+	effect = {
+		custom_tooltip = starborn_increase_starting_hab_district_voidborn_desc
+		add_modifier = { 
+			modifier = starborn_increase_starting_hab_district_voidborn 
+			days = -1 
+		}
+	}
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			free_district_slots > 0
+		}
+	}
+}
+
+decision_starborn_increase_starting_hab_district_master_builders = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_starborn_expand_habitat
+	prerequisites = { "tech_starborn_expand_starting_habitat_master_builders" }
+	
+	resources = {
+		category = decisions
+		cost = { 
+			alloys = 1000 
+			energy = 1000
+		}
+	}
+
+	enactment_time = 360
+	
+	potential = {
+		is_planet_class = pc_habitat
+		has_modifier = starborn_starting_habitat_districts_4
+		NOT = { has_modifier = starborn_starting_habitat_districts_master_builders }		
+	}
+	
+	effect = {
+		custom_tooltip = starborn_starting_habitat_districts_master_builders_desc
+		add_modifier = { 
+			modifier = starborn_starting_habitat_districts_master_builders 
+			days = -1 
+		}
+	}
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			free_district_slots > 0
+		}
+	}
+}
+
+decision_starborn_increase_starting_hab_district_galatic_wonders = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_starborn_expand_habitat
+	prerequisites = { "tech_starborn_expand_starting_habitat_galatic_wonders" }
+	
+	resources = {
+		category = decisions
+		cost = { 
+			alloys = 1000 
+			energy = 1000
+		}
+	}
+
+	enactment_time = 360
+	
+	potential = {
+		is_planet_class = pc_habitat
+		has_modifier = starborn_starting_habitat_districts_4
+		NOT = { has_modifier = starborn_expand_starting_habitat_galatic_wonders }
+	}
+	
+	effect = {
+		custom_tooltip = starborn_expand_starting_habitat_galatic_wonders_desc
+		add_modifier = { 
+			modifier = starborn_expand_starting_habitat_galatic_wonders 
+			days = -1 
+		}
+	}
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			free_district_slots > 0
+		}
+	}
+}

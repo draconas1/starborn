@@ -1,0 +1,241 @@
+# enlarge the habitat by 1 step.
+decision_starborn_enlarge_hab = {
+	owned_planets_only = yes
+
+	enactment_time = 300
+	resources = {
+		category = decisions
+		cost = {
+			influence = 20
+            energy = 250
+            alloys = 500
+		}
+	}
+	
+	potential = {
+        is_planet_class = pc_habitat
+		planet_size < 6
+	}
+
+	allow = {
+		OR = {
+			owner = {
+				has_ascension_perk = ap_voidborn
+			}
+			planet_size < 3
+		}
+	}
+
+	effect = {
+		custom_tooltip = decision_starborn_enlarge_hab_desc
+		if = {
+			limit = {
+				planet_size < 6
+			}
+			change_planet_size = 1
+		}
+		else = {
+			owner = {
+				country_event = { id = starborn.2 }
+			}
+		}		
+	}
+	
+	# Same AI waiting as Mastery of nature, wonder if the AI ever uses that.
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			free_district_slots > 0
+		}
+	}
+}
+
+# Minimise micromanagement, fully enlarge the hab to 6 once you have voidborn.
+decision_starborn_fully_enlarge_hab = {
+	owned_planets_only = yes
+
+	enactment_time = 1000
+	resources = {
+		category = decisions
+		cost = {
+			trigger = {
+				planet_size = 1
+			}
+			influence = 100
+            energy = 1250
+            alloys = 2500
+		}
+		cost = {
+			trigger = {
+				planet_size = 2
+			}
+			influence = 80
+            energy = 1000
+            alloys = 2000
+		}
+		cost = {
+			trigger = {
+				planet_size = 3
+			}
+			influence = 60
+            energy = 750
+            alloys = 1500
+		}
+		cost = {
+			trigger = {
+				planet_size = 4
+			}
+			influence = 40
+            energy = 500
+            alloys = 1000
+		}
+		cost = {
+			trigger = {
+				planet_size = 5
+			}
+			influence = 20
+            energy = 250
+            alloys = 500
+		}
+	}
+	
+	potential = {
+		is_planet_class = pc_habitat
+		planet_size < 6
+		owner = {
+			has_ascension_perk = ap_voidborn
+		}
+	}
+	
+	effect = {
+		custom_tooltip = decision_starborn_fully_enlarge_hab_desc
+		set_planet_size = 6	
+	}
+	
+	# AI will never use this.  
+	ai_weight = {
+		weight = 0
+	}
+}
+
+
+
+#More Districts on habitat
+decision_starborn_increase_hab_district_1 = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_starborn_expand_habitat
+	prerequisites = { "tech_starbase_3" }
+	
+	resources = {
+		category = decisions
+		cost = { 
+			alloys = 500 
+			energy = 500
+		}
+	}
+
+	enactment_time = 360
+	
+	potential = {
+		is_planet_class = pc_habitat
+		NOT = { has_modifier = starborn_habitat_districts_1 }
+	}
+	
+	effect = {
+		custom_tooltip = starborn_increase_hab_district_1_desc
+		add_modifier = { 
+			modifier = starborn_increase_hab_district_1 
+			days = -1 
+		}
+	}
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			free_district_slots > 0
+		}
+	}
+}
+
+
+decision_starborn_increase_hab_district_2 = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_starborn_expand_habitat
+	prerequisites = { "tech_starbase_5" }
+	
+	resources = {
+		category = decisions
+		cost = { 
+			alloys = 750 
+			energy = 750
+		}
+	}
+
+	enactment_time = 360
+	
+	potential = {
+		is_planet_class = pc_habitat
+		has_modifier = starborn_habitat_districts_1
+		NOT = { has_modifier = starborn_habitat_districts_2 }
+	}
+	
+	effect = {
+		custom_tooltip = starborn_habitat_districts_2_desc
+		add_modifier = { 
+			modifier = starborn_habitat_districts_2 
+			days = -1 
+		}
+	}
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			free_district_slots > 0
+		}
+	}
+}
+
+
+decision_starborn_increase_hab_district_3 = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_starborn_expand_habitat
+	prerequisites = { "tech_mega" }
+	
+	resources = {
+		category = decisions
+		cost = { 
+			alloys = 1000 
+			energy = 1000
+		}
+	}
+
+	enactment_time = 360
+	
+	potential = {
+		is_planet_class = pc_habitat
+		has_modifier = starborn_habitat_districts_2
+		NOT = { has_modifier = starborn_habitat_districts_3 }
+	}
+	
+	effect = {
+		custom_tooltip = starborn_habitat_districts_3_desc
+		add_modifier = { 
+			modifier = starborn_habitat_districts_3 
+			days = -1 
+		}
+	}
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			free_district_slots > 0
+		}
+	}
+}

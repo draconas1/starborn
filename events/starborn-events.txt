@@ -1,5 +1,6 @@
 namespace = starborn
 
+#starting
 country_event = {
         id = starborn.1
         hide_window = yes
@@ -21,6 +22,21 @@ country_event = {
                         starborn_setup_starting_world = yes
                 }
         }
+}
+
+# tried toc heat enlarging habitat
+country_event = {
+        id = starborn.2    
+	title = "starborn.2.name"
+	desc = "starborn.2.desc"
+	show_sound = event_mystic_reveal
+	picture = GFX_evt_colony_settlement
+	is_triggered_only = yes
+        location = FromFromFrom.Planet
+
+	option = {
+		name = "starborn.2.option.a"
+	}
 }
 
 

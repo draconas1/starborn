@@ -103,6 +103,7 @@ starborn_system_initializer = {
 		}
       
         moon = {
+			name = "Arc of Civilisation"
 			class = "pc_starborn_habitat_start"
 			size = 10
 			orbit_distance = 8
