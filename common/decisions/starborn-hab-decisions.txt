@@ -125,7 +125,7 @@ decision_starborn_fully_enlarge_hab = {
 decision_starborn_increase_hab_district_1 = {
 	owned_planets_only = yes
 	sound = event_administrative_work
-	icon = decision_starborn_expand_habitat
+	icon = decision_drifting_gateway
 	prerequisites = { "tech_starbase_3" }
 	
 	resources = {
@@ -144,9 +144,9 @@ decision_starborn_increase_hab_district_1 = {
 	}
 	
 	effect = {
-		custom_tooltip = starborn_increase_hab_district_1_desc
+		custom_tooltip = starborn_habitat_districts_1_desc
 		add_modifier = { 
-			modifier = starborn_increase_hab_district_1 
+			modifier = starborn_habitat_districts_1 
 			days = -1 
 		}
 	}
@@ -164,7 +164,7 @@ decision_starborn_increase_hab_district_1 = {
 decision_starborn_increase_hab_district_2 = {
 	owned_planets_only = yes
 	sound = event_administrative_work
-	icon = decision_starborn_expand_habitat
+	icon = decision_drifting_gateway
 	prerequisites = { "tech_starbase_5" }
 	
 	resources = {
@@ -204,8 +204,8 @@ decision_starborn_increase_hab_district_2 = {
 decision_starborn_increase_hab_district_3 = {
 	owned_planets_only = yes
 	sound = event_administrative_work
-	icon = decision_starborn_expand_habitat
-	prerequisites = { "tech_mega" }
+	icon = decision_drifting_gateway
+	prerequisites = { "tech_mega_engineering" }
 	
 	resources = {
 		category = decisions

@@ -130,7 +130,7 @@
  tech_starborn_expand_starting_habitat_voidborn_desc:0 "As we have become $ap_voidborn$ our engineers believe they can develop new ways to enlarge and improve our $pc_starborn_habitat_start$"
 
  tech_starborn_expand_starting_habitat_master_builders:0 "$pc_starborn_habitat_start$ Enlargement"
- tech_starborn_expand_starting_habitat_master_builders:0 "Our mastery of building and construction has opened up the possibility for ideas once discarded as impossible to be used to enlarge our $pc_starborn_habitat_start$"
+ tech_starborn_expand_starting_habitat_master_builders_desc:0 "Our mastery of building and construction has opened up the possibility for ideas once discarded as impossible to be used to enlarge our $pc_starborn_habitat_start$"
 
  tech_starborn_expand_starting_habitat_galatic_wonders:0 "$pc_starborn_habitat_start$ Enlargement"
  tech_starborn_expand_starting_habitat_galatic_wonders_desc:0 "What is the point of building Galatic Wonders if we cannot use that engineering knowledge to improve our $pc_starborn_habitat_start$"
