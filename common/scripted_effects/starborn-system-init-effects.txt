@@ -13,6 +13,8 @@ starborn_setup_starting_world = {
     add_district = district_starborn_starting_preserve
     add_district = district_starborn_starting_solar
     add_district = district_starborn_starting_solar
+    add_district = district_starborn_starting_solar
+    add_building = building_commercial_zone
 }
 
 

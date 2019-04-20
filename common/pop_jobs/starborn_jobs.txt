@@ -5,7 +5,7 @@ starborn_tombworld_scavenger = {
 	clothes_texture_index = 2
 
 	possible = {
-		complex_worker_job_check_trigger = yes
+		worker_job_check_trigger = yes
 	}
 	
 	resources = {
@@ -13,11 +13,15 @@ starborn_tombworld_scavenger = {
 		produces = {
 			minerals = 3
 			engineering_research = 1
-			alloys = 1
+			alloys = 3
 		}
 		upkeep = {
 			energy = 2
 		}
+	}
+
+	planet_modifier = {
+		planet_amenities_add = 2
 	}
 	
 	weight = {
@@ -88,18 +92,21 @@ starborn_preserve_ranger = {
 	clothes_texture_index = 2
 
 	possible = {
-		complex_worker_job_check_trigger = yes
+		worker_job_check_trigger = yes
 	}
 	
 	resources = {
 		category = planet_farmers
 		produces = {
 			food = 5
-			society_research = 1			
+			society_research = 1		
 		}
 		upkeep = {
 			energy = 1
 		}
+	}
+	planet_modifier = {
+		planet_amenities_add = 2
 	}
 	
 	weight = {
@@ -169,7 +176,7 @@ starborn_solar_technician = {
 	
 	possible = {
 		hidden_trigger = { exists = owner }
-		complex_worker_job_check_trigger = yes
+		worker_job_check_trigger = yes
 		owner = { 
 			is_gestalt = no
 			is_fallen_empire_spiritualist = no
@@ -243,7 +250,7 @@ starborn_alloy_extractor = {
 	clothes_texture_index = 2
 
 	possible = {
-		complex_worker_job_check_trigger = yes
+		worker_job_check_trigger = yes
 	}
 	
 	resources = {

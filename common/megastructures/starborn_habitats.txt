@@ -11,7 +11,7 @@ starborn_habitat = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 300
+			alloys = 250
 		}
 	}
 	construction_blocks_others = no

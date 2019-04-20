@@ -6,6 +6,41 @@ decision_starborn_enlarge_hab = {
 	resources = {
 		category = decisions
 		cost = {
+			trigger = {
+				planet_size = 1
+			}
+			influence = 20
+            energy = 250
+            alloys = 250
+		}
+		cost = {
+			trigger = {
+				planet_size = 2
+			}
+			influence = 20
+            energy = 250
+            alloys = 250
+		}
+		cost = {
+			trigger = {
+				planet_size = 3
+			}
+			influence = 20
+            energy = 250
+            alloys = 250
+		}
+		cost = {
+			trigger = {
+				planet_size = 4
+			}
+			influence = 20
+            energy = 250
+            alloys = 500
+		}
+		cost = {
+			trigger = {
+				planet_size = 5
+			}
 			influence = 20
             energy = 250
             alloys = 500
@@ -22,7 +57,7 @@ decision_starborn_enlarge_hab = {
 			owner = {
 				has_ascension_perk = ap_voidborn
 			}
-			planet_size < 3
+			planet_size < 4
 		}
 	}
 
@@ -64,7 +99,7 @@ decision_starborn_fully_enlarge_hab = {
 			}
 			influence = 100
             energy = 1250
-            alloys = 2500
+            alloys = 1750
 		}
 		cost = {
 			trigger = {
@@ -72,7 +107,7 @@ decision_starborn_fully_enlarge_hab = {
 			}
 			influence = 80
             energy = 1000
-            alloys = 2000
+            alloys = 1500
 		}
 		cost = {
 			trigger = {
@@ -80,7 +115,7 @@ decision_starborn_fully_enlarge_hab = {
 			}
 			influence = 60
             energy = 750
-            alloys = 1500
+            alloys = 1250
 		}
 		cost = {
 			trigger = {
@@ -88,7 +123,7 @@ decision_starborn_fully_enlarge_hab = {
 			}
 			influence = 40
             energy = 500
-            alloys = 1000
+            alloys = 750
 		}
 		cost = {
 			trigger = {
@@ -96,7 +131,7 @@ decision_starborn_fully_enlarge_hab = {
 			}
 			influence = 20
             energy = 250
-            alloys = 500
+            alloys = 250
 		}
 	}
 	
@@ -131,8 +166,8 @@ decision_starborn_increase_hab_district_1 = {
 	resources = {
 		category = decisions
 		cost = { 
-			alloys = 500 
-			energy = 500
+			alloys = 250 
+			energy = 250
 		}
 	}
 
@@ -170,7 +205,7 @@ decision_starborn_increase_hab_district_2 = {
 	resources = {
 		category = decisions
 		cost = { 
-			alloys = 750 
+			alloys = 500 
 			energy = 750
 		}
 	}
@@ -210,7 +245,7 @@ decision_starborn_increase_hab_district_3 = {
 	resources = {
 		category = decisions
 		cost = { 
-			alloys = 1000 
+			alloys = 750 
 			energy = 1000
 		}
 	}

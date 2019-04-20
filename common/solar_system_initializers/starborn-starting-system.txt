@@ -40,6 +40,7 @@ starborn_system_initializer = {
 
 		moon = {
 			class = "pc_habitat"
+			name = "Initial Solar Farm Habitat"
 			size = 3
 			orbit_distance = 10
 			orbit_angle = 40
@@ -151,6 +152,7 @@ starborn_system_initializer = {
 
 		moon = {
 			class = "pc_habitat"
+			name = "Initial Atro Mine Habitat"
 			size = 3
 			orbit_distance = 10
 			orbit_angle = 40

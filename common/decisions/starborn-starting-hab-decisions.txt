@@ -8,7 +8,7 @@ decision_starborn_increase_starting_hab_district_1 = {
 	resources = {
 		category = decisions
 		cost = { 
-			alloys = 500 
+			alloys = 250 
 			energy = 500
 		}
 	}
@@ -46,7 +46,7 @@ decision_starborn_increase_starting_hab_district_2 = {
 	resources = {
 		category = decisions
 		cost = { 
-			alloys = 500 
+			alloys = 350 
 			energy = 500
 		}
 	}
@@ -124,7 +124,7 @@ decision_starborn_increase_starting_hab_district_4 = {
 	resources = {
 		category = decisions
 		cost = { 
-			alloys = 500 
+			alloys = 750 
 			energy = 500
 		}
 	}

@@ -3,16 +3,5 @@ habitable_structure = {
 		is_planet_class = pc_starborn_habitat_start
 		is_planet_class = pc_ringworld_habitable
 		is_planet_class = pc_habitat
-		is_planet_class = pc_gigaorbital_ring
-		is_planet_class = pc_habitable_gas_giant
-		is_planet_class = pc_interstellar_habitat
-		is_planet_class = pc_interstellar_ringworld_habitable
-		is_planet_class = pc_giga_ringworld_habitable
-		is_planet_class = pc_giga_planetary_computer
-		is_planet_class = pc_archive
-		is_planet_class = pc_ringworld_city
-		is_planet_class = pc_ringworld_machine
-		is_planet_class = pc_ringworld_hive
-		is_planet_class = pc_virtual_world
 	}
 }

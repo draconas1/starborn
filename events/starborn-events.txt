@@ -14,7 +14,13 @@ country_event = {
         immediate = {
                 set_country_flag = custom_start_screen
 
+                give_technology = { 
+                        message = no 
+                        tech = tech_hydroponics 
+                }
+
                 home_planet = {
+                        set_name = "Arc of Civilisation"
                         set_planet_size = 16
                         clear_blockers = yes
                         clear_deposits = yes
@@ -24,7 +30,7 @@ country_event = {
         }
 }
 
-# tried toc heat enlarging habitat
+# tried to cheat enlarging habitat
 country_event = {
         id = starborn.2    
 	title = "starborn.2.name"
@@ -39,5 +45,16 @@ country_event = {
 	}
 }
 
+# starting blurb
+country_event = {
+        id = starborn.3    
+	title = "starborn.3.name"
+	desc = "starborn.3.desc"
+	picture = GFX_evt_colony_settlement
+	is_triggered_only = yes
 
+	option = {
+		name = "starborn.3.option.a"
+	}
+}
 

@@ -2,5 +2,6 @@
 on_game_start_country = {
 	events = {
 		starborn.1
+		starborn.3
 	}
 }
