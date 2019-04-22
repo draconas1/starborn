@@ -9,7 +9,6 @@ decision_starborn_enlarge_hab = {
 			trigger = {
 				planet_size = 1
 			}
-			influence = 20
             energy = 250
             alloys = 250
 		}
@@ -17,7 +16,6 @@ decision_starborn_enlarge_hab = {
 			trigger = {
 				planet_size = 2
 			}
-			influence = 20
             energy = 250
             alloys = 250
 		}
@@ -25,7 +23,6 @@ decision_starborn_enlarge_hab = {
 			trigger = {
 				planet_size = 3
 			}
-			influence = 20
             energy = 250
             alloys = 250
 		}
@@ -33,7 +30,6 @@ decision_starborn_enlarge_hab = {
 			trigger = {
 				planet_size = 4
 			}
-			influence = 20
             energy = 250
             alloys = 500
 		}
@@ -41,7 +37,6 @@ decision_starborn_enlarge_hab = {
 			trigger = {
 				planet_size = 5
 			}
-			influence = 20
             energy = 250
             alloys = 500
 		}
@@ -97,7 +92,6 @@ decision_starborn_fully_enlarge_hab = {
 			trigger = {
 				planet_size = 1
 			}
-			influence = 100
             energy = 1250
             alloys = 1750
 		}
@@ -105,7 +99,6 @@ decision_starborn_fully_enlarge_hab = {
 			trigger = {
 				planet_size = 2
 			}
-			influence = 80
             energy = 1000
             alloys = 1500
 		}
@@ -113,7 +106,6 @@ decision_starborn_fully_enlarge_hab = {
 			trigger = {
 				planet_size = 3
 			}
-			influence = 60
             energy = 750
             alloys = 1250
 		}
@@ -121,17 +113,15 @@ decision_starborn_fully_enlarge_hab = {
 			trigger = {
 				planet_size = 4
 			}
-			influence = 40
             energy = 500
-            alloys = 750
+            alloys = 1000
 		}
 		cost = {
 			trigger = {
 				planet_size = 5
 			}
-			influence = 20
             energy = 250
-            alloys = 250
+            alloys = 500
 		}
 	}
 	

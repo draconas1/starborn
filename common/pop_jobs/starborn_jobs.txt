@@ -13,7 +13,7 @@ starborn_tombworld_scavenger = {
 		produces = {
 			minerals = 3
 			engineering_research = 1
-			alloys = 3
+			alloys = 2
 		}
 		upkeep = {
 			energy = 2

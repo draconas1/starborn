@@ -121,7 +121,7 @@
 
 
  starborn.2.name:0 "Habitat Enlargement Scam"
- starborn.2.desc:0 "It seems that at the same time as ordering the 'full enlargement' of the $pc_habitat$ from our regular engineering, our government also contracted 'Derek Trotters Honest Builders' to further enlarge the structure, 'what do those experts know about maximums?'\n\nIt seems this may have been an error and that Derek Trotter has dissappeared along with all the resources he was supplied to do the job.\n\nThe habitat is the same 'maximum size' as our experts predicted"
+ starborn.2.desc:0 "It seems that at the same time as ordering the 'full enlargement' of the $pc_habitat$ from our regular engineers, our government also contracted 'Derek Trotters Honest Builders' to further enlarge the structure, 'what do those experts know about maximums?'\n\nIt seems this may have been an error and that Derek Trotter has dissappeared along with all the resources he was supplied to do the job.\n\nThe habitat is the same 'maximum size' as our experts predicted"
  starborn.2.option.a:0 "Next time we should listen to the experts"
 
  starborn.3.name:0 "$civic_starborn$"
@@ -142,11 +142,11 @@
  tech_starborn_expand_starting_habitat_galatic_wonders:0 "$pc_starborn_habitat_start$ Enlargement"
  tech_starborn_expand_starting_habitat_galatic_wonders_desc:0 "What is the point of building Galatic Wonders if we cannot use that engineering knowledge to improve our $pc_starborn_habitat_start$"
 
- building_hab_food_processing_facility:0 "$building_food_processing_facility$"
+ building_hab_food_processing_facility:0 "Habitat $building_food_processing_facility$"
  building_hab_food_processing_facility_desc:0 "$building_food_processing_facility_desc$"
 
- building_hab_mineral_purification_plant:0 "$building_mineral_purification_plant$"
+ building_hab_mineral_purification_plant:0 "Habitt $building_mineral_purification_plant$"
  building_hab_mineral_purification_plant_desc:0 "$building_mineral_purification_plant_desc$"
 
- building_hab_energy_grid:0 "$building_energy_grid$"
+ building_hab_energy_grid:0 "Habitat $building_energy_grid$"
  building_hab_energy_grid_desc:0 "$building_energy_grid_desc$"

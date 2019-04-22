@@ -86,6 +86,7 @@ district_starborn_starting_scavenger = {
 	
 	planet_modifier = {
 		job_starborn_tombworld_scavenger_add = 2
+		planet_housing_add = 1
 	}
 
 	triggered_desc = {
@@ -123,6 +124,7 @@ district_starborn_starting_preserve = {
 	
 	planet_modifier = {
 		job_starborn_preserve_ranger_add = 2
+		planet_housing_add = 1
 	}
 
 	triggered_desc = {
@@ -157,6 +159,7 @@ district_starborn_starting_solar = {
 				
 	planet_modifier = {
 		job_starborn_solar_technician_add = 2
+		planet_housing_add = 1
 	}
 	
 	triggered_desc = {
@@ -194,6 +197,10 @@ district_starborn_solar = {
 		upkeep = {
 			energy = @hab_maintenance
 		}		
+	}
+
+	planet_modifier = {
+		planet_housing_add = 1
 	}
 				
 	triggered_planet_modifier = {
@@ -310,6 +317,10 @@ district_starborn_surface_mining = {
 		upkeep = {
 			energy = @hab_maintenance
 		}		
+	}
+
+	planet_modifier = {
+		planet_housing_add = 1
 	}
 			
 	triggered_planet_modifier = {
@@ -457,6 +468,10 @@ district_starborn_surface_alloys = {
 			energy = @hab_maintenance
 		}		
 	}
+
+	planet_modifier = {
+		planet_housing_add = 1
+	}
 	
 	triggered_planet_modifier = {
 		potential = {
@@ -542,8 +557,7 @@ district_starborn_surface_farming = {
 	
 	allow = {
 		NOT = { has_modifier = resort_colony }
-	}	
-	
+	}
 		
 	resources = {
 		category = planet_districts
@@ -553,6 +567,10 @@ district_starborn_surface_farming = {
 		upkeep = {
 			energy = 1
 		}		
+	}
+
+	planet_modifier = {
+		planet_housing_add = 1
 	}
 	
 	triggered_planet_modifier = {

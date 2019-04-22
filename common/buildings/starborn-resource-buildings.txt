@@ -8,8 +8,10 @@ building_hab_food_processing_facility = {
 	
 	potential = {
 		NOR = {
+            is_planet_class = pc_starborn_habitat_start
 			is_planet_class = pc_machine
 			has_modifier = resort_colony
+			has_building = building_food_processing_center
 		}
         OR = {
 			NOT = { is_planet_class = pc_habitat }	
@@ -146,7 +148,9 @@ building_hab_mineral_purification_plant = {
 	
 	potential = {
 		NOT = { has_modifier = resort_colony }
-        NOT = { has_modifier = slave_colony }
+		NOT = { has_modifier = slave_colony }
+		NOT = { has_building = building_mineral_purification_hub }
+        NOT = { is_planet_class = pc_starborn_habitat_start }	
         OR = {
 			NOT = { is_planet_class = pc_habitat }	
             has_deposit = d_starborn_mineral_surface
@@ -284,6 +288,8 @@ building_hab_energy_grid = {
 	potential = {
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
+		NOT = { is_planet_class = pc_starborn_habitat_start }
+		NOT = { has_building = building_energy_nexus }
 		OR = {
 			NOT = { is_planet_class = pc_habitat }
 			AND = {
