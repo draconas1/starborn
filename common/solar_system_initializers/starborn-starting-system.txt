@@ -115,6 +115,7 @@ starborn_system_initializer = {
 			init_effect = {
 				prevent_anomaly = yes
 				set_planet_flag = starting_deposit
+				set_planet_flag = has_megastructure
 			}
         }
         

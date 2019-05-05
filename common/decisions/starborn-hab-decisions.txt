@@ -1,7 +1,6 @@
 # enlarge the habitat by 1 step.
 decision_starborn_enlarge_hab = {
 	owned_planets_only = yes
-
 	enactment_time = 300
 	resources = {
 		category = decisions
@@ -84,7 +83,6 @@ decision_starborn_enlarge_hab = {
 # Minimise micromanagement, fully enlarge the hab to 6 once you have voidborn.
 decision_starborn_fully_enlarge_hab = {
 	owned_planets_only = yes
-
 	enactment_time = 1000
 	resources = {
 		category = decisions
@@ -149,7 +147,6 @@ decision_starborn_fully_enlarge_hab = {
 #More Districts on habitat
 decision_starborn_increase_hab_district_1 = {
 	owned_planets_only = yes
-	sound = event_administrative_work
 	icon = decision_drifting_gateway
 	prerequisites = { "tech_starbase_3" }
 	
@@ -188,7 +185,6 @@ decision_starborn_increase_hab_district_1 = {
 
 decision_starborn_increase_hab_district_2 = {
 	owned_planets_only = yes
-	sound = event_administrative_work
 	icon = decision_drifting_gateway
 	prerequisites = { "tech_starbase_5" }
 	
@@ -228,7 +224,6 @@ decision_starborn_increase_hab_district_2 = {
 
 decision_starborn_increase_hab_district_3 = {
 	owned_planets_only = yes
-	sound = event_administrative_work
 	icon = decision_drifting_gateway
 	prerequisites = { "tech_mega_engineering" }
 	

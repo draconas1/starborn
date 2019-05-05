@@ -1,5 +1,5 @@
 civic_starborn = {
-	playable = { host_has_dlc = "Apocalypse" }
+	playable = { host_has_dlc = "Utopia" }
 	starting_colony = pc_starborn_habitat_start
 	habitability_preference = pc_habitat
 	preferred_planet_class_neighbor = no

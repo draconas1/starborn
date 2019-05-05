@@ -1,6 +1,6 @@
 pc_starborn_habitat_start = {
 	entity = "giga_orbital_habitat_entity"
-	picture = pc_starborn_habitat_start_sky
+	picture = pc_starborn_habitat_start
 	tile_set = pc_continental
 	icon_frame = 21
 	habitat = yes
