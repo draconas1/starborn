@@ -2,7 +2,6 @@ objectTypes = {
 
 	pdxmesh = {
 		name = "gigaorbitalring_mesh"
-		file = "gfx/models/planets/orbital_habitat.mesh"
-	
+		file = "gfx/models/planets/orbital_habitat.mesh"	
 	}
 }

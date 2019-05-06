@@ -7,6 +7,7 @@ trait_pc_starborn_habitat_start_preference = {
 		pc_habitat_habitability = 1.0
 		pc_ringworld_habitable_habitability = 1.0
 		pc_starborn_habitat_start_habitability = 1.0
+		pc_nuked_habitability = 0
 	}
 	ai_weight = {
 		weight = 0

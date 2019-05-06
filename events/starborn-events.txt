@@ -14,18 +14,282 @@ country_event = {
         immediate = {
                 set_country_flag = custom_start_screen
 
+                #tag the starting star
+                random_system_within_border = {
+                        limit = {
+                                any_system_planet = {
+                                        is_capital = yes
+                                }
+                        }
+                        # tag the star
+                        random_system_planet = { 
+                                limit = {
+                                        is_star = yes
+                                }
+                                save_event_target_as = star_spawn 
+                                set_planet_flag = has_megastructure
+                                random_mining_station = {
+                                        dismantle = yes
+                                }
+                        }
+
+                        # tag the capital
+                        random_system_planet = { 
+                                limit = {
+                                        is_capital = yes
+                                }
+                                save_event_target_as = capital_spawn_planet 
+                        }
+
+                        if = {
+                                limit = {
+                                        NOT = {
+                                                any_system_planet = {
+                                                        is_asteroid = yes
+                                                        has_deposit = no
+                                                }
+                                        }
+                                }
+                                add_asteroid_belt = {
+                                        radius = 200
+                                        type = rocky_asteroid_belt
+                                }
+
+                                spawn_planet = {
+                                        class = "pc_asteroid"
+                                        orbit_distance = 200
+                                        orbit_angle = 0
+                                        size = 6
+                                        has_ring = no
+                        
+                                        init_effect = {
+                                                set_planet_flag = has_megastructure
+                                                save_event_target_as = asteroid_spawn 
+                                        }
+                                }
+                                
+                                spawn_planet = {
+                                        class = "pc_asteroid"
+                                        orbit_distance = 200
+                                        orbit_angle = 90
+                                        size = 5
+                                        has_ring = no
+                                        init_effect = {
+                                                add_deposit = d_minerals_3
+                                        }
+                                }
+                                spawn_planet = {
+                                        class = "pc_asteroid"
+                                        orbit_distance = 200
+                                        orbit_angle = 200
+                                        size = 4
+                                        has_ring = no
+                                        init_effect = {
+                                                add_deposit = d_minerals_2
+                                        }
+                                }
+                                spawn_planet = {
+                                        class = "pc_asteroid"
+                                        orbit_distance = 200
+                                        orbit_angle = 280
+                                        size = 3
+                                        has_ring = no
+                                        init_effect = {
+                                                add_deposit = d_minerals_1
+                                        }
+                                }
+                        }
+                        else = {
+                                random_system_planet = { 
+                                        limit = {
+                                                is_asteroid = yes
+                                                has_deposit = no
+                                        }
+                                        save_event_target_as = asteroid_spawn 
+                                }  
+                        }
+
+                        # spawn the solar habitat
+                        spawn_planet = {
+                                class = "pc_habitat"
+                                location = event_target:star_spawn
+                                orbit_location = yes
+                                orbit_angle_offset = 45
+                                orbit_distance_offset = 9.899
+                                size = 3
+                                has_ring = no
+                                
+                                init_effect = {
+                                        set_name = "Prototype Solar Collection Habitat"
+                                        set_planet_entity = {
+                                                entity = "orbital_habitat_entity"
+                                                graphical_culture = fromfrom
+                                        }
+                                        surveyed = {
+                                                set_surveyed = yes
+                                                surveyor = FROM
+                                        }
+                                        set_all_comms_surveyed = yes
+                                        clear_blockers = yes
+
+                                        add_deposit = d_starborn_energy
+                                        add_deposit = d_starborn_energy
+                                        add_deposit = d_starborn_energy
+                                        add_deposit = d_starborn_energy
+                                        add_deposit = d_starborn_energy
+                                        add_modifier = {
+                                                modifier = starborn_near_solar_energy
+                                                days = -1
+                                        }                                                                               
+        
+                                        set_planet_flag = megastructure
+                                        set_planet_flag = habitat
+                                }
+                        }
+
+                        # spawn the mining habitat
+                        spawn_planet = {
+                                class = "pc_habitat"
+                                location = event_target:asteroid_spawn
+                                orbit_location = yes
+                                orbit_angle_offset = 20
+                                orbit_distance_offset = 2
+                                size = 3
+                                has_ring = no
+                                
+                                init_effect = {
+                                        set_name = "Prototype Asteroid Mining Habitat"
+                                        set_planet_entity = {
+                                                entity = "orbital_habitat_entity"
+                                                graphical_culture = fromfrom
+                                        }
+                                        surveyed = {
+                                                set_surveyed = yes
+                                                surveyor = FROM
+                                        }
+                                        set_all_comms_surveyed = yes
+                                        clear_blockers = yes
+
+                                        add_deposit = d_starborn_mineral_surface
+                                        add_deposit = d_starborn_mineral_surface
+                                        add_deposit = d_starborn_mineral_surface
+                                        add_deposit = d_starborn_mineral_surface
+                                        add_deposit = d_starborn_mineral_surface
+                                        add_modifier = {
+                                                modifier = starborn_asteroid_minerals
+                                                days = -1
+                                        }                                                                               
+        
+                                        set_planet_flag = megastructure
+                                        set_planet_flag = habitat
+                                }
+                        }
+
+                        # spawn the orbital city
+                        spawn_planet = {
+                                class = "pc_starborn_habitat_start"
+                                location =  event_target:capital_spawn_planet
+                                orbit_location = yes
+                                size = 16
+                                has_ring = no
+                                
+                                init_effect = {                                        
+                                        set_planet_entity = {
+                                                entity = "giga_orbital_habitat_entity"
+                                                graphical_culture = ROOT
+                                        }
+                                        surveyed = {
+                                                set_surveyed = yes
+                                                surveyor = FROM
+                                        }
+                                        set_all_comms_surveyed = yes
+                                        clear_blockers = yes
+                                        set_planet_flag = megastructure
+				        set_planet_flag = habitat
+                                      
+                                        create_colony = {
+                                                owner = root
+                                                species = owner_main_species
+                                                ethos = owner
+                                        }
+                                        set_name = "Arc of Civilisation"
+                                        add_building = building_capital
+                                        add_building = building_research_lab_1
+                                        add_building = building_foundry_1
+                                        add_building = building_factory_1
+
+                                        add_deposit = d_starborn_tomb_surface
+
+                                        add_district = district_starborn_starting_hab_housing
+                                        add_district = district_starborn_starting_hab_housing
+                                        add_district = district_starborn_starting_hab_housing
+                                    
+                                        add_district = district_starborn_starting_scavenger
+                                        add_district = district_starborn_starting_scavenger
+                                        add_district = district_starborn_starting_preserve
+                                        add_district = district_starborn_starting_preserve
+                                        add_district = district_starborn_starting_preserve
+                                        add_district = district_starborn_starting_solar
+                                        add_district = district_starborn_starting_solar
+                                        add_district = district_starborn_starting_solar
+
+                                        while = {
+                                                limit = { 
+                                                        num_pops < 24
+                                                }
+                                                create_pop = {
+                                                        species = owner_main_species
+                                                }
+                                        }
+
+                                        set_capital = yes
+                                }
+                        }
+                }
+
+                # we live in a space station, we understand how hydroponics work
                 give_technology = { 
                         message = no 
                         tech = tech_hydroponics 
                 }
 
+                # sort the old home planet
                 home_planet = {
-                        set_name = "Arc of Civilisation"
-                        set_planet_size = 16
+                        # already has the default 3 blockers
                         clear_blockers = yes
-                        clear_deposits = yes
-                        starborn_remove_all_districts = yes
-                        starborn_setup_starting_world = yes
+                        # orbital city
+                        set_planet_flag = has_megastructure
+                       
+                        #copy of the post_apoc deposits
+                        # common/scripted_effects/01_start_of_game_effects.txt : generate_start_deposits_and_blockers
+                        # 3 + 3 energy		
+                        add_deposit = d_hot_springs		
+                        add_deposit = d_searing_desert
+                        add_deposit = d_underwater_vent	
+                        
+                        # 3 + 4 mining
+                        add_deposit = d_veiny_cliffs		
+                        add_deposit = d_ore_rich_caverns
+                        add_deposit = d_submerged_ore_veins
+                        
+                        # 3 + 2 farming
+                        add_deposit = d_lichen_fields	
+                        add_deposit = d_fungal_caves 	
+                        add_deposit = d_fungal_forest	
+                   
+                        # add starborn ruins blockers
+                        # like regular ones, except they don't give you any pops when cleared as all the pops are dead.  
+                        add_deposit = d_starborn_ruins
+			add_deposit = d_starborn_wasteland
+			add_deposit = d_starborn_ruins
+			add_deposit = d_starborn_wasteland	
+			add_deposit = d_starborn_ruins
+                        add_deposit = d_starborn_wasteland
+
+                        #kill off the original colony in a nuclear war       
+                        destroy_colony = yes
+                        change_pc = "pc_nuked" 
+                        set_name = "Paradise Lost"
                 }
         }
 }

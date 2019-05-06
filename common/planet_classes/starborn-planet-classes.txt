@@ -33,4 +33,5 @@ pc_starborn_habitat_start = {
 	colonizable = yes
 	starting_planet = yes
 	orbit_lines = yes
+	show_city = no
 }
