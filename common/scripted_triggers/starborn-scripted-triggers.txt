@@ -1,0 +1,65 @@
+habitable_structure = {
+	OR = {
+		is_planet_class = pc_starborn_habitat_start
+		is_planet_class = pc_ringworld_habitable
+		is_planet_class = pc_habitat
+	}
+}
+
+starborn_can_place_hab = {
+	custom_tooltip = {
+		fail_text = "requires_surveyed_planet"
+		is_surveyed = {			# prevent leaking habitability information
+			who = prev.from
+			status = yes
+		}
+	}
+	custom_tooltip = {
+		fail_text = "requires_no_anomaly"
+		NOT = { has_anomaly = yes }
+	}
+	custom_tooltip = {
+		fail_text = "requires_no_existing_megastructure"
+		#can_build_megastructure_on_planet = yes
+		NOR = {
+			has_planet_flag = megastructure
+			has_planet_flag = has_megastructure
+			solar_system = {
+				has_star_flag = ring_world_built
+			}
+			is_planet_class = pc_ringworld_habitable
+			is_planet_class = pc_ringworld_habitable_damaged
+			is_planet_class = pc_ringworld_tech
+			is_planet_class = pc_ringworld_tech_damaged
+			is_planet_class = pc_ringworld_seam
+			is_planet_class = pc_ringworld_seam_damaged
+			is_planet_class = pc_habitat
+		}
+	}
+	custom_tooltip = {
+		fail_text = "requires_no_orbital_station"
+		has_orbital_station = no
+	}
+
+	# do not build habitats on black holes.  It's just not cool man!
+	custom_tooltip = {
+		fail_text = "requires_not_black_hole"
+		NOT = {
+			is_star_class = sc_black_hole
+		}
+	}
+
+	# do not build on strategic resources I have not put an extractor in for yet
+	custom_tooltip = {
+		fail_text = "requires_no_unminable_sr"
+		NOR = {
+			has_deposit = d_zro_deposit_1
+			has_deposit = d_zro_deposit_2
+			has_deposit = d_zro_deposit_3
+			has_deposit = d_dark_matter_deposit_1
+			has_deposit = d_dark_matter_deposit_2
+			has_deposit = d_dark_matter_deposit_3
+			has_deposit = d_living_metal_deposit
+		}
+	}
+}

@@ -1,0 +1,43 @@
+starborn_show_hab_build_size = {
+    length = 0
+    resources = {
+	    category = edicts
+		cost = {
+			influence = 0
+		}
+    }
+    
+    allow = {
+        has_civic = civic_starborn
+    }
+    
+	effect = {
+		country_event = { id = starborn.4 }
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+starborn_show_hab_enlargment_size = {
+    length = 0
+    resources = {
+        category = edicts
+        cost = {
+            influence = 0
+        }
+    }
+    
+    allow = {
+        has_civic = civic_starborn
+    }
+    
+	effect = {
+		country_event = { id = starborn.5 }
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}

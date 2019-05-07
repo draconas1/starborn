@@ -13,8 +13,9 @@ country_event = {
 
         immediate = {
                 set_country_flag = custom_start_screen
+                set_global_flag = starborn_hab_size_2
 
-                #tag the starting star
+                #starting system
                 random_system_within_border = {
                         limit = {
                                 any_system_planet = {
@@ -39,6 +40,13 @@ country_event = {
                                         is_capital = yes
                                 }
                                 save_event_target_as = capital_spawn_planet 
+                        }
+
+                        every_planet = {
+                                limit = {
+                                        is_star = yes
+                                }
+                                remove_deposit = yes 
                         }
 
                         if = {
@@ -75,7 +83,13 @@ country_event = {
                                         size = 5
                                         has_ring = no
                                         init_effect = {
-                                                add_deposit = d_minerals_3
+                                                random_list = {
+                                                        40 = {}
+                                                        60 = { add_deposit = d_minerals_1 }
+                                                        50 = { add_deposit = d_minerals_2 }
+                                                        40 = { add_deposit = d_minerals_3 }
+                                                        20 = { add_deposit = d_minerals_4 }
+                                                }
                                         }
                                 }
                                 spawn_planet = {
@@ -85,7 +99,13 @@ country_event = {
                                         size = 4
                                         has_ring = no
                                         init_effect = {
-                                                add_deposit = d_minerals_2
+                                                random_list = {
+                                                        40 = {}
+                                                        60 = { add_deposit = d_minerals_1 }
+                                                        50 = { add_deposit = d_minerals_2 }
+                                                        40 = { add_deposit = d_minerals_3 }
+                                                        20 = { add_deposit = d_minerals_4 }
+                                                }
                                         }
                                 }
                                 spawn_planet = {
@@ -95,7 +115,13 @@ country_event = {
                                         size = 3
                                         has_ring = no
                                         init_effect = {
-                                                add_deposit = d_minerals_1
+                                                random_list = {
+                                                        40 = {}
+                                                        60 = { add_deposit = d_minerals_1 }
+                                                        50 = { add_deposit = d_minerals_2 }
+                                                        40 = { add_deposit = d_minerals_3 }
+                                                        20 = { add_deposit = d_minerals_4 }
+                                                }
                                         }
                                 }
                         }
@@ -319,6 +345,138 @@ country_event = {
 
 	option = {
 		name = "starborn.3.option.a"
+	}
+}
+
+# hab build size menu
+country_event = {
+        id = starborn.4    
+	title = "starborn.4.name"
+	desc = "starborn.4.desc"
+	picture = GFX_evt_colony_settlement
+	is_triggered_only = yes
+
+	option = {
+                name = "starborn.4.option.2"
+                hidden_effect = {
+                        set_global_flag = starborn_hab_size_2
+                        remove_global_flag = starborn_hab_size_3
+                        remove_global_flag = starborn_hab_size_4
+                        remove_global_flag = starborn_hab_size_5
+                        remove_global_flag = starborn_hab_size_6
+		}
+        }
+        option = {
+                name = "starborn.4.option.3"
+                hidden_effect = {
+                        set_global_flag = starborn_hab_size_3
+                        remove_global_flag = starborn_hab_size_2
+                        remove_global_flag = starborn_hab_size_4
+                        remove_global_flag = starborn_hab_size_5
+                        remove_global_flag = starborn_hab_size_6
+		}
+        }
+        option = {
+                name = "starborn.4.option.4"
+                hidden_effect = {
+                        set_global_flag = starborn_hab_size_4
+                        remove_global_flag = starborn_hab_size_2
+                        remove_global_flag = starborn_hab_size_3
+                        remove_global_flag = starborn_hab_size_5
+                        remove_global_flag = starborn_hab_size_6
+		}
+        }
+        option = {
+                name = "starborn.4.option.5"
+                trigger = {
+			has_ascension_perk = ap_voidborn
+		}
+                hidden_effect = {
+                        set_global_flag = starborn_hab_size_5
+                        remove_global_flag = starborn_hab_size_2
+                        remove_global_flag = starborn_hab_size_3
+                        remove_global_flag = starborn_hab_size_4
+                        remove_global_flag = starborn_hab_size_6
+		}
+        }
+        option = {
+                name = "starborn.4.option.6"
+                trigger = {
+			has_ascension_perk = ap_voidborn
+		}
+                hidden_effect = {
+                        set_global_flag = starborn_hab_size_6
+                        remove_global_flag = starborn_hab_size_2
+                        remove_global_flag = starborn_hab_size_3
+                        remove_global_flag = starborn_hab_size_4
+                        remove_global_flag = starborn_hab_size_5
+		}
+	}
+}
+
+#hab enlargement menu
+country_event = {
+        id = starborn.5    
+	title = "starborn.5.name"
+	desc = "starborn.5.desc"
+	picture = GFX_evt_colony_settlement
+	is_triggered_only = yes
+
+        option = {
+                name = "starborn.5.option.0"
+                hidden_effect = {
+                        remove_global_flag = starborn_hab_enlargement_3
+                        remove_global_flag = starborn_hab_enlargement_2
+                        remove_global_flag = starborn_hab_enlargement_1
+		}
+        }
+	option = {
+                name = "starborn.5.option.1"
+                trigger = {
+			has_technology = tech_starbase_3
+		}
+                hidden_effect = {
+                        set_global_flag = starborn_hab_enlargement_1
+                        remove_global_flag = starborn_hab_enlargement_2
+                        remove_global_flag = starborn_hab_enlargement_3
+		}
+        }
+        option = {
+                name = "starborn.5.option.2"
+                trigger = {
+			has_technology = tech_starbase_5
+		}
+                hidden_effect = {
+                        set_global_flag = starborn_hab_enlargement_2
+                        remove_global_flag = starborn_hab_enlargement_1
+                        remove_global_flag = starborn_hab_enlargement_3
+		}
+        }
+        option = {
+                name = "starborn.5.option.3"
+                trigger = {
+			has_technology = tech_mega_engineering
+		}
+                hidden_effect = {
+                        set_global_flag = starborn_hab_enlargement_3
+                        remove_global_flag = starborn_hab_enlargement_1
+                        remove_global_flag = starborn_hab_enlargement_2
+		}
+        }
+}
+
+# hab enlargement failed
+country_event = {
+        id = starborn.6    
+	title = "starborn.6.name"
+	desc = "starborn.6.desc"
+	show_sound = event_mystic_reveal
+	picture = GFX_evt_colony_settlement
+	is_triggered_only = yes
+        location = FromFromFrom.Planet
+
+	option = {
+		name = "starborn.6.option.a"
 	}
 }
 

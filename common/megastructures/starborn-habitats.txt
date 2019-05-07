@@ -1,0 +1,342 @@
+# see README.txt for example
+
+starborn_habitat = {
+	entity = ""
+	construction_entity = "orbital_habitat_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = yes
+	entity_offset = { x = -7 y = -7 }
+	build_time = 365
+
+	#for reasons that escape me and the folks on stellaris modding den the reosurces tag here ignores any cost with a trigger = element
+	# so i need to duplicate this out
+	resources = {
+        category = megastructures
+        cost = {
+			alloys = 250
+        }
+    }
+
+	construction_blocks_others = no
+
+	potential = {
+		has_civic = civic_starborn
+		has_global_flag = starborn_hab_size_2
+	}
+
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+	}
+
+	placement_rules = {
+		planet_possible = {
+			starborn_can_place_hab = yes
+		}
+	}
+
+	# root = system
+	# from = country	
+	ai_weight = {
+		factor = 0
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	
+	on_build_complete = {
+		spawn_planet = {
+			class = "pc_habitat"
+			location = fromfrom.planet
+			orbit_location = yes
+			orbit_angle_offset = 45
+			orbit_distance_offset = 9.899
+			size = 2
+			has_ring = no
+			
+			init_effect = {
+				starborn_hab_init_effect = yes
+			}
+		}
+		fromfrom.planet = {
+			set_planet_flag = has_megastructure
+		}
+		remove_megastructure = fromfrom
+		from = { country_event =  { id = utopia.61 } }
+	}
+}
+
+starborn_habitat3 = {
+	entity = ""
+	construction_entity = "orbital_habitat_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = yes
+	entity_offset = { x = -7 y = -7 }
+	build_time = 600
+
+	resources = {
+        category = megastructures
+        cost = {
+			alloys = 500
+			energy = 250            
+        }
+    }
+
+	construction_blocks_others = no
+
+	potential = {
+		has_civic = civic_starborn
+		has_global_flag = starborn_hab_size_3
+	}
+
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+	}
+
+	placement_rules = {
+		planet_possible = {
+			starborn_can_place_hab = yes
+		}
+	}
+
+	# root = system
+	# from = country	
+	ai_weight = {
+		factor = 0
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	
+	on_build_complete = {
+		spawn_planet = {
+			class = "pc_habitat"
+			location = fromfrom.planet
+			orbit_location = yes
+			orbit_angle_offset = 45
+			orbit_distance_offset = 9.899
+			size = 3
+			has_ring = no
+			
+			init_effect = {
+				starborn_hab_init_effect = yes
+			}
+		}
+		fromfrom.planet = {
+			set_planet_flag = has_megastructure
+		}
+		remove_megastructure = fromfrom
+		from = { country_event =  { id = utopia.61 } }
+	}
+}
+
+starborn_habitat4 = {
+	entity = ""
+	construction_entity = "orbital_habitat_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = yes
+	entity_offset = { x = -7 y = -7 }
+	build_time = 900
+
+	resources = {
+        category = megastructures
+        cost = {
+			alloys = 1000
+			energy = 500            
+        }
+    }
+
+	construction_blocks_others = no
+
+	potential = {
+		has_civic = civic_starborn
+		has_global_flag = starborn_hab_size_4
+	}
+
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+	}
+
+	placement_rules = {
+		planet_possible = {
+			starborn_can_place_hab = yes
+		}
+	}
+
+	# root = system
+	# from = country	
+	ai_weight = {
+		factor = 0
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	
+	on_build_complete = {
+		spawn_planet = {
+			class = "pc_habitat"
+			location = fromfrom.planet
+			orbit_location = yes
+			orbit_angle_offset = 45
+			orbit_distance_offset = 9.899
+			size = 4
+			has_ring = no
+			
+			init_effect = {
+				starborn_hab_init_effect = yes
+			}
+		}
+		fromfrom.planet = {
+			set_planet_flag = has_megastructure
+		}
+		remove_megastructure = fromfrom
+		from = { country_event =  { id = utopia.61 } }
+	}
+}
+
+starborn_habitat5 = {
+	entity = ""
+	construction_entity = "orbital_habitat_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = yes
+	entity_offset = { x = -7 y = -7 }
+	build_time = 1200
+
+	resources = {
+        category = megastructures
+        cost = {
+			alloys = 1500
+			energy = 750            
+        }
+    }
+
+	construction_blocks_others = no
+
+	potential = {
+		has_civic = civic_starborn
+		has_global_flag = starborn_hab_size_5
+	}
+
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+	}
+
+	placement_rules = {
+		planet_possible = {
+			starborn_can_place_hab = yes
+		}
+	}
+
+	# root = system
+	# from = country	
+	ai_weight = {
+		factor = 0
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	
+	on_build_complete = {
+		spawn_planet = {
+			class = "pc_habitat"
+			location = fromfrom.planet
+			orbit_location = yes
+			orbit_angle_offset = 45
+			orbit_distance_offset = 9.899
+			size = 5
+			has_ring = no
+			
+			init_effect = {
+				starborn_hab_init_effect = yes
+			}
+		}
+		fromfrom.planet = {
+			set_planet_flag = has_megastructure
+		}
+		remove_megastructure = fromfrom
+		from = { country_event =  { id = utopia.61 } }
+	}
+}
+
+starborn_habitat6 = {
+	entity = ""
+	construction_entity = "orbital_habitat_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = yes
+	entity_offset = { x = -7 y = -7 }
+	build_time = 1500
+
+	resources = {
+        category = megastructures
+        cost = {
+			alloys = 2000
+			energy = 1000            
+        }
+    }
+
+	construction_blocks_others = no
+
+	potential = {
+		has_civic = civic_starborn
+		has_global_flag = starborn_hab_size_6
+	}
+
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+	}
+
+	placement_rules = {
+		planet_possible = {
+			starborn_can_place_hab = yes
+		}
+	}
+
+	# root = system
+	# from = country	
+	ai_weight = {
+		factor = 0
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	
+	on_build_complete = {
+		spawn_planet = {
+			class = "pc_habitat"
+			location = fromfrom.planet
+			orbit_location = yes
+			orbit_angle_offset = 45
+			orbit_distance_offset = 9.899
+			size = 6
+			has_ring = no
+			
+			init_effect = {
+				starborn_hab_init_effect = yes
+			}
+		}
+		fromfrom.planet = {
+			set_planet_flag = has_megastructure
+		}
+		remove_megastructure = fromfrom
+		from = { country_event =  { id = utopia.61 } }
+	}
+}
