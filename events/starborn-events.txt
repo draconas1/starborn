@@ -27,7 +27,8 @@ country_event = {
                                 limit = {
                                         is_star = yes
                                 }
-                                save_event_target_as = star_spawn 
+                                save_event_target_as = star_spawn
+                                clear_deposits = yes
                                 set_planet_flag = has_megastructure
                                 random_mining_station = {
                                         dismantle = yes
@@ -54,7 +55,6 @@ country_event = {
                                         NOT = {
                                                 any_system_planet = {
                                                         is_asteroid = yes
-                                                        has_deposit = no
                                                 }
                                         }
                                 }
@@ -71,6 +71,7 @@ country_event = {
                                         has_ring = no
                         
                                         init_effect = {
+                                                set_name = "I5-A2"
                                                 set_planet_flag = has_megastructure
                                                 save_event_target_as = asteroid_spawn 
                                         }
@@ -83,6 +84,7 @@ country_event = {
                                         size = 5
                                         has_ring = no
                                         init_effect = {
+                                                set_name = "I5-A1"
                                                 random_list = {
                                                         40 = {}
                                                         60 = { add_deposit = d_minerals_1 }
@@ -99,6 +101,7 @@ country_event = {
                                         size = 4
                                         has_ring = no
                                         init_effect = {
+                                                set_name = "I5-A3"
                                                 random_list = {
                                                         40 = {}
                                                         60 = { add_deposit = d_minerals_1 }
@@ -115,6 +118,7 @@ country_event = {
                                         size = 3
                                         has_ring = no
                                         init_effect = {
+                                                set_name = "I5-A4"
                                                 random_list = {
                                                         40 = {}
                                                         60 = { add_deposit = d_minerals_1 }
@@ -129,9 +133,9 @@ country_event = {
                                 random_system_planet = { 
                                         limit = {
                                                 is_asteroid = yes
-                                                has_deposit = no
                                         }
                                         save_event_target_as = asteroid_spawn 
+                                        clear_deposits = yes
                                 }  
                         }
 
@@ -478,5 +482,32 @@ country_event = {
 	option = {
 		name = "starborn.6.option.a"
 	}
+}
+
+country_event = {
+        id = starborn.7
+        hide_window = yes
+        is_triggered_only = yes
+
+        trigger = {
+                is_ai = no
+                has_civic = civic_starborn
+                has_global_flag = starborn_op_init
+        }
+
+        immediate = {
+                if = {
+                        limit = {
+                                has_tech_option = tech_mine_living_metal
+                        }
+                        add_tech_progress = {
+                                tech = tech_mine_living_metal
+                                progress = 0.25
+                        }
+                }
+                else = {
+                        add_research_option = tech_mine_living_metal
+                }
+        }
 }
 
