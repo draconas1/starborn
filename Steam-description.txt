@@ -1,0 +1,74 @@
+[h1]Starborn[/h1]
+Have you ever wanted to abandon planets completely and live amoung the stars?  Like the Quarion of Mass Effect live safe in your artifical habitat, but unable to set foot on your home world again?
+
+Starborn does this, it introduces a new game start civic: Starborn.
+
+Selecting this civic turns your starting planet into an orbital city orbiting the desolate remains of your homeworld.  When your world was devestated in nuclear war, only the inhabitants of the city survived.
+You can build habitats from game start, starting small and enlarging as your get the resources, and your habitats will gain special districts based on what they are in orbit of and what orbital deposit it has.
+
+But there is a catch, your species has spent so long living in habitats that planetary biospheres are now toxic and uninhabitable for you.
+
+
+[h1]Features[/h1]
+[list]
+[*] Start in unique habitat: the orbital city, in orbit around a tomb world, with unique districts that kept your civilisation alive when their world burned
+[*] Enlarge your orbital city as you discover relevant techs and relevant ascension perks  
+[*] Start with hydroponics farming technology - you've survived in space, you understand hydroponics!
+[*] Build small habitats from game start and expand them as your empire grows
+[*] Habitats get unique districts based on orbital deposits and planet type:
+[*] Mineral deposit: 1 mining district per deposit level (max 5)
+[*] Energy deposit: 1 solar planel district per deposit level (max 5)
+[*] Habitable planet: biosphere farming (unlimited)
+[*] Asteroid: +25% mineral extraction
+[*] Star: +25% energy production
+[*] Build energy grid, food processing and mineral processing facilities on relevant habitats.
+[*] Build Habitats around almost all stellar bodies
+[*] Planetary decisons to add more districts to habitats based on certain technologies (Space Station ones)
+[*] Use edicts to adjust the habitat build size and cost to reduce micromanagement
+[*] Optional OP starting system if you want it
+[/list]
+[i]There are lots of other effects for different types of planets and the different orbital deposits, you'll need to discover them in play[/i]
+ 
+ 
+ 
+[h1]Requirements[/h1]
+Utopia DLC
+
+[h1]Gameplay Notes[/h1]
+Remember that habitats cost alloys in maintenance!  Starborn builds will have a constant need for more alloy production.
+
+I do not adjust the Voidborn Ascension Perk, so you will have the ability to build normal habitats when you buy it.  Those are completely vanilla and I suggest avoiding them, I've not taken them out to try to limit compatablity problems.
+
+It does require a fair quantity of micromanagement, due to the small nature of the habitats, I have done my best to balance difficulty and ease, suggestions welcome.
+Yes it is possible to "cheat" by enacting the fully enlarge habitat decisions and also the construct more habitat decision at once, becuase there is not an easy way to immiedately deactive one decision based on another being selected (and in progress).  Go on, try it, I dare you.  
+
+[h1]Compatability[/h1]
+This mod makes changes to:
+[list]
+[*] City Districts
+[*] Most Habitat Districts
+[*] habitable_structure scripted trigger
+[/list]
+So will have compatability problems with any other mod that changes these.  Compatablity patches:
+
+Gigastructures: 
+
+
+[h1]Credit and thanks[/h1]
+The Orbital City ring is from [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1121692237]Gigastructures[/url]  and the nature preserve and scavenger districts were inspired by similar ones from their mod.  
+
+[h1]Localisation[/h1]
+Currently english only 
+
+If you would like to help translate into your language, the English language files are at 
+https://github.com/draconas1/starborn/tree/master/localisation/english if you are familiar with git then feel free to fork and create a pull request when you are done.  If you have no idea how to use github the don't worry: download the file, and upload your localised version to pastebin or similar and let me know in the comments and I will handle the rest.
+
+[h1]Future Plans[/h1]
+Buildings for dealing with rare strategic resources (Dark matter, Zro, Living Metal)
+The next big game patch is going to change how habitats work, so will need some tweaking and rebalencing to bring it into line with vanilla.
+
+
+[b]Please Rate and Subscribe as it helps others find the mods[/b]
+[img]https://i.imgur.com/fVVaDCS.gif[/img]
+
+[url=https://discordapp.com/invite/CMjnnET][img]https://i.imgur.com/4Und3QN.png[/img][/url]
