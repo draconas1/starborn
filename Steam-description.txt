@@ -1,9 +1,9 @@
 [h1]Starborn[/h1]
-Have you ever wanted to abandon planets completely and live amoung the stars?  Like the Quarion of Mass Effect live safe in your artifical habitat, but unable to set foot on your home world again?
+Have you ever wanted to abandon planets completely and live amoung the stars?  Like the Quarion of Mass Effect live safe in your artificial habitat, but unable to set foot on your home world again?
 
 Starborn does this, it introduces a new game start civic: Starborn.
 
-Selecting this civic turns your starting planet into an orbital city orbiting the desolate remains of your homeworld.  When your world was devestated in nuclear war, only the inhabitants of the city survived.
+Selecting this civic turns your starting planet into an orbital city orbiting the desolate remains of your homeworld.  When your world was devastated in nuclear war, only the inhabitants of the city survived.
 You can build habitats from game start, starting small and enlarging as your get the resources, and your habitats will gain special districts based on what they are in orbit of and what orbital deposit it has.
 
 But there is a catch, your species has spent so long living in habitats that planetary biospheres are now toxic and uninhabitable for you.
@@ -17,13 +17,13 @@ But there is a catch, your species has spent so long living in habitats that pla
 [*] Build small habitats from game start and expand them as your empire grows
 [*] Habitats get unique districts based on orbital deposits and planet type:
 [*] Mineral deposit: 1 mining district per deposit level (max 5)
-[*] Energy deposit: 1 solar planel district per deposit level (max 5)
+[*] Energy deposit: 1 solar panel district per deposit level (max 5)
 [*] Habitable planet: biosphere farming (unlimited)
 [*] Asteroid: +25% mineral extraction
 [*] Star: +25% energy production
 [*] Build energy grid, food processing and mineral processing facilities on relevant habitats.
 [*] Build Habitats around almost all stellar bodies
-[*] Planetary decisons to add more districts to habitats based on certain technologies (Space Station ones)
+[*] Planetary decisions to add more districts to habitats based on certain technologies (Space Station ones)
 [*] Use edicts to adjust the habitat build size and cost to reduce micromanagement
 [*] Optional OP starting system if you want it
 [/list]
@@ -37,24 +37,31 @@ Utopia DLC
 [h1]Gameplay Notes[/h1]
 Remember that habitats cost alloys in maintenance!  Starborn builds will have a constant need for more alloy production.
 
-I do not adjust the Voidborn Ascension Perk, so you will have the ability to build normal habitats when you buy it.  Those are completely vanilla and I suggest avoiding them, I've not taken them out to try to limit compatablity problems.
+I do not adjust the Voidborn Ascension Perk, so you will have the ability to build normal habitats when you buy it.  Those are completely vanilla and I suggest avoiding them, I've not taken them out to try to limit compatibility problems.
 
 It does require a fair quantity of micromanagement, due to the small nature of the habitats, I have done my best to balance difficulty and ease, suggestions welcome.
-Yes it is possible to "cheat" by enacting the fully enlarge habitat decisions and also the construct more habitat decision at once, becuase there is not an easy way to immiedately deactive one decision based on another being selected (and in progress).  Go on, try it, I dare you.  
+Yes it is possible to "cheat" by enacting the fully enlarge habitat decisions and also the construct more habitat decision at once, because there is not an easy way to immediately deactivate one decision based on another being selected (and in progress).  Go on, try it, I dare you.  
 
-[h1]Compatability[/h1]
+[h1]Compatibility[/h1]
 This mod makes changes to:
 [list]
 [*] City Districts
 [*] Most Habitat Districts
 [*] habitable_structure scripted trigger
 [/list]
-So will have compatability problems with any other mod that changes these.  Compatablity patches:
 
-Gigastructures: 
+So will have compatibility problems with any other mod that changes these.  Compatibility patches:
+
+Gigastructures: [url=https://steamcommunity.com/sharedfiles/filedetails/?edit=true&id=1743137605]https://steamcommunity.com/sharedfiles/filedetails/?edit=true&id=1743137605[/url]
+
+[h1]Troubleshooting[/h1]
+[i]Have the option to build a mining hab but nothing happens when you press it? or right click on a star with energy or asteroid with mineral it does not give an option to build?[/i]
+The most likely reason is that your target is not a valid build target for some reason, but if no megastructure is a valid build target, there is a bug in 2.2.x that the game does not show any of the build megastructures dialogues that tell you exactly why you can't build them.  This is very annoying and forces you to guess, I have reported a bug but we have to wait until PDX fixes it.  They haven't yet and its now 2.2.7, I reported it in 2.2.3
+
+Since PDX are not fixing it in a hurry, I have created another mod that creates a dummy megastructure to force the dialog to appear [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1711871967]Can't Build Megastructure Reason[/url]
 
 
-[h1]Credit and thanks[/h1]
+[h1]Credit and Thanks[/h1]
 The Orbital City ring is from [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1121692237]Gigastructures[/url]  and the nature preserve and scavenger districts were inspired by similar ones from their mod.  
 
 [h1]Localisation[/h1]
@@ -65,7 +72,7 @@ https://github.com/draconas1/starborn/tree/master/localisation/english if you ar
 
 [h1]Future Plans[/h1]
 Buildings for dealing with rare strategic resources (Dark matter, Zro, Living Metal)
-The next big game patch is going to change how habitats work, so will need some tweaking and rebalencing to bring it into line with vanilla.
+The next big game patch is going to change how habitats work, so will need some tweaking and rebalancing to bring it into line with vanilla.
 
 
 [b]Please Rate and Subscribe as it helps others find the mods[/b]
