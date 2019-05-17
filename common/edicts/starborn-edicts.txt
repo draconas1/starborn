@@ -12,6 +12,7 @@ starborn_show_hab_build_size = {
     }
     
 	effect = {
+        custom_tooltip = edict_starborn_show_menu_effect
 		country_event = { id = starborn.4 }
 	}
 	
@@ -34,6 +35,7 @@ starborn_show_hab_enlargment_size = {
     }
     
 	effect = {
+        custom_tooltip = edict_starborn_show_menu_effect
 		country_event = { id = starborn.5 }
 	}
 	

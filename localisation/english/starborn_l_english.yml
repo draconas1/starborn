@@ -153,7 +153,8 @@
  starborn.3.desc5:0 "\n\nYou can adjust the starting size (and cost) of $pc_habitat$ from the edicts menu"
  starborn.3.option.a:0 "Into the Void"
 
- 
+ edict_starborn_show_menu_effect:0 "Selecting this edict triggers a menu as a global effect that the game denotes as a §Ycountry effect§! You can do it as many times as you like"
+
  edict_starborn_show_hab_build_size:0 "Set Habitat Construction Size"
  edict_starborn_show_hab_build_size_desc:0 "Adjust how large (and how expansive) we build the inital habitat as our economy grows"
 
