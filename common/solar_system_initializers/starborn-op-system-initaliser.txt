@@ -124,18 +124,9 @@ starborn_op_system = {
 			init_effect = {
 				prevent_anomaly = yes
 				set_planet_flag = starting_deposit
-				set_deposit = d_trade_value_10
-
-                add_deposit = d_arid_highlands			
-                add_deposit = d_searing_desert
-                add_deposit = d_geothermal_vent	
-                add_deposit = d_mineral_fields			
-                add_deposit = d_prosperous_mesa
-                add_deposit = d_submerged_ore_veins
-                add_deposit = d_bountiful_plains	
-                add_deposit = d_fertile_lands	
-                add_deposit = d_bountiful_plains 
-			    add_deposit = d_black_soil
+				
+				reroll_planet = yes
+				add_deposit = d_trade_value_10
 			}
 		}
 		moon = {
@@ -148,18 +139,9 @@ starborn_op_system = {
 			init_effect = {
 				prevent_anomaly = yes
 				set_planet_flag = starting_deposit
-				set_deposit = d_trade_value_10
-
-                add_deposit = d_hot_springs			
-                add_deposit = d_rushing_waterfalls
-                add_deposit = d_underwater_vent	
-                add_deposit = d_mineral_fields			
-                add_deposit = d_ore_rich_caverns
-                add_deposit = d_submerged_ore_veins
-                add_deposit = d_green_hills
-                add_deposit = d_lush_jungle	
-                add_deposit = d_green_hills
-                add_deposit = d_teeming_reef			
+				
+				reroll_planet = yes
+				add_deposit = d_trade_value_10
 			}
 		}
 		moon = {
@@ -172,17 +154,9 @@ starborn_op_system = {
 			init_effect = {
 				prevent_anomaly = yes
 				set_planet_flag = starting_deposit
-				set_deposit = d_trade_value_10
-                add_deposit = d_hot_springs			
-                add_deposit = d_frozen_gas_lake
-                add_deposit = d_tempestous_mountain	
-                add_deposit = d_veiny_cliffs		
-                add_deposit = d_ore_rich_caverns
-                add_deposit = d_rich_mountain
-                add_deposit = d_forgiving_tundra		
-                add_deposit = d_fungal_caves
-                add_deposit = d_forgiving_tundra	
-                add_deposit = d_fungal_forest	
+
+				reroll_planet = yes
+				add_deposit = d_trade_value_10
 			}
 		}
 	}
@@ -271,23 +245,9 @@ starborn_op_system = {
 			init_effect = {
 				prevent_anomaly = yes
 				set_planet_flag = starting_deposit
-                set_deposit = d_trade_value_10	
-                	
-                add_deposit = d_hot_springs		
-                add_deposit = d_searing_desert
-                add_deposit = d_underwater_vent	
-                add_deposit = d_veiny_cliffs
-                add_deposit = d_ore_rich_caverns
-                add_deposit = d_submerged_ore_veins
-                add_deposit = d_lichen_fields	
-                add_deposit = d_fungal_caves 	
-                add_deposit = d_fungal_forest
-                add_deposit = d_starborn_ruins
-                add_deposit = d_starborn_wasteland
-                add_deposit = d_starborn_ruins
-                add_deposit = d_starborn_wasteland
-                add_deposit = d_starborn_ruins
-                add_deposit = d_starborn_wasteland
+  				
+				reroll_planet = yes
+				add_deposit = d_trade_value_10	
 			}
 		}
 		moon = {
@@ -299,23 +259,9 @@ starborn_op_system = {
 			init_effect = {
 				prevent_anomaly = yes
 				set_planet_flag = starting_deposit
-                set_deposit = d_trade_value_10
-                
-                add_deposit = d_hot_springs		
-                add_deposit = d_searing_desert
-                add_deposit = d_underwater_vent	
-                add_deposit = d_veiny_cliffs
-                add_deposit = d_ore_rich_caverns
-                add_deposit = d_submerged_ore_veins
-                add_deposit = d_lichen_fields	
-                add_deposit = d_fungal_caves 	
-                add_deposit = d_fungal_forest
-                add_deposit = d_starborn_ruins
-                add_deposit = d_starborn_wasteland
-                add_deposit = d_starborn_ruins
-                add_deposit = d_starborn_wasteland
-                add_deposit = d_starborn_ruins
-                add_deposit = d_starborn_wasteland
+  				
+				reroll_planet = yes
+				add_deposit = d_trade_value_10	
 			}
 		}
 	}
@@ -334,13 +280,6 @@ starborn_op_system = {
 			set_planet_flag = starting_deposit
 			set_deposit = d_rare_crystals_3
 		}
-
-		moon = {
-            count = { min = 0 max = 4 }
-            class = random_non_colonizable
-            orbit_angle = { min = 90 max = 270 }
-            orbit_distance = 5
-        }
 	}
 	planet = {
 		name = "Dagorlad"
@@ -354,12 +293,6 @@ starborn_op_system = {
 			prevent_anomaly = yes
 			set_planet_flag = starting_deposit
 			set_deposit = d_exotic_gases_3
-		}
-		moon = {
-            count = { min = 0 max = 1 }
-            class = random_non_colonizable
-            orbit_angle = { min = 90 max = 270 }
-            orbit_distance = 5
 		}
 	}
 	planet = {
@@ -375,12 +308,6 @@ starborn_op_system = {
 			set_planet_flag = starting_deposit
 			set_deposit = d_volatile_motes_3
 		}
-		moon = {
-            count = { min = 0 max = 3 }
-            class = random_non_colonizable
-            orbit_angle = { min = 90 max = 270 }
-            orbit_distance = 5
-        }
 	}
 	planet = {
 		name = "Angband"
