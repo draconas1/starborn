@@ -153,7 +153,7 @@
  starborn.3.desc5:0 "\n\nYou can adjust the starting size (and cost) of $pc_habitat$ from the edicts menu"
  starborn.3.option.a:0 "Into the Void"
 
- edict_starborn_show_menu_effect:0 "Selecting this edict triggers a menu as a global effect that the game denotes as a §Ycountry effect§! You can do it as many times as you like"
+ edict_starborn_show_menu_effect:0 "Selecting this edict triggers a menu as a global effect that the game denotes as a §YCountry event! You can do it as many times as you like"
 
  edict_starborn_show_hab_build_size:0 "Set Habitat Construction Size"
  edict_starborn_show_hab_build_size_desc:0 "Adjust how large (and how expansive) we build the inital habitat as our economy grows"
@@ -197,3 +197,7 @@
 
  building_hab_energy_grid:0 "Habitat $building_energy_grid$"
  building_hab_energy_grid_desc:0 "$building_energy_grid_desc$"
+
+ starborn.8.name:0 "IMPORTANT: BUGFIX"
+ starborn.8.desc:0 "There is a bug in the game where all 'investigate X aliens' special projects always trigger on your original homeworld (Paradise Lost).\n\nIf you don't own your homeworld then when you complete any of these nothing will happen (except for a big error in the log)\n\nAs a work around we've had to colonise your original homeworld for you with 1 pop and pop controls enabled (even if you can't enable them normally)\n\nSorry, have raised the bug with PDX and will look at different ways to spawn the orbital city in future"
+ starborn.8.option.a:0 "Bother"
