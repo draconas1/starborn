@@ -40,7 +40,7 @@ country_event = {
                                 limit = {
                                         is_capital = yes
                                 }
-                                save_event_target_as = capital_spawn_planet 
+                                save_event_target_as = capital_spawn_planet
                         }
 
                         every_planet = {
@@ -223,10 +223,11 @@ country_event = {
                                 size = 16
                                 has_ring = no
                                 
-                                init_effect = {                                        
+                                init_effect = {
+                                        save_event_target_as = orbital_city                                   
                                         set_planet_entity = {
                                                 entity = "giga_orbital_habitat_entity"
-                                                graphical_culture = ROOT
+                                                graphical_culture = fromfrom
                                         }
                                         surveyed = {
                                                 set_surveyed = yes
@@ -238,7 +239,7 @@ country_event = {
 				        set_planet_flag = habitat
                                       
                                         create_colony = {
-                                                owner = root
+                                                owner = FROM
                                                 species = owner_main_species
                                                 ethos = owner
                                         }
@@ -273,6 +274,7 @@ country_event = {
                                         }
 
                                         set_capital = yes
+                                        save_event_target_as = pc_home
                                 }
                         }
                 }
@@ -283,17 +285,16 @@ country_event = {
                         tech = tech_hydroponics 
                 }
 
-                # sort the old home planet
                 home_planet = {
                         # already has the default 3 blockers
                         clear_blockers = yes
                         # orbital city
                         set_planet_flag = has_megastructure
-                       
+                
                         #copy of the post_apoc deposits
                         # common/scripted_effects/01_start_of_game_effects.txt : generate_start_deposits_and_blockers
                         # 3 + 3 energy		
-                        add_deposit = d_hot_springs		
+                        set_deposit = d_hot_springs		
                         add_deposit = d_searing_desert
                         add_deposit = d_underwater_vent	
                         
@@ -306,20 +307,37 @@ country_event = {
                         add_deposit = d_lichen_fields	
                         add_deposit = d_fungal_caves 	
                         add_deposit = d_fungal_forest	
-                   
+                
                         # add starborn ruins blockers
                         # like regular ones, except they don't give you any pops when cleared as all the pops are dead.  
                         add_deposit = d_starborn_ruins
-			add_deposit = d_starborn_wasteland
-			add_deposit = d_starborn_ruins
-			add_deposit = d_starborn_wasteland	
-			add_deposit = d_starborn_ruins
+                        add_deposit = d_starborn_wasteland
+                        add_deposit = d_starborn_ruins
+                        add_deposit = d_starborn_wasteland	
+                        add_deposit = d_starborn_ruins
                         add_deposit = d_starborn_wasteland
 
-                        #kill off the original colony in a nuclear war       
+                        #kill off the original colony in a nuclear war
+                        remove_all_buildings = yes 
                         destroy_colony = yes
                         change_pc = "pc_nuked" 
+                       
+                        # exploration bugfix
+                        create_colony = {
+                                owner = FROM
+                                species = owner_main_species
+                                ethos = owner
+                        }
+                        create_pop = {
+                                species = owner_main_species
+                        }
+                        add_modifier = { modifier = "planet_population_control" days = -1 }
+
                         set_name = "Paradise Lost"
+                }
+
+                owner_species = {
+                        set_species_homeworld = event_target:orbital_city
                 }
         }
 }
@@ -509,5 +527,17 @@ country_event = {
                         add_research_option = tech_mine_living_metal
                 }
         }
+}
+
+
+country_event = {
+        id = starborn.8    
+	title = "starborn.8.name"
+	desc = "starborn.8.desc"
+	picture = GFX_evt_colony_settlement
+	is_triggered_only = yes
+	option = {
+		name = "starborn.8.option.a"
+	}
 }
 

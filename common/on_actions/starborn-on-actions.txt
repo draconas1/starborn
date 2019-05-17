@@ -4,5 +4,6 @@ on_game_start_country = {
 		starborn.1
 		starborn.3
 		starborn.7
+		starborn.8
 	}
 }
