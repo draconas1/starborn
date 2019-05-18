@@ -169,6 +169,9 @@
  edict_starborn_show_hab_enlargment_size:0 "Set Auto-Habitat Enlargement"
  edict_starborn_show_hab_enlargment_size_desc:0 "Adjust if we automatically apply habitat enlargment decisions"
  
+ edict_starborn_set_flag:0 "Set hidden flag for !!!!Universal Districts Patch"
+ edict_starborn_set_flag_desc:0 "Temporary fix for those who have started games with the old version and want to use the Districts patch to make it work with other mods.  It will appear to do nothing, but is setting a hidden variable that the patch needs, you only need to do it once (then save).  This happens automatically in new games and this edict will be removed in a future release."
+ 
  starborn.5.name:0 "Auto Apply Habitat Enlargement Decisions"
  starborn.5.desc:0 "Habitat enlargement decisions can be auto-applied at construction time.\n\n§YWhen a habitat finishes construction§!, if you have sufficient resources to pay for the enlargement, it will be automatically applied"
  starborn.5.option.0:0 "No extra enlargement"
