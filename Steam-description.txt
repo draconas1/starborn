@@ -1,10 +1,10 @@
 [h1]Starborn[/h1]
-Have you ever wanted to abandon planets completely and live amoung the stars?  Like the Quarion of Mass Effect live safe in your artificial habitat, but unable to set foot on your home world again?
+Have you ever wanted to abandon planets completely and live among the stars?  Like the Quarion of Mass Effect live safe in your artificial habitat, but unable to set foot on your home world again?
 
 Starborn does this, it introduces a new game start civic: Starborn.
 
 Selecting this civic turns your starting planet into an orbital city orbiting the desolate remains of your homeworld.  When your world was devastated in nuclear war, only the inhabitants of the city survived.
-You can build habitats from game start, starting small and enlarging as your get the resources, and your habitats will gain special districts based on what they are in orbit of and what orbital deposit it has.
+You can build habitats from game start, starting small and enlarging as you get the resources, and your habitats will gain special districts based on what they are in orbit of and what orbital deposit it has.
 
 But there is a catch, your species has spent so long living in habitats that planetary biospheres are now toxic and uninhabitable for you.
 
@@ -49,13 +49,18 @@ This mod makes changes to:
 [*] Most Habitat Districts
 [*] habitable_structure scripted trigger
 [/list]
+So will have compatibility problems with any other mod that changes these.  The most obvious sign is when you go to the Orbital City you will see Housing, Mining, Generating and Farming districts instead of Habitat Housing, Nature Preserve, Tombworld Scavenger and Solar Panel ones.  
 
-So will have compatibility problems with any other mod that changes these.  Compatibility patches:
 
-General habitable_structures trigger (includes gigastructures and a load more):  [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1636492142]!habitable Structures Patch[/url] 
+[b]Compatibility patches:[/b]
+[list]
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1636492142]!habitable Structures Patch[/url]
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1635222296]!!!!Universal Districts Patch[/url]
+[/list]
 
-Gigastructures: [url=https://steamcommunity.com/sharedfiles/filedetails/?edit=true&id=1743137605]https://steamcommunity.com/sharedfiles/filedetails/?edit=true&id=1743137605[/url]
+I made a specific patch for Gigastructures  [url=https://steamcommunity.com/sharedfiles/filedetails/?edit=true&id=1743137605]here[/url] however that is not necessary if you have [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1636492142]!habitable Structures Patch[/url] and I will not be maintaining it provided Habitable Structures stays updated.  
 
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1635222296]!!!!Universal Districts Patch[/url] relies on global flags being set.  If you have already started a game then they are missing, so I have temporarily added a special edict that will set them.  The edict will appear to do nothing, but rest assured has set flags in the background.
 
 
 [h1]Troubleshooting[/h1]
@@ -84,7 +89,7 @@ https://github.com/draconas1/starborn/tree/master/localisation/english if you ar
 [*] Buildings for dealing with rare strategic resources (Dark matter, Zro, Living Metal)
 [*] The next big game patch is going to change how habitats work, so will need some tweaking and rebalancing to bring it into line with vanilla.
 [*] Some currently unspecified changes to the spawn event to fix the investigate species bug
-[*] Megacorp compatability
+[*] Megacorp compatibility
 [*] Changes to backstory
 [/list]
 
