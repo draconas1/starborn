@@ -1,0 +1,206 @@
+﻿l_braz_por:
+
+ civic_starborn:0 "Starborn"
+ civic_starborn_desc:0 "This civilisation starts in an enormous orbital city above the ruins of their homeworld.  They are skilled at orbital construction, but generations of living in artifical environments have made the natural ecosystems of planets undesirable to their physiology"
+ civic_tooltip_starborn_effects:0 "Starting world is an §Y$pc_starborn_habitat_start$§! in orbit of a §Y$pc_nuked$§!. You have the ability to build basic §Y$pc_habitat$§!s immediately, which have different districts or bonuses depending on the planet or orbital deposits they are built around, but all planets are uninhabitable.  You start with $tech_hydroponics$ technnology."
+
+ starborn_op_system_NAME:0 "Starborn OP"
+ starborn_op_system_DESC:0 "While they may be born among the stars, the $civic_starborn$ wondered why they would ever leave their home system, as it provided them with everything they could ever want"
+
+ pc_starborn_habitat_start:0 "Orbital City"
+ pc_starborn_habitat_start_desc:0 "It was the crowning glory of our technological achievement, that became the arc that saved our civilisation"
+ mod_pc_starborn_habitat_start_habitability:0 "$pc_starborn_habitat_start$"
+
+ trait_pc_starborn_habitat_start_preference:0 "$pc_starborn_habitat_start$ Preference"
+ trait_pc_starborn_habitat_start_preference_desc:0 "We've lived on the Orbital City for so long that we have lost the ability to live on planets"
+
+ requires_not_black_hole:0 "$TRIGGER_FAIL$$starborn_habitat$ cannot be built around a black hole, nobody wants to gaze into the abyss constantly"
+ requires_no_unminable_sr:0 "$TRIGGER_FAIL$There appears to be valuable strategic resources here that our $starborn_habitat$ would destroy"
+
+ starborn_habitat_MEGASTRUCTURE_DETAILS:1 "A §Y$starborn_habitat$§! is a new orbital habitat to allow our people to expand"
+ starborn_habitat_CONSTRUCTION_INFO_DELAYED:2 "A §Y$starborn_habitat$§! can be built around any stellar body"
+ starborn_habitat:0 "Starborn Orbital Habitat"
+ starborn_habitat_DESC:0 "A Habitation station in orbit of a star, planet, moon or in any asteroid field capable of housing a number of our §HPops§! and §HBuildings§! while also allowing us to take advantage of the natural features of the parent body."
+
+ starborn_habitat3_MEGASTRUCTURE_DETAILS:1 "$starborn_habitat_MEGASTRUCTURE_DETAILS$"
+ starborn_habitat3_CONSTRUCTION_INFO_DELAYED:2 "$starborn_habitat_CONSTRUCTION_INFO_DELAYED$"
+ starborn_habitat3:0 "$starborn_habitat$"
+ starborn_habitat3_DESC:0 "$starborn_habitat_DESC$"
+
+ starborn_habitat4_MEGASTRUCTURE_DETAILS:1 "$starborn_habitat_MEGASTRUCTURE_DETAILS$"
+ starborn_habitat4_CONSTRUCTION_INFO_DELAYED:2 "$starborn_habitat_CONSTRUCTION_INFO_DELAYED$"
+ starborn_habitat4:0 "$starborn_habitat$"
+ starborn_habitat4_DESC:0 "$starborn_habitat_DESC$"
+
+ starborn_habitat5_MEGASTRUCTURE_DETAILS:1 "$starborn_habitat_MEGASTRUCTURE_DETAILS$"
+ starborn_habitat5_CONSTRUCTION_INFO_DELAYED:2 "$starborn_habitat_CONSTRUCTION_INFO_DELAYED$"
+ starborn_habitat5:0 "$starborn_habitat$"
+ starborn_habitat5_DESC:0 "$starborn_habitat_DESC$"
+
+ starborn_habitat6_MEGASTRUCTURE_DETAILS:1 "$starborn_habitat_MEGASTRUCTURE_DETAILS$"
+ starborn_habitat6_CONSTRUCTION_INFO_DELAYED:2 "$starborn_habitat_CONSTRUCTION_INFO_DELAYED$"
+ starborn_habitat6:0 "$starborn_habitat$"
+ starborn_habitat6_DESC:0 "$starborn_habitat_DESC$"
+
+ job_starborn_tombworld_scavenger:0 "Scavenger"
+ job_starborn_tombworld_scavenger_plural:0 "Scavengers"
+ job_starborn_tombworld_scavenger_desc:0 "Scavengers search the ruins of the planet for useful resources. Since the work is so dangerous, they expect suitable compensation."
+ job_starborn_tombworld_scavenger_effect_desc:0 "£job_starborn_tombworld_scavenger£ $job_starborn_tombworld_scavenger_plural$ produce £minerals£§Y$minerals$§! and  £alloys£§Y$alloys$§! and £engineering£§YResearch Points§!"
+ mod_job_starborn_tombworld_scavenger_add:0 "$job_starborn_tombworld_scavenger$ Jobs"
+ mod_job_starborn_tombworld_scavenger_per_pop:0 "§G+1§! $job_starborn_tombworld_scavenger$ Job per $VALUE$ Pops"
+ mod_job_starborn_tombworld_scavenger_per_pop_short:0 "\n§G+1§! £mod_job_starborn_tombworld_scavenger_add£ per $VALUE$ £pop£"
+
+ job_starborn_preserve_ranger:0 "Preserve Ranger"
+ job_starborn_preserve_ranger_plural:0 "Preserve Rangers"
+ job_starborn_preserve_ranger_desc:0 "Managing the delicate ecosystem in the preserve"
+ job_starborn_preserve_ranger_effect_desc:0 "£job_starborn_preserve_ranger£ $job_starborn_preserve_ranger_plural$ produce  £food£§Y$food$§! and some £society£§YResearch Points§!"
+ mod_job_starborn_preserve_ranger_add:0 "$job_starborn_preserve_ranger$ Jobs"
+ mod_job_starborn_preserve_ranger_per_pop:0  "§G+1§! $job_starborn_preserve_ranger$ Job per $VALUE$ Pops"
+ mod_job_starborn_preserve_rangerr_per_pop_short:0 "\n§G+1§! £mod_job_starborn_preserve_ranger_add£ per $VALUE$ £pop£"
+
+ job_starborn_solar_technician:0 "Solar Technican"
+ job_starborn_solar_technician_plural:0 "Solar Technicans"
+ job_starborn_solar_technician_desc:0 "Repairing and enhancing the massive network of solar panels and station power grid"
+ job_starborn_solar_technician_effect_desc:0 "£job_starborn_solar_technician£ $job_starborn_solar_technician_plural$ produce £energy£§Y$energy$§! and some £physics£§YResearch Points§!"
+ mod_job_starborn_solar_technician_add:0 "$job_starborn_solar_technician$ Jobs"
+ mod_job_starborn_solar_technician:0  "§G+1§! $job_starborn_solar_technician$ Job per $VALUE$ Pops"
+ mod_job_starborn_solar_technician_short:0 "\n§G+1§! £mod_job_starborn_solar_technician_add£ per $VALUE$ £pop£"
+
+ job_starborn_alloy_extractor:0 "Alloy Extractor"
+ job_starborn_alloy_extractor_plural:0 "Alloy Extractors"
+ job_starborn_alloy_extractor_desc:0 "We can simply extract the §Y$alloys$§! from the surface deposits with minimal refining needed"
+ job_starborn_alloy_extractor_effect_desc:0 "£job_starborn_alloy_extractor£ $job_starborn_alloy_extractor_plural$ produce £alloys£§Y$alloys$§!"
+ mod_job_starborn_alloy_extractor_add:0 "$job_starborn_alloy_extractor$ Jobs"
+ mod_job_starborn_alloy_extractor:0  "§G+1§! $job_starborn_alloy_extractor$ Job per $VALUE$ Pops"
+ mod_job_starborn_alloy_extractor_short:0 "\n§G+1§! £mod_job_starborn_alloy_extractor_add£ per $VALUE$ £pop£"
+
+ district_starborn_starting_hab_housing:0 "$district_hab_housing$"
+ district_starborn_starting_hab_housing_plural:0 "$district_hab_housing_plural$"
+ district_starborn_starting_hab_housing_desc:0 "$district_hab_housing_desc$"
+
+ district_starborn_starting_scavenger:0 "Planetary Scavenger District"
+ district_starborn_starting_scavenger_plural:0 "Planetary Scavenger Districts"
+ district_starborn_starting_scavenger_desc:0 "The ruins of the planet below provide an almost infinite, if very dangerous, supply of resources.  This district contains everything needed to launch and manage expeditions, then recycle the salvage into usable materials"
+
+ district_starborn_starting_preserve:0 "Nature Preserve District"
+ district_starborn_starting_preserve_plural:0 "Nature Preserve Districts"
+ district_starborn_starting_preserve_desc:0 "We built a massive nature park into the city for recreation and science.  Careful management of the ecosystem turns it into a source of food instead"
+
+ district_starborn_starting_solar:0 "Solar Panel District"
+ district_starborn_starting_solar_plural:0 "Solar Panel Districts"
+ district_starborn_starting_solar_desc:0 "Our power needs are met by massive arrays of solar panels. Maintaining and optimising the panels and miles of cabling network requires a large cadre of technicians"
+
+ district_starborn_surface_farming:0 "Surface Farming District"
+ district_starborn_surface_farming_plural:0 "Surface Farming Districts"
+ district_starborn_surface_farming_desc:0 "While we may not be able to live on the world below, we can harness its biosphere for farming"
+
+ district_starborn_solar:0 "Solar Panel District"
+ district_starborn_solar_plural:0 "Solar Panel Districts"
+ district_starborn_solar_desc:0 "Massive arrays of solar panels provide vast amounts of energy" 
+ mod_district_starborn_solar_max:0 "§Y$district_starborn_solar$§!"
+
+ district_starborn_surface_mining:0 "Surface Mining District"
+ district_starborn_surface_mining_plural:0 "Surface Mining Districts"
+ district_starborn_surface_mining_desc:0 "Sections of the $pc_habitat$ built directly on the most mineral rich surface areas allow the resources to be safely extracted"
+ mod_district_starborn_surface_mining_max:0 "§Y$district_starborn_surface_mining$§!"
+
+ district_starborn_surface_alloys:0 "Foundary District"
+ district_starborn_surface_alloys_plural:0 "Foundary Districts"
+ district_starborn_surface_alloys_desc:0 "Sections of the $pc_habitat$ built directly on the most alloy rich surface areas allow the resources to be safely extracted"
+ mod_district_starborn_surface_alloys_max:0 "§Y$district_starborn_surface_alloys$§!"
+
+
+ d_starborn_ruins:0 "£blocker£ Ruins"
+ d_starborn_ruins_desc:0 "This once major settlement is now a crumbling ruin, occupied only by the decaying bodies of its inhabitants."
+ d_starborn_wasteland:0 "£blocker£ Radiation Zone"
+ d_starborn_wasteland_desc:0 "A region that was the target of numerous nuclear warheads. Though the radiation in this area has decreased since the initial impact, it is still unfit for habitation barring a major clean-up effort."
+
+
+ d_starborn_energy:0 "Solar Section"
+ d_starborn_energy_desc:0 "This stellar body has access to sufficient solar energy to make it worth dedicating large sections of the $pc_habitat$ to harnessing it"
+ d_starborn_mineral_surface:0 "Mineral Deposits"
+ d_starborn_mineral_surface_desc:0 "There is easy access to sufficient mineral deposits to make it worth dedicating large sections of the $pc_habitat$ to mining them"
+ d_starborn_alloy_surface:0 "Alloy Deposits"
+ d_starborn_alloy_surface_desc:0 "There is easy access to sufficient alloy deposits to  make it worth dedicating large sections of the $pc_habitat$ to extracting them"
+ d_starborn_tomb_surface:0 "Wasteland Ruins Below"
+ d_starborn_tomb_surface_desc:0 "The ruins of this blasted world are rich in valuable resources that we can scavenge"
+ d_starborn_habitable_surface:0 "Fertile Surface"
+ d_starborn_habitable_surface_desc:0 "While we may not be able to live on the world below, we can take advantage of the biosphere for food production"
+
+
+ START_SCREEN_STARBORN:0 "$START_SCREEN_STARBORN_1$$START_SCREEN_STARBORN_2$$START_SCREEN_STARBORN_3$$START_SCREEN_STARBORN_4$$START_SCREEN_STARBORN_5$$START_SCREEN_STARBORN_6$$START_SCREEN_STARBORN_7$$START_SCREEN_STARBORN_8$"
+ START_SCREEN_STARBORN_1:0 "Our civilisation was outgrowing its cradle and reaching for the stars. We had begun our conquest of our solar system and were poised on the brink of hyperlane travel.\n\n"
+ START_SCREEN_STARBORN_2:0 "To celebrate our brilliance we built a gigantic orbital city above our homeworld.  A feat of engineering and international cooperation never before seen.\n\n"
+ START_SCREEN_STARBORN_3:0 "But Pride Comes Before A Fall\n\n"
+ START_SCREEN_STARBORN_4:0 "We do not know who fired the first shot, or why it escalated so quickly to armageddon, but a simmering border skirmish turned into global thermonuclear war in the space of a day\n\n"
+ START_SCREEN_STARBORN_5:0 "The planet was ravaged, civilisation collapsed, the only ones that survived were our ancestors orbiting above in their city.\n\n"
+ START_SCREEN_STARBORN_6:0 "Life for our forefathers was hard. The city had not been designed to be the new cradle of life and drastic changes were needed quickly, several times we were nearly snuffed out by accidents, civil unrest and dispair.  They persevered, survived, prospered and now we reap the rewards of their sacrifice and are ready once again to venture out into the black.\n\n"
+ START_SCREEN_STARBORN_7:0 "The first new $pc_habitat$s have been constructed around the richest resources in our solar system and are ready for their first colonists.\n\n"
+ START_SCREEN_STARBORN_8:0 "But it is not without cost.  Our people have spent so long living in our artifical city with its recycled air and carefully controlled environment that our immune systems have weakened and our bodies changed such that planetary environments are hostile to us, we can no longer live on natures cradles.\n\n   We must make our own homes among the stars."
+
+
+ starborn.2.name:0 "Habitat Construction Scam"
+ starborn.2.desc:0 "It seems that at the same time as ordering the 'full construction' of the $pc_habitat$ from our regular engineers, our government also contracted 'Derek Trotters Honest Builders' to further enlarge the structure, 'what do those experts know about maximums?'\n\nIt seems this may have been an error and that Derek Trotter has dissappeared along with all the resources he was supplied to do the job.\n\nThe habitat is the same 'maximum size' as our experts predicted"
+ starborn.2.option.a:0 "Next time we should listen to the experts"
+
+ starborn.3.name:0 "$civic_starborn$"
+ starborn.3.desc:0 "While our people can no longer live on planets, our $pc_habitat$s are a lot more flexible than those of species who adopted the void, rather than being born to it.\n\nWe have already constructed the first ones in suitable locations in our home system.$starborn.3.desc0$$starborn.3.desc1$$starborn.3.desc2$$starborn.3.desc3$$starborn.3.desc4$$starborn.3.desc5$"
+ starborn.3.desc0:0 "\n\n§YEnergy Deposists§! allow us to use the planet for solar farms for £energy£ §Y$energy$§! and will be most effective around stars"
+ starborn.3.desc1:0 "\n§YMineral Deposists§! allow for mining districts for £minerals£ §Y$minerals$§! and will be most effective around asteroids"
+ starborn.3.desc2:0 "\n§YHabitable Worlds§! will let us use the biosphere to farm for £food£ §Y$food$§!.  Just probably not on $pc_nuked$s"
+ starborn.3.desc3:0 "\n\nOther types of planet and orbital deposits will give us different effects, that we will have to experiment to find out."
+ starborn.3.desc4:0 "\n\nWhile our $pc_habitat$s may start small, you can order them expanded via the decision §Y$decision_starborn_enlarge_hab$§!\nRemember each $pc_habitat$ requires £alloys£§Y$alloys$§! in upkeep!"
+ starborn.3.desc5:0 "\n\nYou can adjust the starting size (and cost) of $pc_habitat$ from the edicts menu"
+ starborn.3.option.a:0 "Into the Void"
+
+ edict_starborn_show_menu_effect:0 "Selecting this edict triggers a menu as a global effect that the game denotes as a §YCountry event! You can do it as many times as you like"
+
+ edict_starborn_show_hab_build_size:0 "Set Habitat Construction Size"
+ edict_starborn_show_hab_build_size_desc:0 "Adjust how large (and how expansive) we build the inital habitat as our economy grows"
+
+ starborn.4.name:0 "Starting Habitat Build Size"
+ starborn.4.desc:0 "As the game progresses, you can opt to increase the initial cost of your habitats to improve their starting size and reduce your micromanagement.  The top sizes require $ap_voidborn$"
+ starborn.4.option.2:0 "§YSize 2§! Habitats cost 250 £alloys£§Y$alloys$§!, 365 days"
+ starborn.4.option.3:0 "§YSize 3§! Habitats cost 500 £alloys£§Y$alloys$§!, 250 £energy£§Y$energy$§!, 600 days"
+ starborn.4.option.4:0 "§YSize 4§! Habitats cost 1000 £alloys£§Y$alloys$§!, 500 £energy£§Y$energy$§!, 900 days"
+ starborn.4.option.5:0 "§YSize 5§! Habitats cost 1500 £alloys£§Y$alloys$§!, 750 £energy£§Y$energy$§!, 1200 days"
+ starborn.4.option.6:0 "§YSize 6§! Habitats cost 2000 £alloys£§Y$alloys$§!, 1000 £energy£§Y$energy$§!, 1500 days"
+
+ edict_starborn_show_hab_enlargment_size:0 "Set Auto-Habitat Enlargement"
+ edict_starborn_show_hab_enlargment_size_desc:0 "Adjust if we automatically apply habitat enlargment decisions"
+ 
+ edict_starborn_set_flag:0 "Set hidden flag for !!!!Universal Districts Patch"
+ edict_starborn_set_flag_desc:0 "Temporary fix for those who have started games with the old version and want to use the Districts patch to make it work with other mods.  It will appear to do nothing, but is setting a hidden variable that the patch needs, you only need to do it once (then save).  This happens automatically in new games and this edict will be removed in a future release."
+ 
+ starborn.5.name:0 "Auto Apply Habitat Enlargement Decisions"
+ starborn.5.desc:0 "Habitat enlargement decisions can be auto-applied at construction time.\n\n§YWhen a habitat finishes construction§!, if you have sufficient resources to pay for the enlargement, it will be automatically applied"
+ starborn.5.option.0:0 "No extra enlargement"
+ starborn.5.option.1:0 "Apply §Y$decision_starborn_increase_hab_district_1$§! Costs 250 £alloys£§Y$alloys$§!, 250 £energy£§Y$energy$§!"
+ starborn.5.option.2:0 "Apply §Y$decision_starborn_increase_hab_district_2$§! Costs 750 £alloys£§Y$alloys$§!, 1000 £energy£§Y$energy$§!"
+ starborn.5.option.3:0 "Apply §Y$decision_starborn_increase_hab_district_3$§! Costs 1500 £alloys£§Y$alloys$§!, 2000 £energy£§Y$energy$§!"
+
+ starborn.6.name:0 "Habitat Enlargement Failed"
+ starborn.6.desc:0 "There were insufficient funds in the treasury to automatically enlarge [From.From.From.Planet.GetName]. You can still do it manually from the planet decisions screen"
+ starborn.6.option.a:0 "Darn"
+
+ tech_starborn_expand_starting_habitat_voidborn:0 "$pc_starborn_habitat_start$ Enlargement"
+ tech_starborn_expand_starting_habitat_voidborn_desc:0 "As we have become $ap_voidborn$ our engineers believe they can develop new ways to enlarge and improve our $pc_starborn_habitat_start$"
+
+ tech_starborn_expand_starting_habitat_master_builders:0 "$pc_starborn_habitat_start$ Enlargement"
+ tech_starborn_expand_starting_habitat_master_builders_desc:0 "Our mastery of building and construction has opened up the possibility for ideas once discarded as impossible to be used to enlarge our $pc_starborn_habitat_start$"
+
+ tech_starborn_expand_starting_habitat_galatic_wonders:0 "$pc_starborn_habitat_start$ Enlargement"
+ tech_starborn_expand_starting_habitat_galatic_wonders_desc:0 "What is the point of building Galatic Wonders if we cannot use that engineering knowledge to improve our $pc_starborn_habitat_start$"
+
+ building_hab_food_processing_facility:0 "Habitat $building_food_processing_facility$"
+ building_hab_food_processing_facility_desc:0 "$building_food_processing_facility_desc$"
+
+ building_hab_mineral_purification_plant:0 "Habitt $building_mineral_purification_plant$"
+ building_hab_mineral_purification_plant_desc:0 "$building_mineral_purification_plant_desc$"
+
+ building_hab_energy_grid:0 "Habitat $building_energy_grid$"
+ building_hab_energy_grid_desc:0 "$building_energy_grid_desc$"
+
+ starborn.8.name:0 "IMPORTANT: BUGFIX"
+ starborn.8.desc:0 "There is a bug in the game where all 'investigate X aliens' special projects always trigger on your original homeworld (Paradise Lost).\n\nIf you don't own your homeworld then when you complete any of these nothing will happen (except for a big error in the log)\n\nAs a work around we've had to colonise your original homeworld for you with 1 pop and pop controls enabled (even if you can't enable them normally)\n\nSorry, have raised the bug with PDX and will look at different ways to spawn the orbital city in future"
+ starborn.8.option.a:0 "Bother"
