@@ -251,7 +251,8 @@ country_event = {
                                         set_all_comms_surveyed = yes
                                         clear_blockers = yes
                                         set_planet_flag = megastructure
-				        set_planet_flag = habitat
+                                        set_planet_flag = habitat
+                                        set_planet_flag = eco_no_pollution
                                       
                                         create_colony = {
                                                 owner = FROM

@@ -29,18 +29,17 @@ But there is a catch, your species has spent so long living in habitats that pla
 [/list]
 [i]There are lots of other effects for different types of planets and the different orbital deposits, you'll need to discover them in play[/i]
  
- 
- 
+  
 [h1]Requirements[/h1]
 Utopia DLC
 
 [h1]Gameplay Notes[/h1]
-Remember that habitats cost alloys in maintenance!  Starborn builds will have a constant need for more alloy production.
+Remember that habitats cost alloys in maintenance!  Starborn builds will have a constant need for more alloy production.  Starborn is a valid civic for Megacorps but not for gestalt or machine intelligences.
 
 I do not adjust the Voidborn Ascension Perk, so you will have the ability to build normal habitats when you buy it.  Those are completely vanilla and I suggest avoiding them, I've not taken them out to try to limit compatibility problems.
 
 It does require a fair quantity of micromanagement, due to the small nature of the habitats, I have done my best to balance difficulty and ease, suggestions welcome.
-Yes it is possible to "cheat" by enacting the fully enlarge habitat decisions and also the construct more habitat decision at once, because there is not an easy way to immediately deactivate one decision based on another being selected (and in progress).  Go on, try it, I dare you.  
+You can try to "cheat" by enacting the fully enlarge habitat decisions and also the construct more habitat decision at once, because there is not an easy way to immediately deactivate one decision based on another being selected (and in progress).  Go on, try it, I dare you.  
 
 [h1]Compatibility[/h1]
 This mod makes changes to:
@@ -51,6 +50,7 @@ This mod makes changes to:
 [/list]
 So will have compatibility problems with any other mod that changes these.  The most obvious sign is when you go to the Orbital City you will see Housing, Mining, Generating and Farming districts instead of Habitat Housing, Nature Preserve, Tombworld Scavenger and Solar Panel ones.  
 
+It is not yet compatible with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1742527573]!!District Overhaul[/url], the author will be including compatibility in their next release. 
 
 [b]Compatibility patches:[/b]
 [list]
@@ -89,7 +89,6 @@ https://github.com/draconas1/starborn/tree/master/localisation/english if you ar
 [*] Buildings for dealing with rare strategic resources (Dark matter, Zro, Living Metal)
 [*] The next big game patch is going to change how habitats work, so will need some tweaking and rebalancing to bring it into line with vanilla.
 [*] Some currently unspecified changes to the spawn event to fix the investigate species bug
-[*] Megacorp compatibility
 [*] Changes to backstory
 [/list]
 
