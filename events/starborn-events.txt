@@ -2,7 +2,7 @@ namespace = starborn
 
 #District patch flag setting 
 #out of order to make it easy for the patcher to find.
-country_event = {
+event = {
         id = starborn.9
         hide_window = yes
 	is_triggered_only = yes
@@ -15,7 +15,7 @@ country_event = {
 }
 
 
-#starting
+#1. starting - spawn planets and habitats
 country_event = {
         id = starborn.1
         hide_window = yes
@@ -176,6 +176,7 @@ country_event = {
                                         }
                                         set_all_comms_surveyed = yes
                                         clear_blockers = yes
+                                        prevent_anomaly = yes
 
                                         add_deposit = d_starborn_energy
                                         add_deposit = d_starborn_energy
@@ -214,6 +215,7 @@ country_event = {
                                         }
                                         set_all_comms_surveyed = yes
                                         clear_blockers = yes
+                                        prevent_anomaly = yes
 
                                         add_deposit = d_starborn_mineral_surface
                                         add_deposit = d_starborn_mineral_surface
@@ -230,67 +232,52 @@ country_event = {
                                 }
                         }
 
-                        # spawn the orbital city
+                        # spawn the original homeworld
                         spawn_planet = {
-                                class = "pc_starborn_habitat_start"
+                                class = "pc_nuked"
                                 location =  event_target:capital_spawn_planet
                                 orbit_location = yes
-                                size = 16
+                                size = 18
                                 has_ring = no
                                 
                                 init_effect = {
-                                        save_event_target_as = orbital_city                                   
-                                        set_planet_entity = {
-                                                entity = "giga_orbital_habitat_entity"
-                                                graphical_culture = fromfrom
-                                        }
                                         surveyed = {
                                                 set_surveyed = yes
                                                 surveyor = FROM
                                         }
                                         set_all_comms_surveyed = yes
                                         clear_blockers = yes
-                                        set_planet_flag = megastructure
-                                        set_planet_flag = habitat
-                                        set_planet_flag = eco_no_pollution
-                                      
-                                        create_colony = {
-                                                owner = FROM
-                                                species = owner_main_species
-                                                ethos = owner
-                                        }
-                                        set_name = "Arc of Civilisation"
-                                        add_building = building_capital
-                                        add_building = building_research_lab_1
-                                        add_building = building_foundry_1
-                                        add_building = building_factory_1
+                                        clear_planet_modifiers = yes                                        
+                                        prevent_anomaly = yes
 
-                                        add_deposit = d_starborn_tomb_surface
+                                        set_planet_flag = has_megastructure
+                                        set_name = "Paradise Lost"
 
-                                        add_district = district_starborn_starting_hab_housing
-                                        add_district = district_starborn_starting_hab_housing
-                                        add_district = district_starborn_starting_hab_housing
-                                    
-                                        add_district = district_starborn_starting_scavenger
-                                        add_district = district_starborn_starting_scavenger
-                                        add_district = district_starborn_starting_preserve
-                                        add_district = district_starborn_starting_preserve
-                                        add_district = district_starborn_starting_preserve
-                                        add_district = district_starborn_starting_solar
-                                        add_district = district_starborn_starting_solar
-                                        add_district = district_starborn_starting_solar
-
-                                        while = {
-                                                limit = { 
-                                                        num_pops < 24
-                                                }
-                                                create_pop = {
-                                                        species = owner_main_species
-                                                }
-                                        }
-
-                                        set_capital = yes
-                                        save_event_target_as = pc_home
+                                        #copy of the post_apoc deposits
+                                        # common/scripted_effects/01_start_of_game_effects.txt : generate_start_deposits_and_blockers
+                                        # 3 + 3 energy		
+                                        set_deposit = d_hot_springs		
+                                        add_deposit = d_searing_desert
+                                        add_deposit = d_underwater_vent	
+                                        
+                                        # 3 + 4 mining
+                                        add_deposit = d_veiny_cliffs		
+                                        add_deposit = d_ore_rich_caverns
+                                        add_deposit = d_submerged_ore_veins
+                                        
+                                        # 3 + 2 farming
+                                        add_deposit = d_lichen_fields	
+                                        add_deposit = d_fungal_caves 	
+                                        add_deposit = d_fungal_forest	
+                                
+                                        # add starborn ruins blockers
+                                        # like regular ones, except they don't give you any pops when cleared as all the pops are dead.  
+                                        add_deposit = d_starborn_ruins
+                                        add_deposit = d_starborn_wasteland
+                                        add_deposit = d_starborn_ruins
+                                        add_deposit = d_starborn_wasteland	
+                                        add_deposit = d_starborn_ruins
+                                        add_deposit = d_starborn_wasteland
                                 }
                         }
                 }
@@ -300,65 +287,10 @@ country_event = {
                         message = no 
                         tech = tech_hydroponics 
                 }
-
-                home_planet = {
-                        # already has the default 3 blockers
-                        clear_blockers = yes
-                        # orbital city
-                        set_planet_flag = has_megastructure
-                
-                        #copy of the post_apoc deposits
-                        # common/scripted_effects/01_start_of_game_effects.txt : generate_start_deposits_and_blockers
-                        # 3 + 3 energy		
-                        set_deposit = d_hot_springs		
-                        add_deposit = d_searing_desert
-                        add_deposit = d_underwater_vent	
-                        
-                        # 3 + 4 mining
-                        add_deposit = d_veiny_cliffs		
-                        add_deposit = d_ore_rich_caverns
-                        add_deposit = d_submerged_ore_veins
-                        
-                        # 3 + 2 farming
-                        add_deposit = d_lichen_fields	
-                        add_deposit = d_fungal_caves 	
-                        add_deposit = d_fungal_forest	
-                
-                        # add starborn ruins blockers
-                        # like regular ones, except they don't give you any pops when cleared as all the pops are dead.  
-                        add_deposit = d_starborn_ruins
-                        add_deposit = d_starborn_wasteland
-                        add_deposit = d_starborn_ruins
-                        add_deposit = d_starborn_wasteland	
-                        add_deposit = d_starborn_ruins
-                        add_deposit = d_starborn_wasteland
-
-                        #kill off the original colony in a nuclear war
-                        remove_all_buildings = yes 
-                        destroy_colony = yes
-                        change_pc = "pc_nuked" 
-                       
-                        # exploration bugfix
-                        create_colony = {
-                                owner = FROM
-                                species = owner_main_species
-                                ethos = owner
-                        }
-                        create_pop = {
-                                species = owner_main_species
-                        }
-                        add_modifier = { modifier = "planet_population_control" days = -1 }
-
-                        set_name = "Paradise Lost"
-                }
-
-                owner_species = {
-                        set_species_homeworld = event_target:orbital_city
-                }
         }
 }
 
-# tried to cheat enlarging habitat
+#2. tried to cheat enlarging habitat
 country_event = {
         id = starborn.2    
 	title = "starborn.2.name"
@@ -373,7 +305,7 @@ country_event = {
 	}
 }
 
-# starting blurb
+#3. Starting mechanics functions
 country_event = {
         id = starborn.3    
 	title = "starborn.3.name"
@@ -381,12 +313,17 @@ country_event = {
 	picture = GFX_evt_colony_settlement
 	is_triggered_only = yes
 
+        trigger = {
+                is_ai = no
+                has_civic = civic_starborn
+        }
+
 	option = {
 		name = "starborn.3.option.a"
 	}
 }
 
-# hab build size menu
+#4. hab build size menu
 country_event = {
         id = starborn.4    
 	title = "starborn.4.name"
@@ -452,7 +389,7 @@ country_event = {
 	}
 }
 
-#hab enlargement menu
+#5. hab enlargement menu
 country_event = {
         id = starborn.5    
 	title = "starborn.5.name"
@@ -503,7 +440,7 @@ country_event = {
         }
 }
 
-# hab enlargement failed
+#6. hab enlargement failed because you lacked resources
 country_event = {
         id = starborn.6    
 	title = "starborn.6.name"
@@ -518,6 +455,7 @@ country_event = {
 	}
 }
 
+#7. enact living metal event if playing in the OP system.  
 country_event = {
         id = starborn.7
         hide_window = yes
@@ -545,15 +483,43 @@ country_event = {
         }
 }
 
-
-country_event = {
-        id = starborn.8    
-	title = "starborn.8.name"
-	desc = "starborn.8.desc"
-	picture = GFX_evt_colony_settlement
+#8. Deal with Starting world - the orbital city
+planet_event = {
+        id = starborn.8
+	hide_window = yes
 	is_triggered_only = yes
-	option = {
-		name = "starborn.8.option.a"
-	}
+
+	trigger = {
+		owner = {
+			has_civic = civic_starborn
+		}
+        }
+        immediate = {
+                clear_deposits = yes
+                clear_blockers = yes
+		prevent_anomaly = yes
+                set_planet_flag = has_megastructure                
+
+                set_name = "Arc of Civilisation"              
+               
+                remove_all_districts = yes
+                add_district = district_starborn_starting_hab_housing
+                add_district = district_starborn_starting_hab_housing
+                add_district = district_starborn_starting_hab_housing
+                add_district = district_starborn_starting_scavenger
+                add_district = district_starborn_starting_scavenger
+                add_district = district_starborn_starting_preserve
+                add_district = district_starborn_starting_preserve
+                add_district = district_starborn_starting_preserve
+                add_district = district_starborn_starting_solar
+                add_district = district_starborn_starting_solar
+                add_district = district_starborn_starting_solar
+
+                add_deposit = d_starborn_tomb_surface
+
+                set_planet_size = 16
+        }
 }
+
+#9. is at the top
 

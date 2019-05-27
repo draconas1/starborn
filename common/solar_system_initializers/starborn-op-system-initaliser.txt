@@ -352,7 +352,7 @@ starborn_op_system = {
 			orbit_angle = { min = 90 max = 270 }
 			size = 10
 			init_effect = {
-                add_anomaly = living_metal_category
+                prevent_anomaly = yes
                 set_planet_flag = starting_deposit
                 set_deposit = d_living_metal_deposit
 			}

@@ -65,5 +65,48 @@ d_starborn_habitable_surface = {
 	}
 }
 
+d_starborn_dark_matter_surface = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	
+	category = deposit_cat_rare
+	
+	planet_modifier = { 
+		building_starborn_dark_matter_extractor_max = 1
+	}
+	
+	drop_weight = {
+		weight = 0
+	}
+}
 
+d_starborn_living_metal_surface = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	
+	category = deposit_cat_rare
+	
+	planet_modifier = { 
+		building_starborn_living_metal_extractor_max = 1
+	}
+	
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_starborn_zro_surface = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	
+	category = deposit_cat_rare
+	
+	planet_modifier = { 
+		building_starborn_zro_extractor_max = 1
+	}
+	
+	drop_weight = {
+		weight = 0
+	}
+}
 

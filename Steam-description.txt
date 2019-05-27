@@ -29,12 +29,11 @@ But there is a catch, your species has spent so long living in habitats that pla
 [/list]
 [i]There are lots of other effects for different types of planets and the different orbital deposits, you'll need to discover them in play[/i]
  
-  
 [h1]Requirements[/h1]
 Utopia DLC
 
 [h1]Gameplay Notes[/h1]
-Remember that habitats cost alloys in maintenance!  Starborn builds will have a constant need for more alloy production.  Starborn is a valid civic for Megacorps but not for gestalt or machine intelligences.
+Remember that habitats cost alloys in maintenance!  Starborn builds will have a constant need for more alloy production.
 
 I do not adjust the Voidborn Ascension Perk, so you will have the ability to build normal habitats when you buy it.  Those are completely vanilla and I suggest avoiding them, I've not taken them out to try to limit compatibility problems.
 
@@ -50,7 +49,7 @@ This mod makes changes to:
 [/list]
 So will have compatibility problems with any other mod that changes these.  The most obvious sign is when you go to the Orbital City you will see Housing, Mining, Generating and Farming districts instead of Habitat Housing, Nature Preserve, Tombworld Scavenger and Solar Panel ones.  
 
-It is not yet compatible with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1742527573]!!District Overhaul[/url], the author will be including compatibility in their next release. 
+It is not yet compatible with !!District Overhaul, the author will be including compatibility in their next release. 
 
 [b]Compatibility patches:[/b]
 [list]
@@ -59,9 +58,6 @@ It is not yet compatible with [url=https://steamcommunity.com/sharedfiles/filede
 [/list]
 
 I made a specific patch for Gigastructures  [url=https://steamcommunity.com/sharedfiles/filedetails/?edit=true&id=1743137605]here[/url] however that is not necessary if you have [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1636492142]!habitable Structures Patch[/url] and I will not be maintaining it provided Habitable Structures stays updated.  
-
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1635222296]!!!!Universal Districts Patch[/url] relies on global flags being set.  If you have already started a game then they are missing, so I have temporarily added a special edict that will set them.  The edict will appear to do nothing, but rest assured has set flags in the background.
-
 
 [h1]Troubleshooting[/h1]
 [i]Have the option to build a mining hab but nothing happens when you press it? or right click on a star with energy or asteroid with mineral it does not give an option to build?[/i]
@@ -89,6 +85,7 @@ https://github.com/draconas1/starborn/tree/master/localisation/english if you ar
 [*] Buildings for dealing with rare strategic resources (Dark matter, Zro, Living Metal)
 [*] The next big game patch is going to change how habitats work, so will need some tweaking and rebalancing to bring it into line with vanilla.
 [*] Some currently unspecified changes to the spawn event to fix the investigate species bug
+[*] Megacorp compatibility
 [*] Changes to backstory
 [/list]
 

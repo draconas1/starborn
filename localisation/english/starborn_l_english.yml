@@ -74,6 +74,30 @@
  mod_job_starborn_alloy_extractor:0  "§G+1§! $job_starborn_alloy_extractor$ Job per $VALUE$ Pops"
  mod_job_starborn_alloy_extractor_short:0 "\n§G+1§! £mod_job_starborn_alloy_extractor_add£ per $VALUE$ £pop£"
 
+ job_starborn_living_metal_extractor:0 "Living Metal Extractor"
+ job_starborn_living_metal_extractor_plural:0 "Living Metal Extractors"
+ job_starborn_living_metal_extractor_desc:0 "Spending time in the canverns of flowing silver, separating and getting it into a useful form is as much an act of persuasion as of engineering"
+ job_starborn_living_metal_extractor_effect_desc:0 "£job_starborn_living_metal_extractor£ $job_starborn_living_metal_extractor_plural$ produce £sr_living_metal£§Y$sr_living_metal$§!"
+ mod_job_starborn_living_metal_extractor_add:0 "$job_starborn_living_metal_extractor$ Jobs"
+ mod_job_starborn_living_metal_extractor:0  "§G+1§! $job_starborn_living_metal_extractor$ Job per $VALUE$ Pops"
+ mod_job_starborn_living_metal_extractor_short:0 "\n§G+1§! £mod_job_starborn_living_metal_extractor_add£ per $VALUE$ £pop£"
+
+ job_starborn_dark_matter_extractor:0 "Dark Matter Artificer"
+ job_starborn_dark_matter_extractor_plural:0 "Dark Matter Artificers"
+ job_starborn_dark_matter_extractor_desc:0 "Exploiting grvitational lensing properties to generate $sr_dark_matter$, they tend to be skittish and afraid of loud noises due to the inherent volitity of the process"
+ job_starborn_dark_matter_extractor_effect_desc:0 "£job_starborn_dark_matter_extractor£ $job_starborn_dark_matter_extractor_plural$ produce £sr_dark_matter£§Y$sr_dark_matter$§!"
+ mod_job_starborn_dark_matter_extractor_add:0 "$job_starborn_dark_matter_extractor$ Jobs"
+ mod_job_starborn_dark_matter_extractor:0  "§G+1§! $job_starborn_dark_matter_extractor$ Job per $VALUE$ Pops"
+ mod_job_starborn_dark_matter_extractor_short:0 "\n§G+1§! £mod_job_starborn_dark_matter_extractor_add£ per $VALUE$ £pop£"
+
+ job_starborn_zro_extractor:0 "Zro Accolyte"
+ job_starborn_zro_extractor_plural:0 "Zro Accolytes"
+ job_starborn_zro_extractor_desc:0 "Accusations that this is less a job and more cult membership are not helped by the title of 'accolyte' and that they frequently seem to be only half aware of the real world, and half experiencing something completely different "
+ job_starborn_zro_extractor_effect_desc:0 "£job_starborn_zro_extractor£ $job_starborn_zro_extractor_plural$ produce £sr_zro£§Y$sr_zro$§!"
+ mod_job_starborn_zro_extractor_add:0 "$job_starborn_zro_extractor$ Jobs"
+ mod_job_starborn_zro_extractor:0  "§G+1§! $job_starborn_zro_extractor$ Job per $VALUE$ Pops"
+ mod_job_starborn_zro_extractor_short:0 "\n§G+1§! £mod_job_starborn_zro_extractor_add£ per $VALUE$ £pop£"
+
  district_starborn_starting_hab_housing:0 "$district_hab_housing$"
  district_starborn_starting_hab_housing_plural:0 "$district_hab_housing_plural$"
  district_starborn_starting_hab_housing_desc:0 "$district_hab_housing_desc$"
@@ -109,6 +133,17 @@
  district_starborn_surface_alloys_desc:0 "Sections of the $pc_habitat$ built directly on the most alloy rich surface areas allow the resources to be safely extracted"
  mod_district_starborn_surface_alloys_max:0 "§Y$district_starborn_surface_alloys$§!"
 
+ building_starborn_dark_matter_extractor:0 "Dark Matter Generator"
+ building_starborn_dark_matter_extractor_desc:0 "This facility uses gravitational lensing to allow brave researchers to generate $sr_dark_matter$.  Due to its tendency to explode on contact with regular matter, the facility is extensively shielded and as far from anything of value as possible."
+ mod_building_starborn_dark_matter_extractor_max:0 "§Y$building_starborn_dark_matter_extractor$§!"
+
+ building_starborn_living_metal_extractor:0 "Living Metal Refinery"
+ building_starborn_living_metal_extractor_desc:0 "Built above $sr_living_metal$ caverns, the extractors are often quiet, contemplative types who facilitate extraction and refinement of small amounts without upsetting the mass as a whole."
+ mod_building_starborn_living_metal_extractor_max:0 "§Y$building_starborn_living_metal_extractor$§!"
+
+ building_starborn_zro_extractor:0 "Zro Temple"
+ building_starborn_zro_extractor_desc:0 "With their vacant expressions, strange rank system and odd behaviours, the temple spends almost as much time trying to convince people that it's not a cult as actually refining $sr_zro$"
+ mod_building_starborn_zro_extractor_max:0 "§Y$building_starborn_zro_extractor$§!"
 
  d_starborn_ruins:0 "£blocker£ Ruins"
  d_starborn_ruins_desc:0 "This once major settlement is now a crumbling ruin, occupied only by the decaying bodies of its inhabitants."
@@ -126,7 +161,12 @@
  d_starborn_tomb_surface_desc:0 "The ruins of this blasted world are rich in valuable resources that we can scavenge"
  d_starborn_habitable_surface:0 "Fertile Surface"
  d_starborn_habitable_surface_desc:0 "While we may not be able to live on the world below, we can take advantage of the biosphere for food production"
-
+ d_starborn_living_metal_surface:0 "Living Metal Lakes"
+ d_starborn_living_metal_surface_desc:0 "Caverns below the surface are filled with a £sr_living_metal£§Y$sr_living_metal$§! that flows from cavern to cavern in gleaming rivers, pooling into underground lakes."
+ d_starborn_dark_matter_surface:0 "Accessible Dark Matter"
+ d_starborn_dark_matter_surface_desc:0 "Rare gravitational lensing effects make it possible to coalesce and refine £sr_dark_matter£§Y$sr_dark_matter$§!"
+ d_starborn_zro_surface:0 "Frozen Zro"
+ d_starborn_zro_surface_desc:0 "Features around an ancient cometary impact site region keep the temperature perminantly far below freezing, leading to large deposists of £sr_zro£§Y$sr_zro$§! being trapped in ice rather than dissipating into the atmosphere"
 
  START_SCREEN_STARBORN:0 "$START_SCREEN_STARBORN_1$$START_SCREEN_STARBORN_2$$START_SCREEN_STARBORN_3$$START_SCREEN_STARBORN_4$$START_SCREEN_STARBORN_5$$START_SCREEN_STARBORN_6$$START_SCREEN_STARBORN_7$$START_SCREEN_STARBORN_8$"
  START_SCREEN_STARBORN_1:0 "Our civilisation was outgrowing its cradle and reaching for the stars. We had begun our conquest of our solar system and were poised on the brink of hyperlane travel.\n\n"

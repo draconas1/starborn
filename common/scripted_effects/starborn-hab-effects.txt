@@ -516,7 +516,74 @@ starborn_hab_init_effect = {
     }
 
 
+    if = {
+        limit = {
+            fromfrom.planet = {
+                has_deposit = d_dark_matter_deposit_1
+            }
+        }
+        add_deposit = d_starborn_dark_matter_surface
+    }
 
+    if = {
+        limit = {
+            fromfrom.planet = {
+                has_deposit = d_dark_matter_deposit_2
+            }
+        }
+        add_deposit = d_starborn_dark_matter_surface
+        add_deposit = d_starborn_dark_matter_surface
+    }
+
+    if = {
+        limit = {
+            fromfrom.planet = {
+                has_deposit = d_dark_matter_deposit_3
+            }
+        }
+        add_deposit = d_starborn_dark_matter_surface
+        add_deposit = d_starborn_dark_matter_surface
+        add_deposit = d_starborn_dark_matter_surface
+    }
+
+    if = {
+        limit = {
+            fromfrom.planet = {
+                has_deposit = d_zro_deposit_1
+            }
+        }
+        add_deposit = d_starborn_zro_surface
+    }
+
+    if = {
+        limit = {
+            fromfrom.planet = {
+                has_deposit = d_zro_deposit_2
+            }
+        }
+        add_deposit = d_starborn_zro_surface
+        add_deposit = d_starborn_zro_surface
+    }
+
+    if = {
+        limit = {
+            fromfrom.planet = {
+                has_deposit = d_zro_deposit_3
+            }
+        }
+        add_deposit = d_starborn_zro_surface
+        add_deposit = d_starborn_zro_surface
+        add_deposit = d_starborn_zro_surface
+    }
+
+    if = {
+        limit = {
+            fromfrom.planet = {
+                has_deposit = d_living_metal_deposit
+            }
+        }
+        add_deposit = d_starborn_living_metal_surface
+    }
 
 
     # deposits that add modifers
@@ -832,6 +899,30 @@ starborn_hab_init_effect = {
         }
     }
 
+    if = {
+        limit = {                        
+            fromfrom.planet = {								
+                is_star_class = sc_black_hole
+            }
+        }
+        add_modifier = {
+            modifier = starborn_physics_black_hole
+            days = -1
+        }
+    }
+
+    if = {
+        limit = {                        
+            fromfrom.planet = {								
+                is_star_class = sc_pulsar
+            }
+        }
+        add_modifier = {
+            modifier = starborn_physics_pulsar
+            days = -1
+        }
+    }
+
 
     # Society 
 
@@ -985,6 +1076,18 @@ starborn_hab_init_effect = {
         add_modifier = {
             modifier = starborn_engineering_25
             days = -1
+        }
+
+        if = {
+            limit = {                        
+                fromfrom.planet = {								
+                    is_star_class = sc_neutron_star
+                }
+            }
+            add_modifier = {
+                modifier = starborn_engineering_neutron_star
+                days = -1
+            }
         }
     }
 

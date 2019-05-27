@@ -108,6 +108,19 @@ starborn_physics_25 = {
     planet_jobs_physics_research_produces_mult = 0.25
 }
 
+starborn_physics_black_hole = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_black_hole.dds"
+    icon_frame = 1
+    planet_jobs_physics_research_produces_mult = 0.25
+}
+
+starborn_physics_pulsar = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_star_pulsar.dds"
+    icon_frame = 1
+    planet_jobs_physics_research_produces_mult = 0.25
+}
+
+
 starborn_society_5 = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_microscopic_life.dds"
     icon_frame = 1
@@ -164,6 +177,12 @@ starborn_engineering_20 = {
 
 starborn_engineering_25 = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"
+    icon_frame = 1
+    planet_jobs_engineering_research_produces_mult = 0.25
+}
+
+starborn_engineering_neutron_star = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_star_neutron.dds"
     icon_frame = 1
     planet_jobs_engineering_research_produces_mult = 0.25
 }

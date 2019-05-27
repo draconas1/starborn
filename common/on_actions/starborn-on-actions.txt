@@ -1,10 +1,30 @@
 # Triggers when the game starts
+on_game_start = {
+	events = {
+		starborn.9 # set global flag for patches
+	}
+}
+
 on_game_start_country = {
 	events = {
-		starborn.9
-		starborn.1
-		starborn.3
-		starborn.7
-		starborn.8
+		starborn.1 # spawn orbital city and starting habitats in system
+		starborn.3 # general blurb
+		starborn.7 # if using the OP system start, trigger living metal megaconsturction.
+	}
+}
+
+empire_init_capital_planet = {
+	events = {
+		starborn.8 # nuke starting world and turn it into a tomb world: Paradise Lost
+	}
+}
+
+empire_init_create_ships = {
+	events = {		
+	}
+}
+
+on_press_begin = {
+	events = {	
 	}
 }

@@ -43,25 +43,3 @@ starborn_show_hab_enlargment_size = {
 		weight = 0
 	}
 }
-
-starborn_set_flag = {
-    length = 0
-    resources = {
-        category = edicts
-        cost = {
-            influence = 0
-        }
-    }
-    
-    allow = {
-        has_civic = civic_starborn
-    }
-    
-	effect = {
-		country_event = { id = starborn.9 }
-	}
-	
-	ai_weight = {
-		weight = 0
-	}
-}

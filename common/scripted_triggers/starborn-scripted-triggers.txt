@@ -40,26 +40,4 @@ starborn_can_place_hab = {
 		fail_text = "requires_no_orbital_station"
 		has_orbital_station = no
 	}
-
-	# do not build habitats on black holes.  It's just not cool man!
-	custom_tooltip = {
-		fail_text = "requires_not_black_hole"
-		NOT = {
-			is_star_class = sc_black_hole
-		}
-	}
-
-	# do not build on strategic resources I have not put an extractor in for yet
-	custom_tooltip = {
-		fail_text = "requires_no_unminable_sr"
-		NOR = {
-			has_deposit = d_zro_deposit_1
-			has_deposit = d_zro_deposit_2
-			has_deposit = d_zro_deposit_3
-			has_deposit = d_dark_matter_deposit_1
-			has_deposit = d_dark_matter_deposit_2
-			has_deposit = d_dark_matter_deposit_3
-			has_deposit = d_living_metal_deposit
-		}
-	}
 }
