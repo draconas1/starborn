@@ -92,7 +92,7 @@
 
  job_starborn_zro_extractor:0 "Zro Accolyte"
  job_starborn_zro_extractor_plural:0 "Zro Accolytes"
- job_starborn_zro_extractor_desc:0 "Accusations that this is less a job and more cult membership are not helped by the title of 'accolyte' and that they frequently seem to be only half aware of the real world, and half experiencing something completely different "
+ job_starborn_zro_extractor_desc:0 "Accusations that this is less a job and more cult membership are not helped by the title of 'accolyte' and that they frequently seem to be zoned out of the real world, and half experiencing something completely different "
  job_starborn_zro_extractor_effect_desc:0 "£job_starborn_zro_extractor£ $job_starborn_zro_extractor_plural$ produce £sr_zro£§Y$sr_zro$§!"
  mod_job_starborn_zro_extractor_add:0 "$job_starborn_zro_extractor$ Jobs"
  mod_job_starborn_zro_extractor:0  "§G+1§! $job_starborn_zro_extractor$ Job per $VALUE$ Pops"
@@ -134,15 +134,15 @@
  mod_district_starborn_surface_alloys_max:0 "§Y$district_starborn_surface_alloys$§!"
 
  building_starborn_dark_matter_extractor:0 "Dark Matter Generator"
- building_starborn_dark_matter_extractor_desc:0 "This facility uses gravitational lensing to allow brave researchers to generate $sr_dark_matter$.  Due to its tendency to explode on contact with regular matter, the facility is extensively shielded and as far from anything of value as possible."
+ building_starborn_dark_matter_extractor_desc:0 "This facility uses gravitational lensing to allow brave researchers to generate $sr_dark_matter$.  Due to $sr_dark_matter$s tendency to explode on contact with regular matter, the facility is extensively shielded and as far from anything of value as possible.  It is not a place for those of a nervous disposition."
  mod_building_starborn_dark_matter_extractor_max:0 "§Y$building_starborn_dark_matter_extractor$§!"
 
  building_starborn_living_metal_extractor:0 "Living Metal Refinery"
- building_starborn_living_metal_extractor_desc:0 "Built above $sr_living_metal$ caverns, the extractors are often quiet, contemplative types who facilitate extraction and refinement of small amounts without upsetting the mass as a whole."
+ building_starborn_living_metal_extractor_desc:0 "Built above $sr_living_metal$ caverns to extract and refine small amounts of the material, the staff team of extractors are often quiet, contemplative types who facilitate the process without upsetting the mass as a whole."
  mod_building_starborn_living_metal_extractor_max:0 "§Y$building_starborn_living_metal_extractor$§!"
 
  building_starborn_zro_extractor:0 "Zro Temple"
- building_starborn_zro_extractor_desc:0 "With their vacant expressions, strange rank system and odd behaviours, the temple spends almost as much time trying to convince people that it's not a cult as actually refining $sr_zro$"
+ building_starborn_zro_extractor_desc:0 "With its members vacant expressions, strange rank system and odd behaviours, the temple spends almost as much time trying to convince people that it's not a cult as actually refining $sr_zro$, the process of which is a closely guarded secret."
  mod_building_starborn_zro_extractor_max:0 "§Y$building_starborn_zro_extractor$§!"
 
  d_starborn_ruins:0 "£blocker£ Ruins"
@@ -196,7 +196,7 @@
  edict_starborn_show_menu_effect:0 "Selecting this edict triggers a menu as a global effect that the game denotes as a §YCountry event! You can do it as many times as you like"
 
  edict_starborn_show_hab_build_size:0 "Set Habitat Construction Size"
- edict_starborn_show_hab_build_size_desc:0 "Adjust how large (and how expansive) we build the inital habitat as our economy grows"
+ edict_starborn_show_hab_build_size_desc:0 "Adjust how large (and how expensive) we build the inital habitat as our economy grows"
 
  starborn.4.name:0 "Starting Habitat Build Size"
  starborn.4.desc:0 "As the game progresses, you can opt to increase the initial cost of your habitats to improve their starting size and reduce your micromanagement.  The top sizes require $ap_voidborn$"
@@ -208,9 +208,6 @@
 
  edict_starborn_show_hab_enlargment_size:0 "Set Auto-Habitat Enlargement"
  edict_starborn_show_hab_enlargment_size_desc:0 "Adjust if we automatically apply habitat enlargment decisions"
- 
- edict_starborn_set_flag:0 "Set hidden flag for !!!!Universal Districts Patch"
- edict_starborn_set_flag_desc:0 "Temporary fix for those who have started games with the old version and want to use the Districts patch to make it work with other mods.  It will appear to do nothing, but is setting a hidden variable that the patch needs, you only need to do it once (then save).  This happens automatically in new games and this edict will be removed in a future release."
  
  starborn.5.name:0 "Auto Apply Habitat Enlargement Decisions"
  starborn.5.desc:0 "Habitat enlargement decisions can be auto-applied at construction time.\n\n§YWhen a habitat finishes construction§!, if you have sufficient resources to pay for the enlargement, it will be automatically applied"
@@ -240,7 +237,4 @@
 
  building_hab_energy_grid:0 "Habitat $building_energy_grid$"
  building_hab_energy_grid_desc:0 "$building_energy_grid_desc$"
-
- starborn.8.name:0 "IMPORTANT: BUGFIX"
- starborn.8.desc:0 "There is a bug in the game where all 'investigate X aliens' special projects always trigger on your original homeworld (Paradise Lost).\n\nIf you don't own your homeworld then when you complete any of these nothing will happen (except for a big error in the log)\n\nAs a work around we've had to colonise your original homeworld for you with 1 pop and pop controls enabled (even if you can't enable them normally)\n\nSorry, have raised the bug with PDX and will look at different ways to spawn the orbital city in future"
- starborn.8.option.a:0 "Bother"
+ 

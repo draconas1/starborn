@@ -300,6 +300,7 @@ starborn_alloy_extractor = {
 starborn_dark_matter_extractor = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_starborn_dark_matter_extractor
 	clothes_texture_index = 3
 	
 	possible = {
@@ -385,6 +386,7 @@ starborn_dark_matter_extractor = {
 starborn_living_metal_extractor = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_starborn_living_metal_extractor
 	clothes_texture_index = 3
 	
 	possible = {
@@ -470,6 +472,7 @@ starborn_living_metal_extractor = {
 starborn_zro_extractor = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_starborn_zro_extractor
 	clothes_texture_index = 3
 	
 	possible = {

@@ -65,14 +65,9 @@ The most likely reason is that your target is not a valid build target for some 
 
 Since PDX are not fixing it in a hurry, I have created another mod that creates a dummy megastructure to force the dialog to appear [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1711871967]Can't Build Megastructure Reason[/url]
 
-[b]INVESTIGATE SPECIES BUG[/b]
-Yet another bug in the vanilla game: When you have special projects to investigate species (as well as a few others: tree of life/giant slugs) these special projects complete against your original homeworld, irrelevant of your state now in the game.  If you don't own your original homeworld, then when the special project completes, nothing happens (except for a big fat scoping error in the game log).
-To get around this we have had to colonise your homeworld, so that you own it.  
-Will work on a more long term fix for it, but I wanted something quick to keep you playing, have a free extra colony on an inhospitable tomb world.
-
-
 [h1]Credit and Thanks[/h1]
-The Orbital City ring is from [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1121692237]Gigastructures[/url]  and the nature preserve and scavenger districts were inspired by similar ones from their mod.  
+The Orbital City ring is from [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1121692237]Gigastructures[/url]  and the nature preserve and scavenger districts were inspired by similar ones from their mod.
+The building art for Zro Temple, Dark Matter Generator and Living Metal Refinery come from CGM Planets.  
 
 [h1]Localisation[/h1]
 Currently english only 
@@ -82,11 +77,8 @@ https://github.com/draconas1/starborn/tree/master/localisation/english if you ar
 
 [h1]Future Plans[/h1]
 [list]
-[*] Buildings for dealing with rare strategic resources (Dark matter, Zro, Living Metal)
 [*] The next big game patch is going to change how habitats work, so will need some tweaking and rebalancing to bring it into line with vanilla.
-[*] Some currently unspecified changes to the spawn event to fix the investigate species bug
-[*] Megacorp compatibility
-[*] Changes to backstory
+[*] Changes to backstory / ability to start with dying colony
 [/list]
 
 [b]Please Rate and Subscribe as it helps others find the mods[/b]
