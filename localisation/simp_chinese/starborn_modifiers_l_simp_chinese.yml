@@ -36,6 +36,11 @@
  starborn_physics_20_desc:0 "The stellar body this $pc_habitat$ is orbiting exibits unusual $physics$, studying this improves our own research"
  starborn_physics_25:0 "Odd Physics"
  starborn_physics_25_desc:0 "The stellar body this $pc_habitat$ is orbiting exibits unusual $physics$, studying this improves our own research"
+ starborn_physics_pulsar:0 "Pulsar"
+ starborn_physics_pulsar_desc:0 "Detailed study of the $sc_pulsar$ helps improve our own research"
+ starborn_physics_black_hole:0 "Black Hole"
+ starborn_physics_black_hole_desc:0 "Studying the $sc_black_hole$ is a boon to physics research, but does tend to drive people a bit mad if they stare into the void for too long"
+
  starborn_society_5:0 "Intriging Lifesigns"
  starborn_society_5_desc:0 "The planet this $pc_habitat$ is orbiting has unusual organisms living in the biosphere. Studying them improves our own research"
  starborn_society_10:0 "Intriging Lifesigns"
@@ -56,7 +61,8 @@
  starborn_engineering_20_desc:0 "The planet this $pc_habitat$ is has unexpected material structures. Studying them improves our own research"
  starborn_engineering_25:0 "Unusual Materials"
  starborn_engineering_25_desc:0 "The planet this $pc_habitat$ is has unexpected material structures. Studying them improves our own research"
-
+ starborn_engineering_neutron_star:0 "Neutron Star"
+ starborn_engineering_neutron_star_desc:0 "Studying the $pc_neutron_star$ up close is a boon for our engineering research"
  
  decision_starborn_enlarge_hab:0 "Construct More Habitat"
  decision_starborn_enlarge_hab_desc:0 "We can construct new $pc_habitat$ sections such that it can support an additional district"
