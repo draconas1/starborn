@@ -7,7 +7,7 @@ on_game_start = {
 
 on_game_start_country = {
 	events = {
-		starborn.1 # spawn orbital city and starting habitats in system
+		starborn.1 # spawn starting habitats in system
 		starborn.3 # general blurb
 		starborn.7 # if using the OP system start, trigger living metal megaconsturction.
 	}

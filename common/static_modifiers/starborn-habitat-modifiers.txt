@@ -4,12 +4,6 @@ starborn_asteroid_minerals = {
     planet_jobs_minerals_produces_mult = 0.25
 }
 
-starborn_planet_minerals = {
-	icon = "gfx/interface/icons/planet_modifiers/pm_mineral_poor.dds"
-    icon_frame = 1
-    planet_jobs_minerals_produces_mult = -0.15
-}
-
 starborn_molten_planet_minerals = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_mineral_poor.dds"
     icon_frame = 1

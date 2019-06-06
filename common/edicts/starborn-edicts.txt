@@ -7,7 +7,7 @@ starborn_show_hab_build_size = {
 		}
     }
     
-    allow = {
+    potential = {
         has_civic = civic_starborn
     }
     
@@ -30,7 +30,7 @@ starborn_show_hab_enlargment_size = {
         }
     }
     
-    allow = {
+    potential = {
         has_civic = civic_starborn
     }
     

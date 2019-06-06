@@ -1,13 +1,16 @@
 building_starborn_dark_matter_extractor = {
 	base_buildtime = 360
-	icon = building_starborn_dark_matter_extractor
-
-	is_capped_by_modifier = yes
-
+	base_cap_amount = 1
 	category = resource
 	
 	potential = {
         is_planet_class = pc_habitat
+        OR = {
+            has_deposit = d_hab_dark_matter_1
+            has_deposit = d_hab_dark_matter_2
+            has_deposit = d_hab_dark_matter_3
+        }
+
         owner = {
             has_civic = civic_starborn
         }
@@ -52,14 +55,14 @@ building_starborn_dark_matter_extractor = {
 
 building_starborn_living_metal_extractor = {
 	base_buildtime = 360
-	icon = building_starborn_living_metal_extractor
-
-	is_capped_by_modifier = yes
-
+	base_cap_amount = 1
 	category = resource
 	
 	potential = {
         is_planet_class = pc_habitat
+        OR = {
+            has_deposit = d_hab_living_metal_1
+        }
         owner = {
             has_civic = civic_starborn
         }
@@ -103,14 +106,16 @@ building_starborn_living_metal_extractor = {
 
 building_starborn_zro_extractor = {
 	base_buildtime = 360
-	icon = building_starborn_zro_extractor
-
-	is_capped_by_modifier = yes
-
+	base_cap_amount = 1
 	category = resource
 	
 	potential = {
         is_planet_class = pc_habitat
+        OR = {
+            has_deposit = d_hab_zro_1
+            has_deposit = d_hab_zro_2
+            has_deposit = d_hab_zro_3
+        }
         owner = {
             has_civic = civic_starborn
         }

@@ -177,12 +177,6 @@ country_event = {
                                         set_all_comms_surveyed = yes
                                         clear_blockers = yes
                                         prevent_anomaly = yes
-
-                                        add_deposit = d_starborn_energy
-                                        add_deposit = d_starborn_energy
-                                        add_deposit = d_starborn_energy
-                                        add_deposit = d_starborn_energy
-                                        add_deposit = d_starborn_energy
                                         add_modifier = {
                                                 modifier = starborn_near_solar_energy
                                                 days = -1
@@ -190,6 +184,7 @@ country_event = {
         
                                         set_planet_flag = megastructure
                                         set_planet_flag = habitat
+                                        set_planet_flag = energy_habitat
                                 }
                         }
 
@@ -217,11 +212,6 @@ country_event = {
                                         clear_blockers = yes
                                         prevent_anomaly = yes
 
-                                        add_deposit = d_starborn_mineral_surface
-                                        add_deposit = d_starborn_mineral_surface
-                                        add_deposit = d_starborn_mineral_surface
-                                        add_deposit = d_starborn_mineral_surface
-                                        add_deposit = d_starborn_mineral_surface
                                         add_modifier = {
                                                 modifier = starborn_asteroid_minerals
                                                 days = -1
@@ -229,6 +219,7 @@ country_event = {
         
                                         set_planet_flag = megastructure
                                         set_planet_flag = habitat
+                                        set_planet_flag = mining_habitat
                                 }
                         }
 

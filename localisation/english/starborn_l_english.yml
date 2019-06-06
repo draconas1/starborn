@@ -118,21 +118,6 @@
  district_starborn_surface_farming_plural:0 "Surface Farming Districts"
  district_starborn_surface_farming_desc:0 "While we may not be able to live on the world below, we can harness its biosphere for farming"
 
- district_starborn_solar:0 "Solar Panel District"
- district_starborn_solar_plural:0 "Solar Panel Districts"
- district_starborn_solar_desc:0 "Massive arrays of solar panels provide vast amounts of energy" 
- mod_district_starborn_solar_max:0 "§Y$district_starborn_solar$§!"
-
- district_starborn_surface_mining:0 "Surface Mining District"
- district_starborn_surface_mining_plural:0 "Surface Mining Districts"
- district_starborn_surface_mining_desc:0 "Sections of the $pc_habitat$ built directly on the most mineral rich surface areas allow the resources to be safely extracted"
- mod_district_starborn_surface_mining_max:0 "§Y$district_starborn_surface_mining$§!"
-
- district_starborn_surface_alloys:0 "Foundary District"
- district_starborn_surface_alloys_plural:0 "Foundary Districts"
- district_starborn_surface_alloys_desc:0 "Sections of the $pc_habitat$ built directly on the most alloy rich surface areas allow the resources to be safely extracted"
- mod_district_starborn_surface_alloys_max:0 "§Y$district_starborn_surface_alloys$§!"
-
  building_starborn_dark_matter_extractor:0 "Dark Matter Generator"
  building_starborn_dark_matter_extractor_desc:0 "This facility uses gravitational lensing to allow brave researchers to generate $sr_dark_matter$.  Due to $sr_dark_matter$s tendency to explode on contact with regular matter, the facility is extensively shielded and as far from anything of value as possible.  It is not a place for those of a nervous disposition."
  mod_building_starborn_dark_matter_extractor_max:0 "§Y$building_starborn_dark_matter_extractor$§!"
@@ -151,22 +136,10 @@
  d_starborn_wasteland_desc:0 "A region that was the target of numerous nuclear warheads. Though the radiation in this area has decreased since the initial impact, it is still unfit for habitation barring a major clean-up effort."
 
 
- d_starborn_energy:0 "Solar Section"
- d_starborn_energy_desc:0 "This stellar body has access to sufficient solar energy to make it worth dedicating large sections of the $pc_habitat$ to harnessing it"
- d_starborn_mineral_surface:0 "Mineral Deposits"
- d_starborn_mineral_surface_desc:0 "There is easy access to sufficient mineral deposits to make it worth dedicating large sections of the $pc_habitat$ to mining them"
- d_starborn_alloy_surface:0 "Alloy Deposits"
- d_starborn_alloy_surface_desc:0 "There is easy access to sufficient alloy deposits to  make it worth dedicating large sections of the $pc_habitat$ to extracting them"
  d_starborn_tomb_surface:0 "Wasteland Ruins Below"
  d_starborn_tomb_surface_desc:0 "The ruins of this blasted world are rich in valuable resources that we can scavenge"
  d_starborn_habitable_surface:0 "Fertile Surface"
  d_starborn_habitable_surface_desc:0 "While we may not be able to live on the world below, we can take advantage of the biosphere for food production"
- d_starborn_living_metal_surface:0 "Living Metal Lakes"
- d_starborn_living_metal_surface_desc:0 "Caverns below the surface are filled with a £sr_living_metal£§Y$sr_living_metal$§! that flows from cavern to cavern in gleaming rivers, pooling into underground lakes."
- d_starborn_dark_matter_surface:0 "Accessible Dark Matter"
- d_starborn_dark_matter_surface_desc:0 "Rare gravitational lensing effects make it possible to coalesce and refine £sr_dark_matter£§Y$sr_dark_matter$§!"
- d_starborn_zro_surface:0 "Frozen Zro"
- d_starborn_zro_surface_desc:0 "Features around an ancient cometary impact site region keep the temperature perminantly far below freezing, leading to large deposists of £sr_zro£§Y$sr_zro$§! being trapped in ice rather than dissipating into the atmosphere"
 
  START_SCREEN_STARBORN:0 "$START_SCREEN_STARBORN_1$$START_SCREEN_STARBORN_2$$START_SCREEN_STARBORN_3$$START_SCREEN_STARBORN_4$$START_SCREEN_STARBORN_5$$START_SCREEN_STARBORN_6$$START_SCREEN_STARBORN_7$$START_SCREEN_STARBORN_8$"
  START_SCREEN_STARBORN_1:0 "Our civilisation was outgrowing its cradle and reaching for the stars. We had begun our conquest of our solar system and were poised on the brink of hyperlane travel.\n\n"
@@ -219,15 +192,6 @@
  starborn.6.name:0 "Habitat Enlargement Failed"
  starborn.6.desc:0 "There were insufficient funds in the treasury to automatically enlarge [From.From.From.Planet.GetName]. You can still do it manually from the planet decisions screen"
  starborn.6.option.a:0 "Darn"
-
- tech_starborn_expand_starting_habitat_voidborn:0 "$pc_starborn_habitat_start$ Enlargement"
- tech_starborn_expand_starting_habitat_voidborn_desc:0 "As we have become $ap_voidborn$ our engineers believe they can develop new ways to enlarge and improve our $pc_starborn_habitat_start$"
-
- tech_starborn_expand_starting_habitat_master_builders:0 "$pc_starborn_habitat_start$ Enlargement"
- tech_starborn_expand_starting_habitat_master_builders_desc:0 "Our mastery of building and construction has opened up the possibility for ideas once discarded as impossible to be used to enlarge our $pc_starborn_habitat_start$"
-
- tech_starborn_expand_starting_habitat_galatic_wonders:0 "$pc_starborn_habitat_start$ Enlargement"
- tech_starborn_expand_starting_habitat_galatic_wonders_desc:0 "What is the point of building Galatic Wonders if we cannot use that engineering knowledge to improve our $pc_starborn_habitat_start$"
 
  building_hab_food_processing_facility:0 "Habitat $building_food_processing_facility$"
  building_hab_food_processing_facility_desc:0 "$building_food_processing_facility_desc$"
