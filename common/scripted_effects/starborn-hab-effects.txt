@@ -265,9 +265,9 @@ starborn_hab_init_effect = {
         limit = {
             from = { 
                 OR = {
-                    has_global_flag = starborn_hab_enlargement_1
-                    has_global_flag = starborn_hab_enlargement_2
-                    has_global_flag = starborn_hab_enlargement_3
+                    has_country_flag = starborn_hab_enlargement_1
+                    has_country_flag = starborn_hab_enlargement_2
+                    has_country_flag = starborn_hab_enlargement_3
                 }
                 has_resource = { type = alloys amount > 250 }
                 has_resource = { type = energy amount > 250 }
@@ -287,7 +287,7 @@ starborn_hab_init_effect = {
     else_if = {
         limit = { 
             from = { 
-                has_global_flag = starborn_hab_enlargement_1
+                has_country_flag = starborn_hab_enlargement_1
                 OR = {
                     has_resource = { type = alloys amount < 250 }
                     has_resource = { type = energy amount < 250 }
@@ -301,8 +301,8 @@ starborn_hab_init_effect = {
         limit = {
             from = {
                 OR = {            
-                    has_global_flag = starborn_hab_enlargement_2
-                    has_global_flag = starborn_hab_enlargement_3
+                    has_country_flag = starborn_hab_enlargement_2
+                    has_country_flag = starborn_hab_enlargement_3
                 }
                 has_resource = { type = alloys amount > 500 }
                 has_resource = { type = energy amount > 750 }
@@ -322,7 +322,7 @@ starborn_hab_init_effect = {
     else_if = {
         limit = { 
             from = { 
-                has_global_flag = starborn_hab_enlargement_2
+                has_country_flag = starborn_hab_enlargement_2
                 OR = {
                     has_resource = { type = alloys amount < 500 }
                     has_resource = { type = energy amount < 750 }
@@ -335,7 +335,7 @@ starborn_hab_init_effect = {
     if = {
         limit = {
             from = {               
-                has_global_flag = starborn_hab_enlargement_3
+                has_country_flag = starborn_hab_enlargement_3
                 has_resource = { type = alloys amount > 750 }
                 has_resource = { type = energy amount > 1000 }
             }
@@ -354,7 +354,7 @@ starborn_hab_init_effect = {
     else_if = {
         limit = { 
             from = { 
-                has_global_flag = starborn_hab_enlargement_3
+                has_country_flag = starborn_hab_enlargement_3
                 OR = {
                     has_resource = { type = alloys amount < 750 }
                     has_resource = { type = energy amount < 1000 }

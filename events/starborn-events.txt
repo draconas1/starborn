@@ -28,7 +28,7 @@ country_event = {
 
         immediate = {
                 set_country_flag = custom_start_screen
-                set_global_flag = starborn_hab_size_2
+                set_country_flag = starborn_hab_size_2
 
                 #starting system
                 random_system_within_border = {
@@ -325,31 +325,31 @@ country_event = {
 	option = {
                 name = "starborn.4.option.2"
                 hidden_effect = {
-                        set_global_flag = starborn_hab_size_2
-                        remove_global_flag = starborn_hab_size_3
-                        remove_global_flag = starborn_hab_size_4
-                        remove_global_flag = starborn_hab_size_5
-                        remove_global_flag = starborn_hab_size_6
+                        set_country_flag = starborn_hab_size_2
+                        remove_country_flag = starborn_hab_size_3
+                        remove_country_flag = starborn_hab_size_4
+                        remove_country_flag = starborn_hab_size_5
+                        remove_country_flag = starborn_hab_size_6
 		}
         }
         option = {
                 name = "starborn.4.option.3"
                 hidden_effect = {
-                        set_global_flag = starborn_hab_size_3
-                        remove_global_flag = starborn_hab_size_2
-                        remove_global_flag = starborn_hab_size_4
-                        remove_global_flag = starborn_hab_size_5
-                        remove_global_flag = starborn_hab_size_6
+                        set_country_flag = starborn_hab_size_3
+                        remove_country_flag = starborn_hab_size_2
+                        remove_country_flag = starborn_hab_size_4
+                        remove_country_flag = starborn_hab_size_5
+                        remove_country_flag = starborn_hab_size_6
 		}
         }
         option = {
                 name = "starborn.4.option.4"
                 hidden_effect = {
-                        set_global_flag = starborn_hab_size_4
-                        remove_global_flag = starborn_hab_size_2
-                        remove_global_flag = starborn_hab_size_3
-                        remove_global_flag = starborn_hab_size_5
-                        remove_global_flag = starborn_hab_size_6
+                        set_country_flag = starborn_hab_size_4
+                        remove_country_flag = starborn_hab_size_2
+                        remove_country_flag = starborn_hab_size_3
+                        remove_country_flag = starborn_hab_size_5
+                        remove_country_flag = starborn_hab_size_6
 		}
         }
         option = {
@@ -358,11 +358,11 @@ country_event = {
 			has_ascension_perk = ap_voidborn
 		}
                 hidden_effect = {
-                        set_global_flag = starborn_hab_size_5
-                        remove_global_flag = starborn_hab_size_2
-                        remove_global_flag = starborn_hab_size_3
-                        remove_global_flag = starborn_hab_size_4
-                        remove_global_flag = starborn_hab_size_6
+                        set_country_flag = starborn_hab_size_5
+                        remove_country_flag = starborn_hab_size_2
+                        remove_country_flag = starborn_hab_size_3
+                        remove_country_flag = starborn_hab_size_4
+                        remove_country_flag = starborn_hab_size_6
 		}
         }
         option = {
@@ -371,11 +371,11 @@ country_event = {
 			has_ascension_perk = ap_voidborn
 		}
                 hidden_effect = {
-                        set_global_flag = starborn_hab_size_6
-                        remove_global_flag = starborn_hab_size_2
-                        remove_global_flag = starborn_hab_size_3
-                        remove_global_flag = starborn_hab_size_4
-                        remove_global_flag = starborn_hab_size_5
+                        set_country_flag = starborn_hab_size_6
+                        remove_country_flag = starborn_hab_size_2
+                        remove_country_flag = starborn_hab_size_3
+                        remove_country_flag = starborn_hab_size_4
+                        remove_country_flag = starborn_hab_size_5
 		}
 	}
 }
@@ -391,9 +391,9 @@ country_event = {
         option = {
                 name = "starborn.5.option.0"
                 hidden_effect = {
-                        remove_global_flag = starborn_hab_enlargement_3
-                        remove_global_flag = starborn_hab_enlargement_2
-                        remove_global_flag = starborn_hab_enlargement_1
+                        remove_country_flag = starborn_hab_enlargement_3
+                        remove_country_flag = starborn_hab_enlargement_2
+                        remove_country_flag = starborn_hab_enlargement_1
 		}
         }
 	option = {
@@ -402,9 +402,9 @@ country_event = {
 			has_technology = tech_starbase_3
 		}
                 hidden_effect = {
-                        set_global_flag = starborn_hab_enlargement_1
-                        remove_global_flag = starborn_hab_enlargement_2
-                        remove_global_flag = starborn_hab_enlargement_3
+                        set_country_flag = starborn_hab_enlargement_1
+                        remove_country_flag = starborn_hab_enlargement_2
+                        remove_country_flag = starborn_hab_enlargement_3
 		}
         }
         option = {
@@ -413,9 +413,9 @@ country_event = {
 			has_technology = tech_starbase_5
 		}
                 hidden_effect = {
-                        set_global_flag = starborn_hab_enlargement_2
-                        remove_global_flag = starborn_hab_enlargement_1
-                        remove_global_flag = starborn_hab_enlargement_3
+                        set_country_flag = starborn_hab_enlargement_2
+                        remove_country_flag = starborn_hab_enlargement_1
+                        remove_country_flag = starborn_hab_enlargement_3
 		}
         }
         option = {
@@ -424,9 +424,9 @@ country_event = {
 			has_technology = tech_mega_engineering
 		}
                 hidden_effect = {
-                        set_global_flag = starborn_hab_enlargement_3
-                        remove_global_flag = starborn_hab_enlargement_1
-                        remove_global_flag = starborn_hab_enlargement_2
+                        set_country_flag = starborn_hab_enlargement_3
+                        remove_country_flag = starborn_hab_enlargement_1
+                        remove_country_flag = starborn_hab_enlargement_2
 		}
         }
 }

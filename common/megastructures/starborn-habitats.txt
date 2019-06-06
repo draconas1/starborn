@@ -21,7 +21,7 @@ starborn_habitat = {
 
 	potential = {
 		has_civic = civic_starborn
-		has_global_flag = starborn_hab_size_2
+		has_country_flag = starborn_hab_size_2
 	}
 
 	possible = {
@@ -89,7 +89,7 @@ starborn_habitat3 = {
 
 	potential = {
 		has_civic = civic_starborn
-		has_global_flag = starborn_hab_size_3
+		has_country_flag = starborn_hab_size_3
 	}
 
 	possible = {
@@ -157,7 +157,7 @@ starborn_habitat4 = {
 
 	potential = {
 		has_civic = civic_starborn
-		has_global_flag = starborn_hab_size_4
+		has_country_flag = starborn_hab_size_4
 	}
 
 	possible = {
@@ -225,7 +225,7 @@ starborn_habitat5 = {
 
 	potential = {
 		has_civic = civic_starborn
-		has_global_flag = starborn_hab_size_5
+		has_country_flag = starborn_hab_size_5
 	}
 
 	possible = {
@@ -293,7 +293,7 @@ starborn_habitat6 = {
 
 	potential = {
 		has_civic = civic_starborn
-		has_global_flag = starborn_hab_size_6
+		has_country_flag = starborn_hab_size_6
 	}
 
 	possible = {
