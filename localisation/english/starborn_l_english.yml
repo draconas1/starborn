@@ -135,12 +135,6 @@
  d_starborn_wasteland:0 "£blocker£ Radiation Zone"
  d_starborn_wasteland_desc:0 "A region that was the target of numerous nuclear warheads. Though the radiation in this area has decreased since the initial impact, it is still unfit for habitation barring a major clean-up effort."
 
-
- d_starborn_tomb_surface:0 "Wasteland Ruins Below"
- d_starborn_tomb_surface_desc:0 "The ruins of this blasted world are rich in valuable resources that we can scavenge"
- d_starborn_habitable_surface:0 "Fertile Surface"
- d_starborn_habitable_surface_desc:0 "While we may not be able to live on the world below, we can take advantage of the biosphere for food production"
-
  START_SCREEN_STARBORN:0 "$START_SCREEN_STARBORN_1$$START_SCREEN_STARBORN_2$$START_SCREEN_STARBORN_3$$START_SCREEN_STARBORN_4$$START_SCREEN_STARBORN_5$$START_SCREEN_STARBORN_6$$START_SCREEN_STARBORN_7$$START_SCREEN_STARBORN_8$"
  START_SCREEN_STARBORN_1:0 "Our civilisation was outgrowing its cradle and reaching for the stars. We had begun our conquest of our solar system and were poised on the brink of hyperlane travel.\n\n"
  START_SCREEN_STARBORN_2:0 "To celebrate our brilliance we built a gigantic orbital city above our homeworld.  A feat of engineering and international cooperation never before seen.\n\n"
@@ -192,13 +186,3 @@
  starborn.6.name:0 "Habitat Enlargement Failed"
  starborn.6.desc:0 "There were insufficient funds in the treasury to automatically enlarge [From.From.From.Planet.GetName]. You can still do it manually from the planet decisions screen"
  starborn.6.option.a:0 "Darn"
-
- building_hab_food_processing_facility:0 "Habitat $building_food_processing_facility$"
- building_hab_food_processing_facility_desc:0 "$building_food_processing_facility_desc$"
-
- building_hab_mineral_purification_plant:0 "Habitt $building_mineral_purification_plant$"
- building_hab_mineral_purification_plant_desc:0 "$building_mineral_purification_plant_desc$"
-
- building_hab_energy_grid:0 "Habitat $building_energy_grid$"
- building_hab_energy_grid_desc:0 "$building_energy_grid_desc$"
- 

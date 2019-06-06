@@ -13,6 +13,7 @@ civic_starborn = {
 				value = civic_syncretic_evolution
 				value = civic_post_apocalyptic
 				value = civic_life_seeded
+				value = civic_the_void #dyson swarm
 			}
 		}
 	}

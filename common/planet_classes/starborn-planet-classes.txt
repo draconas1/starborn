@@ -25,7 +25,7 @@ pc_starborn_habitat_start = {
 	
 	chance_of_ring = 0
 	
-	planet_size = { min = 18 max = 18 }
+	planet_size = { min = 16 max = 16 }
 	moon_size = { min = 0 max = 0 }
 	
 	ideal = yes

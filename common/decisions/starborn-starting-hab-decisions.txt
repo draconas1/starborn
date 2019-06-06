@@ -244,7 +244,7 @@ decision_starborn_increase_starting_hab_district_galatic_wonders = {
 		is_planet_class = pc_starborn_habitat_start
 		has_modifier = starborn_starting_habitat_districts_4
 		NOT = { has_modifier = starborn_starting_habitat_districts_galatic_wonders }
-		owner = { has_ascension_perk = ap_galatic_wonders }
+		owner = { has_galactic_wonders = yes }
 	}
 	
 	effect = {

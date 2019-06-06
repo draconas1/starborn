@@ -24,16 +24,16 @@ district_starborn_starting_hab_housing = {
 	}
 	
 	planet_modifier = {
-		planet_housing_add = 10
+		planet_housing_add = 8
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_maintenance_drone_add = 2
+			job_maintenance_drone_add = 1
 		}
 	}
 	
@@ -46,10 +46,22 @@ district_starborn_starting_hab_housing = {
 	}	
 	
 	ai_weight = {
-		weight = 1
+		weight = 0
 		modifier = {
-			factor = 12
-			free_housing < 0
+			weight = 90000
+			planet = {
+				num_districts = { type = district_hab_housing value < 0 }
+			}
+		}
+		modifier = {
+			weight = 90000
+			planet = {
+				owner = { 
+					is_regular_empire = yes
+					has_ascension_perk = ap_master_builders
+				}
+				num_districts = { type = district_hab_housing value < 1 }
+			}
 		}
 	}
 }
@@ -63,7 +75,7 @@ district_starborn_starting_scavenger = {
 			is_planet_class = pc_starborn_habitat_start
 			is_planet_class = pc_habitat
 		}
-		has_deposit = d_starborn_tomb_surface
+		has_planet_flag = starborn_tomb_scavenging
 	}
 	
 	potential = {
@@ -71,7 +83,7 @@ district_starborn_starting_scavenger = {
 			is_planet_class = pc_starborn_habitat_start
 			is_planet_class = pc_habitat
 		}
-		has_deposit = d_starborn_tomb_surface
+		has_planet_flag = starborn_tomb_scavenging
 	}
 	
 	resources = {
@@ -179,12 +191,12 @@ district_starborn_surface_farming = {
 	
 	show_on_uncolonized = {
 		is_planet_class = pc_habitat
-		has_deposit = d_starborn_habitable_surface
+		has_planet_flag = starborn_farming_habitat
 	}
 	
 	potential = {
 		is_planet_class = pc_habitat
-		has_deposit = d_starborn_habitable_surface
+		has_planet_flag = starborn_farming_habitat
 	}
 	
 	allow = {

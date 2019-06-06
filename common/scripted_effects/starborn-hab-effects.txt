@@ -367,10 +367,6 @@ starborn_hab_init_effect = {
 
 
 
-
-
-
-
 # Deposits that produce districts
     # Habitable worlds 
     if = {
@@ -384,7 +380,7 @@ starborn_hab_init_effect = {
                 }
             }
         }
-        add_deposit = d_starborn_habitable_surface
+        set_planet_flag = starborn_farming_habitat
         add_modifier = {
             modifier = starborn_farming_planet
             days = -1
@@ -397,7 +393,7 @@ starborn_hab_init_effect = {
                 is_planet_class = pc_nuked
             }
         }
-        add_deposit = d_starborn_tomb_surface
+        set_planet_flag = starborn_tomb_scavenging
     }
 
 

@@ -489,7 +489,8 @@ planet_event = {
                 clear_deposits = yes
                 clear_blockers = yes
 		prevent_anomaly = yes
-                set_planet_flag = has_megastructure                
+                set_planet_flag = has_megastructure
+                set_planet_flag = starborn_tomb_scavenging              
 
                 set_name = "Arc of Civilisation"              
                
@@ -505,8 +506,6 @@ planet_event = {
                 add_district = district_starborn_starting_solar
                 add_district = district_starborn_starting_solar
                 add_district = district_starborn_starting_solar
-
-                add_deposit = d_starborn_tomb_surface
 
                 set_planet_size = 16
         }
