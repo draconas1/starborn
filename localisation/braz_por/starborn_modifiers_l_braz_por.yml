@@ -2,8 +2,6 @@
 
  starborn_asteroid_minerals:0 "Asteroid Mineral Extraction"
  starborn_asteroid_minerals_desc:0 "Mineral wealth is much easier to extract efficiently from asteroids"
- starborn_planet_minerals:0 "Planet Mineral Extraction"
- starborn_planet_minerals_desc:0 "Exploiting the planets mineral wealth and lifting it out of the gravity field is an inefficient process compared with asteroid mining"
  starborn_molten_planet_minerals:0 "Molten Planet Mineral Extraction"
  starborn_molten_planet_minerals_desc:0 "The molten nature of this planet makes mineral wealth much easier to extract"
  starborn_near_solar_energy:0 "Near Solar Energy Collection"
@@ -27,15 +25,15 @@
  starborn_trade_value_25:0 "Surface Trade Value"
  starborn_trade_value_25_desc:0 "The unique oddities of this stellar body are extremely valuable and result in flourishing trade"
  starborn_physics_5:0 "Odd Physics"
- starborn_physics_5_desc:0 "The stellar body this $pc_habitat$ is orbiting exibits unusual $physics$, studying this improves our own research"
+ starborn_physics_5_desc:0 "The stellar body this $pc_habitat$ is orbiting exibits unusual physics, studying this improves our own research"
  starborn_physics_10:0 "Odd Physics"
- starborn_physics_10_desc:0 "The stellar body this $pc_habitat$ is orbiting exibits unusual $physics$, studying this improves our own research"
+ starborn_physics_10_desc:0 "The stellar body this $pc_habitat$ is orbiting exibits unusual physics, studying this improves our own research"
  starborn_physics_15:0 "Odd Physics"
- starborn_physics_15_desc:0 "The stellar body this $pc_habitat$ is orbiting exibits unusual $physics$, studying this improves our own research"
+ starborn_physics_15_desc:0 "The stellar body this $pc_habitat$ is orbiting exibits unusual physics, studying this improves our own research"
  starborn_physics_20:0 "Odd Physics"
- starborn_physics_20_desc:0 "The stellar body this $pc_habitat$ is orbiting exibits unusual $physics$, studying this improves our own research"
+ starborn_physics_20_desc:0 "The stellar body this $pc_habitat$ is orbiting exibits unusual physics, studying this improves our own research"
  starborn_physics_25:0 "Odd Physics"
- starborn_physics_25_desc:0 "The stellar body this $pc_habitat$ is orbiting exibits unusual $physics$, studying this improves our own research"
+ starborn_physics_25_desc:0 "The stellar body this $pc_habitat$ is orbiting exibits unusual physics, studying this improves our own research"
  starborn_physics_pulsar:0 "Pulsar"
  starborn_physics_pulsar_desc:0 "Detailed study of the $sc_pulsar$ helps improve our own research"
  starborn_physics_black_hole:0 "Black Hole"
@@ -114,7 +112,7 @@
  decision_starborn_increase_starting_hab_district_master_builders_desc:0 "To Master Builders $pc_starborn_habitat_start$ projects throught be be the realm of science fiction are now possible"
 
  decision_starborn_increase_starting_hab_district_galatic_wonders:0 "The wonder of $pc_starborn_habitat_start$"
- decision_starborn_increase_starting_hab_district_galatic_wonders_desc:0 "The size of scope of $pc_starborn_habitat_start$ can become truly a Galatic Wonder"
+ decision_starborn_increase_starting_hab_district_galatic_wonders_desc:0 "What is the point of building Galatic Wonders if we cannot use that engineering knowledge to improve our $pc_starborn_habitat_start$"
 
  starborn_starting_habitat_districts_1:0 "Enlarge $pc_starborn_habitat_start$"
  starborn_starting_habitat_districts_1_desc:0 "Enlarge and make better use of space in the $pc_starborn_habitat_start$"
@@ -136,6 +134,3 @@
 
  starborn_starting_habitat_districts_galatic_wonders:0 "Galatic Wonder"
  starborn_starting_habitat_districts_galatic_wonders_desc:0 "The sheer scale of $pc_starborn_habitat_start$ is a wonder throughout the galaxy"
-
- 
-

@@ -214,7 +214,7 @@ district_starborn_surface_farming = {
 	}
 
 	planet_modifier = {
-		planet_housing_add = 1
+		planet_housing_add = 3
 	}
 	
 	triggered_planet_modifier = {
@@ -223,7 +223,7 @@ district_starborn_surface_farming = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_agri_drone_add = 3
+			job_agri_drone_add = 4
 		}
 	}
 	
@@ -233,7 +233,7 @@ district_starborn_surface_farming = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_agri_drone_add = 2
+			job_agri_drone_add = 3
 		}
 	}
 		
@@ -246,7 +246,7 @@ district_starborn_surface_farming = {
 			}
 		}
 		modifier = {
-			job_farmer_add = 2
+			job_farmer_add = 3
 		}
 	}
 
@@ -256,7 +256,7 @@ district_starborn_surface_farming = {
 			owner = { is_fallen_empire_spiritualist = yes }
 		}
 		modifier = {
-			job_fe_acolyte_farm_add = 2
+			job_fe_acolyte_farm_add = 3
 		}
 	}
 	

@@ -876,4 +876,107 @@ starborn_hab_init_effect = {
             }
         }
     }
+
+
+    #Temporary - leave some markers for myself for building better habitats than vanilla
+    if = {
+        limit = {
+            OR = {
+                fromfrom.planet = { has_deposit = d_minerals_1 }
+                fromfrom.planet = { has_deposit = d_minerals_2 }
+            }
+        }
+        set_planet_flag = starborn_mining_2
+    }
+
+    if = {
+        limit = {
+            OR = {               
+                fromfrom.planet = { has_deposit = d_minerals_3 }
+                fromfrom.planet = { has_deposit = d_minerals_4 }
+            }
+        }
+        set_planet_flag = starborn_mining_4
+    }
+
+    if = {
+        limit = {
+            OR = {               
+                fromfrom.planet = { has_deposit = d_minerals_5 }
+                fromfrom.planet = { has_deposit = d_minerals_6 }
+            }
+        }
+        set_planet_flag = starborn_mining_6
+    }
+
+    if = {
+        limit = {
+            OR = {
+                fromfrom.planet = { has_deposit = d_minerals_7 }
+                fromfrom.planet = { has_deposit = d_minerals_8 }
+            }
+        }
+        set_planet_flag = starborn_mining_8
+    }
+
+    if = {
+        limit = {
+            OR = {
+                fromfrom.planet = { has_deposit = d_minerals_9 }
+                fromfrom.planet = { has_deposit = d_minerals_10 }
+            }
+        }
+        set_planet_flag = starborn_mining_10
+    }
+
+    if = {
+        limit = {
+            OR = {
+                fromfrom.planet = { has_deposit = d_energy_1 }
+                fromfrom.planet = { has_deposit = d_energy_2 }
+            }
+        }
+        set_planet_flag = starborn_energy_2
+    }
+
+    if = {
+        limit = {
+            OR = {
+             
+                fromfrom.planet = { has_deposit = d_energy_3 }
+                fromfrom.planet = { has_deposit = d_energy_4 }
+            }
+        }
+        set_planet_flag = starborn_energy_4
+    }
+
+    if = {
+        limit = {
+            OR = {
+                fromfrom.planet = { has_deposit = d_energy_5 }
+                fromfrom.planet = { has_deposit = d_energy_6 }
+            }
+        }
+        set_planet_flag = starborn_energy_6
+    }
+
+    if = {
+        limit = {
+            OR = {
+                fromfrom.planet = { has_deposit = d_energy_7 }
+                fromfrom.planet = { has_deposit = d_energy_8 }
+            }
+        }
+        set_planet_flag = starborn_energy_8
+    }
+
+    if = {
+        limit = {
+            OR = {                
+                fromfrom.planet = { has_deposit = d_energy_9 }
+                fromfrom.planet = { has_deposit = d_energy_10 }
+            }
+        }
+        set_planet_flag = starborn_energy_10
+    }
 }

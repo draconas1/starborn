@@ -185,6 +185,7 @@ country_event = {
                                         set_planet_flag = megastructure
                                         set_planet_flag = habitat
                                         set_planet_flag = energy_habitat
+                                        set_planet_flag = starborn_energy_6
                                 }
                         }
 
@@ -220,6 +221,7 @@ country_event = {
                                         set_planet_flag = megastructure
                                         set_planet_flag = habitat
                                         set_planet_flag = mining_habitat
+                                        set_planet_flag = starborn_mining_6
                                 }
                         }
 
