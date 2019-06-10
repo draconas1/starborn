@@ -376,7 +376,7 @@ starborn_hab_init_effect = {
                 NOR = {
                     is_planet_class = pc_city
                     is_planet_class = pc_nuked
-                    is_planet_class = relic_world
+                    is_planet_class = pc_relic
                 }
             }
         }
@@ -391,6 +391,7 @@ starborn_hab_init_effect = {
         limit = {
             fromfrom.planet = {
                 is_planet_class = pc_nuked
+                is_planet_class = pc_relic
             }
         }
         set_planet_flag = starborn_tomb_scavenging
@@ -596,7 +597,7 @@ starborn_hab_init_effect = {
             fromfrom.planet = {
                 OR = {
                     is_planet_class = pc_city
-                    is_planet_class = relic_world
+                    is_planet_class = pc_relic
                 }
             }
         }
@@ -695,6 +696,7 @@ starborn_hab_init_effect = {
             modifier = starborn_physics_black_hole
             days = -1
         }
+        set_planet_flag = research_habitat
     }
 
     if = {
@@ -707,6 +709,7 @@ starborn_hab_init_effect = {
             modifier = starborn_physics_pulsar
             days = -1
         }
+        set_planet_flag = research_habitat
     }
 
 
@@ -874,6 +877,7 @@ starborn_hab_init_effect = {
                 modifier = starborn_engineering_neutron_star
                 days = -1
             }
+            set_planet_flag = research_habitat
         }
     }
 

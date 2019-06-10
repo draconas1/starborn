@@ -46,15 +46,6 @@ decision_starborn_enlarge_hab = {
 		planet_size < 6
 	}
 
-	allow = {
-		OR = {
-			owner = {
-				has_ascension_perk = ap_voidborn
-			}
-			planet_size < 4
-		}
-	}
-
 	effect = {
 		custom_tooltip = decision_starborn_enlarge_hab_desc
 		if = {
@@ -126,9 +117,6 @@ decision_starborn_fully_enlarge_hab = {
 	potential = {
 		is_planet_class = pc_habitat
 		planet_size < 6
-		owner = {
-			has_ascension_perk = ap_voidborn
-		}
 	}
 	
 	effect = {

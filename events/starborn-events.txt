@@ -356,9 +356,6 @@ country_event = {
         }
         option = {
                 name = "starborn.4.option.5"
-                trigger = {
-			has_ascension_perk = ap_voidborn
-		}
                 hidden_effect = {
                         set_country_flag = starborn_hab_size_5
                         remove_country_flag = starborn_hab_size_2
@@ -369,9 +366,6 @@ country_event = {
         }
         option = {
                 name = "starborn.4.option.6"
-                trigger = {
-			has_ascension_perk = ap_voidborn
-		}
                 hidden_effect = {
                         set_country_flag = starborn_hab_size_6
                         remove_country_flag = starborn_hab_size_2
