@@ -131,13 +131,13 @@
  mod_building_starborn_zro_extractor_max:0 "§Y$building_starborn_zro_extractor$§!"
 
  building_starborn_alloy_foundry:0 "Alloy Mining and Refining Complex"
- building_starborn_alloy_foundry_desc:0 "The alloy deposits we have access to warrant the construction of a large refining and foundary facility.  The number of jobs this building can provide is proportional to the size of deposit"
+ building_starborn_alloy_foundry_desc:0 "The alloy deposits we have access to warrant the construction of a large refining and foundary facility that improves the base deposist and enables further extraction.  The number of jobs this building can provide is proportional to the size of deposit"
 
  building_starborn_generator_complex:0 "Generator Complex"
- building_starborn_generator_complex_desc:0 "The sheer amount of energy we can harvest from the stellar body we orbit warrants the construction of this complex to fully exploit it.  The number of jobs this building can provide is proportional to the size of deposit."
+ building_starborn_generator_complex_desc:0 "The sheer amount of energy we can harvest from the stellar body we orbit warrants the construction of this complex that improves the deposit and enables more jobs to fully exploit it.  The number of jobs this building can provide is proportional to the size of deposit."
 
  building_starborn_mining_bay:0 "Mineral Mining Complex"
- building_starborn_mining_bay_desc:0 "The sheer amount of minerals we can harvest from the stellar body we orbit warrants the construction of this complex to fully exploit it.   The number of jobs this building can provide is proportional to the size of deposit."
+ building_starborn_mining_bay_desc:0 "The sheer amount of minerals we can harvest from the stellar body we orbit warrants the construction of this complex that improves the deposit and enables more jobs to fully exploit it.   The number of jobs this building can provide is proportional to the size of deposit."
 
  d_starborn_ruins:0 "£blocker£ Ruins"
  d_starborn_ruins_desc:0 "This once major settlement is now a crumbling ruin, occupied only by the decaying bodies of its inhabitants."
