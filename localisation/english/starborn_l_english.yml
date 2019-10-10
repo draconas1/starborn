@@ -137,7 +137,7 @@
  building_starborn_generator_complex_desc:0 "The sheer amount of energy we can harvest from the stellar body we orbit warrants the construction of this complex to fully exploit it.  The number of jobs this building can provide is proportional to the size of deposit."
 
  building_starborn_mining_bay:0 "Mineral Mining Complex"
- building_starborn_mining_bay_desc:0 "The sheer amount of energy we can harvest from the stellar body we orbit warrants the construction of this complex to fully exploit it.   The number of jobs this building can provide is proportional to the size of deposit."
+ building_starborn_mining_bay_desc:0 "The sheer amount of minerals we can harvest from the stellar body we orbit warrants the construction of this complex to fully exploit it.   The number of jobs this building can provide is proportional to the size of deposit."
 
  d_starborn_ruins:0 "£blocker£ Ruins"
  d_starborn_ruins_desc:0 "This once major settlement is now a crumbling ruin, occupied only by the decaying bodies of its inhabitants."
