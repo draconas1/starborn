@@ -1,0 +1,15 @@
+Planetary Diversity:
+
+Should be completely compatable.  Most worlds follow standard rules (e.g. habitable worlds give farming)
+
+Crystal world: Farming, no special bonus
+Floating World: research hab, physics bonus
+Gaveyard world:  research hab, society bonus
+Technoorganic world:  research hab, engineering bonus
+Archive world: research hab, all science bonus
+
+ #Planetary Diversity
+                      is_planet_class = pc_floating
+                      is_planet_class = pc_graveyard
+                      is_planet_class = pc_archive
+                      is_planet_class = pc_technoorganic

@@ -377,6 +377,12 @@ starborn_hab_init_effect = {
                     is_planet_class = pc_city
                     is_planet_class = pc_nuked
                     is_planet_class = pc_relic
+
+                    #Planetary Diversity
+                    is_planet_class = pc_floating
+                    is_planet_class = pc_graveyard
+                    is_planet_class = pc_archive
+                    is_planet_class = pc_technoorganic
                 }
             }
         }
@@ -712,6 +718,23 @@ starborn_hab_init_effect = {
         set_planet_flag = research_habitat
     }
 
+    if = {
+        limit = {                        
+            fromfrom.planet = {								
+                OR = {
+                    #Planetary Diversity
+                    is_planet_class = pc_floating
+                    is_planet_class = pc_archive
+                }
+            }
+        }
+        add_modifier = {
+            modifier = starborn_physics_25
+            days = -1
+        }
+        set_planet_flag = research_habitat
+    }
+
 
     # Society 
 
@@ -790,6 +813,23 @@ starborn_hab_init_effect = {
         }
     }
 
+    if = {
+        limit = {                        
+            fromfrom.planet = {								
+                OR = {
+                    #Planetary Diversity
+                    is_planet_class = pc_archive
+                    is_planet_class = pc_graveyard
+                }
+            }
+        }
+        add_modifier = {
+            modifier = starborn_society_25
+            days = -1
+        }
+        set_planet_flag = research_habitat
+    }
+
 
     # Engineering 
 
@@ -866,19 +906,36 @@ starborn_hab_init_effect = {
             modifier = starborn_engineering_25
             days = -1
         }
+    }
 
-        if = {
-            limit = {                        
-                fromfrom.planet = {								
-                    is_star_class = sc_neutron_star
+    if = {
+        limit = {                        
+            fromfrom.planet = {								
+                is_star_class = sc_neutron_star
+            }
+        }
+        add_modifier = {
+            modifier = starborn_engineering_neutron_star
+            days = -1
+        }
+        set_planet_flag = research_habitat
+    }
+
+    if = {
+        limit = {                        
+            fromfrom.planet = {								
+                OR = {
+                    #Planetary Diversity
+                    is_planet_class = pc_archive
+                    is_planet_class = pc_technoorganic
                 }
             }
-            add_modifier = {
-                modifier = starborn_engineering_neutron_star
-                days = -1
-            }
-            set_planet_flag = research_habitat
         }
+        add_modifier = {
+            modifier = starborn_engineering_25
+            days = -1
+        }
+        set_planet_flag = research_habitat
     }
 
 
