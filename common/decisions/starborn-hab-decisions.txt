@@ -44,6 +44,7 @@ decision_starborn_enlarge_hab = {
 	potential = {
         is_planet_class = pc_habitat
 		planet_size < 6
+		owner = { has_civic = civic_starborn }
 	}
 
 	effect = {
@@ -71,7 +72,7 @@ decision_starborn_enlarge_hab = {
 	}
 }
 
-# Minimise micromanagement, fully enlarge the hab to 6 once you have voidborn.
+# Minimise micromanagement, fully enlarge the hab to 6.
 decision_starborn_fully_enlarge_hab = {
 	owned_planets_only = yes
 	enactment_time = 1000
@@ -117,6 +118,7 @@ decision_starborn_fully_enlarge_hab = {
 	potential = {
 		is_planet_class = pc_habitat
 		planet_size < 6
+		owner = { has_civic = civic_starborn }
 	}
 	
 	effect = {
@@ -151,6 +153,7 @@ decision_starborn_increase_hab_district_1 = {
 	potential = {
 		is_planet_class = pc_habitat
 		NOT = { has_modifier = starborn_habitat_districts_1 }
+		owner = { has_civic = civic_starborn }
 	}
 	
 	effect = {
@@ -190,6 +193,7 @@ decision_starborn_increase_hab_district_2 = {
 		is_planet_class = pc_habitat
 		has_modifier = starborn_habitat_districts_1
 		NOT = { has_modifier = starborn_habitat_districts_2 }
+		owner = { has_civic = civic_starborn }
 	}
 	
 	effect = {
@@ -229,6 +233,7 @@ decision_starborn_increase_hab_district_3 = {
 		is_planet_class = pc_habitat
 		has_modifier = starborn_habitat_districts_2
 		NOT = { has_modifier = starborn_habitat_districts_3 }
+		owner = { has_civic = civic_starborn }
 	}
 	
 	effect = {

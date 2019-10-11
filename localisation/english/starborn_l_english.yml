@@ -175,7 +175,7 @@
  edict_starborn_show_hab_build_size_desc:0 "Adjust how large (and how expensive) we build the inital habitat as our economy grows"
 
  starborn.4.name:0 "Starting Habitat Build Size"
- starborn.4.desc:0 "As the game progresses, you can opt to increase the initial cost of your habitats to improve their starting size and reduce your micromanagement.  The top sizes require $ap_voidborn$"
+ starborn.4.desc:0 "As the game progresses, you can opt to increase the initial cost of your habitats to improve their starting size and reduce your micromanagement."
  starborn.4.option.2:0 "§YSize 2§! Habitats cost 250 £alloys£§Y$alloys$§!, 365 days"
  starborn.4.option.3:0 "§YSize 3§! Habitats cost 500 £alloys£§Y$alloys$§!, 250 £energy£§Y$energy$§!, 600 days"
  starborn.4.option.4:0 "§YSize 4§! Habitats cost 1000 £alloys£§Y$alloys$§!, 500 £energy£§Y$energy$§!, 900 days"
@@ -195,3 +195,27 @@
  starborn.6.name:0 "Habitat Enlargement Failed"
  starborn.6.desc:0 "There were insufficient funds in the treasury to automatically enlarge [From.From.From.Planet.GetName]. You can still do it manually from the planet decisions screen"
  starborn.6.option.a:0 "Darn"
+
+ decision_starborn_remove_mining:0 "Remove Mining Habitat Designation"
+ decision_starborn_remove_mining_desc:0 "This will dismantle all §Y$district_hab_mining$§! and remove the mining habitat designator, it takes a short amount of time to allow cancellation in case of misclick, you may need to close and reopen the planet window for the change to show in the UI"
+
+ decision_starborn_readd_mining:0 "Restore Mining Habitat Designation"
+ decision_starborn_readd_mining_desc:0 "This will designate the habitat for mining and allow the construction of §Y$district_hab_mining$§!, you may need to close and reopen the planet window for the change to show in the UI"
+
+ decision_starborn_remove_energy:0 "Remove Energy Habitat Designation"
+ decision_starborn_remove_energy_desc:0 "This will dismantle all §Y$district_hab_energy$§! and remove the energy habitat designator, it takes a short amount of time to allow cancellation in case of misclick, you may need to close and reopen the planet window for the change to show in the UI"
+
+ decision_starborn_readd_energy:0 "Restore Energy Habitat Designation"
+ decision_starborn_readd_energy_desc:0 "This will designate the habitat for energy creation and allow the construction of §Y$district_hab_energy$§!, you may need to close and reopen the planet window for the change to show in the UI"
+
+ decision_starborn_remove_research:0 "Remove Science Habitat Designation"
+ decision_starborn_remove_research_desc:0 "This will dismantle all §Y$district_hab_science$§! and remove the science habitat designator, it takes a short amount of time to allow cancellation in case of misclick, you may need to close and reopen the planet window for the change to show in the UI"
+
+ decision_starborn_readd_research:0 "Restore Science Habitat Designation"
+ decision_starborn_readd_research_desc:0 "This will designate the habitat for science and allow the construction of §Y$district_hab_science$§!, you may need to close and reopen the planet window for the change to show in the UI"
+
+ decision_starborn_remove_farming:0 "Remove Farming Habitat Designation"
+ decision_starborn_remove_farming_desc:0 "This will dismantle all §Y$district_starborn_surface_farming$§! and remove the farming habitat designator, it takes a short amount of time to allow cancellation in case of misclick, you may need to close and reopen the planet window for the change to show in the UI"
+
+ decision_starborn_readd_farming:0 "Restore Farming Habitat Designation"
+ decision_starborn_readd_farming_desc:0 "This will designate the habitat for farming and allow the construction of §Y$district_starborn_surface_farming$§!, you may need to close and reopen the planet window for the change to show in the UI"
