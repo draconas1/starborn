@@ -1,0 +1,204 @@
+decision_starborn_remove_mining = {
+	owned_planets_only = yes
+	enactment_time = 50
+		
+	potential = {
+		is_planet_class = pc_habitat
+		owner = { has_civic = civic_starborn }
+		has_planet_flag = mining_habitat
+	}
+
+	effect = {
+		while = {
+			limit = { 
+					num_districts = {
+						type = district_hab_mining
+						value > 0
+					} 
+			}
+			remove_district = district_hab_mining
+		}
+		set_planet_flag = starborn_mining_removed
+		remove_planet_flag = mining_habitat
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+decision_starborn_readd_mining = {
+	owned_planets_only = yes
+	enactment_time = 0
+		
+	potential = {
+		is_planet_class = pc_habitat
+		owner = { has_civic = civic_starborn }
+		has_planet_flag = starborn_mining_removed
+	}
+
+	effect = {
+		set_planet_flag = mining_habitat
+		remove_planet_flag = starborn_mining_removed
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+
+
+
+decision_starborn_remove_energy = {
+	owned_planets_only = yes
+	enactment_time = 50
+		
+	potential = {
+		is_planet_class = pc_habitat
+		owner = { has_civic = civic_starborn }
+		has_planet_flag = energy_habitat
+	}
+
+	effect = {
+		while = {
+			limit = { 
+					num_districts = {
+						type = district_hab_energy
+						value > 0
+					} 
+			}
+			remove_district = district_hab_energy
+		}
+		set_planet_flag = starborn_energy_removed
+		remove_planet_flag = energy_habitat
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+decision_starborn_readd_energy = {
+	owned_planets_only = yes
+	enactment_time = 0
+		
+	potential = {
+		is_planet_class = pc_habitat
+		owner = { has_civic = civic_starborn }
+		has_planet_flag = starborn_energy_removed
+	}
+
+	effect = {
+		set_planet_flag = energy_habitat
+		remove_planet_flag = starborn_energy_removed
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+
+
+
+decision_starborn_remove_research = {
+	owned_planets_only = yes
+	enactment_time = 50
+		
+	potential = {
+		is_planet_class = pc_habitat
+		owner = { has_civic = civic_starborn }
+		has_planet_flag = research_habitat
+	}
+
+	effect = {
+		while = {
+			limit = { 
+					num_districts = {
+						type = district_hab_science
+						value > 0
+					} 
+			}
+			remove_district = district_hab_science
+		}
+		set_planet_flag = starborn_research_removed
+		remove_planet_flag = research_habitat
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+decision_starborn_readd_research = {
+	owned_planets_only = yes
+	enactment_time = 0
+		
+	potential = {
+		is_planet_class = pc_habitat
+		owner = { has_civic = civic_starborn }
+		has_planet_flag = starborn_research_removed
+	}
+
+	effect = {
+		set_planet_flag = research_habitat
+		remove_planet_flag = starborn_research_removed
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+
+
+
+decision_starborn_remove_farming = {
+	owned_planets_only = yes
+	enactment_time = 50
+		
+	potential = {
+		is_planet_class = pc_habitat
+		owner = { has_civic = civic_starborn }
+		has_planet_flag = starborn_farming_habitat
+	}
+
+	effect = {
+		while = {
+			limit = { 
+					num_districts = {
+						type = district_starborn_surface_farming
+						value > 0
+					} 
+			}
+			remove_district = district_starborn_surface_farming
+		}
+		set_planet_flag = starborn_farming_removed
+		remove_planet_flag = starborn_farming_habitat
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+decision_starborn_readd_farming = {
+	owned_planets_only = yes
+	enactment_time = 0
+		
+	potential = {
+		is_planet_class = pc_habitat
+		owner = { has_civic = civic_starborn }
+		has_planet_flag = starborn_farming_removed
+	}
+
+	effect = {
+		set_planet_flag = starborn_farming_habitat
+		remove_planet_flag = starborn_farming_removed
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}

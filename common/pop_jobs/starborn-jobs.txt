@@ -261,66 +261,6 @@ starborn_solar_technician = {
 	}
 }
 
-starborn_alloy_extractor = {
-	category = worker
-	condition_string = WORKER_JOB_TRIGGER
-	building_icon = building_foundry_3
-	clothes_texture_index = 2
-
-	possible_pre_triggers = {
-		has_owner = yes
-		is_being_purged = no
-		is_being_assimilated = no
-	}
-	
-	possible = {
-		worker_job_check_trigger = yes
-	}
-	
-	resources = {
-		category = planet_miners
-		produces = {
-			alloys = 3
-		}
-	}
-	
-	weight = {
-		weight = @worker_job_weight
-		modifier = {
-			factor = 0.2
-			has_citizenship_rights = no	
-			NOT = { has_trait = trait_mechanical }	
-		}		
-		modifier = {
-			factor = 0.1
-			can_take_servant_job = yes
-		}
-		modifier = {
-			factor = 2
-			species = {
-				has_species_flag = racket_species_flag
-			}
-		}
-		modifier = {
-           factor = 2
-           OR = {
-               has_trait = trait_robust
-               has_trait = trait_robot_efficient_processors
-           }
-        }
-		modifier = {
-			factor = 1.5
-			has_job = starborn_alloy_extractor
-		}		
-		modifier = {
-			factor = 2
-			has_trait = trait_syncretic_proles
-		}
-	}
-}
-
-
-
 starborn_dark_matter_extractor = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER

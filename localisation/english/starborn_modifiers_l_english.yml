@@ -70,17 +70,17 @@
 
 
 
- decision_starborn_increase_hab_district_1:0 "Enlarge Habitat 1"
- decision_starborn_increase_hab_district_1_desc:0 "We can enlarge sections of the $pc_habitat$ such that it can support an additional district"
+ decision_starborn_increase_hab_district_1:0 "Optimise Habitat 1"
+ decision_starborn_increase_hab_district_1_desc:0 "Improved construction techniques let us optimise the internal structure of the $pc_habitat$ such that it can support an additional district without requiring significant extra construction"
 
- decision_starborn_increase_hab_district_2:0 "Enlarge Habitat 2"
- decision_starborn_increase_hab_district_2_desc:0 "We can enlarge sections of the $pc_habitat$ such that it can support an additional district"
+ decision_starborn_increase_hab_district_2:0 "Optimise Habitat 2"
+ decision_starborn_increase_hab_district_2_desc:0 "$decision_starborn_increase_hab_district_1_desc$"
 
- decision_starborn_increase_hab_district_3:0 "Enlarge Habitat 3"
- decision_starborn_increase_hab_district_3_desc:0 "Our knowledge of mega structure engineering lets us further enlarge $pc_habitat$ such that it can support additional districts"
+ decision_starborn_increase_hab_district_3:0 "Optimise Habitat 3"
+ decision_starborn_increase_hab_district_3_desc:0 "Our knowledge of mega structure engineering lets us further optimise and enlarge $pc_habitat$ internal structures such that it can support additional districts"
 
 
- starborn_habitat_districts_1:0 "Enlarge Habitat"
+ starborn_habitat_districts_1:0 "Optimise Habitat"
  starborn_habitat_districts_1_desc:0 "Enlarge and make better use of space in the $pc_habitat$"
 
  starborn_habitat_districts_2:0 "$starborn_habitat_districts_1$"

@@ -219,3 +219,12 @@
 
  decision_starborn_readd_farming:0 "Restore Farming Habitat Designation"
  decision_starborn_readd_farming_desc:0 "This will designate the habitat for farming and allow the construction of §Y$district_starborn_surface_farming$§!, you may need to close and reopen the planet window for the change to show in the UI"
+
+ d_starborn_refund_size_2:0 "Recycled §Y$alloys$§!"
+ d_starborn_refund_size_2_desc:0 "The small size of the habitat has resulted in fewer §Y$alloys$§! required for essential maintenance and the excess is refunded to the state"
+
+ d_starborn_refund_size_3:0 "$d_starborn_refund_size_2$"
+ d_starborn_refund_size_3_desc:0 "$d_starborn_refund_size_2_desc$"
+
+ d_starborn_refund_size_4:0 "$d_starborn_refund_size_2$"
+ d_starborn_refund_size_4_desc:0 "$d_starborn_refund_size_2_desc$"

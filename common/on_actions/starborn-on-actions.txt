@@ -28,3 +28,11 @@ on_press_begin = {
 	events = {	
 	}
 }
+
+# A planet has been colonized.
+# Scope = Planet
+on_colonized = {
+	events = {
+		starborn.10 #add refund deposits to small habitats
+	}
+}

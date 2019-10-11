@@ -181,7 +181,7 @@ country_event = {
                                                 modifier = starborn_near_solar_energy
                                                 days = -1
                                         }                                                                               
-        
+
                                         set_planet_flag = megastructure
                                         set_planet_flag = habitat
                                         set_planet_flag = energy_habitat
@@ -217,7 +217,7 @@ country_event = {
                                                 modifier = starborn_asteroid_minerals
                                                 days = -1
                                         }                                                                               
-        
+
                                         set_planet_flag = megastructure
                                         set_planet_flag = habitat
                                         set_planet_flag = mining_habitat
@@ -509,3 +509,40 @@ planet_event = {
 
 #9. is at the top
 
+
+#10 put refund modifer on smaller hab alloys cost
+planet_event = {
+        id = starborn.10
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			has_civic = civic_starborn
+		}
+                is_planet_class = pc_habitat
+        }
+
+        immediate = {
+                if = {
+                        limit = {
+                                planet_size = 2
+                        }
+                        add_deposit = d_starborn_refund_size_2
+                }
+
+                if = {
+                        limit = {
+                                planet_size = 3
+                        }
+                        add_deposit = d_starborn_refund_size_3
+                }
+
+                if = {
+                        limit = {
+                                planet_size = 4
+                        }
+                        add_deposit = d_starborn_refund_size_4
+                }
+        }
+}
