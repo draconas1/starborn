@@ -300,36 +300,7 @@ building_starborn_alloy_foundry = {
 		upkeep = {
 			energy = 5
 		}
-		# Just building the building doubles the flat alloys
 		produces = {
-			trigger = {
-				has_deposit = d_hab_alloy_1
-			}
-			alloys = 1
-		}
-		produces = {
-			trigger = {
-				has_deposit = d_hab_alloy_2
-			}
-			alloys = 2
-		}
-		produces = {
-			trigger = {
-				has_deposit = d_hab_alloy_3
-			}
-			alloys = 3
-		}
-		produces = {
-			trigger = {
-				has_deposit = d_hab_alloy_4
-			}
-			alloys = 4
-		}
-		produces = {
-			trigger = {
-				has_deposit = d_hab_alloy_5
-			}
-			alloys = 5
 		}
 	}
 
@@ -524,30 +495,8 @@ building_starborn_mining_bay = {
 		upkeep = {
 			energy = 1
 		}
-		# Just building the building doubles the flat minerals
+
 		produces = {
-			trigger = {
-				has_planet_flag = starborn_mining_4
-			}
-			minerals = 8
-		}
-		produces = {
-			trigger = {
-				has_planet_flag = starborn_mining_6
-			}
-			minerals = 8
-		}
-		produces = {
-			trigger = {
-				has_planet_flag = starborn_mining_8
-			}
-			minerals = 8
-		}
-		produces = {
-			trigger = {
-				has_planet_flag = starborn_mining_10
-			}
-			minerals = 10
 		}
 	}
 	
@@ -766,31 +715,7 @@ building_starborn_generator_complex = {
 			energy = 1
 		}
 
-		# Just building the building doubles the flat energy
-		produces = {
-			trigger = {
-				has_planet_flag = starborn_energy_4
-			}
-			energy = 4
-		}
-		produces = {
-			trigger = {
-				has_planet_flag = starborn_energy_6
-			}
-			energy = 6
-		}
-		produces = {
-			trigger = {
-				has_planet_flag = starborn_energy_8
-			}
-			energy = 8
-		}
-		produces = {
-			trigger = {
-				has_planet_flag = starborn_energy_10
-			}
-			energy = 10
-		}
+		produces = {}
 	}	
 	
 	prerequisites = {
