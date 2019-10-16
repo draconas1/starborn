@@ -1,15 +1,27 @@
 Planetary Diversity:
 
-Should be completely compatable.  Most worlds follow standard rules (e.g. habitable worlds give farming)
+Needs a district patch
 
-Crystal world: Farming, no special bonus
-Floating World: research hab, physics bonus
-Gaveyard world:  research hab, society bonus
-Technoorganic world:  research hab, engineering bonus
-Archive world: research hab, all science bonus
+Should be completely compatible.  Most worlds follow standard rules (e.g. habitable worlds give farming), it should be noted that almost all PD worlds are habitable, even the special/unique ones, and thus will by default give farming districts.  There are a few changes outlined below.
 
- #Planetary Diversity
-                      is_planet_class = pc_floating
-                      is_planet_class = pc_graveyard
-                      is_planet_class = pc_archive
-                      is_planet_class = pc_technoorganic
+ - Crystal world: Farming, no special bonus
+ - Floating World: research hab, physics bonus
+ - Gaveyard world:  research hab, society bonus
+ - Technoorganic world:  research hab, engineering bonus
+ - Archive world: research hab, all science bonus
+
+If you think that other classes should have different effects, leave a comment below
+
+
+
+Guillis Planetary Modifiers
+Fully compatible - however, when habitats spawn, including starborn ones, Guillis PM runs a set of script to add modifiers and a habitat designation based on the local planet, this will often end up with an additional designation being added, particulally to farming planets (so they will also gain the ability to have an astro mine, for example), which could push the starborn district out of view.
+
+There are 2 solutions to this:
+Use a UI mod that allows for a bigger planet view so you can see more than 4 districts, either "Bigger Planet View" or "UI Overhaul Dynamic" will work.  Note that the Planetary Diversity Planet Viewer does not and is locked to 4.
+A design has been added that lets you remove Mining, energy research or farming designations as appropriate.  Once you enact it your ability to build the erroneous district will go away.
+
+
+Gigastructures
+As both Giga and Starborn both modify the habitable_structure scripted trigger, you need the patch
+

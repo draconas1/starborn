@@ -186,6 +186,7 @@ country_event = {
                                         set_planet_flag = habitat
                                         set_planet_flag = energy_habitat
                                         set_planet_flag = starborn_energy_6
+                                        set_planet_flag = habitat_of@event_target:star_spawn
                                 }
                         }
 
@@ -222,6 +223,7 @@ country_event = {
                                         set_planet_flag = habitat
                                         set_planet_flag = mining_habitat
                                         set_planet_flag = starborn_mining_6
+                                        set_planet_flag = habitat_of@event_target:asteroid_spawn
                                 }
                         }
 
@@ -244,6 +246,7 @@ country_event = {
                                         prevent_anomaly = yes
 
                                         set_planet_flag = has_megastructure
+                                        set_planet_flag = starborn_origin
                                         set_name = "Paradise Lost"
 
                                         #copy of the post_apoc deposits
@@ -546,3 +549,293 @@ planet_event = {
                 }
         }
 }
+
+# 11. Remove whole planetary farming when colonised
+planet_event = {
+        id = starborn.11
+	is_triggered_only = yes
+        title = "starborn.11.name"
+	desc = "starborn.11.desc"
+	picture = GFX_evt_colony_settlement
+
+	trigger = {
+		owner = {
+                        any_planet_within_border = {
+                                has_planet_flag = habitat_of@root
+                                has_planet_flag = starborn_farming_habitat
+                        }
+		}
+        }
+
+        immediate = {
+                random_planet = {
+                        limit = {
+                                has_planet_flag = habitat_of@prev
+                                has_planet_flag = starborn_farming_habitat
+                        }
+                        save_event_target_as = target
+                        remove_modifier = starborn_farming_planet
+                }
+        }
+        option = {
+                name = "starborn.11.option.a"
+        }
+}
+
+
+#16. message about terraforming causing scavenger districts to pack up and become farming
+country_event = {
+        id = starborn.16    
+	title = "starborn.16.name"
+	desc = "starborn.16.desc"
+	picture = GFX_evt_colony_settlement
+	is_triggered_only = yes
+
+
+	option = {
+		name = "starborn.16.option.a"
+	}
+}
+
+# 12. Remove tomb world savenger when terraformed
+planet_event = {
+        id = starborn.12
+        is_triggered_only = yes
+        hide_window = yes
+	picture = GFX_evt_colony_settlement
+
+	trigger = {
+                solar_system = {
+                        any_system_planet = {
+                                has_planet_flag = habitat_of@root
+                                has_planet_flag = starborn_tomb_scavenging
+                        }   
+                }
+        }
+
+        immediate = {
+                save_event_target_as = src_planet
+                random_planet = {
+                        limit = {
+                                has_planet_flag = habitat_of@root
+                                has_planet_flag = starborn_tomb_scavenging
+                        }
+                        save_event_target_as = target_hab
+                        remove_planet_flag = starborn_tomb_scavenging
+                        while = {
+                                limit = {
+                                        num_districts = {
+                                                type = district_starborn_starting_scavenger
+                                                value > 0                                                
+                                        }
+                                }
+                                remove_district = district_starborn_starting_scavenger
+                                add_district = district_starborn_surface_farming
+                        }
+                        set_planet_flag = starborn_farming_habitat
+                        
+                        if = {
+                                limit = {
+                                        root = {
+                                                has_owner = no
+                                        }
+                                }
+                                add_modifier = {
+                                        modifier = starborn_farming_planet
+                                        days = -1
+                                }
+                        }
+                      
+                }
+                from = {
+                        country_event = { id = starborn.16 }
+                }
+        }
+}
+
+# 13. Add City world mod when converted
+planet_event = {
+        id = starborn.13
+        is_triggered_only = yes
+	title = "starborn.13.name"
+	desc = "starborn.13.desc"
+	picture = GFX_evt_city_planet
+
+	trigger = {
+		owner = {
+                        has_civic = civic_starborn
+                         any_planet_within_border = {
+                                 has_planet_flag = habitat_of@root
+                        }
+                }
+        }
+
+        immediate = {
+                random_planet = {
+                        limit = {
+                                has_planet_flag = habitat_of@root
+                        }
+                        save_event_target_as = target
+                        remove_planet_flag = starborn_tomb_scavenging
+                        remove_planet_flag = starborn_farming_habitat
+                        remove_modifier = starborn_farming_planet
+                        
+                        while = {
+                                limit = {
+                                        num_districts = {
+                                                type = district_starborn_starting_scavenger
+                                                value > 0                                                
+                                        }
+                                }
+                                remove_district = district_starborn_starting_scavenger
+                                add_district = district_hab_commercial
+                        }
+                        while = {
+                                limit = {
+                                        num_districts = {
+                                                type = district_starborn_surface_farming
+                                                value > 0                                                
+                                        }
+                                }
+                                remove_district = district_starborn_surface_farming
+                                add_district = district_hab_commercial
+                        }
+                        add_modifier = {
+                                modifier = starborn_pc_city_trade_value
+                                days = -1
+                        }
+
+                }
+        }
+
+        option = {
+                name = "starborn.13.option.a"
+        }
+}
+
+
+
+#17. message about terraforming home world causing scavenger districts to pack up and become farming
+country_event = {
+        id = starborn.17    
+	title = "starborn.17.name"
+	desc = "starborn.17.desc"
+	picture = GFX_evt_colony_settlement
+	is_triggered_only = yes
+
+
+	option = {
+		name = "starborn.17.option.a"
+	}
+}
+
+# 14. Remove tomb world savenger from orbital city when home world terraformed
+planet_event = {
+        id = starborn.14
+        is_triggered_only = yes
+        hide_window = yes	
+	picture = GFX_evt_colony_settlement
+
+	trigger = {
+                has_planet_flag = starborn_origin
+        }
+
+        immediate = {
+                solar_system = {
+                        random_system_planet = {
+                                limit = {
+                                       is_planet_class = pc_starborn_habitat_start
+                                }
+                                remove_planet_flag = starborn_tomb_scavenging
+                                while = {
+                                        limit = {
+                                                num_districts = {
+                                                        type = district_starborn_starting_scavenger
+                                                        value > 0                                                
+                                                }
+                                        }
+                                        remove_district = district_starborn_starting_scavenger
+                                        add_district = district_starborn_surface_farming
+                                }
+                                set_planet_flag = starborn_farming_habitat
+                                if = {
+                                        limit = {
+                                                root = {
+                                                        has_owner = no
+                                                }
+                                        }
+                                        add_modifier = {
+                                                modifier = starborn_farming_planet
+                                                days = -1
+                                        }
+                                }
+                        }
+                }
+                from = {
+                        country_event = { id = starborn.17 }
+                }
+                
+        }
+}
+
+
+# 15.  Homeworld converted to city
+planet_event = {
+        id = starborn.15
+        is_triggered_only = yes
+	title = "starborn.15.name"
+	desc = "starborn.15.desc"
+	picture = GFX_evt_city_planet
+
+	trigger = {
+		has_planet_flag = starborn_origin
+        }
+
+        immediate = {
+                save_event_target_as = src_planet
+                solar_system = {
+                        random_system_planet = {
+                                limit = {
+                                        is_planet_class = pc_starborn_habitat_start
+                                }
+                                save_event_target_as = target_hab
+                                remove_planet_flag = starborn_tomb_scavenging
+                                remove_planet_flag = starborn_farming_habitat
+                                remove_modifier = starborn_farming_planet
+
+                                set_planet_flag = commercial_habitat
+                                
+                                while = {
+                                        limit = {
+                                                num_districts = {
+                                                        type = district_starborn_starting_scavenger
+                                                        value > 0                                                
+                                                }
+                                        }
+                                        remove_district = district_starborn_starting_scavenger
+                                        add_district = district_starborn_hab_commercial
+                                }
+                                while = {
+                                        limit = {
+                                                num_districts = {
+                                                        type = district_starborn_surface_farming
+                                                        value > 0                                                
+                                                }
+                                        }
+                                        remove_district = district_starborn_surface_farming
+                                        add_district = district_starborn_hab_commercial
+                                }
+                                add_modifier = {
+                                        modifier = starborn_pc_city_trade_value
+                                        days = -1
+                                }
+                        }
+                }
+        }
+
+        option = {
+                name = "starborn.15.option.a"
+        }
+}
+
+#16 and 17 are out of order

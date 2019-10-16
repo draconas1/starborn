@@ -118,6 +118,10 @@
  district_starborn_surface_farming_plural:0 "Surface Farming Districts"
  district_starborn_surface_farming_desc:0 "While we may not be able to live on the world below, we can harness its biosphere for farming"
 
+ district_starborn_hab_commercial:0 "$district_hab_commercial$"
+ district_starborn_hab_commercial_plural:0 "$district_hab_commercial_plural$"
+ district_starborn_hab_commercial_desc:0 "$district_hab_commercial_desc$"
+
  building_starborn_dark_matter_extractor:0 "Dark Matter Generator"
  building_starborn_dark_matter_extractor_desc:0 "This facility uses gravitational lensing to allow brave researchers to generate $sr_dark_matter$.  Due to $sr_dark_matter$s tendency to explode on contact with regular matter, the facility is extensively shielded and as far from anything of value as possible.  It is not a place for those of a nervous disposition."
  mod_building_starborn_dark_matter_extractor_max:0 "§Y$building_starborn_dark_matter_extractor$§!"
@@ -193,8 +197,28 @@
  starborn.5.option.3:0 "Apply §Y$decision_starborn_increase_hab_district_3$§! Costs 1500 £alloys£§Y$alloys$§!, 2000 £energy£§Y$energy$§!"
 
  starborn.6.name:0 "Habitat Enlargement Failed"
- starborn.6.desc:0 "There were insufficient funds in the treasury to automatically enlarge [From.From.From.Planet.GetName]. You can still do it manually from the planet decisions screen"
+ starborn.6.desc:0 "There were insufficient funds in the treasury to automatically enlarge §Y[From.From.From.Planet.GetName]§!. You can still do it manually from the planet decisions screen"
  starborn.6.option.a:0 "Darn"
+
+ starborn.11.name:0 "Whole Biosphere farming stopped"
+ starborn.11.desc:0 "With the colonisation of §Y[Root.Planet.GetName]§! the farmers in the §Y[target.GetName]§! can no longer use the entire biosphere for food production"
+ starborn.11.option.a:0 "A small loss"
+
+ starborn.16.name:0 "Scavenger Districts Dismantled"
+ starborn.16.desc:0 "With the completion of the terraforming of [src_planet.GetName]§! the the ruins that blighted the planets surface have all been removed.  The §Y$district_starborn_starting_scavenger_plural$§! of §Y[target_hab.GetName]§! have been converted into §Y$district_starborn_surface_farming_plural$§!"
+ starborn.16.option.a:0 "A great day"
+
+ starborn.13.name:0 "Orbital Trade Hub"
+ starborn.13.desc:0 "With §Y[Root.Planet.GetName]§! becoming an enormous city §Y[target.GetName]§! has needed to adapt as it can no longer access the natural resources of the planet.  A vast increase in trade value is already being seen."
+ starborn.13.option.a:0 "A great day"
+
+ starborn.17.name:0 "Homeworld Reclaimed!"
+ starborn.17.desc:0 "With the completion of the terraforming of [src_planet.GetName]§! we have finally undone the damage our ancestors inflicted and reclaimed our birth world as a cradle of life. No longer will we pick over the bones of our former civilisation and the §Y$district_starborn_starting_scavenger_plural$§! have been converted into §Y$district_starborn_surface_farming_plural$§!"
+ starborn.17.option.a:0 "A great day"
+
+ starborn.15.name:0 "The Great City"
+ starborn.15.desc:0 "Our former home of §Y[Root.Planet.GetName]§! becoming an enormous city and completing its recovery since our ancestors wrecked it so long ago §Y[target.GetName]§! no longer harvests the raw materials of the planet and the space has been reconfigured to take advantage of the increased trade opportunities"
+ starborn.15.option.a:0 "A great day"
 
  decision_starborn_remove_mining:0 "Remove Mining Habitat Designation"
  decision_starborn_remove_mining_desc:0 "This will dismantle all §Y$district_hab_mining$§! and remove the mining habitat designator, it takes a short amount of time to allow cancellation in case of misclick, you may need to close and reopen the planet window for the change to show in the UI"

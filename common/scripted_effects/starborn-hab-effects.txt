@@ -260,6 +260,8 @@ starborn_hab_init_effect = {
 
 # END VANILLA
 
+    set_planet_flag = habitat_of@fromfrom.planet
+
     # set decisions based on flags
     if = {
         limit = {
@@ -396,8 +398,10 @@ starborn_hab_init_effect = {
     if = {
         limit = {
             fromfrom.planet = {
-                is_planet_class = pc_nuked
-                is_planet_class = pc_relic
+                OR = {
+                    is_planet_class = pc_nuked
+                    is_planet_class = pc_relic
+                }
             }
         }
         set_planet_flag = starborn_tomb_scavenging
@@ -603,7 +607,6 @@ starborn_hab_init_effect = {
             fromfrom.planet = {
                 OR = {
                     is_planet_class = pc_city
-                    is_planet_class = pc_relic
                 }
             }
         }

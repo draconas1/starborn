@@ -1,10 +1,14 @@
 starborn_op_system = {
+	name = "Arda"
+
     class = "rl_trinary_stars"
 
     asteroid_belt = {
   		type = rocky_asteroid_belt
   		radius = 255
   	}
+
+	flags = { empire_home_system }
 
 	usage = custom_empire
 

@@ -34,5 +34,16 @@ on_press_begin = {
 on_colonized = {
 	events = {
 		starborn.10 #add refund deposits to small habitats
+		starborn.11 # remove whole planet farming
+	}
+}
+
+# Planet has been terraformed
+# This = Planet
+# From = Terraforming country
+on_terraforming_complete = {
+	events = {
+		starborn.12 # remove scavenger districts and add farming when terraforming
+		starborn.14 # remove scavenger districts and add farming  when terraforming homeworld
 	}
 }

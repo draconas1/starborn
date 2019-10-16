@@ -190,12 +190,18 @@ district_starborn_surface_farming = {
 	is_capped_by_modifier = no
 	
 	show_on_uncolonized = {
-		is_planet_class = pc_habitat
+		OR = {
+			is_planet_class = pc_habitat
+			is_planet_class = pc_starborn_habitat_start
+		}
 		has_planet_flag = starborn_farming_habitat
 	}
 	
 	potential = {
-		is_planet_class = pc_habitat
+		OR = {
+			is_planet_class = pc_habitat
+			is_planet_class = pc_starborn_habitat_start
+		}
 		has_planet_flag = starborn_farming_habitat
 	}
 	
@@ -330,6 +336,75 @@ district_starborn_surface_farming = {
 
 	ai_resource_production = {
 		food = 1
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+
+district_starborn_hab_commercial = {
+	base_buildtime = 240
+	is_capped_by_modifier = no
+	
+	show_on_uncolonized = {
+		is_planet_class = pc_starborn_habitat_start
+		has_planet_flag = commercial_habitat
+		
+		exists = from
+		from = { is_gestalt = no }
+	}
+	
+	potential = {
+		is_planet_class = pc_starborn_habitat_start
+		has_planet_flag = commercial_habitat
+		
+		exists = owner
+		owner = { is_gestalt = no }
+	}
+
+	conversion_ratio = 0.5
+	convert_to = {
+		district_hab_energy
+	}	
+	
+	resources = {
+		category = planet_districts_hab_trade
+		cost = {
+			minerals = @hab_cost
+		}
+		upkeep = {
+			energy = @hab_maintenance
+		}		
+	}
+		
+	planet_modifier = {
+		planet_housing_add = 3
+		job_clerk_add = 5
+	}
+	
+	triggered_desc = {
+		text = job_clerk_effect_desc
+	}	
+	
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 9000
+			OR = {
+				has_district = district_hab_commercial
+				owner = {
+					has_monthly_income = {
+						resource = consumer_goods
+						value < 6
+					}
+				}
+			}
+		}
+	}
+
+	ai_resource_production = {
+		consumer_goods = 1
 		trigger = {
 			always = yes
 		}
