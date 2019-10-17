@@ -1,4 +1,4 @@
-[h1]Starborn[/h1]
+[h1]Starborn for 2.3 & 2.4[/h1]
 Have you ever wanted to abandon planets completely and live among the stars?  Like the Quarion of Mass Effect live safe in your artificial habitat, but unable to set foot on your home world again?
 
 Starborn does this, it introduces a new game start civic: Starborn.
@@ -8,51 +8,65 @@ You can build habitats from game start, starting small and enlarging as you get 
 
 But there is a catch, your species has spent so long living in habitats that planetary biospheres are now toxic and uninhabitable for you.
 
+[b]2.4 players will get the old version warning: it is safe to ignore, for now the version will remain tagged at 2.3.3 while PDX sorts out 2.4 and the launcher[/b]
 
 [h1]Features[/h1]
 [list]
 [*] Start in unique habitat: the orbital city, in orbit around a tomb world, with unique districts that kept your civilisation alive when their world burned
-[*] Enlarge your orbital city as you discover relevant techs and relevant ascension perks  
+[*] Enlarge your orbital city as you discover relevant techs and relevant ascension perks
 [*] Start with hydroponics farming technology - you've survived in space, you understand hydroponics!
 [*] Build small habitats from game start and expand them as your empire grows
-[*] Habitats gain unique districts or buildings based on the type of object and deposits they are built around
+[*] Habitats gain unique districts based on the type of object and deposits they are built around
+[*] Unique buildings for rare strategic resources and large deposits
 [*] Build around habitable planet: biosphere farming
-[*] Asteroid: +25% mineral extraction
-[*] Star: +25% energy production
+[*] Build around Asteroid: +25% mineral extraction
+[*] Build around Star: +25% energy production
+[*] Habtiat effects updated if you exploit the habitable planet below it
 [*] Build Habitats around almost all stellar bodies
 [*] Planetary decisions to add more districts to habitats based on certain technologies (Space Station ones)
 [*] Use edicts to adjust the habitat build size and cost to reduce micromanagement
 [*] Optional OP starting system if you want it
 [/list]
 [i]There are lots of other effects for different types of planets and the different orbital deposits, you'll need to discover them in play[/i]
- 
+
 [h1]Requirements[/h1]
 Utopia DLC
 
 [h1]Gameplay Notes[/h1]
 Remember that habitats cost alloys in maintenance!  Starborn builds will have a constant need for more alloy production.
 
-I do not adjust the Voidborn Ascension Perk, so you will have the ability to build normal habitats when you buy it.  Those are completely vanilla and I suggest avoiding them, I've not taken them out to try to limit compatibility problems.
+I do not adjust normal habitats so you will have the ability to build normal habitats if you buy the tech.  Those are completely vanilla and I suggest avoiding them, I've not taken them out to try to limit compatibility problems.
 
 It does require a fair quantity of micromanagement, due to the small nature of the habitats, I have done my best to balance difficulty and ease, suggestions welcome.
-You can try to "cheat" by enacting the fully enlarge habitat decisions and also the construct more habitat decision at once, because there is not an easy way to immediately deactivate one decision based on another being selected (and in progress).  Go on, try it, I dare you.  
+You can try to "cheat" by enacting the fully enlarge habitat decisions and also the construct more habitat decision at once, because there is not an easy way to immediately deactivate one decision based on another being selected (and in progress).  Go on, try it, I dare you.
 
 [h1]Compatibility[/h1]
 This mod makes changes to:
 [list]
-[*] City Districts
-[*] Most Habitat Districts
+[*] City District (placement rules only)
 [*] habitable_structure scripted trigger
+[*] Acology Complete Events (just the popup to tell you its done)
 [/list]
-So will have compatibility problems with any other mod that changes these.  The most obvious sign is when you go to the Orbital City you will see Housing, Mining, Generating and Farming districts instead of Habitat Housing, Nature Preserve, Tombworld Scavenger and Solar Panel ones.  
+So may have compatibility problems with any other mod that changes these, the symptom is seeing regular planet districts for the orbital city instead of its special ones.  A patch can be avoided by using one of the UI overhaul mods that gives a bigger planet district view.
 
-It is compatible with 2.3 !!District Overhaul, there is no need for a patch.
-It is compatible with Dyson Swarm, and you can use the 2 mods together for the ultimate "no planets" experience.  Though it is incompatible with the Dyson Swarm starting civic and not takeable if you have selected Dyson Swarm start.  
-
-[b]Compatibility patches:[/b]
+[b]Specific Compatibility:[/b]
+Due to a character length issue with the description, I had to remove all the direct links from this section.  Sorry.  There are direct links to both major patches below.
 [list]
-[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1636492142]!habitable Structures Patch[/url]
-[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1635222296]!!!!Universal Districts Patch[/url]
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1121692237]Gigastructural Engineering[/url]    Use: !habitable Structures Patch
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1624127196]Dyson Swarm[/url]      Use: !Starborn Compatibility Patch & !habitable Structures Patch.  There is a note with details in the Discussion section
+[*] [url=https://steamcommunity.com/workshop/filedetails/?id=819148835]Planetary Diversity[/url]      Use !Starborn Compatibility Patch.  There is a note with details in the Discussion section
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=865040033]Guilli's Planet Modifiers[/url]     Completely compatible, [b]IMPORTANT[/b] See Note: [url=https://steamcommunity.com/workshop/filedetails/discussion/1743133825/1606022547910590708/]here[/url]
+[*] Realspace     Completely compatible, as of yet the new worlds do not have specific behaviour
+[/list]
+
+It was compatible with 2.2 District Overhaul, but issues have been reported in 2.3, I will work with the DO authors to resolve them.  Problems have also been reported witht he universal districts patch, so I do not recommend using it and have written my own district compatibility patch.
+
+If you have a mod that wants district compatibility, leave a comment and I will have a look.
+
+[b]Compatibility Patches:[/b]
+[list]
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1636492142]!habitable Structures Patch[/url] - for any updates to the habitable structures
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1891845676]!Starborn Compatibility Patch[/url] - does not include habitable structures patching, as it relies on the above mod
 [/list]
 
 [h1]Troubleshooting[/h1]
@@ -63,19 +77,18 @@ Since PDX are not fixing it in a hurry, I have created another mod that creates 
 
 [h1]Credit and Thanks[/h1]
 The Orbital City ring is from [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1121692237]Gigastructures[/url]  and the nature preserve and scavenger districts were inspired by similar ones from their mod.
-The building art for Zro Temple, Dark Matter Generator and Living Metal Refinery come from CGM Planets.  
+The building art for Zro Temple, Dark Matter Generator and Living Metal Refinery come from CGM Planets.
+ViolentBeetle on Stellaris Modding Den discord gave me a great deal of help, without which I never would ahve been able to do the planet and habitat linking
 
 [h1]Localisation[/h1]
-Currently English only 
+Currently English only
 
-If you would like to help translate into your language, the English language files are at 
+If you would like to help translate into your language, the English language files are at
 https://github.com/draconas1/starborn/tree/master/localisation/english if you are familiar with git then feel free to fork and create a pull request when you are done.  If you have no idea how to use github the don't worry: download the file, and upload your localised version to pastebin or similar and let me know in the comments and I will handle the rest.
 
 [h1]Future Plans[/h1]
 [list]
-[*] Special buildings / districts for alloy deposits.  
-[*] Special buildings / modifiers if you have built around large deposits of minerals/trade/energy/science.  
-[*] Changes to backstory / ability to start with dying colony
+[*] Making the Districts of the orbital city Hive friendly.
 [/list]
 
 [h1]Past Versions[/h1]

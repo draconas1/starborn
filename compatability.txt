@@ -1,6 +1,5 @@
 Planetary Diversity:
-
-Needs a district patch
+Needs the starborn compatibility patch
 
 Should be completely compatible.  Most worlds follow standard rules (e.g. habitable worlds give farming), it should be noted that almost all PD worlds are habitable, even the special/unique ones, and thus will by default give farming districts.  There are a few changes outlined below.
 
@@ -22,6 +21,17 @@ Use a UI mod that allows for a bigger planet view so you can see more than 4 dis
 A design has been added that lets you remove Mining, energy research or farming designations as appropriate.  Once you enact it your ability to build the erroneous district will go away.
 
 
+
 Gigastructures
 As both Giga and Starborn both modify the habitable_structure scripted trigger, you need the patch
 
+
+
+Dyson Swarm
+Needs both the habitable structures patch and the starborn compatability patch as we both modify urban districts and habitable structures trigger.
+
+
+
+Realspace
+No patch needed as it does not alter urban districts
+At the moment real space new worlds do not do anything special, suggestions welcome
