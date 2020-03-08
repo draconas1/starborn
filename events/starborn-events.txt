@@ -23,12 +23,12 @@ country_event = {
 
         trigger = {
                 is_ai = no
-                has_civic = civic_starborn
+                has_starborn = yes
         }
 
         immediate = {
                 set_country_flag = custom_start_screen
-                set_country_flag = starborn_hab_size_2
+                set_country_flag = starborn_hab_size_3
 
                 #starting system
                 random_system_within_border = {
@@ -311,7 +311,7 @@ country_event = {
 
         trigger = {
                 is_ai = no
-                has_civic = civic_starborn
+                has_starborn = yes
         }
 
 	option = {
@@ -319,116 +319,6 @@ country_event = {
 	}
 }
 
-#4. hab build size menu
-country_event = {
-        id = starborn.4    
-	title = "starborn.4.name"
-	desc = "starborn.4.desc"
-	picture = GFX_evt_colony_settlement
-	is_triggered_only = yes
-
-	option = {
-                name = "starborn.4.option.2"
-                hidden_effect = {
-                        set_country_flag = starborn_hab_size_2
-                        remove_country_flag = starborn_hab_size_3
-                        remove_country_flag = starborn_hab_size_4
-                        remove_country_flag = starborn_hab_size_5
-                        remove_country_flag = starborn_hab_size_6
-		}
-        }
-        option = {
-                name = "starborn.4.option.3"
-                hidden_effect = {
-                        set_country_flag = starborn_hab_size_3
-                        remove_country_flag = starborn_hab_size_2
-                        remove_country_flag = starborn_hab_size_4
-                        remove_country_flag = starborn_hab_size_5
-                        remove_country_flag = starborn_hab_size_6
-		}
-        }
-        option = {
-                name = "starborn.4.option.4"
-                hidden_effect = {
-                        set_country_flag = starborn_hab_size_4
-                        remove_country_flag = starborn_hab_size_2
-                        remove_country_flag = starborn_hab_size_3
-                        remove_country_flag = starborn_hab_size_5
-                        remove_country_flag = starborn_hab_size_6
-		}
-        }
-        option = {
-                name = "starborn.4.option.5"
-                hidden_effect = {
-                        set_country_flag = starborn_hab_size_5
-                        remove_country_flag = starborn_hab_size_2
-                        remove_country_flag = starborn_hab_size_3
-                        remove_country_flag = starborn_hab_size_4
-                        remove_country_flag = starborn_hab_size_6
-		}
-        }
-        option = {
-                name = "starborn.4.option.6"
-                hidden_effect = {
-                        set_country_flag = starborn_hab_size_6
-                        remove_country_flag = starborn_hab_size_2
-                        remove_country_flag = starborn_hab_size_3
-                        remove_country_flag = starborn_hab_size_4
-                        remove_country_flag = starborn_hab_size_5
-		}
-	}
-}
-
-#5. hab enlargement menu
-country_event = {
-        id = starborn.5    
-	title = "starborn.5.name"
-	desc = "starborn.5.desc"
-	picture = GFX_evt_colony_settlement
-	is_triggered_only = yes
-
-        option = {
-                name = "starborn.5.option.0"
-                hidden_effect = {
-                        remove_country_flag = starborn_hab_enlargement_3
-                        remove_country_flag = starborn_hab_enlargement_2
-                        remove_country_flag = starborn_hab_enlargement_1
-		}
-        }
-	option = {
-                name = "starborn.5.option.1"
-                trigger = {
-			has_technology = tech_starbase_3
-		}
-                hidden_effect = {
-                        set_country_flag = starborn_hab_enlargement_1
-                        remove_country_flag = starborn_hab_enlargement_2
-                        remove_country_flag = starborn_hab_enlargement_3
-		}
-        }
-        option = {
-                name = "starborn.5.option.2"
-                trigger = {
-			has_technology = tech_starbase_5
-		}
-                hidden_effect = {
-                        set_country_flag = starborn_hab_enlargement_2
-                        remove_country_flag = starborn_hab_enlargement_1
-                        remove_country_flag = starborn_hab_enlargement_3
-		}
-        }
-        option = {
-                name = "starborn.5.option.3"
-                trigger = {
-			has_technology = tech_mega_engineering
-		}
-                hidden_effect = {
-                        set_country_flag = starborn_hab_enlargement_3
-                        remove_country_flag = starborn_hab_enlargement_1
-                        remove_country_flag = starborn_hab_enlargement_2
-		}
-        }
-}
 
 #6. hab enlargement failed because you lacked resources
 country_event = {
@@ -453,7 +343,7 @@ country_event = {
 
         trigger = {
                 is_ai = no
-                has_civic = civic_starborn
+                has_starborn = yes
                 has_global_flag = starborn_op_init
         }
 
@@ -481,7 +371,7 @@ planet_event = {
 
 	trigger = {
 		owner = {
-			has_civic = civic_starborn
+			has_starborn = yes
 		}
         }
         immediate = {
@@ -521,7 +411,7 @@ planet_event = {
 
 	trigger = {
 		owner = {
-			has_civic = civic_starborn
+			has_starborn = yes
 		}
                 is_planet_class = pc_habitat
         }
@@ -663,9 +553,9 @@ planet_event = {
 
 	trigger = {
 		owner = {
-                        has_civic = civic_starborn
-                         any_planet_within_border = {
-                                 has_planet_flag = habitat_of@root
+                        has_starborn = yes
+                        any_planet_within_border = {
+                                has_planet_flag = habitat_of@root
                         }
                 }
         }

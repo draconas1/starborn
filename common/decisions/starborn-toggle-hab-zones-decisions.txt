@@ -4,7 +4,7 @@ decision_starborn_remove_mining = {
 		
 	potential = {
 		is_planet_class = pc_habitat
-		owner = { has_civic = civic_starborn }
+		owner = { has_starborn = yes }
 		has_planet_flag = mining_habitat
 	}
 
@@ -33,7 +33,7 @@ decision_starborn_readd_mining = {
 		
 	potential = {
 		is_planet_class = pc_habitat
-		owner = { has_civic = civic_starborn }
+		owner = { has_starborn = yes }
 		has_planet_flag = starborn_mining_removed
 	}
 
@@ -56,7 +56,7 @@ decision_starborn_remove_energy = {
 		
 	potential = {
 		is_planet_class = pc_habitat
-		owner = { has_civic = civic_starborn }
+		owner = { has_starborn = yes }
 		has_planet_flag = energy_habitat
 	}
 
@@ -85,7 +85,7 @@ decision_starborn_readd_energy = {
 		
 	potential = {
 		is_planet_class = pc_habitat
-		owner = { has_civic = civic_starborn }
+		owner = { has_starborn = yes }
 		has_planet_flag = starborn_energy_removed
 	}
 
@@ -108,7 +108,7 @@ decision_starborn_remove_research = {
 		
 	potential = {
 		is_planet_class = pc_habitat
-		owner = { has_civic = civic_starborn }
+		owner = { has_starborn = yes }
 		has_planet_flag = research_habitat
 	}
 
@@ -137,7 +137,7 @@ decision_starborn_readd_research = {
 		
 	potential = {
 		is_planet_class = pc_habitat
-		owner = { has_civic = civic_starborn }
+		owner = { has_starborn = yes }
 		has_planet_flag = starborn_research_removed
 	}
 
@@ -160,7 +160,7 @@ decision_starborn_remove_farming = {
 		
 	potential = {
 		is_planet_class = pc_habitat
-		owner = { has_civic = civic_starborn }
+		owner = { has_starborn = yes }
 		has_planet_flag = starborn_farming_habitat
 	}
 
@@ -189,7 +189,7 @@ decision_starborn_readd_farming = {
 		
 	potential = {
 		is_planet_class = pc_habitat
-		owner = { has_civic = civic_starborn }
+		owner = { has_starborn = yes }
 		has_planet_flag = starborn_farming_removed
 	}
 

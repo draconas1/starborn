@@ -3,21 +3,7 @@ decision_starborn_enlarge_hab = {
 	owned_planets_only = yes
 	enactment_time = 300
 	resources = {
-		category = decisions
-		cost = {
-			trigger = {
-				planet_size = 1
-			}
-            energy = 250
-            alloys = 250
-		}
-		cost = {
-			trigger = {
-				planet_size = 2
-			}
-            energy = 250
-            alloys = 250
-		}
+		category = decisions		
 		cost = {
 			trigger = {
 				planet_size = 3
@@ -44,7 +30,7 @@ decision_starborn_enlarge_hab = {
 	potential = {
         is_planet_class = pc_habitat
 		planet_size < 6
-		owner = { has_civic = civic_starborn }
+		owner = { has_starborn = yes }
 	}
 
 	effect = {
@@ -53,8 +39,7 @@ decision_starborn_enlarge_hab = {
 			limit = {
 				planet_size < 6
 			}
-			change_planet_size = 1
-			remove_deposit = d_starborn_refund_size_2
+			change_planet_size = 1		
 			remove_deposit = d_starborn_refund_size_3
 			remove_deposit = d_starborn_refund_size_4
 
@@ -97,20 +82,6 @@ decision_starborn_fully_enlarge_hab = {
 		category = decisions
 		cost = {
 			trigger = {
-				planet_size = 1
-			}
-            energy = 1250
-            alloys = 1750
-		}
-		cost = {
-			trigger = {
-				planet_size = 2
-			}
-            energy = 1000
-            alloys = 1500
-		}
-		cost = {
-			trigger = {
 				planet_size = 3
 			}
             energy = 750
@@ -135,13 +106,12 @@ decision_starborn_fully_enlarge_hab = {
 	potential = {
 		is_planet_class = pc_habitat
 		planet_size < 6
-		owner = { has_civic = civic_starborn }
+		owner = { has_starborn = yes }
 	}
 	
 	effect = {
 		custom_tooltip = decision_starborn_fully_enlarge_hab_desc
 		set_planet_size = 6	
-		remove_deposit = d_starborn_refund_size_2
 		remove_deposit = d_starborn_refund_size_3
 		remove_deposit = d_starborn_refund_size_4
 	}
@@ -173,7 +143,7 @@ decision_starborn_increase_hab_district_1 = {
 	potential = {
 		is_planet_class = pc_habitat
 		NOT = { has_modifier = starborn_habitat_districts_1 }
-		owner = { has_civic = civic_starborn }
+		owner = { has_starborn = yes }
 	}
 	
 	effect = {
@@ -213,7 +183,7 @@ decision_starborn_increase_hab_district_2 = {
 		is_planet_class = pc_habitat
 		has_modifier = starborn_habitat_districts_1
 		NOT = { has_modifier = starborn_habitat_districts_2 }
-		owner = { has_civic = civic_starborn }
+		owner = { has_starborn = yes }
 	}
 	
 	effect = {
@@ -253,7 +223,7 @@ decision_starborn_increase_hab_district_3 = {
 		is_planet_class = pc_habitat
 		has_modifier = starborn_habitat_districts_2
 		NOT = { has_modifier = starborn_habitat_districts_3 }
-		owner = { has_civic = civic_starborn }
+		owner = { has_starborn = yes }
 	}
 	
 	effect = {

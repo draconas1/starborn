@@ -1,25 +1,3 @@
-d_starborn_refund_size_2 = {
-	icon = "unused/d_space_walk"
-	is_for_colonizeable = yes
-	category = deposit_cat_rare
-	
-	potential = {
-		can_have_habitable_deposits = yes
-		is_planet_class = pc_habitat
-	}
-	
-	resources = {
-		category = planet_deposits
-		produces = {
-			alloys = 3
-		}
-	}
-	
-	drop_weight = {
-		weight = 0
-	}
-}
-
 d_starborn_refund_size_3 = {
 	icon = "unused/d_space_walk"
 	is_for_colonizeable = yes
@@ -56,6 +34,28 @@ d_starborn_refund_size_4 = {
 		category = planet_deposits
 		produces = {
 			alloys = 1
+		}
+	}
+	
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_starborn_nanites = {
+	icon = "unused/d_space_walk"
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+
+	potential = {
+		can_have_habitable_deposits = yes
+		is_planet_class = pc_habitat
+	}
+
+	resources = {
+		category = planet_deposits
+		produces = {
+			nanites = 1
 		}
 	}
 	

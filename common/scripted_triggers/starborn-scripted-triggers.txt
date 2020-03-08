@@ -6,6 +6,10 @@ habitable_structure = {
 	}
 }
 
+has_starborn = {
+	has_civic = civic_starborn
+}
+
 starborn_can_place_hab = {
 	custom_tooltip = {
 		fail_text = "requires_surveyed_planet"

@@ -329,7 +329,7 @@ starborn_op_system = {
 			name = "Melkor"
 			class = "pc_barren_cold"
 			orbit_distance = 15
-			orbit_angle = { min = 90 max = 270 }
+			orbit_angle = { min = 0 max = 180 }
 			size = 15
 			init_effect = {
 				prevent_anomaly = yes
@@ -341,7 +341,7 @@ starborn_op_system = {
 			name = "Hadhodrim"
 			class = "pc_barren_cold"
 			orbit_distance = 6
-			orbit_angle = { min = 90 max = 270 }
+			orbit_angle = { min = 0 max = 180 }
 			size = 12
 			init_effect = {
 				prevent_anomaly = yes
@@ -353,12 +353,24 @@ starborn_op_system = {
 			name = "Ithildin"
 			class = "pc_barren"
 			orbit_distance = 6
-			orbit_angle = { min = 90 max = 270 }
+			orbit_angle = { min = 180 max = 350 }
 			size = 10
 			init_effect = {
                 prevent_anomaly = yes
                 set_planet_flag = starting_deposit
                 set_deposit = d_living_metal_deposit
+			}
+		}
+		moon = {
+			name = "Casari"
+			class = "pc_gray_goo"
+			orbit_distance = 15
+			orbit_angle = { min = 180 max = 350 }
+			size = 8
+			init_effect = {
+                prevent_anomaly = yes
+                set_planet_flag = starting_deposit
+                set_deposit = d_nanites_deposit
 			}
 		}
 	}

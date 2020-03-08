@@ -942,6 +942,19 @@ starborn_hab_init_effect = {
     }
 
 
+    if = {
+        limit = {                        
+            fromfrom.planet = {								
+                OR = {															
+                    has_deposit = d_nanites_deposit
+                    is_planet_class = pc_gray_goo
+                }
+            }
+        }
+        add_deposit = d_starborn_nanites
+    }
+
+
     #Temporary - leave some markers for myself for building better habitats than vanilla
     if = {
         limit = {

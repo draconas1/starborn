@@ -20,7 +20,7 @@ starborn_habitat = {
 	construction_blocks_others = no
 
 	potential = {
-		has_civic = civic_starborn
+		has_starborn = yes
 		has_country_flag = starborn_hab_size_2
 	}
 
@@ -88,7 +88,7 @@ starborn_habitat3 = {
 	construction_blocks_others = no
 
 	potential = {
-		has_civic = civic_starborn
+		has_starborn = yes
 		has_country_flag = starborn_hab_size_3
 	}
 
@@ -156,7 +156,7 @@ starborn_habitat4 = {
 	construction_blocks_others = no
 
 	potential = {
-		has_civic = civic_starborn
+		has_starborn = yes
 		has_country_flag = starborn_hab_size_4
 	}
 
@@ -224,7 +224,7 @@ starborn_habitat5 = {
 	construction_blocks_others = no
 
 	potential = {
-		has_civic = civic_starborn
+		has_starborn = yes
 		has_country_flag = starborn_hab_size_5
 	}
 
@@ -292,7 +292,7 @@ starborn_habitat6 = {
 	construction_blocks_others = no
 
 	potential = {
-		has_civic = civic_starborn
+		has_starborn = yes
 		has_country_flag = starborn_hab_size_6
 	}
 
