@@ -1,4 +1,4 @@
-[h1]Starborn for 2.3 & 2.4[/h1]
+[h1]Starborn[/h1]
 Have you ever wanted to abandon planets completely and live among the stars?  Like the Quarion of Mass Effect live safe in your artificial habitat, but unable to set foot on your home world again?
 
 Starborn does this, it introduces a new game start civic: Starborn.
@@ -7,8 +7,6 @@ Selecting this civic turns your starting planet into an orbital city orbiting th
 You can build habitats from game start, starting small and enlarging as you get the resources, and your habitats will gain special districts based on what they are in orbit of and what orbital deposit it has.
 
 But there is a catch, your species has spent so long living in habitats that planetary biospheres are now toxic and uninhabitable for you.
-
-[b]2.4 players will get the old version warning: it is safe to ignore, for now the version will remain tagged at 2.3.3 while PDX sorts out 2.4 and the launcher[/b]
 
 [h1]Features[/h1]
 [list]
@@ -59,7 +57,7 @@ Due to a character length issue with the description, I had to remove all the di
 [*] Realspace     Completely compatible, as of yet the new worlds do not have specific behaviour
 [/list]
 
-It was compatible with 2.2 District Overhaul, but issues have been reported in 2.3, I will work with the DO authors to resolve them.  Problems have also been reported witht he universal districts patch, so I do not recommend using it and have written my own district compatibility patch.
+It was compatible with 2.2 District Overhaul, but issues have been reported in 2.3, I will work with the DO authors to resolve them.  Problems have also been reported with the universal districts patch, so I do not recommend using it and have written my own district compatibility patch.
 
 If you have a mod that wants district compatibility, leave a comment and I will have a look.
 
@@ -88,7 +86,7 @@ https://github.com/draconas1/starborn/tree/master/localisation/english if you ar
 
 [h1]Future Plans[/h1]
 [list]
-[*] Making the Districts of the orbital city Hive friendly.
+[*] 2.6 Rework.  Including Origin, Hive & Robot friendliness.
 [/list]
 
 [h1]Past Versions[/h1]
