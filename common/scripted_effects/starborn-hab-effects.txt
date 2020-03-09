@@ -265,42 +265,6 @@ starborn_hab_init_effect = {
     # set decisions based on flags
     if = {
         limit = {
-            from = { 
-                OR = {
-                    has_country_flag = starborn_hab_enlargement_1
-                    has_country_flag = starborn_hab_enlargement_2
-                    has_country_flag = starborn_hab_enlargement_3
-                }
-                has_resource = { type = alloys amount > 250 }
-                has_resource = { type = energy amount > 250 }
-            }
-        }
-        add_modifier = {
-            modifier = starborn_habitat_districts_1
-            days = -1
-        }
-        from = {
-            add_resource = {
-                alloys = -250
-                energy = -250
-            }
-        }
-    }
-    else_if = {
-        limit = { 
-            from = { 
-                has_country_flag = starborn_hab_enlargement_1
-                OR = {
-                    has_resource = { type = alloys amount < 250 }
-                    has_resource = { type = energy amount < 250 }
-                }
-            }
-        }
-        from = { country_event =  { id = starborn.6 } }
-    }
-   
-    if = {
-        limit = {
             from = {
                 OR = {            
                     has_country_flag = starborn_hab_enlargement_2

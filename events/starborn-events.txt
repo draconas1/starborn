@@ -419,13 +419,6 @@ planet_event = {
         immediate = {
                 if = {
                         limit = {
-                                planet_size = 2
-                        }
-                        add_deposit = d_starborn_refund_size_2
-                }
-
-                if = {
-                        limit = {
                                 planet_size = 3
                         }
                         add_deposit = d_starborn_refund_size_3

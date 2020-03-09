@@ -340,3 +340,79 @@ starborn_habitat6 = {
 		from = { country_event =  { id = utopia.61 } }
 	}
 }
+
+starborn_habitat_expander = {
+	entity = "orbital_habitat_entity"
+	construction_entity = "orbital_habitat_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = yes
+	entity_offset = { x = -7 y = -7 }
+	build_time = 2500
+
+	resources = {
+        category = megastructures
+        cost = {
+			alloys = 2000
+			energy = 1000            
+        }
+    }
+
+	construction_blocks_others = no
+
+	potential = {
+		has_starborn = yes
+	}
+
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_habitat_target"
+			any_system_planet = {
+				has_planet_flag = starborn_hab_build_target
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_only_1_habitat_target"
+			count_planets = {
+				limit = {
+					has_planet_flag = starborn_hab_build_target
+				}
+				count <= 1
+			}			
+		}
+	}
+
+	placement_rules = {
+		planet_possible = {
+			starborn_can_place_hab = yes
+		}
+	}
+
+	# root = system
+	# from = country	
+	ai_weight = {
+		factor = 0
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	
+	on_build_complete = {
+		fromfrom.planet = {
+			set_planet_flag = has_megastructure
+		}
+		random_system_planet = {
+			limit = {
+				has_planet_flag = starborn_hab_build_target
+			}
+			add_modifier = { 
+				modifier = starborn_habitat_complex 
+				days = -1 
+			}
+		}
+	}
+}

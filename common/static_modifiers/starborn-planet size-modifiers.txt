@@ -1,18 +1,12 @@
-starborn_habitat_districts_1 = {
-	planet_max_districts_add = 1
-    icon = "gfx/interface/icons/planet_modifiers/pm_satellite_in_orbit.dds"
-    icon_frame = 1
-}
-
 starborn_habitat_districts_2 = {
-	planet_max_districts_add = 1
+	planet_max_districts_add = 2
     icon = "gfx/interface/icons/planet_modifiers/pm_satellite_in_orbit.dds"
     icon_frame = 1
 }
 
 starborn_habitat_districts_3 = {
 	planet_max_districts_add = 2
-    icon = "gfx/interface/icons/planet_modifiers/pm_satellite_in_orbit.dds"
+    icon = "gfx/interface/icons/planet_modifiers/pm_dyson_sphere.dds"
     icon_frame = 1
 }
 
@@ -36,24 +30,30 @@ starborn_starting_habitat_districts_3 = {
 
 starborn_starting_habitat_districts_4 = {
 	planet_max_districts_add = 2
-    icon = "gfx/interface/icons/planet_modifiers/pm_satellite_in_orbit.dds"
+    icon = "gfx/interface/icons/planet_modifiers/pm_dyson_sphere.dds"
     icon_frame = 1
 }
 
 starborn_starting_habitat_districts_voidborn = {
 	planet_max_districts_add = 2
-    icon = "gfx/interface/icons/planet_modifiers/pm_satellite_in_orbit.dds"
+    icon = "gfx/interface/icons/planet_modifiers/pm_dyson_sphere.dds"
     icon_frame = 1
 }
 
 starborn_starting_habitat_districts_master_builders = {
 	planet_max_districts_add = 2
-    icon = "gfx/interface/icons/planet_modifiers/pm_satellite_in_orbit.dds"
+    icon = "gfx/interface/icons/planet_modifiers/pm_dyson_sphere.dds"
     icon_frame = 1
 }
 
 starborn_starting_habitat_districts_galatic_wonders = {
 	planet_max_districts_add = 2
-    icon = "gfx/interface/icons/planet_modifiers/pm_satellite_in_orbit.dds"
+    icon = "gfx/interface/icons/planet_modifiers/pm_dyson_sphere.dds"
+    icon_frame = 1
+}
+
+starborn_habitat_complex = {
+	planet_max_districts_add = 6
+    icon = "gfx/interface/icons/planet_modifiers/pm_land_appropriated.dds"
     icon_frame = 1
 }

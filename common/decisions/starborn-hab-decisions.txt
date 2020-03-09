@@ -39,22 +39,24 @@ decision_starborn_enlarge_hab = {
 			limit = {
 				planet_size < 6
 			}
-			change_planet_size = 1		
-			remove_deposit = d_starborn_refund_size_3
-			remove_deposit = d_starborn_refund_size_4
+			change_planet_size = 1
+			hidden_effect = {
+				remove_deposit = d_starborn_refund_size_3
+				remove_deposit = d_starborn_refund_size_4
 
-			if = {
-				limit = {
-					planet_size = 3
+				if = {
+					limit = {
+						planet_size = 3
+					}
+					add_deposit = d_starborn_refund_size_3
 				}
-				add_deposit = d_starborn_refund_size_3
-			}
 
-			if = {
-				limit = {
-					planet_size = 4
+				if = {
+					limit = {
+						planet_size = 4
+					}
+					add_deposit = d_starborn_refund_size_4
 				}
-				add_deposit = d_starborn_refund_size_4
 			}
 		}
 		else = {
@@ -112,8 +114,10 @@ decision_starborn_fully_enlarge_hab = {
 	effect = {
 		custom_tooltip = decision_starborn_fully_enlarge_hab_desc
 		set_planet_size = 6	
-		remove_deposit = d_starborn_refund_size_3
-		remove_deposit = d_starborn_refund_size_4
+		hidden_effect = {
+			remove_deposit = d_starborn_refund_size_3
+			remove_deposit = d_starborn_refund_size_4
+		}
 	}
 	
 	# AI will never use this.  
@@ -125,45 +129,6 @@ decision_starborn_fully_enlarge_hab = {
 
 
 #More Districts on habitat
-decision_starborn_increase_hab_district_1 = {
-	owned_planets_only = yes
-	icon = decision_drifting_gateway
-	prerequisites = { "tech_starbase_3" }
-	
-	resources = {
-		category = decisions
-		cost = { 
-			alloys = 250 
-			energy = 250
-		}
-	}
-
-	enactment_time = 360
-	
-	potential = {
-		is_planet_class = pc_habitat
-		NOT = { has_modifier = starborn_habitat_districts_1 }
-		owner = { has_starborn = yes }
-	}
-	
-	effect = {
-		custom_tooltip = starborn_habitat_districts_1_desc
-		add_modifier = { 
-			modifier = starborn_habitat_districts_1 
-			days = -1 
-		}
-	}
-	
-	ai_weight = {
-		weight = 1
-		modifier = {
-			factor = 0
-			free_district_slots > 0
-		}
-	}
-}
-
-
 decision_starborn_increase_hab_district_2 = {
 	owned_planets_only = yes
 	icon = decision_drifting_gateway
@@ -173,7 +138,7 @@ decision_starborn_increase_hab_district_2 = {
 		category = decisions
 		cost = { 
 			alloys = 500 
-			energy = 750
+			energy = 1000
 		}
 	}
 
@@ -181,7 +146,6 @@ decision_starborn_increase_hab_district_2 = {
 	
 	potential = {
 		is_planet_class = pc_habitat
-		has_modifier = starborn_habitat_districts_1
 		NOT = { has_modifier = starborn_habitat_districts_2 }
 		owner = { has_starborn = yes }
 	}
@@ -240,5 +204,59 @@ decision_starborn_increase_hab_district_3 = {
 			factor = 0
 			free_district_slots > 0
 		}
+	}
+}
+
+decision_starborn_complex_target = {
+	owned_planets_only = yes
+	icon = decision_mining_station
+	
+	resources = {
+		category = decisions
+	}
+
+	enactment_time = 0
+	
+	potential = {
+		owner = { has_starborn = yes }
+		is_planet_class = pc_habitat	
+		NOT = {
+			has_planet_flag = starborn_hab_build_target
+		}
+	}
+
+	allow = {
+		planet_size >= 6
+	}
+	
+	effect = {
+		set_planet_flag = starborn_hab_build_target
+	}
+	
+	ai_weight = {
+		weight = 0	
+	}
+}
+
+decision_remove_starborn_complex_target = {
+	owned_planets_only = yes
+	icon = decision_mining_station
+	
+	resources = {
+		category = decisions
+	}
+
+	enactment_time = 0
+	
+	potential = {
+		has_planet_flag = starborn_hab_build_target
+	}
+
+	effect = {
+		set_planet_flag = starborn_hab_build_target
+	}
+	
+	ai_weight = {
+		weight = 0	
 	}
 }

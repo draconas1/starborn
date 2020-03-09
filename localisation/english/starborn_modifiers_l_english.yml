@@ -69,16 +69,14 @@
  decision_starborn_fully_enlarge_hab_desc:0 "The time for slow expansion is over, fully construct this $pc_habitat$ as far as our engineering abilities will let us"
 
 
-
  decision_starborn_increase_hab_district_1:0 "Optimise Habitat 1"
  decision_starborn_increase_hab_district_1_desc:0 "Improved construction techniques let us optimise the internal structure of the $pc_habitat$ such that it can support an additional district without requiring significant extra construction"
 
- decision_starborn_increase_hab_district_2:0 "Optimise Habitat 2"
+ decision_starborn_increase_hab_district_2:0 "Optimise Habitat"
  decision_starborn_increase_hab_district_2_desc:0 "$decision_starborn_increase_hab_district_1_desc$"
 
- decision_starborn_increase_hab_district_3:0 "Optimise Habitat 3"
+ decision_starborn_increase_hab_district_3:0 "Optimise Habitat with $tech_mega_engineering$"
  decision_starborn_increase_hab_district_3_desc:0 "Our knowledge of mega structure engineering lets us further optimise and enlarge $pc_habitat$ internal structures such that it can support additional districts"
-
 
  starborn_habitat_districts_1:0 "Optimise Habitat"
  starborn_habitat_districts_1_desc:0 "Enlarge and make better use of space in the $pc_habitat$"
@@ -86,8 +84,8 @@
  starborn_habitat_districts_2:0 "$starborn_habitat_districts_1$"
  starborn_habitat_districts_2_desc:0 "$starborn_habitat_districts_1_desc$"
 
- starborn_habitat_districts_3:0 "$starborn_habitat_districts_1$"
- starborn_habitat_districts_3_desc:0 "$starborn_habitat_districts_1_desc$"
+ starborn_habitat_districts_3:0 "Optimised Habitat Structure"
+ starborn_habitat_districts_3_desc:0 "Interior space of the habitat complex has been optimised as far as possible"
 
 
 
@@ -134,3 +132,6 @@
 
  starborn_starting_habitat_districts_galatic_wonders:0 "Galatic Wonder"
  starborn_starting_habitat_districts_galatic_wonders_desc:0 "The sheer scale of $pc_starborn_habitat_start$ is a wonder throughout the galaxy"
+
+ starborn_habitat_complex:0 "§Y$starborn_habitat_expander_plural$§!"
+ starborn_habitat_complex_desc:0 "This Habitat has a §Y$starborn_habitat_expander_plural$§! around another planet in this system, increasing the number and potentially the type of districts"
