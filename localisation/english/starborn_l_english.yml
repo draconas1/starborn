@@ -84,7 +84,6 @@
  decision_starborn_readd_farming_desc:0 "This will designate the habitat for farming and allow the construction of §Y$district_starborn_surface_farming$§!, you may need to close and reopen the planet window for the change to show in the UI"
 
  decision_starborn_complex_target:0 "Designate as Multi-Planet Habitat Complex"
- decision_starborn_complex_target_desc:0 "Specify that §Y$starborn_habitat_expander_plural$§! in this system will be controlled by this habitat.  Any §Y$starborn_habitat_expander_plural$§!s will add to the maximum districts and allow access to the special districts for their planet type."
-
- decision_remove_starborn_complex_target:0 "Remove Multi-Planet Habitat Complex designation"
- decision_remove_starborn_complex_target_desc:0 "Additional §Y$starborn_habitat_expander_plural$§! will not be controlled by this habitat."
+ decision_starborn_complex_target_desc:0 "This will remove the designation from any other habitat in the system"
+ decision_starborn_complex_target_must_be_full_size:0 "The habitat must be enlarged to full size before it can manage §Y$starborn_habitat_expander_plural$§!"
+ decision_starborn_complex_target_tooltip:0 "Specify that §Y$starborn_habitat_expander_plural$§! in this system will be controlled by this habitat.  Constructed §Y$starborn_habitat_expander_plural$§! will add to this habitats maximum districts and allow access to the special districts for their planet type."

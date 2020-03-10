@@ -134,4 +134,4 @@
  starborn_starting_habitat_districts_galatic_wonders_desc:0 "The sheer scale of $pc_starborn_habitat_start$ is a wonder throughout the galaxy"
 
  starborn_habitat_complex:0 "§Y$starborn_habitat_expander_plural$§!"
- starborn_habitat_complex_desc:0 "This Habitat has a §Y$starborn_habitat_expander_plural$§! around another planet in this system, increasing the number and potentially the type of districts"
+ starborn_habitat_complex_desc:0 "This Habitat has §Y$starborn_habitat_expander$§! around another planet in this system, increasing the number and potentially the type of districts, but the distributed nature leaves a lot of places to hide illegal activity"

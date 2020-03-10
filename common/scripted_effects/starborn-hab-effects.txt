@@ -25,6 +25,80 @@ starborn_hab_init_effect = {
     set_planet_flag = megastructure
     set_planet_flag = habitat
 
+    # set enlargement districts based on flags
+    if = {
+        limit = {
+            from = {
+                OR = {            
+                    has_country_flag = starborn_hab_enlargement_2
+                    has_country_flag = starborn_hab_enlargement_3
+                }
+                has_resource = { type = alloys amount > 500 }
+                has_resource = { type = energy amount > 750 }
+            }
+        }
+        add_modifier = {
+            modifier = starborn_habitat_districts_2
+            days = -1
+        }
+        from = {
+            add_resource = {
+                alloys = -500
+                energy = -750
+            }
+        }
+    }
+    else_if = {
+        limit = { 
+            from = { 
+                has_country_flag = starborn_hab_enlargement_2
+                OR = {
+                    has_resource = { type = alloys amount < 500 }
+                    has_resource = { type = energy amount < 750 }
+                }
+            }
+        }
+        from = { country_event =  { id = starborn.6 } }
+    }
+
+    if = {
+        limit = {
+            from = {               
+                has_country_flag = starborn_hab_enlargement_3
+                has_resource = { type = alloys amount > 750 }
+                has_resource = { type = energy amount > 1000 }
+            }
+        }
+        add_modifier = {
+            modifier = starborn_habitat_districts_3
+            days = -1
+        }
+        from = {
+            add_resource = {
+                alloys = -750
+                energy = -1000
+            }
+        }
+    }
+    else_if = {
+        limit = { 
+            from = { 
+                has_country_flag = starborn_hab_enlargement_3
+                OR = {
+                    has_resource = { type = alloys amount < 750 }
+                    has_resource = { type = energy amount < 1000 }
+                }
+            }
+        }
+        from = { country_event =  { id = starborn.6 } }
+    }
+
+    starborn_hab_init_deposits = yes
+    starborn_hab_init_modifiers = yes
+}
+
+starborn_hab_init_deposits = {
+    #VANILLA
     if = {
         limit = {
             OR = {
@@ -262,77 +336,6 @@ starborn_hab_init_effect = {
 
     set_planet_flag = habitat_of@fromfrom.planet
 
-    # set decisions based on flags
-    if = {
-        limit = {
-            from = {
-                OR = {            
-                    has_country_flag = starborn_hab_enlargement_2
-                    has_country_flag = starborn_hab_enlargement_3
-                }
-                has_resource = { type = alloys amount > 500 }
-                has_resource = { type = energy amount > 750 }
-            }
-        }
-        add_modifier = {
-            modifier = starborn_habitat_districts_2
-            days = -1
-        }
-        from = {
-            add_resource = {
-                alloys = -500
-                energy = -750
-            }
-        }
-    }
-    else_if = {
-        limit = { 
-            from = { 
-                has_country_flag = starborn_hab_enlargement_2
-                OR = {
-                    has_resource = { type = alloys amount < 500 }
-                    has_resource = { type = energy amount < 750 }
-                }
-            }
-        }
-        from = { country_event =  { id = starborn.6 } }
-    }
-
-    if = {
-        limit = {
-            from = {               
-                has_country_flag = starborn_hab_enlargement_3
-                has_resource = { type = alloys amount > 750 }
-                has_resource = { type = energy amount > 1000 }
-            }
-        }
-        add_modifier = {
-            modifier = starborn_habitat_districts_3
-            days = -1
-        }
-        from = {
-            add_resource = {
-                alloys = -750
-                energy = -1000
-            }
-        }
-    }
-    else_if = {
-        limit = { 
-            from = { 
-                has_country_flag = starborn_hab_enlargement_3
-                OR = {
-                    has_resource = { type = alloys amount < 750 }
-                    has_resource = { type = energy amount < 1000 }
-                }
-            }
-        }
-        from = { country_event =  { id = starborn.6 } }
-    }
-
-
-
-
 # Deposits that produce districts
     # Habitable worlds 
     if = {
@@ -353,10 +356,6 @@ starborn_hab_init_effect = {
             }
         }
         set_planet_flag = starborn_farming_habitat
-        add_modifier = {
-            modifier = starborn_farming_planet
-            days = -1
-        }
     }
 
     if = {
@@ -371,7 +370,196 @@ starborn_hab_init_effect = {
         set_planet_flag = starborn_tomb_scavenging
     }
 
+    if = {
+        limit = {                        
+            fromfrom.planet = {								
+                OR = {
+                    is_star_class = sc_black_hole
+                    is_star_class = sc_pulsar
 
+                    #Planetary Diversity
+                    is_planet_class = pc_floating
+                    is_planet_class = pc_archive
+                }
+            }
+        }
+        set_planet_flag = research_habitat
+    }
+
+    # Society 
+    if = {
+        limit = {                        
+            fromfrom.planet = {								
+                OR = {
+                    #Planetary Diversity
+                    is_planet_class = pc_archive
+                    is_planet_class = pc_graveyard
+                }
+            }
+        }
+        set_planet_flag = research_habitat
+    }
+
+
+    # Engineering 
+    if = {
+        limit = {                        
+            fromfrom.planet = {								
+                OR = {
+                    #Planetary Diversity
+                    is_planet_class = pc_archive
+                    is_planet_class = pc_technoorganic
+                    is_star_class = sc_neutron_star
+                }
+            }
+        }
+        set_planet_flag = research_habitat
+    }
+
+
+    if = {
+        limit = {                        
+            fromfrom.planet = {								
+                OR = {															
+                    has_deposit = d_nanites_deposit
+                    is_planet_class = pc_gray_goo
+                }
+            }
+        }
+        add_deposit = d_starborn_nanites
+    }
+
+
+    #Temporary - leave some markers for myself for building better habitats than vanilla
+    if = {
+        limit = {
+            OR = {
+                fromfrom.planet = { has_deposit = d_minerals_1 }
+                fromfrom.planet = { has_deposit = d_minerals_2 }
+            }
+        }
+        set_planet_flag = starborn_mining_2
+    }
+
+    if = {
+        limit = {
+            OR = {               
+                fromfrom.planet = { has_deposit = d_minerals_3 }
+                fromfrom.planet = { has_deposit = d_minerals_4 }
+            }
+        }
+        set_planet_flag = starborn_mining_4
+    }
+
+    if = {
+        limit = {
+            OR = {               
+                fromfrom.planet = { has_deposit = d_minerals_5 }
+                fromfrom.planet = { has_deposit = d_minerals_6 }
+            }
+        }
+        set_planet_flag = starborn_mining_6
+    }
+
+    if = {
+        limit = {
+            OR = {
+                fromfrom.planet = { has_deposit = d_minerals_7 }
+                fromfrom.planet = { has_deposit = d_minerals_8 }
+            }
+        }
+        set_planet_flag = starborn_mining_8
+    }
+
+    if = {
+        limit = {
+            OR = {
+                fromfrom.planet = { has_deposit = d_minerals_9 }
+                fromfrom.planet = { has_deposit = d_minerals_10 }
+            }
+        }
+        set_planet_flag = starborn_mining_10
+    }
+
+    if = {
+        limit = {
+            OR = {
+                fromfrom.planet = { has_deposit = d_energy_1 }
+                fromfrom.planet = { has_deposit = d_energy_2 }
+            }
+        }
+        set_planet_flag = starborn_energy_2
+    }
+
+    if = {
+        limit = {
+            OR = {
+                
+                fromfrom.planet = { has_deposit = d_energy_3 }
+                fromfrom.planet = { has_deposit = d_energy_4 }
+            }
+        }
+        set_planet_flag = starborn_energy_4
+    }
+
+    if = {
+        limit = {
+            OR = {
+                fromfrom.planet = { has_deposit = d_energy_5 }
+                fromfrom.planet = { has_deposit = d_energy_6 }
+            }
+        }
+        set_planet_flag = starborn_energy_6
+    }
+
+    if = {
+        limit = {
+            OR = {
+                fromfrom.planet = { has_deposit = d_energy_7 }
+                fromfrom.planet = { has_deposit = d_energy_8 }
+            }
+        }
+        set_planet_flag = starborn_energy_8
+    }
+
+    if = {
+        limit = {
+            OR = {                
+                fromfrom.planet = { has_deposit = d_energy_9 }
+                fromfrom.planet = { has_deposit = d_energy_10 }
+            }
+        }
+        set_planet_flag = starborn_energy_10
+    }
+}
+
+
+
+starborn_hab_init_modifiers = {    
+# Deposits that produce districts
+    # Habitable worlds 
+    if = {
+        limit = {
+            fromfrom.planet = {
+                habitable_planet = yes
+                NOR = {
+                    is_planet_class = pc_city
+                    is_planet_class = pc_nuked
+                    is_planet_class = pc_relic
+
+                    #Planetary Diversity
+                    is_planet_class = pc_floating
+                    is_planet_class = pc_graveyard
+                    is_planet_class = pc_archive
+                    is_planet_class = pc_technoorganic
+                }
+            }
+        }
+        add_modifier = {
+            modifier = starborn_farming_planet
+            days = -1
+        }
+    }
     # deposits that add modifers
 
     # Energy
@@ -669,7 +857,6 @@ starborn_hab_init_effect = {
             modifier = starborn_physics_black_hole
             days = -1
         }
-        set_planet_flag = research_habitat
     }
 
     if = {
@@ -682,7 +869,6 @@ starborn_hab_init_effect = {
             modifier = starborn_physics_pulsar
             days = -1
         }
-        set_planet_flag = research_habitat
     }
 
     if = {
@@ -699,7 +885,6 @@ starborn_hab_init_effect = {
             modifier = starborn_physics_25
             days = -1
         }
-        set_planet_flag = research_habitat
     }
 
 
@@ -794,7 +979,6 @@ starborn_hab_init_effect = {
             modifier = starborn_society_25
             days = -1
         }
-        set_planet_flag = research_habitat
     }
 
 
@@ -885,7 +1069,6 @@ starborn_hab_init_effect = {
             modifier = starborn_engineering_neutron_star
             days = -1
         }
-        set_planet_flag = research_habitat
     }
 
     if = {
@@ -902,122 +1085,5 @@ starborn_hab_init_effect = {
             modifier = starborn_engineering_25
             days = -1
         }
-        set_planet_flag = research_habitat
-    }
-
-
-    if = {
-        limit = {                        
-            fromfrom.planet = {								
-                OR = {															
-                    has_deposit = d_nanites_deposit
-                    is_planet_class = pc_gray_goo
-                }
-            }
-        }
-        add_deposit = d_starborn_nanites
-    }
-
-
-    #Temporary - leave some markers for myself for building better habitats than vanilla
-    if = {
-        limit = {
-            OR = {
-                fromfrom.planet = { has_deposit = d_minerals_1 }
-                fromfrom.planet = { has_deposit = d_minerals_2 }
-            }
-        }
-        set_planet_flag = starborn_mining_2
-    }
-
-    if = {
-        limit = {
-            OR = {               
-                fromfrom.planet = { has_deposit = d_minerals_3 }
-                fromfrom.planet = { has_deposit = d_minerals_4 }
-            }
-        }
-        set_planet_flag = starborn_mining_4
-    }
-
-    if = {
-        limit = {
-            OR = {               
-                fromfrom.planet = { has_deposit = d_minerals_5 }
-                fromfrom.planet = { has_deposit = d_minerals_6 }
-            }
-        }
-        set_planet_flag = starborn_mining_6
-    }
-
-    if = {
-        limit = {
-            OR = {
-                fromfrom.planet = { has_deposit = d_minerals_7 }
-                fromfrom.planet = { has_deposit = d_minerals_8 }
-            }
-        }
-        set_planet_flag = starborn_mining_8
-    }
-
-    if = {
-        limit = {
-            OR = {
-                fromfrom.planet = { has_deposit = d_minerals_9 }
-                fromfrom.planet = { has_deposit = d_minerals_10 }
-            }
-        }
-        set_planet_flag = starborn_mining_10
-    }
-
-    if = {
-        limit = {
-            OR = {
-                fromfrom.planet = { has_deposit = d_energy_1 }
-                fromfrom.planet = { has_deposit = d_energy_2 }
-            }
-        }
-        set_planet_flag = starborn_energy_2
-    }
-
-    if = {
-        limit = {
-            OR = {
-             
-                fromfrom.planet = { has_deposit = d_energy_3 }
-                fromfrom.planet = { has_deposit = d_energy_4 }
-            }
-        }
-        set_planet_flag = starborn_energy_4
-    }
-
-    if = {
-        limit = {
-            OR = {
-                fromfrom.planet = { has_deposit = d_energy_5 }
-                fromfrom.planet = { has_deposit = d_energy_6 }
-            }
-        }
-        set_planet_flag = starborn_energy_6
-    }
-
-    if = {
-        limit = {
-            OR = {
-                fromfrom.planet = { has_deposit = d_energy_7 }
-                fromfrom.planet = { has_deposit = d_energy_8 }
-            }
-        }
-        set_planet_flag = starborn_energy_8
-    }
-
-    if = {
-        limit = {
-            OR = {                
-                fromfrom.planet = { has_deposit = d_energy_9 }
-                fromfrom.planet = { has_deposit = d_energy_10 }
-            }
-        }
-        set_planet_flag = starborn_energy_10
     }
 }

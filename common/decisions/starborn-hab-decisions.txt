@@ -227,33 +227,19 @@ decision_starborn_complex_target = {
 
 	allow = {
 		planet_size >= 6
+		custom_tooltip = decision_starborn_complex_target_must_be_full_size
 	}
 	
 	effect = {
-		set_planet_flag = starborn_hab_build_target
-	}
-	
-	ai_weight = {
-		weight = 0	
-	}
-}
-
-decision_remove_starborn_complex_target = {
-	owned_planets_only = yes
-	icon = decision_mining_station
-	
-	resources = {
-		category = decisions
-	}
-
-	enactment_time = 0
-	
-	potential = {
-		has_planet_flag = starborn_hab_build_target
-	}
-
-	effect = {
-		set_planet_flag = starborn_hab_build_target
+		custom_tooltip = decision_starborn_complex_target_desc
+		hidden_effect = {
+			solar_system = {
+				every_planet = {
+					remove_planet_flag = starborn_hab_build_target
+				}
+			}
+			set_planet_flag = starborn_hab_build_target
+		}
 	}
 	
 	ai_weight = {

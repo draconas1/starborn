@@ -53,7 +53,9 @@ starborn_starting_habitat_districts_galatic_wonders = {
 }
 
 starborn_habitat_complex = {
-	planet_max_districts_add = 6
+    planet_max_districts_add = 6
+    planet_crime_mult = 0.05
+	planet_amenities_mult = -0.05
     icon = "gfx/interface/icons/planet_modifiers/pm_land_appropriated.dds"
     icon_frame = 1
 }

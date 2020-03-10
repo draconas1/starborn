@@ -413,6 +413,7 @@ starborn_habitat_expander = {
 				modifier = starborn_habitat_complex 
 				days = -1 
 			}
+			starborn_hab_init_deposits = yes
 		}
 	}
 }
