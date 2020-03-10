@@ -112,10 +112,14 @@
  building_starborn_mining_bay:0 "Mineral Mining Complex"
  building_starborn_mining_bay_desc:0 "The sheer amount of minerals we can harvest from the stellar body we orbit warrants the construction of this complex that improves the our minerals production"
 
+ building_starborn_habitation_dome:0 "Habitation Dome"
+ building_starborn_habitation_dome_desc:0 "Sometimes $district_hab_housing$ are insufficient to house the population, these domes provide additional space and one heck of a view"
+
  d_starborn_ruins:0 "£blocker£ Ruins"
  d_starborn_ruins_desc:0 "This once major settlement is now a crumbling ruin, occupied only by the decaying bodies of its inhabitants."
  d_starborn_wasteland:0 "£blocker£ Radiation Zone"
  d_starborn_wasteland_desc:0 "A region that was the target of numerous nuclear warheads. Though the radiation in this area has decreased since the initial impact, it is still unfit for habitation barring a major clean-up effort."
+ 
  d_starborn_nanites:0 "Nanites"
  d_starborn_nanites_desc:0 "An exploitable source of £nanites£§Y$nanites$§!."
 

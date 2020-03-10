@@ -482,3 +482,37 @@ building_starborn_generator_complex = {
 		tech_power_hub_1
 	}
 }
+
+
+
+building_starborn_habitation_domes = {
+	icon = old_production/building_hydroponics_farm_5
+	base_buildtime = 500
+	category = amenity
+	
+	potential = {
+		is_planet_class = pc_habitat
+        owner = {
+            has_starborn = yes
+        }
+	}
+	
+	planet_modifier = {
+		planet_housing_add = 8
+	}
+
+	
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 500
+		}
+		upkeep = {
+			energy = 2
+		}
+	}	
+	
+	prerequisites = {
+		"tech_paradise_dome"
+	}
+}
