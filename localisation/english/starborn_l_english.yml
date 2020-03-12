@@ -18,9 +18,9 @@
  requires_no_unminable_sr:0 "$TRIGGER_FAIL$There appears to be valuable strategic resources here that our $starborn_habitat$ would destroy"
 
  starborn_habitat_MEGASTRUCTURE_DETAILS:1 "A §Y$starborn_habitat$§! is a new orbital habitat to allow our people to expand"
- starborn_habitat_CONSTRUCTION_INFO_DELAYED:2 "$starborn_habitat_DESC$ and can be built around any stellar body"
+ starborn_habitat_CONSTRUCTION_INFO_DELAYED:2 "$starborn_habitat_DESC$"
  starborn_habitat:0 "Starborn Orbital Habitat"
- starborn_habitat_DESC:0 "A Habitation station in orbit of a star, planet, moon or in any asteroid field capable of housing a number of our §HPops§! and §HBuildings§! while also allowing us to take advantage of the natural features of the parent body."
+ starborn_habitat_DESC:0 "A Habitation station in orbit of a star, planet, moon or large asteroid.  Capable of housing a number of our §HPops§! and §HBuildings§! while also allowing us to take advantage of the natural features of the parent body."
 
  starborn_habitat3_MEGASTRUCTURE_DETAILS:1 "$starborn_habitat_MEGASTRUCTURE_DETAILS$"
  starborn_habitat3_CONSTRUCTION_INFO_DELAYED:2 "$starborn_habitat_CONSTRUCTION_INFO_DELAYED$"
@@ -47,8 +47,8 @@
  starborn_habitat_expander:0 "Satelite Habitat Complex"
  starborn_habitat_expander_plural:0 "Satelite Habitat Complexes"
  starborn_habitat_expander_DESC:0 "An expansion of one of our habitats around another body in system.  This effectively expands the existing habitat, while allowing for exploitation of the resources of the new body"
- requires_habitat_target:0 "You must select a §Y$starborn_habitat$§! in this system using the §Y$decision_starborn_complex_target$§! planetary decision that will gain the benefits of the §Y$starborn_habitat_expander$§!"
- requires_only_1_habitat_target:0 "More than 1 §Y$starborn_habitat$§! in this system has been designated as the §Y$decision_starborn_complex_target$§!"
+ requires_habitat_target:0 "$TRIGGER_FAIL$ You must select a §Y$starborn_habitat$§! in this system using the §Y$decision_starborn_complex_target$§! planetary decision that will gain the benefits of the §Y$starborn_habitat_expander$§!"
+ requires_only_1_habitat_target:0 "$TRIGGER_FAIL$ More than 1 §Y$starborn_habitat$§! in this system has been designated as the §Y$decision_starborn_complex_target$§!"
 
  
  edict_starborn_show_menu_effect:0 "Selecting this edict triggers a menu as a global effect that the game denotes as a §YCountry event! You can do it as many times as you like"

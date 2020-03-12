@@ -485,7 +485,7 @@ building_starborn_generator_complex = {
 
 
 
-building_starborn_habitation_domes = {
+building_starborn_habitation_dome = {
 	icon = old_production/building_hydroponics_farm_5
 	base_buildtime = 500
 	category = amenity

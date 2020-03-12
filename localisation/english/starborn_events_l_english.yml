@@ -63,3 +63,6 @@
  starborn.15.name:0 "The Great City"
  starborn.15.desc:0 "Our former home of §Y[Root.Planet.GetName]§! becoming an enormous city and completing its recovery since our ancestors wrecked it so long ago §Y[target.GetName]§! no longer harvests the raw materials of the planet and the space has been reconfigured to take advantage of the increased trade opportunities"
  starborn.15.option.a:0 "A great day"
+
+ starborn.20.name:0 "[From.From.From.Planet.GetName] $starborn_habitat_expander_plural$ Complete"
+ starborn.20.desc:0 "We have completed construction of the $starborn_habitat_expander_plural$, [target.GetName] now has access to [From.From.From.Planet.GetName]s resources, though the complexities of management across the system negate any of the special efficiences our people often get from direct exploitation"

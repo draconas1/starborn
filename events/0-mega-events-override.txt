@@ -1,5 +1,4 @@
 namespace = mega
-
 # Ecumenopolis complete
 planet_event = {
 	id = mega.200
@@ -8,24 +7,24 @@ planet_event = {
 	picture = GFX_evt_city_planet
 	show_sound = event_cityscape
 	location = root
-
 	is_triggered_only = yes
-
 	trigger = {
 		is_planet_class = pc_city
 	}
-
 	option = {
 		name = mega.200.a
 		hidden_effect = {
-			planet_event = { id = starborn.13 # random planets }
-		}
-		hidden_effect = {
-			planet_event = { id = starborn.15 # home planet }
+			planet_event = {
+				id = starborn.13				# random planets }
+			}
+			hidden_effect = {
+				planet_event = {
+					id = starborn.15					# home planet }
+				}
+			}
 		}
 	}
 }
-
 
 # Ecumenopolis complete (Relic World)
 planet_event = {
@@ -35,21 +34,21 @@ planet_event = {
 	picture = GFX_evt_city_planet
 	show_sound = event_cityscape
 	location = root
-
 	is_triggered_only = yes
-
 	trigger = {
 		is_planet_class = pc_city
 	}
-
 	option = {
 		name = mega.200.a
 		hidden_effect = {
-			planet_event = { id = starborn.13 # random planets }
-		}
-		hidden_effect = {
-			planet_event = { id = starborn.15 # home planet }
+			planet_event = {
+				id = starborn.13				# random planets }
+			}
+			hidden_effect = {
+				planet_event = {
+					id = starborn.15					# home planet }
+				}
+			}
 		}
 	}
 }
-

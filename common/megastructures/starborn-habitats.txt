@@ -297,9 +297,10 @@ starborn_habitat6 = {
 	}
 
 	possible = {
-		exists = starbase
+		
 		custom_tooltip = {
 			fail_text = "requires_inside_border"
+			exists = starbase
 			is_inside_border = from
 		}
 	}
@@ -375,15 +376,6 @@ starborn_habitat_expander = {
 				has_planet_flag = starborn_hab_build_target
 			}
 		}
-		custom_tooltip = {
-			fail_text = "requires_only_1_habitat_target"
-			count_planets = {
-				limit = {
-					has_planet_flag = starborn_hab_build_target
-				}
-				count <= 1
-			}			
-		}
 	}
 
 	placement_rules = {
@@ -414,6 +406,8 @@ starborn_habitat_expander = {
 				days = -1 
 			}
 			starborn_hab_init_deposits = yes
+			save_event_target_as = target
 		}
+		from = { country_event =  { id = starborn.20 } }
 	}
 }

@@ -81,11 +81,50 @@ district_starborn_starting_scavenger = {
 	}
 	
 	planet_modifier = {
-		job_starborn_tombworld_scavenger_add = 2
 		planet_housing_add = 1
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+			}
+		}
+		modifier = {
+			job_starborn_tombworld_scavenger_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_mining_drone_add = 2
+			job_alloy_drone_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_mining_drone_add = 1
+			job_fabricator_add = 1
+		}
+	}
+
 	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { 
+				is_gestalt = no
+			}
+		}
 		text = job_starborn_tombworld_scavenger_effect_desc
 	}
 
@@ -118,12 +157,51 @@ district_starborn_starting_preserve = {
 		}
 	}
 	
-	planet_modifier = {
-		job_starborn_preserve_ranger_add = 2
+	planet_modifier = {	
 		planet_housing_add = 1
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+			}
+		}
+		modifier = {
+			job_starborn_preserve_ranger_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_agri_drone_add = 2
+			job_synapse_drone_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_agri_drone_add = 1
+			job_calculator_add = 1
+		}
+	}
+
 	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { 
+				is_gestalt = no
+			}
+		}
 		text = job_starborn_preserve_ranger_effect_desc
 	}
 
@@ -154,12 +232,52 @@ district_starborn_starting_solar = {
 	}
 				
 	planet_modifier = {
-		job_starborn_solar_technician_add = 2
 		planet_housing_add = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+			}
+		}
+		modifier = {
+			job_starborn_solar_technician_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}		
+		job_technician_drone_add = 3
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}	
+		job_technician_drone_add = 4
 	}
 	
 	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { 
+				is_gestalt = no
+			}
+		}
 		text = job_starborn_solar_technician_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = job_technician_drone_effect_desc
 	}
 
 	ai_weight = {

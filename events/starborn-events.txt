@@ -722,3 +722,17 @@ planet_event = {
 }
 
 #16 and 17 are out of order
+
+# Habitat Complete Notification
+country_event = {
+	id = "starborn.20"
+	title = "starborn.20.name"
+	desc = "starborn.20.desc"
+	picture = GFX_evt_colony_settlement
+	is_triggered_only = yes
+	location = FromFromFrom.Planet
+
+	option = {
+		name = EXCELLENT
+	}
+}
