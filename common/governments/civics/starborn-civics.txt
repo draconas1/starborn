@@ -3,9 +3,7 @@ civic_starborn = {
 	starting_colony = pc_starborn_habitat_start
 	habitability_preference = pc_habitat
 	preferred_planet_class_neighbor = no
-	potential = {
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-	}
+	potential = { authority = { NOT = { value = auth_machine_intelligence } } }
 	possible = {
 		civics = {
 			NOR = {
