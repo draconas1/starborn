@@ -554,6 +554,7 @@ planet_event = {
         }
 
         immediate = {
+                set_planet_flag = starborn_citied
                 random_planet = {
                         limit = {
                                 has_planet_flag = habitat_of@root
@@ -671,22 +672,26 @@ planet_event = {
 	picture = GFX_evt_city_planet
 
 	trigger = {
-		has_planet_flag = starborn_origin
+                has_planet_flag = starborn_origin
+                NOT = {
+                        has_planet_flag = starborn_origin_citied
+                }
         }
 
         immediate = {
                 save_event_target_as = src_planet
+                set_planet_flag = starborn_origin_citied
                 solar_system = {
                         random_system_planet = {
                                 limit = {
                                         is_planet_class = pc_starborn_habitat_start
                                 }
-                                save_event_target_as = target_hab
+                                save_event_target_as = target
                                 remove_planet_flag = starborn_tomb_scavenging
                                 remove_planet_flag = starborn_farming_habitat
                                 remove_modifier = starborn_farming_planet
 
-                                set_planet_flag = commercial_habitat
+                                set_planet_flag = commercial_habitat                              
                                 
                                 while = {
                                         limit = {
@@ -736,3 +741,51 @@ country_event = {
 		name = EXCELLENT
 	}
 }
+
+# annual poll for city conversion
+country_event = {
+        id = "starborn.21"
+        hide_window = yes
+        is_triggered_only = yes
+
+        trigger = {
+                has_civic = civic_starborn
+                has_ascension_perk = ap_arcology_project
+                any_planet_within_border = {
+                        is_planet_class = pc_city
+                        NOR = { 
+                                has_planet_flag = starborn_citied
+                                has_planet_flag = starborn_origin_citied
+                        }
+                }
+        }
+
+        immediate = {
+                every_planet_within_border = {
+                        limit = {
+                                is_planet_class = pc_city
+                                NOR = {
+                                        has_planet_flag = starborn_origin
+                                        has_planet_flag = starborn_citied
+                                }
+                        }
+                        planet_event = {
+                                id = starborn.13
+                        }
+                }
+
+                random_controlled_planet = {
+                        limit = {
+                                is_planet_class = pc_city
+                                has_planet_flag = starborn_origin
+                                NOT = {
+                                        has_planet_flag = starborn_origin_citied
+                                }
+                        }
+                        planet_event = {
+                                id = starborn.15
+                        }
+                }
+        }
+}
+

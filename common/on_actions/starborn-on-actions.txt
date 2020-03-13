@@ -19,13 +19,11 @@ empire_init_capital_planet = {
 	}
 }
 
-empire_init_create_ships = {
-	events = {		
-	}
-}
 
-on_press_begin = {
-	events = {	
+# this = country
+on_yearly_pulse_country = {
+	events = {
+		starborn.21 #check for completed city worlds
 	}
 }
 
