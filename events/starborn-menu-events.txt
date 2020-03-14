@@ -64,17 +64,6 @@ country_event = {
 		}
 	}
 	option = {
-		name = "starborn_menus.2.option.1"
-		trigger = {
-			has_technology = tech_starbase_3
-		}
-		hidden_effect = {
-			set_country_flag = starborn_hab_enlargement_1
-			remove_country_flag = starborn_hab_enlargement_2
-			remove_country_flag = starborn_hab_enlargement_3
-		}
-	}
-	option = {
 		name = "starborn_menus.2.option.2"
 		trigger = {
 			has_technology = tech_starbase_5

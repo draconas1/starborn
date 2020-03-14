@@ -376,47 +376,65 @@ starborn_hab_init_deposits = {
                 OR = {
                     is_star_class = sc_black_hole
                     is_star_class = sc_pulsar
+                    is_star_class = sc_neutron_star
 
                     #Planetary Diversity
                     is_planet_class = pc_floating
                     is_planet_class = pc_archive
-                }
-            }
-        }
-        set_planet_flag = research_habitat
-    }
-
-    # Society 
-    if = {
-        limit = {                        
-            fromfrom.planet = {								
-                OR = {
-                    #Planetary Diversity
-                    is_planet_class = pc_archive
                     is_planet_class = pc_graveyard
+                    is_planet_class = pc_technoorganic
+
+                    #GPM
+                    has_deposit = gpm_Pulsar_clock
+                    has_deposit = gpm_Inspirational
+                    has_deposit = gpm_Time_Displaced_Planet
+                    has_deposit = gpm_proto_molecule_deposit
+                  
                 }
             }
         }
         set_planet_flag = research_habitat
     }
+  
+    # GPM Classifications
 
-
-    # Engineering 
     if = {
         limit = {                        
             fromfrom.planet = {								
-                OR = {
-                    #Planetary Diversity
-                    is_planet_class = pc_archive
-                    is_planet_class = pc_technoorganic
-                    is_star_class = sc_neutron_star
+                OR = {															
+                    has_deposit = gpm_asteroid_large_mineral_deposit
+                    has_deposit = gpm_asteroid_dense_mineral_deposit
+                    has_deposit = gpm_asteroid_moon_mineral_deposit
                 }
             }
         }
-        set_planet_flag = research_habitat
+        set_planet_flag = mining_habitat
     }
 
+    if = {
+        limit = {                        
+            fromfrom.planet = {								
+                OR = {															
+                    has_deposit = gpm_asteroid_large_mineral_deposit
+                    has_deposit = gpm_sun_energy_deposit
+                }
+            }
+        }
+        set_planet_flag = energy_habitat
+    }
+   
+    if = {
+        limit = {                        
+            fromfrom.planet = {								
+                OR = {															
+                    has_deposit = gpm_trade_deposit
+                }
+            }
+        }
+        set_planet_flag = commercial_habitat
+    }
 
+    #desposits that add others:
     if = {
         limit = {                        
             fromfrom.planet = {								
@@ -427,6 +445,18 @@ starborn_hab_init_deposits = {
             }
         }
         add_deposit = d_starborn_nanites
+    }
+
+    if = {
+        limit = {                        
+            fromfrom.planet = {								
+                OR = {															
+                    has_deposit = gpm_precursor_unity_deposit
+                    has_deposit = gpm_unity_deposit
+                }
+            }
+        }
+        add_deposit = gpm_unity_deposit
     }
 
 
@@ -456,6 +486,9 @@ starborn_hab_init_deposits = {
             OR = {               
                 fromfrom.planet = { has_deposit = d_minerals_5 }
                 fromfrom.planet = { has_deposit = d_minerals_6 }
+
+                fromfrom.planet = { has_deposit = gpm_asteroid_metal_mineral_deposit }
+                fromfrom.planet = { has_deposit = gpm_asteroid_dense_mineral_deposit }
             }
         }
         set_planet_flag = starborn_mining_6
@@ -466,6 +499,8 @@ starborn_hab_init_deposits = {
             OR = {
                 fromfrom.planet = { has_deposit = d_minerals_7 }
                 fromfrom.planet = { has_deposit = d_minerals_8 }
+
+                fromfrom.planet = { has_deposit = gpm_asteroid_moon_mineral_deposit }
             }
         }
         set_planet_flag = starborn_mining_8
@@ -535,6 +570,18 @@ starborn_hab_init_deposits = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 starborn_hab_init_modifiers = {    
 # Deposits that produce districts
     # Habitable worlds 
@@ -578,6 +625,8 @@ starborn_hab_init_modifiers = {
                     has_deposit = d_energy_8
                     has_deposit = d_energy_9
                     has_deposit = d_energy_10
+
+                    has_deposit = gpm_sun_energy_deposit
                 }
                 is_star = yes
             }
@@ -604,6 +653,11 @@ starborn_hab_init_modifiers = {
                     has_deposit = d_minerals_8
                     has_deposit = d_minerals_9
                     has_deposit = d_minerals_10
+
+                    has_deposit = gpm_asteroid_dense_mineral_deposit
+                    has_deposit = gpm_asteroid_metal_mineral_deposit
+                    has_deposit = gpm_asteroid_large_mineral_deposit
+                    has_deposit = gpm_asteroid_moon_mineral_deposit
                 }
                 is_asteroid = yes
             }
@@ -745,6 +799,7 @@ starborn_hab_init_modifiers = {
                 OR = {						
                     has_deposit = d_trade_value_9
                     has_deposit = d_trade_value_10
+                    has_deposit = gpm_trade_deposit
                 }
             }
         }
@@ -759,6 +814,7 @@ starborn_hab_init_modifiers = {
             fromfrom.planet = {
                 OR = {
                     is_planet_class = pc_city
+                    has_modifier = Space_Elevators #GPM
                 }
             }
         }
@@ -808,6 +864,8 @@ starborn_hab_init_modifiers = {
                 OR = {	
                     has_deposit = d_physics_5
                     has_deposit = d_physics_6
+
+                    has_deposit = gpm_Time_Displaced_Planet
                 }
             }
         }
@@ -838,6 +896,9 @@ starborn_hab_init_modifiers = {
                 OR = {						
                     has_deposit = d_physics_9
                     has_deposit = d_physics_10
+
+                    has_deposit = gpm_Inspirational
+                    has_deposit = gpm_Pulsar_clock
                 }
             }
         }
@@ -926,6 +987,9 @@ starborn_hab_init_modifiers = {
                 OR = {	
                     has_deposit = d_society_5
                     has_deposit = d_society_6
+
+                    has_deposit = gpm_Time_Displaced_Planet
+                    has_deposit = gpm_proto_molecule_deposit
                 }
             }
         }
@@ -1020,6 +1084,8 @@ starborn_hab_init_modifiers = {
                 OR = {	
                     has_deposit = d_engineering_5
                     has_deposit = d_engineering_6
+
+                    has_deposit = gpm_Time_Displaced_Planet
                 }
             }
         }

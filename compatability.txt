@@ -35,3 +35,54 @@ Needs both the habitable structures patch and the starborn compatability patch a
 Realspace
 No patch needed as it does not alter urban districts
 At the moment real space new worlds do not do anything special, suggestions welcome
+
+
+Features
+
+All the standard districts/rules from vanilla: mining, energy, research or commerical
+
+[h1]Planet class[/h1]
+[list]
+[*][b]Habitable Planet except Tomb/relic/city:[/b] +25% food jobs, enable farming district
+[*][b]Star with energy:[/b] +25% energy jobs
+[*][b]Asteroid with minerals:[/b] +25% mining jobs
+[*][b]Molten Planet with minerals:[/b] +20% mining jobs
+[*][b]Molten Planet with alloys:[/b] +20% alloy jobs
+[*][b]Tomb world / Relic world:[/b] Enable Tomb World Scavenger District
+[*][b]City world :[/b] +50% trade value and amenities
+[*][b]Black Hole:[/b] +25% physics research
+[*][b]Pulsar:[/b] +25% physics research
+[*][b]Neutron Star:[/b] +25% engineering research
+[*][b]Various PD Worlds:[/b] most of them are farming, a few are scavenger or science
+[/list]
+
+
+[h1]Deposits[/h1]
+[list]
+[*][b]4 or more energy:[/b] enable building: energy complex.  Production proportional to size of deposit
+[*][b]4 or more minerals:[/b] enable building: mining complex.  Production proportional to size of deposit
+[*][b]Alloys:[/b] enable building: alloy foundry complex.  Production proportional to size of deposit
+[*][b]Physics:[/b] +% to physics research, capping at +25% at 10 physics.
+[*][b]Engineering:[/b] +% to engineering research, capping at +25% at 10 engineering.
+[*][b]Society:[/b] +% to society research, capping at +25% at 10 society.
+[*][b]Trade value:[/b ]+% to trade value and amenities, capping at +25% for a level 5 deposit.  
+[*][b]Zro:[/b] enable building: zro temple
+[*][b]Living metal:[/b] enable building: living metal extractor
+[*][b]Dark matter:[/b] enable building: dark matter extractor
+[*][b]Nanites:[/b] enable building: dark nanite producer
+[*][b]GPM:[/b] approprate benefits based on the GPM deposit
+[/list]
+
+[h1]Megastructure[/h1]
+Satelite Habitat Complex: Requires you to designate one fully built habitat (size 6) as the target.  You can then build this megastructure around any other planet/star in the system and when completed it will add +6 districts to your targetted habitat and will give access to any special districts or buildings based on the planet it was built around.  It will not give you any bonuses or modifiers for that world though.  It also adds +5% crime and +5 amenities use to the target hab, representing effects of the distributed nature of the habitat.
+
+[h1]Other[/h1]
+[list]
+[*]2 levels of "add district" decisions acquired from the starbase techs and master builders as you make more efficient use of your habitat (each adds +2).
+[*]Decisions that let you turn off the extra districts if you need more UI room
+[*]Habitats adapt to changes in habitable world
+[*]Refund on habitat alloy upkeep for size 3 and 4 habitats.
+[*]Set of edicts let you build habitats at any size between 3 and 6 and with one or both levels of extra districts at starting, to save on your micromanagement.
+[/list]
+
+

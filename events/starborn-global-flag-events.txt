@@ -1,0 +1,30 @@
+namespace = starborn_flags
+
+event = {
+	id = starborn_flags.1
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+			always = yes
+	}
+
+	immediate = {
+			set_global_flag = starborn_installed
+	}
+}
+
+
+event = {
+	id = starborn_flags.2
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+			any_country = {
+				has_starborn = yes
+			}
+	}
+	
+	immediate = {
+		set_global_flag = starborn_active
+	}
+}

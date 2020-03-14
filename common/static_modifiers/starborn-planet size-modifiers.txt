@@ -1,3 +1,16 @@
+##########################################################################
+# Icon Frames
+##########################################################################
+# 1 = Good (green)
+# 2 = Mixed (yellow)
+# 3 = Bad (red)
+# 4 = Neutral/flavor (White)
+# 5 = Precursor (Light Blue special)
+# 6 = Event (Purple)
+# 7 = (Dark Blue)
+# 8 = Machine Worlds(Orange)
+# 9 = Fallen Empires (Pink-Purple)
+
 starborn_habitat_districts_2 = {
 	planet_max_districts_add = 2
     icon = "gfx/interface/icons/planet_modifiers/pm_satellite_in_orbit.dds"
@@ -54,8 +67,10 @@ starborn_starting_habitat_districts_galatic_wonders = {
 
 starborn_habitat_complex = {
     planet_max_districts_add = 6
-    planet_crime_mult = 0.05
+    planet_crime_mult = 0.1
 	planet_amenities_mult = -0.05
     icon = "gfx/interface/icons/planet_modifiers/pm_land_appropriated.dds"
-    icon_frame = 1
+    icon_frame = 2
 }
+
+

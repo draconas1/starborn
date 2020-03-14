@@ -1,291 +1,5 @@
 namespace = starborn
 
-#District patch flag setting 
-#out of order to make it easy for the patcher to find.
-event = {
-        id = starborn.9
-        hide_window = yes
-	is_triggered_only = yes
-        trigger = {
-                always = yes
-        }
-        immediate = {
-                set_global_flag = starborn_installed
-        }
-}
-
-
-#1. starting - spawn planets and habitats
-country_event = {
-        id = starborn.1
-        hide_window = yes
-        is_triggered_only = yes
-
-        trigger = {
-                is_ai = no
-                has_starborn = yes
-        }
-
-        immediate = {
-                set_country_flag = custom_start_screen
-                set_country_flag = starborn_hab_size_3
-
-                #starting system
-                random_system_within_border = {
-                        limit = {
-                                any_system_planet = {
-                                        is_capital = yes
-                                }
-                        }
-                        # tag the star
-                        random_system_planet = { 
-                                limit = {
-                                        is_star = yes
-                                }
-                                save_event_target_as = star_spawn
-                                clear_deposits = yes
-                                set_planet_flag = has_megastructure
-                                random_mining_station = {
-                                        dismantle = yes
-                                }
-                        }
-
-                        # tag the capital
-                        random_system_planet = { 
-                                limit = {
-                                        is_capital = yes
-                                }
-                                save_event_target_as = capital_spawn_planet
-                        }
-
-                        every_planet = {
-                                limit = {
-                                        is_star = yes
-                                }
-                                remove_deposit = yes 
-                        }
-
-                        if = {
-                                limit = {
-                                        NOT = {
-                                                any_system_planet = {
-                                                        is_asteroid = yes
-                                                }
-                                        }
-                                }
-                                add_asteroid_belt = {
-                                        radius = 200
-                                        type = rocky_asteroid_belt
-                                }
-
-                                spawn_planet = {
-                                        class = "pc_asteroid"
-                                        orbit_distance = 200
-                                        orbit_angle = 0
-                                        size = 6
-                                        has_ring = no
-                        
-                                        init_effect = {
-                                                set_name = "I5-A2"
-                                                set_planet_flag = has_megastructure
-                                                save_event_target_as = asteroid_spawn 
-                                        }
-                                }
-                                
-                                spawn_planet = {
-                                        class = "pc_asteroid"
-                                        orbit_distance = 200
-                                        orbit_angle = 90
-                                        size = 5
-                                        has_ring = no
-                                        init_effect = {
-                                                set_name = "I5-A1"
-                                                random_list = {
-                                                        40 = {}
-                                                        60 = { add_deposit = d_minerals_1 }
-                                                        50 = { add_deposit = d_minerals_2 }
-                                                        40 = { add_deposit = d_minerals_3 }
-                                                        20 = { add_deposit = d_minerals_4 }
-                                                }
-                                        }
-                                }
-                                spawn_planet = {
-                                        class = "pc_asteroid"
-                                        orbit_distance = 200
-                                        orbit_angle = 200
-                                        size = 4
-                                        has_ring = no
-                                        init_effect = {
-                                                set_name = "I5-A3"
-                                                random_list = {
-                                                        40 = {}
-                                                        60 = { add_deposit = d_minerals_1 }
-                                                        50 = { add_deposit = d_minerals_2 }
-                                                        40 = { add_deposit = d_minerals_3 }
-                                                        20 = { add_deposit = d_minerals_4 }
-                                                }
-                                        }
-                                }
-                                spawn_planet = {
-                                        class = "pc_asteroid"
-                                        orbit_distance = 200
-                                        orbit_angle = 280
-                                        size = 3
-                                        has_ring = no
-                                        init_effect = {
-                                                set_name = "I5-A4"
-                                                random_list = {
-                                                        40 = {}
-                                                        60 = { add_deposit = d_minerals_1 }
-                                                        50 = { add_deposit = d_minerals_2 }
-                                                        40 = { add_deposit = d_minerals_3 }
-                                                        20 = { add_deposit = d_minerals_4 }
-                                                }
-                                        }
-                                }
-                        }
-                        else = {
-                                random_system_planet = { 
-                                        limit = {
-                                                is_asteroid = yes
-                                        }
-                                        save_event_target_as = asteroid_spawn 
-                                        clear_deposits = yes
-                                }  
-                        }
-
-                        # spawn the solar habitat
-                        spawn_planet = {
-                                class = "pc_habitat"
-                                location = event_target:star_spawn
-                                orbit_location = yes
-                                orbit_angle_offset = 45
-                                orbit_distance_offset = 9.899
-                                size = 3
-                                has_ring = no
-                                
-                                init_effect = {
-                                        set_name = "Prototype Solar Collection Habitat"
-                                        set_planet_entity = {
-                                                entity = "orbital_habitat_entity"
-                                                graphical_culture = fromfrom
-                                        }
-                                        surveyed = {
-                                                set_surveyed = yes
-                                                surveyor = FROM
-                                        }
-                                        set_all_comms_surveyed = yes
-                                        clear_blockers = yes
-                                        prevent_anomaly = yes
-                                        add_modifier = {
-                                                modifier = starborn_near_solar_energy
-                                                days = -1
-                                        }                                                                               
-
-                                        set_planet_flag = megastructure
-                                        set_planet_flag = habitat
-                                        set_planet_flag = energy_habitat
-                                        set_planet_flag = starborn_energy_6
-                                        set_planet_flag = habitat_of@event_target:star_spawn
-                                }
-                        }
-
-                        # spawn the mining habitat
-                        spawn_planet = {
-                                class = "pc_habitat"
-                                location = event_target:asteroid_spawn
-                                orbit_location = yes
-                                orbit_angle_offset = 20
-                                orbit_distance_offset = 2
-                                size = 3
-                                has_ring = no
-                                
-                                init_effect = {
-                                        set_name = "Prototype Asteroid Mining Habitat"
-                                        set_planet_entity = {
-                                                entity = "orbital_habitat_entity"
-                                                graphical_culture = fromfrom
-                                        }
-                                        surveyed = {
-                                                set_surveyed = yes
-                                                surveyor = FROM
-                                        }
-                                        set_all_comms_surveyed = yes
-                                        clear_blockers = yes
-                                        prevent_anomaly = yes
-
-                                        add_modifier = {
-                                                modifier = starborn_asteroid_minerals
-                                                days = -1
-                                        }                                                                               
-
-                                        set_planet_flag = megastructure
-                                        set_planet_flag = habitat
-                                        set_planet_flag = mining_habitat
-                                        set_planet_flag = starborn_mining_6
-                                        set_planet_flag = habitat_of@event_target:asteroid_spawn
-                                }
-                        }
-
-                        # spawn the original homeworld
-                        spawn_planet = {
-                                class = "pc_nuked"
-                                location =  event_target:capital_spawn_planet
-                                orbit_location = yes
-                                size = 18
-                                has_ring = no
-                                
-                                init_effect = {
-                                        surveyed = {
-                                                set_surveyed = yes
-                                                surveyor = FROM
-                                        }
-                                        set_all_comms_surveyed = yes
-                                        clear_blockers = yes
-                                        clear_planet_modifiers = yes                                        
-                                        prevent_anomaly = yes
-
-                                        set_planet_flag = has_megastructure
-                                        set_planet_flag = starborn_origin
-                                        set_name = "Paradise Lost"
-
-                                        #copy of the post_apoc deposits
-                                        # common/scripted_effects/01_start_of_game_effects.txt : generate_start_deposits_and_blockers
-                                        # 3 + 3 energy		
-                                        set_deposit = d_hot_springs		
-                                        add_deposit = d_searing_desert
-                                        add_deposit = d_underwater_vent	
-                                        
-                                        # 3 + 4 mining
-                                        add_deposit = d_veiny_cliffs		
-                                        add_deposit = d_ore_rich_caverns
-                                        add_deposit = d_submerged_ore_veins
-                                        
-                                        # 3 + 2 farming
-                                        add_deposit = d_lichen_fields	
-                                        add_deposit = d_fungal_caves 	
-                                        add_deposit = d_fungal_forest	
-                                
-                                        # add starborn ruins blockers
-                                        # like regular ones, except they don't give you any pops when cleared as all the pops are dead.  
-                                        add_deposit = d_starborn_ruins
-                                        add_deposit = d_starborn_wasteland
-                                        add_deposit = d_starborn_ruins
-                                        add_deposit = d_starborn_wasteland	
-                                        add_deposit = d_starborn_ruins
-                                        add_deposit = d_starborn_wasteland
-                                }
-                        }
-                }
-
-                # we live in a space station, we understand how hydroponics work
-                give_technology = { 
-                        message = no 
-                        tech = tech_hydroponics 
-                }
-        }
-}
-
 #2. tried to cheat enlarging habitat
 country_event = {
         id = starborn.2    
@@ -301,23 +15,6 @@ country_event = {
 	}
 }
 
-#3. Starting mechanics functions
-country_event = {
-        id = starborn.3    
-	title = "starborn.3.name"
-	desc = "starborn.3.desc"
-	picture = GFX_evt_colony_settlement
-	is_triggered_only = yes
-
-        trigger = {
-                is_ai = no
-                has_starborn = yes
-        }
-
-	option = {
-		name = "starborn.3.option.a"
-	}
-}
 
 
 #6. hab enlargement failed because you lacked resources
@@ -334,73 +31,6 @@ country_event = {
 		name = "starborn.6.option.a"
 	}
 }
-
-#7. enact living metal event if playing in the OP system.  
-country_event = {
-        id = starborn.7
-        hide_window = yes
-        is_triggered_only = yes
-
-        trigger = {
-                is_ai = no
-                has_starborn = yes
-                has_global_flag = starborn_op_init
-        }
-
-        immediate = {
-                if = {
-                        limit = {
-                                has_tech_option = tech_mine_living_metal
-                        }
-                        add_tech_progress = {
-                                tech = tech_mine_living_metal
-                                progress = 0.25
-                        }
-                }
-                else = {
-                        add_research_option = tech_mine_living_metal
-                }
-        }
-}
-
-#8. Deal with Starting world - the orbital city
-planet_event = {
-        id = starborn.8
-	hide_window = yes
-	is_triggered_only = yes
-
-	trigger = {
-		owner = {
-			has_starborn = yes
-		}
-        }
-        immediate = {
-                clear_deposits = yes
-                clear_blockers = yes
-		prevent_anomaly = yes
-                set_planet_flag = has_megastructure
-                set_planet_flag = starborn_tomb_scavenging              
-
-                set_name = "Arc of Civilisation"              
-               
-                remove_all_districts = yes
-                add_district = district_starborn_starting_hab_housing
-                add_district = district_starborn_starting_hab_housing
-                add_district = district_starborn_starting_hab_housing
-                add_district = district_starborn_starting_scavenger
-                add_district = district_starborn_starting_scavenger
-                add_district = district_starborn_starting_preserve
-                add_district = district_starborn_starting_preserve
-                add_district = district_starborn_starting_preserve
-                add_district = district_starborn_starting_solar
-                add_district = district_starborn_starting_solar
-                add_district = district_starborn_starting_solar
-
-                set_planet_size = 16
-        }
-}
-
-#9. is at the top
 
 
 #10 put refund modifer on smaller hab alloys cost
@@ -466,25 +96,12 @@ planet_event = {
 }
 
 
-#16. message about terraforming causing scavenger districts to pack up and become farming
-country_event = {
-        id = starborn.16    
-	title = "starborn.16.name"
-	desc = "starborn.16.desc"
-	picture = GFX_evt_colony_settlement
-	is_triggered_only = yes
-
-
-	option = {
-		name = "starborn.16.option.a"
-	}
-}
-
 # 12. Remove tomb world savenger when terraformed
 planet_event = {
         id = starborn.12
+        title = "starborn.12.name"
+	desc = "starborn.12.desc"
         is_triggered_only = yes
-        hide_window = yes
 	picture = GFX_evt_colony_settlement
 
 	trigger = {
@@ -530,10 +147,11 @@ planet_event = {
                         }
                       
                 }
-                from = {
-                        country_event = { id = starborn.16 }
-                }
         }
+
+        option = {
+		name = "starborn.12.option.a"
+	}
 }
 
 # 13. Add City world mod when converted
@@ -598,26 +216,12 @@ planet_event = {
 }
 
 
-
-#17. message about terraforming home world causing scavenger districts to pack up and become farming
-country_event = {
-        id = starborn.17    
-	title = "starborn.17.name"
-	desc = "starborn.17.desc"
-	picture = GFX_evt_colony_settlement
-	is_triggered_only = yes
-
-
-	option = {
-		name = "starborn.17.option.a"
-	}
-}
-
 # 14. Remove tomb world savenger from orbital city when home world terraformed
 planet_event = {
         id = starborn.14
-        is_triggered_only = yes
-        hide_window = yes	
+        title = "starborn.14.name"
+	desc = "starborn.14.desc"
+        is_triggered_only = yes	
 	picture = GFX_evt_colony_settlement
 
 	trigger = {
@@ -655,11 +259,11 @@ planet_event = {
                                 }
                         }
                 }
-                from = {
-                        country_event = { id = starborn.17 }
-                }
-                
         }
+
+        option = {
+		name = "starborn.14.option.a"
+	}
 }
 
 
@@ -726,9 +330,7 @@ planet_event = {
         }
 }
 
-#16 and 17 are out of order
-
-# Habitat Complete Notification
+# Habitat Complex Complete Notification
 country_event = {
 	id = "starborn.20"
 	title = "starborn.20.name"
@@ -751,7 +353,7 @@ country_event = {
         trigger = {
                 has_civic = civic_starborn
                 has_ascension_perk = ap_arcology_project
-                any_planet_within_border = {
+                any_owned_planet = {
                         is_planet_class = pc_city
                         NOR = { 
                                 has_planet_flag = starborn_citied
@@ -761,7 +363,7 @@ country_event = {
         }
 
         immediate = {
-                every_planet_within_border = {
+                every_owned_planet = {
                         limit = {
                                 is_planet_class = pc_city
                                 NOR = {
@@ -774,7 +376,7 @@ country_event = {
                         }
                 }
 
-                random_controlled_planet = {
+                random_owned_planet = {
                         limit = {
                                 is_planet_class = pc_city
                                 has_planet_flag = starborn_origin
