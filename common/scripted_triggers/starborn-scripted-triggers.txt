@@ -7,7 +7,7 @@ habitable_structure = {
 }
 
 has_starborn = {
-	has_civic = civic_starborn
+	has_origin = origin_starborn
 }
 
 starborn_can_place_hab = {

@@ -115,6 +115,12 @@
  building_starborn_habitation_dome:0 "Habitation Dome"
  building_starborn_habitation_dome_desc:0 "Sometimes $district_hab_housing_plural$ are insufficient to house the population, these domes provide additional space and one heck of a view"
 
+ building_starborn_obelisk_nuked:0 "Monument to Paradise"
+ building_starborn_obelisk_nuked_desc:0 "A giant oblisk of black stone with a large surrounding garden and visitors centre, as much of the site as possible is made from reclaimed ruins, but never polished up, such that you can never mistake them for anything else.\nThe names of what nations we remember are etched into the oblisk, while the visitors centre teaches we we know about our worlds cultural history.\nStanding here, looking at this monument surrounded by the twisted ruins of our homeworld, it is impossible not to feel a great sense of loss and a sense of the futility of war"
+
+ building_starborn_obelisk_restored:0 "Monument to Triumph"
+ building_starborn_obelisk_restored_desc:0 "A giant oblisk of black stone with a large surrounding garden and visitors centre, as much of the site as possible is made from reclaimed ruins, but never polished up, such that you can never mistake them for anything else.\nIt serves forever as a moument to our ancestors folly, and of our resolve to atone for their sins and correct their errors."
+
  d_starborn_ruins:0 "£blocker£ Ruins"
  d_starborn_ruins_desc:0 "This once major settlement is now a crumbling ruin, occupied only by the decaying bodies of its inhabitants."
  d_starborn_wasteland:0 "£blocker£ Radiation Zone"

@@ -1,0 +1,10 @@
+# Starborn
+# wants to be early to override prescripted empires
+# that's why there is a 0 prefix on the file
+part = {
+        location = 0
+        localization = "START_SCREEN_STARBORN"	
+        trigger = {
+                has_starborn = yes
+        }		
+}

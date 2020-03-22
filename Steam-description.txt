@@ -1,4 +1,4 @@
-[h1]Starborn: the Enhanced VoidTouched Habitat Start[/h1]
+[h1]Starborn: the Improved Voidtouched Habitat Start[/h1]
 The Mod that did Voidtouched before PDX did.
 
 Start on a unique habitat - the Orbital City, built above the ruins of your original homeworld.  Build habitats almost anywhere that gain special bonuses and modifiers based on the planet and deposits they are around.  Your species adapted to life on habitats now cannot live on planets anymore, not that you care, who needs to search for habitatable planets when all of the void is habitable to you?  
@@ -13,15 +13,13 @@ Create huge habitats that span solar systems - rather than manage 10 small habit
 [*] Build habitats around almost any stellar body.
 [*] Your adapton to space means your habitats may get additional desposits, buildings or modifiers based on the body type and deposits such as asteroids - great for mining, molten planets - great for alloys, black holes: whole lot of physics research.
 [*] Habitat Satelite Complex megastructure lets you expand your habitats to encompass the entire system without having to manage all the individual planets.  Built it around a planet and one of your existing habitats gets a size boost and access to that planets resources.
-[*] Optional OP starting system if you want it
 [/list]
 [i]There are lots of other effects for different types of planets and the different orbital deposits, you'll need to discover them in play or read the spoiler post in discussion[/i]
 
-Federations DLC is not required as this is my own work that predates VoidTouched, it has been made voidtouched compatible for ease of playstyles.
-Starborn will trigger any unique Voidtouched events only if you have Federations DLC - that is PDX content and if you want it you need to pay them money.   
+Federations DLC is not required as this is my own work that predates VoidTouched, it has been made voidtouched compatible for ease of playstyles. 
 
 [h1]Gameplay Notes[/h1]
-Remember that habitats cost alloys in maintenance!  Starborn builds will have a constant need for more alloy production.
+Remember that habitats cost alloys in maintenance!  Starborn builds will have a constant need for more alloy production,
 
 I do not adjust normal habitats so you will have the ability to build normal habitats if you buy the tech.  Those are completely vanilla and I suggest avoiding them, I've not taken them out to try to limit compatibility problems.
 
@@ -58,7 +56,15 @@ If you have a mod that wants district compatibility, leave a comment and I will 
 [h1]Credit and Thanks[/h1]
 The Orbital City ring is from [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1121692237]Gigastructures[/url]  and the nature preserve and scavenger districts were inspired by similar ones from their mod.
 The building art for come from CGM Planets.
-ViolentBeetle on Stellaris Modding Den discord gave me a great deal of help, without which I never would ahve been able to do the planet and habitat linking
+ViolentBeetle on Stellaris Modding Den discord gave me a great deal of help, without which I never would have been able to do the planet and habitat linking
+
+[h1]Future[/h1]
+[list]
+[*] More events around habitability
+[*] More events generally
+[*] Stellaris Immortal Compatibility
+[/list]
+
 
 [h1]Localisation[/h1]
 Currently English only
@@ -67,7 +73,7 @@ If you would like to help translate into your language, the English language fil
 https://github.com/draconas1/starborn/tree/master/localisation/english if you are familiar with git then feel free to fork and create a pull request when you are done.  If you have no idea how to use github the don't worry: download the file, and upload your localised version to pastebin or similar and let me know in the comments and I will handle the rest.
 
 [h1]Past Versions[/h1]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1765400157]2.5 version[/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2022586532]2.5 version[/url]
 
 [b]Please Rate and Subscribe as it helps others find the mods[/b]
 [img]https://i.imgur.com/fVVaDCS.gif[/img]

@@ -1,4 +1,4 @@
-name="Starborn"
+name="Starborn: Improved Voidtouched"
 tags={
 	"Gameplay"
 	"Overhaul"
@@ -6,6 +6,6 @@ tags={
 picture="thumbnail.png"
 "dependencies"={
 }
-supported_version="2.5.*"
+supported_version="2.6.*"
 path="D:/Users/Draconas/Documents/Paradox Interactive/Stellaris/mod/starborn"
 remote_file_id="1743133825"

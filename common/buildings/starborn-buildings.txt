@@ -486,7 +486,6 @@ building_starborn_generator_complex = {
 
 
 building_starborn_habitation_dome = {
-	icon = old_production/building_hydroponics_farm_5
 	base_buildtime = 500
 	category = amenity
 	
@@ -515,4 +514,65 @@ building_starborn_habitation_dome = {
 	prerequisites = {
 		"tech_paradise_dome"
 	}
+}
+
+building_starborn_obelisk_nuked = {
+	base_buildtime = 500
+	category = unity
+	base_cap_amount = 1
+	
+	potential = {
+		is_planet_class = pc_nuked
+		has_planet_flag = starborn_origin
+        owner = {
+            has_starborn = yes
+        }
+	}
+	
+	planet_modifier = {
+		job_culture_worker_add = 4
+		planet_jobs_unity_produces_mult = 0.10
+		pop_ethic_pacifist_attraction_mult = 0.25
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 500
+		}
+		upkeep = {
+			energy = 3
+		}
+	}	
+}
+
+
+building_starborn_obelisk_restored = {
+	base_buildtime = 500
+	category = unity
+	base_cap_amount = 1
+	
+	potential = {
+		not = { is_planet_class = pc_nuked }
+		has_planet_flag = starborn_origin
+        owner = {
+            has_starborn = yes
+        }
+	}
+	
+	planet_modifier = {
+		job_culture_worker_add = 6
+		planet_jobs_unity_produces_mult = 0.20
+		pop_government_ethic_attraction = 0.50	
+	}
+	
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 500
+		}
+		upkeep = {
+			energy = 3 
+		}
+	}	
 }

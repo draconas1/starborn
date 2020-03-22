@@ -1,8 +1,0 @@
-# Starborn
-part = {
-        location = 0
-        localization = "START_SCREEN_STARBORN"	
-        trigger = {
-                has_starborn = yes
-        }		
-}

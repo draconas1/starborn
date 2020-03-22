@@ -63,15 +63,31 @@ planet_event = {
         }
 }
 
-# 11. Remove whole planetary farming when colonised
-planet_event = {
-        id = starborn.11
-	is_triggered_only = yes
-        title = "starborn.11.name"
-	desc = "starborn.11.desc"
+
+# Habitat Complex Complete Notification
+country_event = {
+	id = "starborn.20"
+	title = "starborn.20.name"
+	desc = "starborn.20.desc"
 	picture = GFX_evt_colony_settlement
+	is_triggered_only = yes
+	location = FromFromFrom.Planet
+
+	option = {
+		name = EXCELLENT
+	}
+}
+
+
+# 30. Remove whole planetary farming when colonised
+# Making the window appear is much easier as a follow on country event
+planet_event = {
+        id = starborn.30
+        is_triggered_only = yes
+        hide_window = yes
 
 	trigger = {
+                exists = owner
 		owner = {
                         any_planet_within_border = {
                                 has_planet_flag = habitat_of@root
@@ -81,28 +97,42 @@ planet_event = {
         }
 
         immediate = {
+                save_event_target_as = src_planet
                 random_planet = {
                         limit = {
                                 has_planet_flag = habitat_of@prev
                                 has_planet_flag = starborn_farming_habitat
                         }
-                        save_event_target_as = target
+                        save_event_target_as = target_hab
                         remove_modifier = starborn_farming_planet
                 }
+
+                owner = {
+                        country_event = {
+                                id = starborn.31
+                        }
+                }
         }
+        
+}
+
+country_event = {
+        id = starborn.31
+	is_triggered_only = yes
+        title = "starborn.31.name"
+	desc = "starborn.31.desc"
+        picture = GFX_evt_colony_settlement
         option = {
-                name = "starborn.11.option.a"
+                name = "starborn.31.option.a"
         }
 }
 
 
-# 12. Remove tomb world savenger when terraformed
+# 40. Remove tomb world savenger when terraformed
 planet_event = {
-        id = starborn.12
-        title = "starborn.12.name"
-	desc = "starborn.12.desc"
+        id = starborn.40
+        hide_window = yes
         is_triggered_only = yes
-	picture = GFX_evt_colony_settlement
 
 	trigger = {
                 solar_system = {
@@ -147,211 +177,70 @@ planet_event = {
                         }
                       
                 }
-        }
-
-        option = {
-		name = "starborn.12.option.a"
-	}
-}
-
-# 13. Add City world mod when converted
-planet_event = {
-        id = starborn.13
-        is_triggered_only = yes
-	title = "starborn.13.name"
-	desc = "starborn.13.desc"
-	picture = GFX_evt_city_planet
-
-	trigger = {
-		owner = {
-                        has_starborn = yes
-                        any_planet_within_border = {
-                                has_planet_flag = habitat_of@root
-                        }
-                }
-        }
-
-        immediate = {
-                set_planet_flag = starborn_citied
-                random_planet = {
+                if = {
                         limit = {
-                                has_planet_flag = habitat_of@root
+                                has_planet_flag = starborn_origin
                         }
-                        save_event_target_as = target
-                        remove_planet_flag = starborn_tomb_scavenging
-                        remove_planet_flag = starborn_farming_habitat
-                        remove_modifier = starborn_farming_planet
-                        
-                        while = {
-                                limit = {
-                                        num_districts = {
-                                                type = district_starborn_starting_scavenger
-                                                value > 0                                                
-                                        }
+                        planet_event = {
+                                id = starborn.70
+                        }
+                        from = {
+                                country_event = {
+                                        id = starborn.42
                                 }
-                                remove_district = district_starborn_starting_scavenger
-                                add_district = district_hab_commercial
                         }
-                        while = {
-                                limit = {
-                                        num_districts = {
-                                                type = district_starborn_surface_farming
-                                                value > 0                                                
-                                        }
-                                }
-                                remove_district = district_starborn_surface_farming
-                                add_district = district_hab_commercial
-                        }
-                        add_modifier = {
-                                modifier = starborn_pc_city_trade_value
-                                days = -1
-                        }
-
                 }
-        }
-
-        option = {
-                name = "starborn.13.option.a"
+                else = {
+                        from = {
+                                country_event = {
+                                        id = starborn.41
+                                }
+                        }
+                }
         }
 }
 
-
-# 14. Remove tomb world savenger from orbital city when home world terraformed
-planet_event = {
-        id = starborn.14
-        title = "starborn.14.name"
-	desc = "starborn.14.desc"
-        is_triggered_only = yes	
-	picture = GFX_evt_colony_settlement
-
-	trigger = {
-                has_planet_flag = starborn_origin
-        }
-
-        immediate = {
-                solar_system = {
-                        random_system_planet = {
-                                limit = {
-                                       is_planet_class = pc_starborn_habitat_start
-                                }
-                                remove_planet_flag = starborn_tomb_scavenging
-                                while = {
-                                        limit = {
-                                                num_districts = {
-                                                        type = district_starborn_starting_scavenger
-                                                        value > 0                                                
-                                                }
-                                        }
-                                        remove_district = district_starborn_starting_scavenger
-                                        add_district = district_starborn_surface_farming
-                                }
-                                set_planet_flag = starborn_farming_habitat
-                                if = {
-                                        limit = {
-                                                root = {
-                                                        has_owner = no
-                                                }
-                                        }
-                                        add_modifier = {
-                                                modifier = starborn_farming_planet
-                                                days = -1
-                                        }
-                                }
-                        }
-                }
-        }
-
-        option = {
-		name = "starborn.14.option.a"
-	}
-}
-
-
-# 15.  Homeworld converted to city
-planet_event = {
-        id = starborn.15
-        is_triggered_only = yes
-	title = "starborn.15.name"
-	desc = "starborn.15.desc"
-	picture = GFX_evt_city_planet
-
-	trigger = {
-                has_planet_flag = starborn_origin
-                NOT = {
-                        has_planet_flag = starborn_origin_citied
-                }
-        }
-
-        immediate = {
-                save_event_target_as = src_planet
-                set_planet_flag = starborn_origin_citied
-                solar_system = {
-                        random_system_planet = {
-                                limit = {
-                                        is_planet_class = pc_starborn_habitat_start
-                                }
-                                save_event_target_as = target
-                                remove_planet_flag = starborn_tomb_scavenging
-                                remove_planet_flag = starborn_farming_habitat
-                                remove_modifier = starborn_farming_planet
-
-                                set_planet_flag = commercial_habitat                              
-                                
-                                while = {
-                                        limit = {
-                                                num_districts = {
-                                                        type = district_starborn_starting_scavenger
-                                                        value > 0                                                
-                                                }
-                                        }
-                                        remove_district = district_starborn_starting_scavenger
-                                        add_district = district_starborn_hab_commercial
-                                }
-                                while = {
-                                        limit = {
-                                                num_districts = {
-                                                        type = district_starborn_surface_farming
-                                                        value > 0                                                
-                                                }
-                                        }
-                                        remove_district = district_starborn_surface_farming
-                                        add_district = district_starborn_hab_commercial
-                                }
-                                add_modifier = {
-                                        modifier = starborn_pc_city_trade_value
-                                        days = -1
-                                }
-                        }
-                }
-        }
-
-        option = {
-                name = "starborn.15.option.a"
-        }
-}
-
-# Habitat Complex Complete Notification
+# message when non homeworld has been terraformed - remove scavenger districts
 country_event = {
-	id = "starborn.20"
-	title = "starborn.20.name"
-	desc = "starborn.20.desc"
+        id = starborn.41
+        title = "starborn.41.name"
+	desc = "starborn.41.desc"
+        is_triggered_only = yes
 	picture = GFX_evt_colony_settlement
-	is_triggered_only = yes
-	location = FromFromFrom.Planet
 
-	option = {
-		name = EXCELLENT
-	}
+        option = {
+                name = "starborn.41.option.a"
+        }
 }
+
+# message when homeworld has been terraformed - remove scavenger districts
+country_event = {
+        id = starborn.42
+        title = "starborn.42.name"
+	desc = "starborn.42.desc"
+        is_triggered_only = yes
+	picture = GFX_evt_colony_settlement
+
+        option = {
+                name = "starborn.42.option.a"
+                add_monthly_resource_mult = {
+			resource = unity
+			value = @tier4unityreward
+			min = @tier4unityreward
+			max = @tier4unityreward
+		}
+        }
+}
+
 
 # annual poll for city conversion
 country_event = {
-        id = "starborn.21"
-        hide_window = yes
+        id = "starborn.50"
         is_triggered_only = yes
+        hide_window = yes
 
         trigger = {
-                has_civic = civic_starborn
+                has_starborn = yes
                 has_ascension_perk = ap_arcology_project
                 any_owned_planet = {
                         is_planet_class = pc_city
@@ -367,27 +256,292 @@ country_event = {
                         limit = {
                                 is_planet_class = pc_city
                                 NOR = {
-                                        has_planet_flag = starborn_origin
                                         has_planet_flag = starborn_citied
                                 }
                         }
                         planet_event = {
-                                id = starborn.13
-                        }
-                }
-
-                random_owned_planet = {
-                        limit = {
-                                is_planet_class = pc_city
-                                has_planet_flag = starborn_origin
-                                NOT = {
-                                        has_planet_flag = starborn_origin_citied
-                                }
-                        }
-                        planet_event = {
-                                id = starborn.15
+                                id = starborn.51
                         }
                 }
         }
 }
 
+
+
+# 13. Add City world mod when converted
+# notification in separate country event for my sanity
+planet_event = {
+        id = starborn.51
+        is_triggered_only = yes
+        hide_window = yes
+        immediate = {
+                set_planet_flag = starborn_citied
+                save_event_target_as = src_planet
+                random_planet = {
+                        limit = {
+                                has_planet_flag = habitat_of@root
+                        }
+                        save_event_target_as = target_hab
+                        remove_planet_flag = starborn_tomb_scavenging
+                        remove_planet_flag = starborn_farming_habitat
+                        remove_modifier = starborn_farming_planet
+                        set_planet_flag = commercial_habitat
+                        
+                        while = {
+                                limit = {
+                                        num_districts = {
+                                                type = district_starborn_starting_scavenger
+                                                value > 0
+                                        }
+                                }
+                                remove_district = district_starborn_starting_scavenger
+                                add_district = district_hab_commercial
+                        }
+                        while = {
+                                limit = {
+                                        num_districts = {
+                                                type = district_starborn_surface_farming
+                                                value > 0                                                
+                                        }
+                                }
+                                remove_district = district_starborn_surface_farming
+                                add_district = district_hab_commercial
+                        }
+                        # homeworld needs a different district to avoid overriding vanilla
+                        if = {
+                                limit = {
+                                        has_planet_flag = starborn_orbital_city
+                                }
+                                while = {
+                                        limit = {
+                                                num_districts = {
+                                                        type = district_hab_commercial
+                                                        value > 0                                                
+                                                }
+                                        }
+                                        remove_district = district_hab_commercial
+                                        add_district = district_starborn_hab_commercial
+                                }
+                        }
+
+                        add_modifier = {
+                                modifier = starborn_pc_city_trade_value
+                                days = -1
+                        }
+
+                }
+                if = {
+                        limit = {
+                                has_planet_flag = starborn_origin
+                        }
+                        planet_event = {
+                                id = starborn.70
+                        }
+                        from = {
+                                country_event = {
+                                        id = starborn.53
+                                }
+                        }
+                }
+                else = {
+                        from = {
+                                country_event = {
+                                        id = starborn.52
+                                }
+                        }
+                }
+        }
+}
+
+
+# message when non homeworld has been citied
+country_event = {
+        id = starborn.52
+        title = "starborn.52.name"
+	desc = "starborn.52.desc"
+        is_triggered_only = yes
+	picture = GFX_evt_city_planet
+
+        option = {
+                name = "starborn.52.option.a"
+        }
+}
+
+# message when homeworld has been citied
+country_event = {
+        id = starborn.53
+        title = "starborn.53.name"
+	desc = "starborn.53.desc"
+        is_triggered_only = yes
+	picture = GFX_evt_city_planet
+
+        option = {
+                name = "starborn.53.option.a"
+                add_monthly_resource_mult = {
+			resource = unity
+			value = @tier5unityreward
+			min = @tier5unityreward
+			max = @tier5unityreward
+		}
+        }
+}
+
+
+
+# reward the player for colonising paradise lost
+planet_event = {
+        id = starborn.60
+        hide_window = yes
+        is_triggered_only = yes
+
+	trigger = {
+                exists = owner
+                owner = {
+                        has_starborn = yes
+                }
+                has_planet_flag = starborn_origin
+                is_planet_class = pc_nuked
+        }
+
+        immediate = {
+                set_name = "Paradise Lost"
+                save_event_target_as = src_planet
+                owner = {
+                        country_event = {
+                                id = starborn.61
+                        }
+                }
+        }
+}
+
+# message for colonising nuked homeworld
+country_event = {
+        id = starborn.61
+        title = "starborn.61.name"
+	desc = "starborn.61.desc"
+        is_triggered_only = yes
+	picture = GFX_evt_city_ruins
+
+        option = {
+                name = "starborn.61.option.a"
+                add_monthly_resource_mult = {
+			resource = unity
+			value = @tier2unityreward
+			min = @tier2unitymin
+			max = @tier2unitymax
+		}
+        }
+}
+
+
+# upgrade the oblisk of rememberance
+planet_event = {
+        id = starborn.70
+        hide_window = yes
+        is_triggered_only = yes
+
+	trigger = {
+                exists = owner
+                owner = {
+                        has_starborn = yes
+                }
+                
+        }
+
+        immediate = {
+                save_event_target_as = src_planet
+                if = {
+                        limit = {
+                                has_building = building_starborn_obelisk_nuked
+                        }
+                        remove_building = building_starborn_obelisk_nuked
+                        add_building = building_starborn_obelisk_restored
+                        owner = {
+                                country_event = {
+                                        id = starborn.71
+                                }
+                        }
+                }
+        }
+}
+
+# message for upgrading the oblisk
+country_event = {
+        id = starborn.71
+        title = "starborn.71.name"
+	desc = "starborn.71.desc"
+        is_triggered_only = yes
+	picture = GFX_evt_galactic_community
+
+        option = {
+                name = EXCELLENT
+        }
+}
+
+
+
+# Starborn orbit dwellers trait
+pop_event = {
+	id = starborn.80
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+                if = {
+			limit = { 
+				has_trait = trait_pc_starborn_habitat_start_preference
+				NOT = { has_trait = trait_starborn_positive }
+				from = { 
+                                        OR = { 
+                                                is_planet_class = pc_habitat 
+                                                is_planet_class = pc_starborn_habitat_start 
+                                        }
+                                }
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_starborn_positive
+			}
+			if = {
+				limit = { has_trait = trait_starborn_negative_1 }
+				modify_species = {
+					species = this
+					remove_trait = trait_starborn_negative_1
+				}
+                        }
+                        if = {
+				limit = { has_trait = trait_starborn_negative_2 }
+				modify_species = {
+					species = this
+					remove_trait = trait_starborn_negative_2
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = trait_starborn_positive
+				from = {
+					habitable_structure = no
+				}
+                        }
+                        random_list = {
+                                10 = {
+                                        modify_species = {
+                                                species = this
+                                                remove_trait = trait_starborn_positive
+                                                add_trait = trait_starborn_negative_1
+                                        }
+                                }
+                                5 = { 
+                                        modify_species = {
+                                                species = this
+                                                remove_trait = trait_starborn_positive
+                                                add_trait = trait_starborn_negative_2
+                                        }
+                                }
+                        }
+			
+		}
+	}
+}

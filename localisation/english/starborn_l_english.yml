@@ -1,18 +1,27 @@
 ﻿l_english:
 
- civic_starborn:0 "Starborn"
- civic_starborn_desc:0 "This civilisation starts in an enormous orbital city above the ruins of their homeworld.  They are skilled at orbital construction, but generations of living in artifical environments have made the natural ecosystems of planets undesirable to their physiology"
- civic_tooltip_starborn_effects:0 "Starting world is an §Y$pc_starborn_habitat_start$§! in orbit of a §Y$pc_nuked$§!. You have the ability to build basic §Y$pc_habitat$§!s immediately, which have different districts or bonuses depending on the planet or orbital deposits they are built around, but all planets are uninhabitable.  You start with $tech_hydroponics$ technnology."
+ origin_starborn:0 "Starborn"
+ origin_starborn_desc:0 "This civilisation starts in an enormous orbital city above the ruins of their homeworld.  They are skilled at orbital construction, but generations of living in artifical environments have made the natural ecosystems of planets undesirable to their physiology"
+ origin_tooltip_starborn_effects:0 "- Starting world is an §Y$pc_starborn_habitat_start$§! in orbit of a §Y$pc_nuked$§!.\n- Build §Y$starborn_habitat$§!s immediately and modularly.\n- §Y$starborn_habitat$§!s have different districts or bonuses depending on the planet or orbital deposits they are built around.\n- Pops suffer additional penalties and events if living on terrestrial planets"
 
  starborn_op_system_NAME:0 "Starborn OP"
- starborn_op_system_DESC:0 "While they may be born among the stars, the $civic_starborn$ wondered why they would ever leave their home system, as it provided them with everything they could ever want"
+ starborn_op_system_DESC:0 "While they may be born among the stars, the $origin_starborn$ wondered why they would ever leave their home system, as it provided them with everything they could ever want"
 
  pc_starborn_habitat_start:0 "Orbital City"
  pc_starborn_habitat_start_desc:0 "It was the crowning glory of our technological achievement, that became the arc that saved our civilisation"
  mod_pc_starborn_habitat_start_habitability:0 "$pc_starborn_habitat_start$"
 
  trait_pc_starborn_habitat_start_preference:0 "$pc_starborn_habitat_start$ Preference"
- trait_pc_starborn_habitat_start_preference_desc:0 "We've lived on the Orbital City for so long that we have lost the ability to live on planets"
+ trait_pc_starborn_habitat_start_preference_desc:0 "We've lived on the Orbital City for so long our bodies are no longer adapted for natural biomes"
+
+ trait_starborn_positive:0 "Starborn"
+ trait_starborn_positive_desc:0 "This species thrives in space, and has fully adapted to the slightly cramped life in orbital facilities"
+
+ trait_starborn_negative_1:0 "$trait_starborn_positive$"
+ trait_starborn_negative_1_desc:0 "This species thrives in space!  Their immune systems struggle to cope with a natural biosphere while their bodies struggle with the punishment of a full planets gravity"
+
+ trait_starborn_negative_2:0 "$trait_starborn_positive$"
+ trait_starborn_negative_2_desc:0 "This species thrives in space!  Their immune systems struggle to cope with a natural biosphere, meanwhile the stress of so much open space has led to acute agoraphobia"
 
  requires_not_black_hole:0 "$TRIGGER_FAIL$$starborn_habitat$ cannot be built around a black hole, nobody wants to gaze into the abyss constantly"
  requires_no_unminable_sr:0 "$TRIGGER_FAIL$There appears to be valuable strategic resources here that our $starborn_habitat$ would destroy"
@@ -44,8 +53,8 @@
 
  starborn_habitat_expander_MEGASTRUCTURE_DETAILS:1 "A §Y$starborn_habitat_expander$§! is an offshoot of one of our existing habitats above another planetary body in system"
  starborn_habitat_expander_CONSTRUCTION_INFO_DELAYED:2 "$starborn_habitat_expander_DESC$ and can be built around any stellar body"
- starborn_habitat_expander:0 "Satelite Habitat Complex"
- starborn_habitat_expander_plural:0 "Satelite Habitat Complexes"
+ starborn_habitat_expander:0 "Satellite Habitat Complex"
+ starborn_habitat_expander_plural:0 "Satellite Habitat Complexes"
  starborn_habitat_expander_DESC:0 "An expansion of one of our habitats around another body in system.  This effectively expands the existing habitat, while allowing for exploitation of the resources of the new body"
  requires_habitat_target:0 "$TRIGGER_FAIL$ You must select a §Y$starborn_habitat$§! in this system using the §Y$decision_starborn_complex_target$§! planetary decision that will gain the benefits of the §Y$starborn_habitat_expander$§!"
  requires_only_1_habitat_target:0 "$TRIGGER_FAIL$ More than 1 §Y$starborn_habitat$§! in this system has been designated as the §Y$decision_starborn_complex_target$§!"

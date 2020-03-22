@@ -24,7 +24,7 @@ empire_init_capital_planet = {
 # this = country
 on_yearly_pulse_country = {
 	events = {
-		starborn.21 #check for completed city worlds
+		starborn.50 #check for completed city worlds
 	}
 }
 
@@ -33,7 +33,8 @@ on_yearly_pulse_country = {
 on_colonized = {
 	events = {
 		starborn.10 #add refund deposits to small habitats
-		starborn.11 # remove whole planet farming
+		starborn.30 # remove whole planet farming
+		starborn.60 # homeworld colonised
 	}
 }
 
@@ -42,7 +43,16 @@ on_colonized = {
 # From = Terraforming country
 on_terraforming_complete = {
 	events = {
-		starborn.12 # remove scavenger districts and add farming when terraforming
-		starborn.14 # remove scavenger districts and add farming  when terraforming homeworld
+		starborn.40 # remove scavenger districts and add farming when terraforming
+	}
+}
+
+
+# A pop has been added to the planet
+# Root = pop
+# From = planet
+on_pop_added = {
+	events = {
+		starborn.80
 	}
 }

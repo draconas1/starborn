@@ -1,0 +1,35 @@
+origin_starborn = {
+	is_origin = yes
+	#icon = "gfx/interface/icons/origins/origins_default.dds"
+	icon = "gfx/interface/icons/governments/civics/civic_starborn.dds"
+	picture = GFX_origin_staborn
+
+	starting_colony = pc_starborn_habitat_start
+	habitability_preference = pc_starborn_habitat_start
+	preferred_planet_class_neighbor = no
+	initializer = starborn_system
+
+	playable = { host_has_dlc = "Utopia" }
+
+	possible = {
+		authority = { NOT = { value = auth_machine_intelligence } } 
+		civics = {
+			NOR = {
+				value = civic_the_void #dyson swarm
+				value = civic_agrarian_idyll
+			}
+		}
+	}
+
+	# modifier = { 
+	# 	planet_pops_robotics_upkeep_mult = -0.05 
+	# 	planet_pop_assembly_mult = 0.05
+	# }
+
+	description = "origin_tooltip_starborn_effects"
+	flags = { custom_start_screen }
+
+	traits = {
+		trait = trait_starborn_positive
+	}
+}

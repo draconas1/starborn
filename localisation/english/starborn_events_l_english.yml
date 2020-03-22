@@ -44,25 +44,33 @@
  starborn.6.desc:0 "There were insufficient funds in the treasury to automatically enlarge §Y[From.From.From.Planet.GetName]§!. You can still do it manually from the planet decisions screen"
  starborn.6.option.a:0 "Darn"
 
- starborn.11.name:0 "Whole Biosphere farming stopped"
- starborn.11.desc:0 "With the colonisation of §Y[Root.Planet.GetName]§! the farmers in the §Y[target.GetName]§! can no longer use the entire biosphere for food production"
- starborn.11.option.a:0 "A small loss"
-
- starborn.12.name:0 "Scavenger Districts Dismantled"
- starborn.12.desc:0 "With the completion of the terraforming of [src_planet.GetName]§! the the ruins that blighted the planets surface have all been removed.  The §Y$district_starborn_starting_scavenger_plural$§! of §Y[target_hab.GetName]§! have been converted into §Y$district_starborn_surface_farming_plural$§!"
- starborn.12.option.a:0 "A great day"
-
- starborn.13.name:0 "Orbital Trade Hub"
- starborn.13.desc:0 "With §Y[Root.Planet.GetName]§! becoming an enormous city §Y[target.GetName]§! has needed to adapt as it can no longer access the natural resources of the planet.  A vast increase in trade value is already being seen."
- starborn.13.option.a:0 "A great day"
-
- starborn.14.name:0 "Homeworld Reclaimed!"
- starborn.14.desc:0 "With the completion of the terraforming of [src_planet.GetName]§! we have finally undone the damage our ancestors inflicted and reclaimed our birth world as a cradle of life. No longer will we pick over the bones of our former civilisation and the §Y$district_starborn_starting_scavenger_plural$§! have been converted into §Y$district_starborn_surface_farming_plural$§!"
- starborn.14.option.a:0 "A great day"
-
- starborn.15.name:0 "The Great City"
- starborn.15.desc:0 "Our former home of §Y[Root.Planet.GetName]§! becoming an enormous city and completing its recovery since our ancestors wrecked it so long ago §Y[target.GetName]§! no longer harvests the raw materials of the planet and the space has been reconfigured to take advantage of the increased trade opportunities"
- starborn.15.option.a:0 "A great day"
-
  starborn.20.name:0 "[From.From.From.Planet.GetName] $starborn_habitat_expander_plural$ Complete"
  starborn.20.desc:0 "We have completed construction of the $starborn_habitat_expander_plural$, [target.GetName] now has access to [From.From.From.Planet.GetName]s resources, though the complexities of management across the system negate any of the special efficiences our people often get from direct exploitation"
+ 
+ starborn.31.name:0 "Whole Biosphere farming stopped"
+ starborn.31.desc:0 "With the colonisation of §Y[src_planet.GetName]§! the farmers in the §Y[target.GetName]§! can no longer use the entire biosphere for food production"
+ starborn.31.option.a:0 "A small loss"
+
+ starborn.41.name:0 "Scavenger Districts Dismantled"
+ starborn.41.desc:0 "With the completion of the terraforming of [src_planet.GetName]§! the the ruins that blighted the planets surface have all been removed.  The §Y$district_starborn_starting_scavenger_plural$§! of §Y[target_hab.GetName]§! have been converted into §Y$district_starborn_surface_farming_plural$§!"
+ starborn.41.option.a:0 "A great day"
+
+ starborn.42.name:0 "Homeworld Reclaimed!"
+ starborn.42.desc:0 "With the completion of the terraforming of [src_planet.GetName]§! we have finally undone the damage our ancestors inflicted and reclaimed our birth world as a cradle of life. No longer will we pick over the bones of our former civilisation and the §Y$district_starborn_starting_scavenger_plural$§! have been converted into §Y$district_starborn_surface_farming_plural$§!"
+ starborn.42.option.a:0 "A great day"
+
+ starborn.52.name:0 "Orbital Trade Hub"
+ starborn.52.desc:0 "With §Y[src_planet.GetName]§! becoming an enormous city §Y[target_hab.GetName]§! has needed to adapt as it can no longer access the natural resources of the planet.  A vast increase in trade value is already being seen."
+ starborn.52.option.a:0 "A great day"
+
+ starborn.53.name:0 "The Great City"
+ starborn.53.desc:0 "Our former home of §Y[src_planet.GetName]§! becoming an enormous city and completing its recovery since our ancestors wrecked it so long ago §Y[target_hab.GetName]§! no longer harvests the raw materials of the planet and the space has been reconfigured to take advantage of the increased trade opportunities"
+ starborn.53.option.a:0 "A great day"
+
+ starborn.61.name:0 "To Reclaim Paradise"
+ starborn.61.desc:0 "Establishing a colony on §Y[src_planet.GetName]§! is an important social milestone for our people.  There is a swell of pride that we once again set foot upon the world of our ancestors and call it ours.\n\nBut it is a dark place, filled with memories and gaves.  Our archetects have designed a new building, the §Y$building_starborn_obelisk_nuked$§!,  for the planet to commerate our return and remind us what our ancestors destroyed"
+ starborn.61.option.a:0 "A great day"
+
+ starborn.71.name:0 "A Triumph of a People"
+ starborn.71.desc:0 "The final act of restoring §Y[src_planet.GetName]§! was a grand ceremony at the §Y$building_starborn_obelisk_nuked$§!.  It has been rededicated and now will stand not only as a monument and a reminder of what we lost, but as a monument of how far we have come as a people."
+ starborn.71.option.a:0 "To the stars"

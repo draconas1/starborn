@@ -63,7 +63,7 @@ All the standard districts/rules from vanilla: mining, energy, research or comme
 [*][b]4 or more minerals:[/b] enable building: mining complex.  Production proportional to size of deposit
 [*][b]Alloys:[/b] enable building: alloy foundry complex.  Production proportional to size of deposit
 [*][b]Physics:[/b] +% to physics research, capping at +25% at 10 physics.
-[*][b]Engineering:[/b] +% to engineering research, capping at +25% at 10 engineering.
+[*][b]Engineering:[/b] +% to engineering research, capping at +25% at 10 engineering.h
 [*][b]Society:[/b] +% to society research, capping at +25% at 10 society.
 [*][b]Trade value:[/b ]+% to trade value and amenities, capping at +25% for a level 5 deposit.  
 [*][b]Zro:[/b] enable building: zro temple
@@ -74,7 +74,7 @@ All the standard districts/rules from vanilla: mining, energy, research or comme
 [/list]
 
 [h1]Megastructure[/h1]
-Satelite Habitat Complex: Requires you to designate one fully built habitat (size 6) as the target.  You can then build this megastructure around any other planet/star in the system and when completed it will add +6 districts to your targetted habitat and will give access to any special districts or buildings based on the planet it was built around.  It will not give you any bonuses or modifiers for that world though.  It also adds +5% crime and +5 amenities use to the target hab, representing effects of the distributed nature of the habitat.
+Satellite Habitat Complex: Requires you to designate one fully built habitat (size 6) as the target.  You can then build this megastructure around any other planet/star in the system and when completed it will add +6 districts to your targetted habitat and will give access to any special districts or buildings based on the planet it was built around.  It will not give you any bonuses or modifiers for that world though.  It also adds +5% crime and +5 amenities use to the target hab, representing effects of the distributed nature of the habitat.
 
 [h1]Other[/h1]
 [list]
@@ -83,6 +83,8 @@ Satelite Habitat Complex: Requires you to designate one fully built habitat (siz
 [*]Habitats adapt to changes in habitable world
 [*]Refund on habitat alloy upkeep for size 3 and 4 habitats.
 [*]Set of edicts let you build habitats at any size between 3 and 6 and with one or both levels of extra districts at starting, to save on your micromanagement.
+[*]Events and unique building for colonising your homeworld
+[*]Habitability species trait that gives bonuses on habitats and penalties on natural planets.  Different flavours of penalty.
 [/list]
 
 
