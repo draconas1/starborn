@@ -225,71 +225,41 @@ building_starborn_alloy_foundry = {
 	planet_modifier = {
 		planet_jobs_alloys_produces_mult = 0.25
 	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			OR = {
-				has_deposit = d_hab_alloy_1
-			}
-		}
-		modifier = {
-			country_alloys_produces_add =  5
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			OR = {
-				has_deposit = d_hab_alloy_2
-			}
-		}
-		modifier = {
-			country_alloys_produces_add =  10
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			OR = {
-				has_deposit = d_hab_alloy_3
-			}
-		}
-		modifier = {
-			country_alloys_produces_add =  15
-		}
-	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			OR = {
-				has_deposit = d_hab_alloy_4
-			}
-		}
-		modifier = {
-			country_alloys_produces_add =  20
-		}
-	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			OR = {
-				has_deposit = d_hab_alloy_5
-			}
-		}
-		modifier = {
-			country_alloys_produces_add =  25
-		}
-	}
 	
 	resources = {
 		category = planet_buildings
 		cost = {
 			minerals = 500
+		}
+		produces = {
+			trigger = {
+				has_deposit = d_hab_alloy_1
+			}
+			alloys = 5
+		}
+		produces = {
+			trigger = {
+				has_deposit = d_hab_alloy_2
+			}
+			alloys = 10
+		}
+		produces = {
+			trigger = {
+				has_deposit = d_hab_alloy_3
+			}
+			alloys = 15
+		}
+		produces = {
+			trigger = {
+				has_deposit = d_hab_alloy_4
+			}
+			alloys = 20
+		}
+		produces = {
+			trigger = {
+				has_deposit = d_hab_alloy_5
+			}
+			alloys = 25
 		}
 		upkeep = {
 			energy = 5
@@ -331,57 +301,33 @@ building_starborn_mining_bay = {
 	planet_modifier = {
 		planet_miners_minerals_produces_mult = 0.25
 	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			OR = {
-				has_planet_flag = starborn_mining_4
-			}
-		}
-		modifier = {
-			country_minerals_produces_add = 20
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			OR = {
-				has_planet_flag = starborn_mining_6
-			}
-		}
-		modifier = {
-			country_minerals_produces_add = 30
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			OR = {
-				has_planet_flag = starborn_mining_8
-			}
-		}
-		modifier = {
-			country_minerals_produces_add = 40
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			OR = {
-				has_planet_flag = starborn_mining_10
-			}
-		}
-		modifier = {
-			country_minerals_produces_add = 50
-		}
-	}
 	
 	resources = {
 		category = planet_buildings
+		produces = {
+			trigger = {
+				has_planet_flag = starborn_mining_4
+			}
+			minerals = 20
+		}
+		produces = {
+			trigger = {
+				has_planet_flag = starborn_mining_6
+			}
+			minerals = 30
+		}
+		produces = {
+			trigger = {
+				has_planet_flag = starborn_mining_8
+			}
+			minerals = 40
+		}
+		produces = {
+			trigger = {
+				has_planet_flag = starborn_mining_10
+			}
+			minerals = 50
+		}
 		cost = {
 			minerals = 500
 		}
@@ -418,57 +364,33 @@ building_starborn_generator_complex = {
 	planet_modifier = {
 		planet_technician_energy_produces_mult = 0.25
 	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			OR = {
-				has_planet_flag = starborn_energy_4
-			}
-		}
-		modifier = {
-			country_energy_produces_add = 20
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			OR = {
-				has_planet_flag = starborn_energy_6
-			}
-		}
-		modifier = {
-			country_energy_produces_add = 30
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			OR = {
-				has_planet_flag = starborn_energy_8
-			}
-		}
-		modifier = {
-			country_energy_produces_add = 40
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			OR = {
-				has_planet_flag = starborn_energy_10
-			}
-		}
-		modifier = {
-			country_energy_produces_add = 50
-		}
-	}
 	
 	resources = {
 		category = planet_buildings
+		produces = {
+			trigger = {
+				has_planet_flag = starborn_energy_4
+			}
+			energy = 20
+		}
+		produces = {
+			trigger = {
+				has_planet_flag = starborn_energy_6
+			}
+			energy = 30
+		}
+		produces = {
+			trigger = {
+				has_planet_flag = starborn_energy_8
+			}
+			energy = 40
+		}
+		produces = {
+			trigger = {
+				has_planet_flag = starborn_energy_10
+			}
+			energy = 50
+		}
 		cost = {
 			minerals = 500
 		}
