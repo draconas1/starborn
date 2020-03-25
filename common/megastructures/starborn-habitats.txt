@@ -348,7 +348,7 @@ starborn_habitat_expander = {
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = yes
 	entity_offset = { x = -7 y = -7 }
-	build_time = 2500
+	build_time = 1500
 
 	resources = {
         category = megastructures
