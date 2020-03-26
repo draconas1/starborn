@@ -233,31 +233,41 @@ building_starborn_alloy_foundry = {
 		}
 		produces = {
 			trigger = {
-				has_deposit = d_hab_alloy_1
+				planet = {
+					has_deposit = d_hab_alloy_1
+				}
 			}
 			alloys = 5
 		}
 		produces = {
 			trigger = {
-				has_deposit = d_hab_alloy_2
+				planet = {
+					has_deposit = d_hab_alloy_2
+				}
 			}
 			alloys = 10
 		}
 		produces = {
 			trigger = {
-				has_deposit = d_hab_alloy_3
+				planet = {
+					has_deposit = d_hab_alloy_3
+				}
 			}
 			alloys = 15
 		}
 		produces = {
 			trigger = {
-				has_deposit = d_hab_alloy_4
+				planet = {
+					has_deposit = d_hab_alloy_4
+				}
 			}
 			alloys = 20
 		}
 		produces = {
 			trigger = {
-				has_deposit = d_hab_alloy_5
+				planet = {
+					has_deposit = d_hab_alloy_5
+				}
 			}
 			alloys = 25
 		}
@@ -306,25 +316,33 @@ building_starborn_mining_bay = {
 		category = planet_buildings
 		produces = {
 			trigger = {
-				has_planet_flag = starborn_mining_4
+				planet = {
+					has_planet_flag = starborn_mining_4
+				}
 			}
 			minerals = 20
 		}
 		produces = {
 			trigger = {
-				has_planet_flag = starborn_mining_6
+				planet = {
+					has_planet_flag = starborn_mining_6
+				}
 			}
 			minerals = 30
 		}
 		produces = {
 			trigger = {
-				has_planet_flag = starborn_mining_8
+				planet = {
+					has_planet_flag = starborn_mining_8
+				}
 			}
 			minerals = 40
 		}
 		produces = {
 			trigger = {
-				has_planet_flag = starborn_mining_10
+				planet = {
+					has_planet_flag = starborn_mining_10
+				}
 			}
 			minerals = 50
 		}
@@ -369,25 +387,33 @@ building_starborn_generator_complex = {
 		category = planet_buildings
 		produces = {
 			trigger = {
-				has_planet_flag = starborn_energy_4
+				planet = {
+					has_planet_flag = starborn_energy_4
+				}
 			}
 			energy = 20
 		}
 		produces = {
 			trigger = {
-				has_planet_flag = starborn_energy_6
+				planet = {
+					has_planet_flag = starborn_energy_6
+				}
 			}
 			energy = 30
 		}
 		produces = {
 			trigger = {
-				has_planet_flag = starborn_energy_8
+				planet = {
+					has_planet_flag = starborn_energy_8
+				}
 			}
 			energy = 40
 		}
 		produces = {
 			trigger = {
-				has_planet_flag = starborn_energy_10
+				planet = {
+					has_planet_flag = starborn_energy_10
+				}
 			}
 			energy = 50
 		}
