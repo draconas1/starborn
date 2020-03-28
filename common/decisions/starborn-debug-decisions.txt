@@ -1,0 +1,19 @@
+decision_starborn_debug_events = {
+	icon = decision_glitchy_matrix
+	owned_planets_only = yes
+	enactment_time = 0
+	
+	potential = {
+		owner = { has_starborn = yes }
+	}
+
+	effect = {
+		planet_event = {
+			id = starborn_traits.1000
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}

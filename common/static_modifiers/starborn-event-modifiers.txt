@@ -1,0 +1,47 @@
+starborn_died_of_disease = {
+	pop_happiness = -0.1
+	icon = "gfx/interface/icons/planet_modifiers/pm_unrest.dds"
+	icon_frame = 3
+}
+
+
+starborn_died_of_disease_2 = {
+	pop_happiness = -0.3
+	icon = "gfx/interface/icons/planet_modifiers/pm_unrest.dds"
+	icon_frame = 3
+}
+
+
+starborn_xenophobe_25 = {
+	pop_ethic_fanatic_xenophobe_attraction_mult = 0.25
+	icon = "gfx/interface/icons/planet_modifiers/pm_unrest.dds"
+	icon_frame = 3
+}
+
+starborn_xenophobe_100 = {
+	pop_ethic_fanatic_xenophobe_attraction_mult = 1
+    planet_stability_add = -10
+	icon = "gfx/interface/icons/planet_modifiers/pm_unrest.dds"
+	icon_frame = 3
+}
+
+starborn_farming_penalty_75 = {
+	planet_jobs_food_produces_mult = -0.75
+	icon = "gfx/interface/icons/planet_modifiers/pm_irradiated.dds"
+	icon_frame = 3
+}
+
+starborn_scavenger_unhappy = {
+	pop_happiness = -0.1
+	planet_miners_produces_mult = -0.50
+	icon = "gfx/interface/icons/planet_modifiers/pm_city_ruins.dds"
+	icon_frame = 3
+}
+
+starborn_scavenger_damaged = {
+	planet_miners_produces_mult = -0.50
+	icon = "gfx/interface/icons/planet_modifiers/pm_city_ruins.dds"
+	icon_frame = 3
+}
+
+

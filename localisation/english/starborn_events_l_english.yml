@@ -74,3 +74,50 @@
  starborn.71.name:0 "A Triumph of a People"
  starborn.71.desc:0 "The final act of restoring §Y[src_planet.GetName]§! was a grand ceremony at the §Y$building_starborn_obelisk_nuked$§!.  It has been rededicated and now will stand not only as a monument and a reminder of what we lost, but as a monument of how far we have come as a people."
  starborn.71.option.a:0 "To the stars"
+
+
+
+ starborn_traits.3.name:0 "Epidemic Strikes"
+ starborn_traits.3.desc:0 "A pathogen on [This.GetName] has proven disproportionately lethal to the Starborn peoples weakened immune system.  It is spreading rapidly through the population and will cause significant deaths without emergency medical intervention"
+ starborn_traits.3.option.a:0 "Send Emergency Medical Supplies. Stat!"
+ starborn_traits.3.option.b:0 "Let the disease run its course"
+
+
+ starborn_traits.11.name:0 "Epidemic Strikes"
+ starborn_traits.11.desc:0 "A new disease is spreading on [This.GetName], brought by one of the terrestial aliens to whom it is a minor irritant, it has proven incredibly dangerous to the starborn population.\n\nThe recycled air and close confines of the environment have caused the diease to spread incredibly quickly through the population"
+ starborn_traits.11.option.a:0 "Send Emergency Medical Supplies. Stat!"
+ starborn_traits.11.option.b:0 "Blame the Xenos and enforce strict separation"
+ starborn_traits.11.option.c:0 "Let the station commander handle it"
+
+ starborn_traits.12.name:0 "Xenos Spaced!"
+ starborn_traits.12.desc:0 "The epidemic on [This.GetName] has caused widespread anti-xeno tensions on the structure.  Members of the starborn population took matters into their own hands and caused a large scale depressurisation event in a zone that had been designated for the xeno population following our separation rules.\n\nA large number of the xeno population were killed, some of the starborn population were unfortunate enough to be in the zone and also died, but their numbers are not statistically significant"
+ starborn_traits.12.option.a:0 "Oh Well"
+
+
+ starborn_traits.21.name:0 "Bipshere Contamination"
+ starborn_traits.21.desc:0 "[This.GetName] has reported a biological contamination outbreak originating from the food production sector.\n\nA microbe believed to occur on the local planet, where we are taking advantage of the biosphere for food production, has mutated and is spreading out of control.\n\nHarmless even to the starborn people in small amounts, the quantities found in the rapid spreading varient quickly become lethal to compromised immune systems.\n\nAt minimum a large portion of the current food crop will have to be destroyed to stop a large-scale incident."
+ starborn_traits.21.option.a:0 "Send Emergency Medical Supplies. Stat!"
+ starborn_traits.21.option.b:0 "Manage with what you have"
+
+ starborn_traits.31.name:0 "Devestation"
+ starborn_traits.31.desc:0 "A massive explosion has levelled one of the ruined cities of [planet_target.GetName] where our teams from [This.GetName] were scavenging.\n\nRescue attempts have managed to locate very few survivors from the outskirts, given the devestation it is believed that all who were further in have been lost.\n\nPreliminary investigations believe that a team must have triggered an unexploded munition that set off a chain reaction and ended up detonating some form of fission device.  We are examining satelite images and sensor results, but whether it was a weapon or perhaps an ancient reactor or science facility will likely never be known.\n\nThe number deaths have caused widespread dissatisfaction among the scavengers who are demanding additional hazard pay"
+ starborn_traits.31.option.a:0 "Compensate the families and pay a hazard bonus"
+ starborn_traits.31.option.b:0 "They know the risks and we pay well already"
+
+ starborn_traits.32.name:0 "Scavenging Accident"
+ starborn_traits.32.desc:0 "The scavenger team on [planet_target.GetName] discovered a massive fuel store hidden behneath the city they were exploring.  Unfortunately this store had been damaged and had been slowly leaking highly combustable fuel into the sewers and pipeworks of the city, over the centuries it had effectively saturated half the city.\n\nDoubly unfortunate that this was discovered by one of the team igniting some of it by accident, that in turn ignited it all\n\nAt the first sign of spreading fire our teams commenced emergency evacuation so nobody was killed, but our entire scavenging operation in that region was destroyed by the explosion when the main tank ignited"
+ starborn_traits.32.option.a:0 "Send supplies to repair as fast as possible"
+ starborn_traits.32.option.b:0 "Get back to operations when you can"
+
+ starborn_traits.999.name:0 "Debug"
+ starborn_traits.999.desc:0 "Starborn Event [FROM.EventId] triggered, but had no effect"
+ starborn_traits.999.option.a:0 "To the stars"
+
+
+ starborn_traits.1000.name:0 "Debug"
+ starborn_traits.1000.desc:0 "Trigger an event for this planet.  Warning they are all awful.\n\nWhy are you here player?\n\nNote even if the event is anabled here it may not trigger, the allow trigger here is very loose.  E.g. triggering scavenger problems on a farming habitat will just do nothing"
+ starborn_traits.1000.option.1:0 "1 Planetary epidemic"
+ starborn_traits.1000.option.10:0 "10 Xeno caused epidemic"
+ starborn_traits.1000.option.20:0 "20 farming contamination"
+ starborn_traits.1000.option.30:0 "30 scavenger accident"
+ starborn_traits.1000.option.nope:0 "None"

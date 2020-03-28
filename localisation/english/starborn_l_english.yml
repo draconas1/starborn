@@ -17,11 +17,14 @@
  trait_starborn_positive:0 "Starborn"
  trait_starborn_positive_desc:0 "This species thrives in space, and has fully adapted to the slightly cramped life in orbital facilities"
 
- trait_starborn_negative_1:0 "$trait_starborn_positive$"
+ trait_starborn_negative_1:0 "Gravity crushed $trait_starborn_positive$"
  trait_starborn_negative_1_desc:0 "This species thrives in space!  Their immune systems struggle to cope with a natural biosphere while their bodies struggle with the punishment of a full planets gravity"
 
- trait_starborn_negative_2:0 "$trait_starborn_positive$"
+ trait_starborn_negative_2:0 "Agoraphobic $trait_starborn_positive$"
  trait_starborn_negative_2_desc:0 "This species thrives in space!  Their immune systems struggle to cope with a natural biosphere, meanwhile the stress of so much open space has led to acute agoraphobia"
+
+ trait_starborn_negative_3:0 "Soliatry $trait_starborn_positive$"
+ trait_starborn_negative_3_desc:0 "This species thrives in space!  Their immune systems struggle to cope with a natural biosphere, and the vast open spaces of a planet has resulted in soliatry and antisocial behaviour"
 
  requires_not_black_hole:0 "$TRIGGER_FAIL$$starborn_habitat$ cannot be built around a black hole, nobody wants to gaze into the abyss constantly"
  requires_no_unminable_sr:0 "$TRIGGER_FAIL$There appears to be valuable strategic resources here that our $starborn_habitat$ would destroy"
@@ -67,7 +70,16 @@
 
  edict_starborn_show_hab_enlargment_size:0 "Set Auto-Habitat Enlargement"
  edict_starborn_show_hab_enlargment_size_desc:0 "Adjust if we automatically apply habitat enlargment decisions"
+
+ starborn_enable_debug:0 "Starborn: Enable Debgug event"
+ starborn_enable_debug_desc:0 "Enables starborn debug events popping up.  You probably want to leave this off."
+
+ starborn_disable_debug:0 "Starborn: Disable Debgug event"
+ starborn_disable_debug_desc:0 "Disables starborn debug event popup.  You probably want to leave it disabled."
  
+ decision_starborn_debug_events:0 "Trigger Starborn Events"
+ decision_starborn_debug_events_desc:0 "Open a menu to manually trigger one of the random starborn events for this planet"
+
  decision_starborn_remove_mining:0 "Remove Mining Habitat Designation"
  decision_starborn_remove_mining_desc:0 "This will dismantle all §Y$district_hab_mining$§! and remove the mining habitat designator, it takes a short amount of time to allow cancellation in case of misclick, you may need to close and reopen the planet window for the change to show in the UI"
 

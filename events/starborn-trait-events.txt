@@ -1,0 +1,628 @@
+namespace = starborn_traits
+
+# disease planetside
+planet_event = {
+	id = starborn_traits.1
+	hide_window = yes
+	mean_time_to_happen = {
+		years = 5
+	}
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		owner = {
+			is_country_type = default
+			is_regular_empire = yes
+		}
+		colonizeable_planet = yes
+		habitable_structure = no
+		any_pop = {
+			has_negative_starborn_trait = yes
+		}
+	}
+
+	immediate = {
+		random_list = {
+			1 = {
+				modifier = {
+					factor = 3
+					has_gene_clinic = no
+				}
+				planet_event = {
+					id = starborn_traits.3
+				}
+			}
+
+			10 = {
+				# do nothing...
+				set_variable = { which = EventId value = 1 }
+				owner = { country_event = { id = starborn_traits.999 } }
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = starborn_traits.3
+	title = starborn_traits.3.name
+	desc = starborn_traits.3.desc
+	picture = GFX_evt_disease_outbreak
+	is_triggered_only = yes
+
+	option = {
+		name = starborn_traits.3.option.a
+		allow = {
+			has_gene_clinic = yes
+			owner = {
+				resource_stockpile_compare = {
+					resource = consumer_goods
+					value >= 500
+				}
+			}
+
+			# owner = {
+			# 	is_country_type = default
+			# 	has_technology = "tech_gene_tailoring"
+			# 	is_same_species = ROOT
+			# 	NOR = {
+			# 		has_country_flag = pop_modification
+			# 		has_ethic = ethic_gestalt_consciousness
+			# 	}
+			# 	ROOT = {
+			# 		planet = {
+			# 			is_ideal_planet_class = {
+			# 				who = PREVPREV
+			# 				status = no
+			# 			}
+			# 			controller = { is_same_value = PREVPREVPREV }
+			# 		}
+			# 	}
+			# }
+		}
+		owner = {
+			add_resource = {
+				consumer_goods = -500
+			}
+		}
+	}
+
+
+	option = {
+		name = starborn_traits.3.option.b
+		if = {
+			limit = {
+				or = {
+					has_modifier = starborn_died_of_disease
+					has_modifier = starborn_died_of_disease_2
+				}				
+			}
+			add_modifier = {
+				modifier = starborn_died_of_disease_2
+				days = 360
+			}
+		}
+		else = {
+			add_modifier = {
+				modifier = starborn_died_of_disease
+				days = 360
+			}
+		}
+		random_pop = {
+			limit = {
+				has_negative_starborn_trait = yes
+			}
+			kill_pop = yes
+		}
+		
+	}
+}
+
+
+# xenos brought disease to the hab
+planet_event = {
+	id = starborn_traits.10
+	hide_window = yes
+	mean_time_to_happen = {
+		years = 3
+	}
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		owner = {
+			is_country_type = default
+			is_regular_empire = yes
+		}
+		habitable_structure = yes
+		any_pop = {
+			is_starborn_pop = yes
+		}
+		any_pop = {
+			is_robot_pop = no
+			NOR = {
+				has_trait = trait_pc_habitat_preference
+				has_trait = trait_pc_starborn_habitat_start_preference
+			}
+		}
+	}
+
+	immediate = {
+		random_list = {
+			1 = {
+				modifier = {
+					factor = 3
+					has_gene_clinic = no
+				}
+				planet_event = {
+					id = starborn_traits.11
+				}
+			}
+
+			10 = {
+				# do nothing...
+				set_variable = { which = EventId value = 10 }
+				owner = { country_event = { id = starborn_traits.999 } }
+			}
+		}
+	}
+}
+
+
+
+planet_event = {
+	id = starborn_traits.11
+	title = starborn_traits.11.name
+	desc = starborn_traits.11.desc
+	picture = GFX_evt_emergency_workers
+	is_triggered_only = yes
+
+	option = {
+		name = starborn_traits.11.option.a
+		allow = {
+			has_gene_clinic = yes
+			owner = {
+				resource_stockpile_compare = {
+					resource = consumer_goods
+					value >= 1000
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				consumer_goods = -1000
+			}
+		}
+		random_pop = {
+			limit = {
+				is_starborn_pop = yes
+			}
+			kill_pop = yes
+		}
+		add_modifier = {
+			modifier = starborn_xenophobe_25
+			days = 500
+		}
+		add_modifier = {
+			modifier = starborn_died_of_disease
+			days = 360
+		}
+	}
+
+	option = {
+		name = starborn_traits.11.option.b
+		allow = {
+			OR = {
+				owner = {
+					OR = { 
+						has_ethic = ethic_fanatic_xenophobe
+						has_ethic = ethic_xenophobe
+					}
+				}
+				any_pop = {
+					is_starborn_pop = yes
+					OR = { 
+						has_ethic = ethic_fanatic_xenophobe
+						has_ethic = ethic_xenophobe
+					}
+				}
+			}
+		}
+		random_pop = {
+			limit = {
+				is_starborn_pop = yes
+			}
+			kill_pop = yes
+		}
+		add_modifier = {
+			modifier = starborn_xenophobe_100
+			days = 500
+		}
+		hidden_effect = {
+			planet_event = {
+				id = starborn_traits.12
+				days = 20 
+				random = 20
+			}	
+		}
+	}
+
+	option = {
+		name = starborn_traits.11.option.c
+		add_modifier = {
+			modifier = starborn_xenophobe_100
+			days = 1000
+		}
+		random_pop = {
+			limit = {
+				is_starborn_pop = yes
+			}
+			kill_pop = yes
+		}
+		random_pop = {
+			limit = {
+				is_starborn_pop = yes
+			}
+			kill_pop = yes
+		}
+		add_modifier = {
+			modifier = starborn_died_of_disease_2
+			days = 360
+		}
+	}
+}
+
+# xenos got spaced
+planet_event = {
+	id = starborn_traits.12
+	title = starborn_traits.12.name
+	desc = starborn_traits.12.desc
+	picture = GFX_evt_sabotaged_ship
+	is_triggered_only = yes
+
+	option = {
+		name = starborn_traits.12.option.a
+		random_pop = {
+			limit = {
+				is_robot_pop = no
+				is_starborn_pop = no
+			}
+			kill_pop = yes
+		}
+		add_modifier = {
+			modifier = starborn_xenophobe_100
+			days = 360
+		}
+	}
+}
+
+
+
+# planet farming brought biological contamination
+planet_event = {
+	id = starborn_traits.20
+	hide_window = yes
+	mean_time_to_happen = {
+		years = 5
+	}
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		owner = {
+			is_country_type = default
+			is_regular_empire = yes
+		}
+		habitable_structure = yes
+		any_pop = {
+			is_starborn_pop = yes
+		}
+		has_modifier = starborn_farming_planet
+	}
+
+	immediate = {
+		random_list = {
+			1 = {
+				modifier = {
+					factor = 3
+					has_gene_clinic = no
+				}
+				planet_event = {
+					id = starborn_traits.21
+				}
+			}
+
+			20 = {
+				# do nothing...
+				set_variable = { which = EventId value = 20 }
+				owner = { country_event = { id = starborn_traits.999 } }
+			}
+		}
+	}
+}
+
+
+planet_event = {
+	id = starborn_traits.21
+	title = starborn_traits.21.name
+	desc = starborn_traits.21.desc
+	picture = GFX_evt_emergency_workers
+	is_triggered_only = yes
+
+	option = {
+		name = starborn_traits.21.option.a
+		allow = {
+			has_gene_clinic = yes
+			owner = {
+				resource_stockpile_compare = {
+					resource = consumer_goods
+					value >= 500
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				consumer_goods = -500
+			}
+		}
+		add_modifier = {
+			modifier = starborn_farming_penalty_75
+			days = 180
+		}	
+	}
+	
+	option = {
+		name = starborn_traits.21.option.b
+		random_pop = {
+			limit = {
+				is_starborn_pop = yes
+			}
+			kill_pop = yes
+		}
+		add_modifier = {
+			modifier = starborn_died_of_disease
+			days = 360
+		}
+		add_modifier = {
+			modifier = starborn_farming_penalty_75
+			days = 360
+		}
+	}
+}
+
+
+
+# planet scavenger districts went wrong
+planet_event = {
+	id = starborn_traits.30
+	hide_window = yes
+	mean_time_to_happen = {
+		years = 5
+	}
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		owner = {
+			is_country_type = default
+			is_regular_empire = yes
+		}
+		habitable_structure = yes
+		has_district = district_starborn_starting_scavenger
+	}
+
+	immediate = {
+		random_planet = {
+			limit = {
+				has_planet_flag = planet_of@prev
+			}
+			save_event_target_as = planet_target
+		}
+		random_list = {
+			1 = {
+				planet_event = {
+					id = starborn_traits.31
+				}
+			}
+			1 = {
+				planet_event = {
+					id = starborn_traits.32
+				}
+			}
+
+			10 = {
+				# do nothing...
+				set_variable = { which = EventId value = 30 }
+				owner = { country_event = { id = starborn_traits.999 } }
+			}
+		}
+	}
+}
+
+
+# person killed, compensate or not
+planet_event = {
+	id = starborn_traits.31
+	title = starborn_traits.31.name
+	desc = starborn_traits.31.desc
+	picture = GFX_evt_dead_city
+	is_triggered_only = yes
+
+	option = {
+		name = starborn_traits.31.option.a
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 500
+				}
+			}
+		}
+		random_pop = {
+			limit = {
+				is_starborn_pop = yes
+			}
+			kill_pop = yes
+		}
+		owner = {
+			add_resource = {
+				energy = -500
+			}
+		}
+	}
+	
+	option = {
+		name = starborn_traits.31.option.b
+		random_pop = {
+			limit = {
+				is_starborn_pop = yes
+			}
+			kill_pop = yes
+		}
+		add_modifier = {
+			modifier = starborn_scavenger_unhappy
+			days = 360
+		}
+	}
+}
+
+
+
+# stuff damaged, rebuild or not
+planet_event = {
+	id = starborn_traits.32
+	title = starborn_traits.32.name
+	desc = starborn_traits.32.desc
+	picture = GFX_evt_dead_city
+	is_triggered_only = yes
+	
+	option = {
+		name = starborn_traits.32.option.a
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 500
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				minerals = -500
+			}
+		}
+	}
+	
+	option = {
+		name = starborn_traits.32.option.b
+		add_modifier = {
+			modifier = starborn_scavenger_damaged
+			days = 360
+		}
+	}
+}
+
+
+
+country_event = {
+	id = starborn_traits.999
+	title = starborn_traits.999.name
+	desc = starborn_traits.999.desc
+	picture = GFX_evt_synth_sabotage
+	is_triggered_only = yes
+	trigger = {
+		has_country_flag = STARBORN_EVENT_DEBUG
+	}
+
+	immediate = {
+		set_variable = { which = EventId value = owner }
+	}
+	option = {
+		name = OK
+	}
+}
+
+planet_event = {
+	id = starborn_traits.1000
+	title = starborn_traits.1000.name
+	desc = starborn_traits.1000.desc
+	picture = GFX_evt_synth_sabotage
+	is_triggered_only = yes
+	option = {
+		allow = {
+			habitable_structure = no
+		}
+		name = starborn_traits.1000.option.1
+		planet_event = {
+			id = starborn_traits.1
+		}
+	}
+
+	option = {
+		allow = {
+			habitable_structure = yes
+		}
+		name = starborn_traits.1000.option.10
+		planet_event = {
+			id = starborn_traits.10
+		}
+	}
+
+	option = {
+		allow = {
+			habitable_structure = yes
+		}
+		name = starborn_traits.1000.option.20
+		planet_event = {
+			id = starborn_traits.20
+		}
+	}
+
+	option = {
+		allow = {
+			habitable_structure = yes
+		}
+		name = starborn_traits.1000.option.30
+		planet_event = {
+			id = starborn_traits.30
+		}
+	}
+
+	option = {
+		name = starborn_traits.1000.option.nope
+	}
+}
+
+# @Draconas Good to know there is the same kind of problem for triggers :P
+# Here is how you can pass arguments through scripted effects. You can do the same for triggers, but giving parameters negates the trigger (more on that below)
+# my_effect = {
+#   set_species_flag = $FLAG$
+# }
+
+# Use it with :
+# my_effect = { FLAG = some_string }
+
+# my_effect = {
+#   set_species_flag = $FLAG|default_flag$
+# }
+
+# Use it with :
+# my_effect = { FLAG = some_string }
+# OR (for using the default)
+# my_effect = yes
+
+# Careful, stellaris will need to use any given arguments (so giving a VALUE in the previous examples might cause an error as it is not used).
+# Also from what I experienced, stellaris compiles (aka replaces) every occurence of $something|default$ before executing the trigger. That means having 50+ occurence of $adz$ might cause some lag.
+
+# Now for the scripted_triggers : it works the same except :
+# If you use a trigger like my_trigger = yes (aka using the default values) it works like you would expect.
+# If you use a trigger like my_trigger = { VALUE = 54 } (ie using non default arguments), then it is the opposite of what you would expect (so it is actually NOT = { my_trigger = { VALUE = 54 }}).
+# I haven't tested the triggers a lot, so it might not be totally accurate. So please test it on your side and don't take this information for 100% accurate

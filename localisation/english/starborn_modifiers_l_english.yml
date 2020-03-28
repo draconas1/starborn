@@ -135,3 +135,30 @@
 
  starborn_habitat_complex:0 "§Y$starborn_habitat_expander_plural$§!"
  starborn_habitat_complex_desc:0 "This Habitat has §Y$starborn_habitat_expander$§! around another planet in this system, increasing the number and potentially the type of districts, but the distributed nature leaves a lot of places to hide illegal activity"
+
+ starborn_died_of_disease:0 "Disease Deaths"
+ starborn_died_of_disease_desc:0 "Our peoples poor immune systems combined with insufficient investment in medical care resulted in many deaths in an epidemic"
+
+ starborn_died_of_disease_2:0 "Repeated Disease Deaths"
+ starborn_died_of_disease_2_desc:0 "Repeated failure to invest in medical care to combat our poor immune system has created widespread resentment"
+
+ starborn_xenophobe_25:0 "Xenophobe Attraction"
+ starborn_xenophobe_25_desc:0 "Diseases caused by close contact with xeno pops is currently causing tension"
+
+ starborn_xenophobe_100:0 "Xenophobe Attraction"
+ starborn_xenophobe_100_desc:0 "Propoganda efforts around the Xeno diseases have caused widespread tensions and attraction to xenophobic causes"
+
+ starborn_farming_penalty_75:0 "Crops Destroyed"
+ starborn_farming_penalty_75_desc:0 "Most of current crop of food had to be destroyed to prevent a biological outbreak"
+
+ starborn_farming_penalty_75:0 "Crops Destroyed"
+ starborn_farming_penalty_75_desc:0 "Most of current crop of food had to be destroyed to prevent a biological outbreak"
+
+ starborn_farming_penalty_75:0 "Crops Destroyed"
+ starborn_farming_penalty_75_desc:0 "Most of current crop of food had to be destroyed to prevent a biological outbreak"
+ 
+ starborn_scavenger_unhappy:0 "Scavengers unhappy"
+ starborn_scavenger_unhappy_desc:0 "Widespread discontent about government disregard for miner and scavenger lives"
+
+ starborn_scavenger_damaged:0 "Scavenger operations damaged"
+ starborn_scavenger_damaged_desc:0 "An accident has damaged planetary scavenger operations"

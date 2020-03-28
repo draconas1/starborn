@@ -3,16 +3,16 @@ namespace = starborn
 #2. tried to cheat enlarging habitat
 country_event = {
         id = starborn.2    
-	title = "starborn.2.name"
-	desc = "starborn.2.desc"
-	show_sound = event_mystic_reveal
-	picture = GFX_evt_colony_settlement
-	is_triggered_only = yes
+        title = "starborn.2.name"
+        desc = "starborn.2.desc"
+        show_sound = event_mystic_reveal
+        picture = GFX_evt_colony_settlement
+        is_triggered_only = yes
         location = FromFromFrom.Planet
 
-	option = {
-		name = "starborn.2.option.a"
-	}
+        option = {
+                name = "starborn.2.option.a"
+        }
 }
 
 
@@ -20,29 +20,29 @@ country_event = {
 #6. hab enlargement failed because you lacked resources
 country_event = {
         id = starborn.6    
-	title = "starborn.6.name"
-	desc = "starborn.6.desc"
-	show_sound = event_mystic_reveal
-	picture = GFX_evt_colony_settlement
-	is_triggered_only = yes
+        title = "starborn.6.name"
+        desc = "starborn.6.desc"
+        show_sound = event_mystic_reveal
+        picture = GFX_evt_colony_settlement
+        is_triggered_only = yes
         location = FromFromFrom.Planet
 
-	option = {
-		name = "starborn.6.option.a"
-	}
+        option = {
+                name = "starborn.6.option.a"
+        }
 }
 
 
 #10 put refund modifer on smaller hab alloys cost
 planet_event = {
         id = starborn.10
-	hide_window = yes
-	is_triggered_only = yes
+        hide_window = yes
+        is_triggered_only = yes
 
-	trigger = {
-		owner = {
-			has_starborn = yes
-		}
+        trigger = {
+                owner = {
+                        has_starborn = yes
+                }
                 is_planet_class = pc_habitat
         }
 
@@ -66,16 +66,16 @@ planet_event = {
 
 # Habitat Complex Complete Notification
 country_event = {
-	id = "starborn.20"
-	title = "starborn.20.name"
-	desc = "starborn.20.desc"
-	picture = GFX_evt_colony_settlement
-	is_triggered_only = yes
-	location = FromFromFrom.Planet
+        id = "starborn.20"
+        title = "starborn.20.name"
+        desc = "starborn.20.desc"
+        picture = GFX_evt_colony_settlement
+        is_triggered_only = yes
+        location = FromFromFrom.Planet
 
-	option = {
-		name = EXCELLENT
-	}
+        option = {
+                name = EXCELLENT
+        }
 }
 
 
@@ -86,14 +86,14 @@ planet_event = {
         is_triggered_only = yes
         hide_window = yes
 
-	trigger = {
+        trigger = {
                 exists = owner
-		owner = {
+                owner = {
                         any_planet_within_border = {
                                 has_planet_flag = habitat_of@root
                                 has_planet_flag = starborn_farming_habitat
                         }
-		}
+                }
         }
 
         immediate = {
@@ -118,9 +118,9 @@ planet_event = {
 
 country_event = {
         id = starborn.31
-	is_triggered_only = yes
+        is_triggered_only = yes
         title = "starborn.31.name"
-	desc = "starborn.31.desc"
+        desc = "starborn.31.desc"
         picture = GFX_evt_colony_settlement
         option = {
                 name = "starborn.31.option.a"
@@ -134,7 +134,7 @@ planet_event = {
         hide_window = yes
         is_triggered_only = yes
 
-	trigger = {
+        trigger = {
                 solar_system = {
                         any_system_planet = {
                                 has_planet_flag = habitat_of@root
@@ -204,9 +204,9 @@ planet_event = {
 country_event = {
         id = starborn.41
         title = "starborn.41.name"
-	desc = "starborn.41.desc"
+        desc = "starborn.41.desc"
         is_triggered_only = yes
-	picture = GFX_evt_colony_settlement
+        picture = GFX_evt_colony_settlement
 
         option = {
                 name = "starborn.41.option.a"
@@ -217,18 +217,18 @@ country_event = {
 country_event = {
         id = starborn.42
         title = "starborn.42.name"
-	desc = "starborn.42.desc"
+        desc = "starborn.42.desc"
         is_triggered_only = yes
-	picture = GFX_evt_colony_settlement
+        picture = GFX_evt_colony_settlement
 
         option = {
                 name = "starborn.42.option.a"
                 add_monthly_resource_mult = {
-			resource = unity
-			value = @tier4unityreward
-			min = @tier4unityreward
-			max = @tier4unityreward
-		}
+                        resource = unity
+                        value = @tier4unityreward
+                        min = @tier4unityreward
+                        max = @tier4unityreward
+                }
         }
 }
 
@@ -358,9 +358,9 @@ planet_event = {
 country_event = {
         id = starborn.52
         title = "starborn.52.name"
-	desc = "starborn.52.desc"
+        desc = "starborn.52.desc"
         is_triggered_only = yes
-	picture = GFX_evt_city_planet
+        picture = GFX_evt_city_planet
 
         option = {
                 name = "starborn.52.option.a"
@@ -371,18 +371,18 @@ country_event = {
 country_event = {
         id = starborn.53
         title = "starborn.53.name"
-	desc = "starborn.53.desc"
+        desc = "starborn.53.desc"
         is_triggered_only = yes
-	picture = GFX_evt_city_planet
+        picture = GFX_evt_city_planet
 
         option = {
                 name = "starborn.53.option.a"
                 add_monthly_resource_mult = {
-			resource = unity
-			value = @tier5unityreward
-			min = @tier5unityreward
-			max = @tier5unityreward
-		}
+                        resource = unity
+                        value = @tier5unityreward
+                        min = @tier5unityreward
+                        max = @tier5unityreward
+                }
         }
 }
 
@@ -394,7 +394,7 @@ planet_event = {
         hide_window = yes
         is_triggered_only = yes
 
-	trigger = {
+        trigger = {
                 exists = owner
                 owner = {
                         has_starborn = yes
@@ -418,18 +418,18 @@ planet_event = {
 country_event = {
         id = starborn.61
         title = "starborn.61.name"
-	desc = "starborn.61.desc"
+        desc = "starborn.61.desc"
         is_triggered_only = yes
-	picture = GFX_evt_city_ruins
+        picture = GFX_evt_city_ruins
 
         option = {
                 name = "starborn.61.option.a"
                 add_monthly_resource_mult = {
-			resource = unity
-			value = @tier2unityreward
-			min = @tier2unitymin
-			max = @tier2unitymax
-		}
+                        resource = unity
+                        value = @tier2unityreward
+                        min = @tier2unitymin
+                        max = @tier2unitymax
+                }
         }
 }
 
@@ -440,7 +440,7 @@ planet_event = {
         hide_window = yes
         is_triggered_only = yes
 
-	trigger = {
+        trigger = {
                 exists = owner
                 owner = {
                         has_starborn = yes
@@ -469,9 +469,9 @@ planet_event = {
 country_event = {
         id = starborn.71
         title = "starborn.71.name"
-	desc = "starborn.71.desc"
+        desc = "starborn.71.desc"
         is_triggered_only = yes
-	picture = GFX_evt_galactic_community
+        picture = GFX_evt_galactic_community
 
         option = {
                 name = EXCELLENT
@@ -482,51 +482,76 @@ country_event = {
 
 # Starborn orbit dwellers trait
 pop_event = {
-	id = starborn.80
-	hide_window = yes
+        id = starborn.80
+        hide_window = yes
 
-	is_triggered_only = yes
+        is_triggered_only = yes
 
-	immediate = {
+        immediate = {
                 if = {
-			limit = { 
-				has_trait = trait_pc_starborn_habitat_start_preference
-				NOT = { has_trait = trait_starborn_positive }
-				from = { 
+                        limit = { 
+                                has_trait = trait_pc_starborn_habitat_start_preference
+                                NOT = { has_trait = trait_starborn_positive }
+                                from = { 
                                         OR = { 
                                                 is_planet_class = pc_habitat 
                                                 is_planet_class = pc_starborn_habitat_start 
                                         }
                                 }
-			}
-			modify_species = {
-				species = this
-				add_trait = trait_starborn_positive
-			}
-			if = {
-				limit = { has_trait = trait_starborn_negative_1 }
-				modify_species = {
-					species = this
-					remove_trait = trait_starborn_negative_1
-				}
+                        }
+                        modify_species = {
+                                species = this
+                                add_trait = trait_starborn_positive
                         }
                         if = {
-				limit = { has_trait = trait_starborn_negative_2 }
-				modify_species = {
-					species = this
-					remove_trait = trait_starborn_negative_2
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				has_trait = trait_starborn_positive
-				from = {
-					habitable_structure = no
-				}
+                                limit = { has_trait = trait_starborn_negative_1 }
+                                modify_species = {
+                                        species = this
+                                        remove_trait = trait_starborn_negative_1
+                                }
+                        }
+                        if = {
+                                limit = { has_trait = trait_starborn_negative_2 }
+                                modify_species = {
+                                        species = this
+                                        remove_trait = trait_starborn_negative_2
+                                }
+                        }
+                        if = {
+                                limit = { has_trait = trait_starborn_negative_3 }
+                                modify_species = {
+                                        species = this
+                                        remove_trait = trait_starborn_negative_3
+                                }
+                        }
+                }
+                else_if = {
+                        limit = {
+                                has_trait = trait_starborn_positive
+                                from = {
+                                        habitable_structure = no
+                                }
                         }
                         random_list = {
                                 10 = {
+                                        modifier = {
+                                                factor = 2
+                                                planet = {
+                                                        or = {
+                                                                planet_size > 16
+                                                                has_planet_modifier = pm_high_gravity
+                                                        }
+                                                }
+                                        }
+                                        modifier = {
+                                                factor = 0.5
+                                                planet = {
+                                                        or = {
+                                                                planet_size < 10
+                                                                has_planet_modifier = pm_low_gravity
+                                                        }
+                                                }
+                                        }
                                         modify_species = {
                                                 species = this
                                                 remove_trait = trait_starborn_positive
@@ -540,8 +565,15 @@ pop_event = {
                                                 add_trait = trait_starborn_negative_2
                                         }
                                 }
+                                5 = {
+                                        modify_species = {
+                                                species = this
+                                                remove_trait = trait_starborn_positive
+                                                add_trait = trait_starborn_negative_3
+                                        }
+                                }
                         }
-			
-		}
-	}
+                        
+                }
+        }
 }

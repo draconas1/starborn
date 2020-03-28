@@ -43,3 +43,55 @@ starborn_show_hab_enlargment_size = {
 		weight = 0
 	}
 }
+
+starborn_enable_debug = {
+    length = 0
+    resources = {
+        category = edicts
+        cost = {
+            influence = 0
+        }
+    }
+    
+    potential = {
+        owner = { 
+            has_starborn = yes 
+            not = { has_country_flag = STARBORN_EVENT_DEBUG }
+        }
+        
+    }
+    
+	effect = {
+        set_country_flag = STARBORN_EVENT_DEBUG
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+starborn_disable_debug = {
+    length = 0
+    resources = {
+        category = edicts
+        cost = {
+            influence = 0
+        }
+    }
+    
+    potential = {
+        owner = { 
+            has_starborn = yes 
+            has_country_flag = STARBORN_EVENT_DEBUG
+        }
+        
+    }
+    
+	effect = {
+        remove_country_flag = STARBORN_EVENT_DEBUG
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}

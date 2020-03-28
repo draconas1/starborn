@@ -10,6 +10,28 @@ has_starborn = {
 	has_origin = origin_starborn
 }
 
+has_negative_starborn_trait = {
+	OR = {
+		has_trait = trait_starborn_negative_1
+		has_trait = trait_starborn_negative_2
+		has_trait = trait_starborn_negative_3
+	}
+}
+
+is_starborn_pop = {
+	OR = {
+		has_negative_starborn_trait = yes
+		has_trait = trait_starborn_positive
+	}
+}
+
+has_gene_clinic = {
+	OR = {
+		has_building = building_hospital
+		has_building = building_clinic
+	}
+}
+
 starborn_can_place_hab = {
 	custom_tooltip = {
 		fail_text = "requires_surveyed_planet"

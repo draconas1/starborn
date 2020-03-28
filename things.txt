@@ -1,16 +1,7 @@
 
 off hab traits
-- agrophobia
-- gains the more space negative
-- desease
 - decadent
-
-- event with unity when terraforming or colonising homeworld
 
 - monument on homeworld - to paradise and to triumph
 
 - robot builders
-
-- on hab event: disease
-- on havent: alien disease
-- leading to xenophobia
