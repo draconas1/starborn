@@ -273,6 +273,22 @@ starborn_hab_init_deposits = {
         }
         add_deposit = d_hab_zro_3
     }
+    if = {
+        limit = {
+            fromfrom.planet = { has_deposit = d_zro_deposit_4 }
+        }
+        add_deposit = d_hab_zro_3
+        add_deposit = d_hab_zro_1
+    }
+
+    if = {
+        limit = {
+            fromfrom.planet = { has_deposit = d_zro_deposit_5 }
+        }
+        add_deposit = d_hab_zro_3
+        add_deposit = d_hab_zro_2
+    }
+
 
     if = {
         limit = {
@@ -392,10 +408,9 @@ starborn_hab_init_deposits = {
                     AND = {
                         has_global_flag = has_guillis_planet_modifiers_mod
                         OR = {
-                            has_deposit = gpm_Pulsar_clock
-                            has_deposit = gpm_Inspirational
-                            has_deposit = gpm_Time_Displaced_Planet
-                            has_deposit = gpm_proto_molecule_deposit
+                            has_deposit = gpm_d_pulsar_clock
+                            has_deposit = gpm_d_time_displaced_planet
+                            has_deposit = gpm_d_proto_molecule_deposit
                         }
                     }
                 }
@@ -411,22 +426,7 @@ starborn_hab_init_deposits = {
             has_global_flag = has_guillis_planet_modifiers_mod
             fromfrom.planet = {
                 OR = {
-                    has_deposit = gpm_asteroid_large_mineral_deposit
-                    has_deposit = gpm_asteroid_dense_mineral_deposit
-                    has_deposit = gpm_asteroid_moon_mineral_deposit
-                }
-            }
-        }
-        set_planet_flag = mining_habitat
-    }
-
-    if = {
-        limit = {
-            has_global_flag = has_guillis_planet_modifiers_mod
-            fromfrom.planet = {
-                OR = {
-                    has_deposit = gpm_asteroid_large_mineral_deposit
-                    has_deposit = gpm_sun_energy_deposit
+                    has_deposit = gpm_d_sun_energy_deposit
                 }
             }
         }
@@ -438,7 +438,7 @@ starborn_hab_init_deposits = {
             has_global_flag = has_guillis_planet_modifiers_mod
             fromfrom.planet = {
                 OR = {
-                    has_deposit = gpm_trade_deposit
+                    has_deposit = gpm_d_trade_deposit
                 }
             }
         }
@@ -463,12 +463,11 @@ starborn_hab_init_deposits = {
     #         has_global_flag = has_guillis_planet_modifiers_mod
     #         fromfrom.planet = {
     #             OR = {
-    #                 has_deposit = gpm_precursor_unity_deposit
-    #                 has_deposit = gpm_unity_deposit
+    #                 has_deposit = gpm_d_unity_deposit
     #             }
     #         }
     #     }
-    #     add_deposit = gpm_unity_deposit
+    #     add_deposit = gpm_d_unity_deposit
     # }
 
 
@@ -498,14 +497,6 @@ starborn_hab_init_deposits = {
             OR = {
                 fromfrom.planet = { has_deposit = d_minerals_5 }
                 fromfrom.planet = { has_deposit = d_minerals_6 }
-
-                AND = {
-                    has_global_flag = has_guillis_planet_modifiers_mod
-                    OR = {
-                        fromfrom.planet = { has_deposit = gpm_asteroid_metal_mineral_deposit }
-                        fromfrom.planet = { has_deposit = gpm_asteroid_dense_mineral_deposit }
-                    }
-                }
             }
         }
         set_planet_flag = starborn_mining_6
@@ -516,13 +507,6 @@ starborn_hab_init_deposits = {
             OR = {
                 fromfrom.planet = { has_deposit = d_minerals_7 }
                 fromfrom.planet = { has_deposit = d_minerals_8 }
-
-                AND = {
-                    has_global_flag = has_guillis_planet_modifiers_mod
-                    OR = {
-                         fromfrom.planet = { has_deposit = gpm_asteroid_moon_mineral_deposit }
-                    }
-                }
             }
         }
         set_planet_flag = starborn_mining_8
@@ -588,6 +572,19 @@ starborn_hab_init_deposits = {
         }
         set_planet_flag = starborn_energy_10
     }
+
+
+    if = {
+        limit = {
+            has_global_flag = has_guillis_planet_modifiers_mod
+            fromfrom.planet = {
+                OR = {
+                    has_deposit = gpm_d_inspirational
+                }
+            }
+        }
+        add_deposit = d_hab_dark_matter_3
+    }
 }
 
 
@@ -651,7 +648,7 @@ starborn_hab_init_deposits = {
                     AND = {
                         has_global_flag = has_guillis_planet_modifiers_mod
                         OR = {
-                            has_deposit = gpm_sun_energy_deposit
+                            has_deposit = gpm_d_sun_energy_deposit
                         }
                     }
                 }
@@ -680,16 +677,6 @@ starborn_hab_init_deposits = {
                     has_deposit = d_minerals_8
                     has_deposit = d_minerals_9
                     has_deposit = d_minerals_10
-
-                    AND = {
-                        has_global_flag = has_guillis_planet_modifiers_mod
-                        OR = {
-                            has_deposit = gpm_asteroid_dense_mineral_deposit
-                            has_deposit = gpm_asteroid_metal_mineral_deposit
-                            has_deposit = gpm_asteroid_large_mineral_deposit
-                            has_deposit = gpm_asteroid_moon_mineral_deposit
-                        }
-                    }                    
                 }
                 is_asteroid = yes
             }
@@ -834,7 +821,7 @@ starborn_hab_init_deposits = {
                     AND = {
                         has_global_flag = has_guillis_planet_modifiers_mod
                         OR = {
-                            has_deposit = gpm_trade_deposit
+                            has_deposit = gpm_d_trade_deposit
                         }
                     }
                 }
@@ -851,12 +838,6 @@ starborn_hab_init_deposits = {
             fromfrom.planet = {
                 OR = {
                     is_planet_class = pc_city
-                    AND = {
-                        has_global_flag = has_guillis_planet_modifiers_mod
-                        OR = {
-                            has_modifier = Space_Elevators #GPM
-                        }
-                    }
                 }
             }
         }
@@ -910,7 +891,7 @@ starborn_hab_init_deposits = {
                     AND = {
                         has_global_flag = has_guillis_planet_modifiers_mod
                         OR = {
-                            has_deposit = gpm_Time_Displaced_Planet
+                            has_deposit = gpm_d_time_displaced_planet
                         }
                     }
                 }
@@ -947,8 +928,7 @@ starborn_hab_init_deposits = {
                     AND = {
                         has_global_flag = has_guillis_planet_modifiers_mod
                         OR = {
-                            has_deposit = gpm_Inspirational
-                            has_deposit = gpm_Pulsar_clock
+                            has_deposit = gpm_d_pulsar_clock
                         }
                     }
                 }
@@ -1043,8 +1023,8 @@ starborn_hab_init_deposits = {
                     AND = {
                         has_global_flag = has_guillis_planet_modifiers_mod
                         OR = {
-                            has_deposit = gpm_Time_Displaced_Planet
-                            has_deposit = gpm_proto_molecule_deposit
+                            has_deposit = gpm_d_time_displaced_planet
+                            has_deposit = gpm_d_proto_molecule_deposit
                         }
                     }
                 }
@@ -1144,7 +1124,7 @@ starborn_hab_init_deposits = {
                     AND = {
                         has_global_flag = has_guillis_planet_modifiers_mod
                         OR = {
-                            has_deposit = gpm_Time_Displaced_Planet
+                            has_deposit = gpm_d_time_displaced_planet
                         }
                     }
                 }
@@ -1214,3 +1194,6 @@ starborn_hab_init_deposits = {
         }
     }
 }
+
+
+# gpm_d_unity_space_deposit_10

@@ -1,11 +1,13 @@
 namespace = starborn_traits
+@mtth = 3
+
 
 # disease planetside
 planet_event = {
 	id = starborn_traits.1
 	hide_window = yes
 	mean_time_to_happen = {
-		years = 5
+		years = @mtth
 	}
 
 	pre_triggers = {
@@ -25,7 +27,7 @@ planet_event = {
 	}
 
 	immediate = {
-		random_list = {
+		random_list = {			
 			1 = {
 				modifier = {
 					factor = 3
@@ -126,7 +128,7 @@ planet_event = {
 	id = starborn_traits.10
 	hide_window = yes
 	mean_time_to_happen = {
-		years = 3
+		years = @mtth
 	}
 
 	pre_triggers = {
@@ -307,7 +309,7 @@ planet_event = {
 	id = starborn_traits.20
 	hide_window = yes
 	mean_time_to_happen = {
-		years = 5
+		years = @mtth
 	}
 
 	pre_triggers = {
@@ -335,6 +337,11 @@ planet_event = {
 				}
 				planet_event = {
 					id = starborn_traits.21
+				}
+			}
+			1 = {
+				planet_event = {
+					id = starborn_traits.22
 				}
 			}
 
@@ -397,13 +404,35 @@ planet_event = {
 }
 
 
+# gain some society research
+planet_event = {
+	id = starborn_traits.22
+	title = starborn_traits.22.name
+	desc = starborn_traits.2.desc
+	picture = GFX_evt_society_research
+	is_triggered_only = yes
+
+	option = {
+		name = starborn_traits.22.option.a
+		owner = {
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = @tier1researchreward
+				min = @tier1researchmin
+				max = @tier1researchmax
+			}
+		}
+	}
+}
+
+
 
 # planet scavenger districts went wrong
 planet_event = {
 	id = starborn_traits.30
 	hide_window = yes
 	mean_time_to_happen = {
-		years = 5
+		years = @mtth
 	}
 
 	pre_triggers = {
@@ -435,6 +464,11 @@ planet_event = {
 			1 = {
 				planet_event = {
 					id = starborn_traits.32
+				}
+			}
+			1 = {
+				planet_event = {
+					id = starborn_traits.33
 				}
 			}
 
@@ -531,6 +565,450 @@ planet_event = {
 }
 
 
+#found a big-ole cache of alloys
+planet_event = {
+	id = starborn_traits.33
+	title = starborn_traits.33.name
+	desc = starborn_traits.33.desc
+	picture = GFX_evt_dead_city
+	is_triggered_only = yes
+	
+	option = {
+		name = starborn_traits.32.option.a
+		owner = {
+			add_monthly_resource_mult = {
+				resource = alloys
+				value = @tier3materialreward
+				min = @tier3materialmin
+				max = @tier3materialmax
+			}
+		}
+	}
+}
+
+
+
+
+
+# dark matter lab go boom!
+planet_event = {
+	id = starborn_traits.40
+	hide_window = yes
+	mean_time_to_happen = {
+		years = @mtth
+	}
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		owner = {
+			is_country_type = default
+			is_regular_empire = yes
+		}
+		habitable_structure = yes
+		has_building = building_starborn_dark_matter_extractor
+	}
+
+	immediate = {
+		random_list = {
+			5 = {
+				planet_event = {
+					id = starborn_traits.41
+				}
+			}
+			5 = {
+				planet_event = {
+					id = starborn_traits.42
+				}
+			}
+			4 = {
+				planet_event = {
+					id = starborn_traits.43
+				}
+			}
+			3 = {
+				planet_event = {
+					id = starborn_traits.44
+				}
+			}
+			1 = {
+				planet_event = {
+					id = starborn_traits.45
+				}
+			}
+		
+			40 = {
+				# do nothing...
+				set_variable = { which = EventId value = 40 }
+				owner = { country_event = { id = starborn_traits.999 } }
+			}
+		}
+	}
+}
+
+
+planet_event = {
+	id = starborn_traits.41
+	title = starborn_traits.41.name
+	desc = starborn_traits.41.desc1
+	picture = GFX_evt_debris
+	is_triggered_only = yes
+
+	option = {
+		name = starborn_traits.41.option.a
+		remove_building = building_starborn_dark_matter_extractor
+	}
+}
+
+planet_event = {
+	id = starborn_traits.42
+	title = starborn_traits.41.name
+	desc = starborn_traits.41.desc2
+	picture = GFX_evt_debris
+	is_triggered_only = yes
+
+	option = {
+		name = starborn_traits.41.option.a
+		random_pop = {
+			limit = {
+				has_job = starborn_dark_matter_extractor
+			}
+			kill_pop = yes
+		}
+		remove_building = building_starborn_dark_matter_extractor
+	}
+}
+
+planet_event = {
+	id = starborn_traits.43
+	title = starborn_traits.41.name
+	desc = starborn_traits.41.desc3
+	picture = GFX_evt_debris
+	is_triggered_only = yes
+
+	option = {
+		name = starborn_traits.41.option.a
+		add_planet_devastation = 25
+		random_pop = {
+			limit = {
+				has_job = starborn_dark_matter_extractor
+			}
+			kill_pop = yes
+		}
+		remove_building = building_starborn_dark_matter_extractor
+	}
+}
+
+planet_event = {
+	id = starborn_traits.44
+	title = starborn_traits.41.name
+	desc = starborn_traits.41.desc4
+	picture = GFX_evt_debris
+	is_triggered_only = yes
+
+	option = {
+		name = starborn_traits.41.option.a		
+		add_planet_devastation = 75
+		random_pop = {
+			limit = {
+				has_job = starborn_dark_matter_extractor
+			}
+			kill_pop = yes
+		}
+		remove_building = building_starborn_dark_matter_extractor
+		random_pop = {
+			kill_pop = yes
+		}
+		random_pop = {
+			kill_pop = yes
+		}
+	}
+}
+
+# Demon invasion!
+planet_event = {
+	id =  starborn_traits.45
+	title =  starborn_traits.45.name
+	desc = starborn_traits.45.desc
+	picture = GFX_evt_ground_combat
+	show_sound = event_air_raid_siren
+	location = ROOT
+	is_triggered_only = yes
+	
+	immediate = {
+		set_planet_flag = starborn_demon_invasion
+		create_country = {
+			name = "Demonic Invasion"
+			type = faction
+			effect = {
+				establish_communications_no_message = root.owner
+			}
+		}
+		create_species = {
+			name = "Demons"
+			class = random_non_machine
+			portrait = random
+			traits = random
+		}
+		set_variable = {
+			which = count
+			value = 0
+		}
+		while = {
+			limit = {
+				check_variable = {
+					which = count
+					value <= 5
+				}
+			}
+			create_army = {
+				name = "Demonic Cannonfodder"
+				owner = last_created
+				species = last_created
+				type = "starborn_demon_army"
+			}
+		}
+
+		create_army = {
+			name = "Hells Titans"
+			owner = last_created
+			species = last_created
+			type = "starborn_titan_demon_army"
+		}
+	}
+	
+	option = {
+		name = starborn_traits.45.option.a
+		custom_tooltip = "Demons are killing everyone!"
+	}
+
+}
+
+
+# Defeat fighting Demons
+country_event = {
+	id = starborn_traits.46
+	title = "starborn_traits.46.name"
+	desc = "starborn_traits.46.desc"
+	picture = GFX_evt_burning_settlement
+	show_sound = event_ghost_town
+	location = FROMFROM
+
+	is_triggered_only = yes
+
+	trigger = {
+		FROMFROM = { has_planet_flag = starborn_demon_invasion }
+	}
+
+	immediate = {
+		FROMFROM = {
+			set_planet_flag = starborn_demon_invasion_demons_won
+			remove_planet_flag = starborn_demon_invasion
+			every_owned_pop = {
+				set_pop_flag = event_purge
+				unemploy_pop = yes
+			}
+		}
+	}
+
+	option = {
+		name = starborn_traits.46.option.a
+	}
+}
+
+# Liberated from Demons
+country_event = {
+	id = starborn_traits.47
+	title = "starborn_traits.47.name"
+	desc = "starborn_traits.47.desc"
+	picture = GFX_evt_victorious_army
+	show_sound = event_ground_battle
+	location = FROMFROM
+
+	is_triggered_only = yes
+
+	trigger = {
+		FROMFROM = { has_planet_flag = starborn_demon_invasion_demons_won }
+	}
+
+	immediate = {
+		FROMFROM = {
+			remove_planet_flag = starborn_demon_invasion_demons_won
+			set_owner = ROOT
+			every_owned_pop = {
+				remove_pop_flag = event_purge
+				unemploy_pop = yes
+			}
+
+			every_owned_pop = {
+				remove_modifier = "pop_recently_conquered"
+				add_modifier = {
+					modifier = "pop_liberation_fever"
+					days = 3600
+				}
+			}
+
+			remove_building = building_starborn_dark_matter_extractor
+		}
+	}
+
+	option = {
+		name = starborn_traits.47.option.a
+	}
+}
+
+
+# repelled demons
+country_event = {
+	id = starborn_traits.48
+	hide_window = yes
+	location = FROMFROM
+
+	is_triggered_only = yes
+
+	trigger = {
+		FROMFROM = { has_planet_flag = starborn_demon_invasion }
+	}
+
+	immediate = {
+		FROMFROM = {
+			remove_planet_flag = starborn_demon_invasion
+		}
+	}
+}
+
+
+
+
+
+
+# Zro cult
+planet_event = {
+	id = starborn_traits.50
+	hide_window = yes
+	mean_time_to_happen = {
+		years = @mtth
+	}
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		owner = {
+			is_country_type = default
+			is_regular_empire = yes
+		}
+		habitable_structure = yes
+		has_building = building_starborn_dark_matter_extractor
+	}
+
+	immediate = {
+		random_list = {
+			1 = {
+				planet_event = {
+					id = starborn_traits.51
+				}
+			}
+			1 = {
+				planet_event = {
+					id = starborn_traits.52
+				}
+			}
+			10 = {
+				# do nothing...
+				set_variable = { which = EventId value = 50 }
+				owner = { country_event = { id = starborn_traits.999 } }
+			}
+		}
+	}
+}
+
+
+# everyone is getting high on zro
+planet_event = {
+	id = starborn_traits.51
+	title = starborn_traits.51.name
+	desc = starborn_traits.51.desc
+	picture = GFX_evt_dead_city
+	is_triggered_only = yes
+
+	option = {
+		name = starborn_traits.51.option.a
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 500
+				}
+			}
+		}	
+		owner = {
+			add_resource = {
+				energy = -500
+			}
+		}
+	}
+	
+	option = {
+		name = starborn_traits.51.option.b
+		add_modifier = {
+			modifier = starborn_zro_everywhere
+			days = 360
+		}	
+	}
+}
+
+
+
+# CULT!
+planet_event = {
+	id = starborn_traits.52
+	title = starborn_traits.52.name
+	desc = starborn_traits.52.desc
+	picture = GFX_evt_dead_city
+	is_triggered_only = yes
+
+	option = {
+		name = starborn_traits.52.option.a
+		allow = {
+			owner = {
+				OR = {
+					has_ethic = ethic_fanatic_spiritualist
+					has_ethic = ethic_spiritualist
+				}
+			}
+		}	
+		add_modifier = {
+			modifier = starborn_zro_cult_embraced
+			days = 720
+		}	
+	}
+	
+	option = {
+		name = starborn_traits.52.option.b
+		add_modifier = {
+			modifier = starborn_zro_cult_left
+			days = 1000
+		}	
+	}
+
+	option = {
+		name = starborn_traits.52.option.c
+		allow = {
+			any_pop = {
+				has_job = enforcer
+			}
+		}
+		add_modifier = {
+			modifier = starborn_zro_cult_suppressed
+			days = 180
+		}
+	}
+}
+
 
 country_event = {
 	id = starborn_traits.999
@@ -596,10 +1074,34 @@ planet_event = {
 		}
 	}
 
+
+	option = {
+		allow = {
+			habitable_structure = yes
+		}
+		name = starborn_traits.1000.option.40
+		planet_event = {
+			id = starborn_traits.40
+		}
+	}
+
+	option = {
+		allow = {
+			habitable_structure = yes
+		}
+		name = starborn_traits.1000.option.50
+		planet_event = {
+			id = starborn_traits.50
+		}
+	}
+	
 	option = {
 		name = starborn_traits.1000.option.nope
 	}
 }
+
+
+
 
 # @Draconas Good to know there is the same kind of problem for triggers :P
 # Here is how you can pass arguments through scripted effects. You can do the same for triggers, but giving parameters negates the trigger (more on that below)

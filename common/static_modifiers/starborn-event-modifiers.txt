@@ -13,13 +13,13 @@ starborn_died_of_disease_2 = {
 
 
 starborn_xenophobe_25 = {
-	pop_ethic_fanatic_xenophobe_attraction_mult = 0.25
+	pop_ethic_xenophobe_attraction_mult = 0.25
 	icon = "gfx/interface/icons/planet_modifiers/pm_unrest.dds"
 	icon_frame = 3
 }
 
 starborn_xenophobe_100 = {
-	pop_ethic_fanatic_xenophobe_attraction_mult = 1
+	pop_ethic_xenophobe_attraction_mult = 1
     planet_stability_add = -10
 	icon = "gfx/interface/icons/planet_modifiers/pm_unrest.dds"
 	icon_frame = 3
@@ -45,3 +45,32 @@ starborn_scavenger_damaged = {
 }
 
 
+starborn_zro_everywhere = {
+	planet_jobs_produces_mult = -0.10
+	pop_government_ethic_attraction = -0.30
+	icon = "gfx/interface/icons/planet_modifiers/pm_surreal_visions.dds"
+	icon_frame = 3
+}
+
+
+starborn_zro_cult_left = {
+	pop_ethic_spiritualist_attraction_mult = 0.2
+	planet_jobs_sr_zro_produces_mult = 0.5
+	pop_amenities_usage_mult = 0.1
+	icon = "gfx/interface/icons/planet_modifiers/pm_surreal_visions.dds"
+	icon_frame = 2
+}
+
+starborn_zro_cult_embraced = {
+	pop_ethic_spiritualist_attraction_mult = 1
+	planet_jobs_sr_zro_produces_mult = 1
+	icon = "gfx/interface/icons/planet_modifiers/pm_surreal_visions.dds"
+	icon_frame = 2
+}
+
+starborn_zro_cult_suppressed = {
+	planet_stability_add = -10
+	planet_jobs_sr_zro_produces_mult = -0.5
+	icon = "gfx/interface/icons/planet_modifiers/pm_surreal_visions.dds"
+	icon_frame = 2
+}

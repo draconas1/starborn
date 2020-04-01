@@ -226,8 +226,8 @@ country_event = {
                 add_monthly_resource_mult = {
                         resource = unity
                         value = @tier4unityreward
-                        min = @tier4unityreward
-                        max = @tier4unityreward
+                        min = @tier4unitymin
+                        max = @tier4unitymax
                 }
         }
 }
@@ -380,8 +380,8 @@ country_event = {
                 add_monthly_resource_mult = {
                         resource = unity
                         value = @tier5unityreward
-                        min = @tier5unityreward
-                        max = @tier5unityreward
+                        min = @tier5unitymin
+                        max = @tier5unitymax
                 }
         }
 }
@@ -574,6 +574,113 @@ pop_event = {
                                 }
                         }
                         
+                }
+        }
+}
+
+country_event = {
+        id = starborn.90
+        hide_window = yes
+        is_triggered_only = yes
+        immediate = {
+                capital_star = {
+                        solar_system = {
+                                random_system_planet = {
+                                        limit = {
+                                                is_planet_class = pc_gas_giant
+                                        }
+                                        add_deposit = d_society_10
+                                        add_deposit = d_engineering_10
+                                        add_deposit = d_physics_10
+                                }
+                                
+                                random_system_planet = {
+                                        limit = {
+                                                is_planet_class = pc_asteroid
+                                        }
+                                        add_deposit = d_alloys_5
+                                }
+                                
+                                random_system_planet = {
+                                        limit = {
+                                                is_star = no
+                                                has_deposit = no
+                                                habitable_structure = no
+                                                nor = {
+                                                        has_planet_flag = has_megastructure
+                                                        is_planet_class = pc_asteroid                                                        
+                                                }
+                                        }
+                                        add_deposit = d_dark_matter_deposit_3
+                                        add_deposit = d_zro_deposit_5
+                                        add_deposit = d_living_metal_deposit
+                                        add_deposit = d_nanites_deposit
+                                }
+
+                                random_system_planet = {
+                                        limit = {
+                                                is_star = no
+                                                has_deposit = no
+                                                habitable_structure = no
+                                                nor = {
+                                                        has_planet_flag = has_megastructure
+                                                        is_planet_class = pc_asteroid
+                                                }
+                                        }
+                                       change_pc = pc_continental
+                                       reroll_planet = yes
+                                }
+
+
+                                random_system_planet = {
+                                        limit = {
+                                                is_star = no
+                                                has_deposit = no
+                                                habitable_structure = no
+                                                nor = {
+                                                        has_planet_flag = has_megastructure
+                                                }
+                                        }
+                                        add_deposit = d_exotic_gases_5
+                                }
+
+                                random_system_planet = {
+                                        limit = {
+                                                is_star = no
+                                                has_deposit = no
+                                                habitable_structure = no
+                                                nor = {
+                                                        has_planet_flag = has_megastructure
+                                                }
+                                        }
+                                        add_deposit = d_rare_crystals_5
+                                }
+
+                                random_system_planet = {
+                                        limit = {
+                                                is_star = no
+                                                has_deposit = no
+                                                habitable_structure = no
+                                                nor = {
+                                                        has_planet_flag = has_megastructure
+                                                }
+                                        }
+                                        add_deposit = d_volatile_motes_5
+                                }
+
+                                random_system_planet = {
+                                        limit = {
+                                                is_star = no
+                                                has_deposit = no
+                                                habitable_structure = no
+                                                nor = {
+                                                        has_planet_flag = has_megastructure
+                                                }
+                                        }
+                                        add_deposit = d_trade_value_10
+                                }
+                               
+                        }
                 }
         }
 }

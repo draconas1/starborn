@@ -62,21 +62,21 @@
  requires_habitat_target:0 "$TRIGGER_FAIL$ You must select a §Y$starborn_habitat$§! in this system using the §Y$decision_starborn_complex_target$§! planetary decision that will gain the benefits of the §Y$starborn_habitat_expander$§!"
  requires_only_1_habitat_target:0 "$TRIGGER_FAIL$ More than 1 §Y$starborn_habitat$§! in this system has been designated as the §Y$decision_starborn_complex_target$§!"
 
- 
- edict_starborn_show_menu_effect:0 "Selecting this edict triggers a menu as a global effect that the game denotes as a §YCountry event! You can do it as many times as you like"
-
  edict_starborn_show_hab_build_size:0 "Set Habitat Construction Size"
  edict_starborn_show_hab_build_size_desc:0 "Adjust how large (and how expensive) we build the inital habitat as our economy grows"
 
  edict_starborn_show_hab_enlargment_size:0 "Set Auto-Habitat Enlargement"
  edict_starborn_show_hab_enlargment_size_desc:0 "Adjust if we automatically apply habitat enlargment decisions"
 
- starborn_enable_debug:0 "Starborn: Enable Debgug event"
- starborn_enable_debug_desc:0 "Enables starborn debug events popping up.  You probably want to leave this off."
+ edict_starborn_enable_debug:0 "Starborn: Enable Debug event"
+ edict_starborn_enable_debug_desc:0 "Enables starborn debug events popping up.  You probably want to leave this off."
 
- starborn_disable_debug:0 "Starborn: Disable Debgug event"
- starborn_disable_debug_desc:0 "Disables starborn debug event popup.  You probably want to leave it disabled."
+ edict_starborn_disable_debug:0 "Starborn: Disable Debug event"
+ edict_starborn_disable_debug_desc:0 "Disables starborn debug event popup.  You probably want to leave it disabled."
  
+ edict_starborn_op_start_system:0 "Make Start System OP"
+ edict_starborn_op_start_system_desc:0 "Deploys a lot of orbital resources in to the start system for you to build habitats on"
+
  decision_starborn_debug_events:0 "Trigger Starborn Events"
  decision_starborn_debug_events_desc:0 "Open a menu to manually trigger one of the random starborn events for this planet"
 
@@ -108,3 +108,14 @@
  decision_starborn_complex_target_desc:0 "This will remove the designation from any other habitat in the system"
  decision_starborn_complex_target_must_be_full_size:0 "The habitat must be enlarged to full size before it can manage §Y$starborn_habitat_expander_plural$§!"
  decision_starborn_complex_target_tooltip:0 "Specify that §Y$starborn_habitat_expander_plural$§! in this system will be controlled by this habitat.  Constructed §Y$starborn_habitat_expander_plural$§! will add to this habitats maximum districts and allow access to the special districts for their planet type."
+
+ starborn_demon_army:0 "Demonic Army"
+ starborn_demon_army.desc:0 "This army appears to be made up of literal demons, from our ancient myths of hell.  Most are roughly human sized monsters with claws that can rend steel and throw balls of fire, but some are towering giants that can smash an armoured vehicle with a single swing"
+
+ starborn_demon_army:0 "Demonic Army"
+ starborn_demon_army_desc:0 "This army appears to be made up of literal demons, from our ancient myths of hell.  Most are roughly human sized monsters with claws that can rend steel and throw balls of fire, but some are towering giants that can smash an armoured vehicle with a single swing"
+
+ starborn_titan_demon_army:0 "Demonic Titan Army"
+ starborn_titan_demon_army_desc:0 "Giant towering demons that crush everything in their path"
+
+ mod_planet_jobs_sr_zro_produces_mult:0 "£sr_zro£ $sr_zro$ from £job£ Jobs"

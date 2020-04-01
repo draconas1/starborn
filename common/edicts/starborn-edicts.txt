@@ -12,9 +12,8 @@ starborn_show_hab_build_size = {
     }
     
 	effect = {
-        custom_tooltip = edict_starborn_show_menu_effect
-		country_event = { id = starborn_menus.1 }
-	}
+        country_event = { id = starborn_menus.1 }
+    }
 	
 	ai_weight = {
 		weight = 0
@@ -35,7 +34,6 @@ starborn_show_hab_enlargment_size = {
     }
     
 	effect = {
-        custom_tooltip = edict_starborn_show_menu_effect
 		country_event = { id = starborn_menus.2 }
 	}
 	
@@ -89,6 +87,35 @@ starborn_disable_debug = {
     
 	effect = {
         remove_country_flag = STARBORN_EVENT_DEBUG
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+starborn_op_start_system = {
+    length = 0
+    resources = {
+        category = edicts
+        cost = {
+            influence = 0
+        }
+    }
+    
+    potential = {
+        owner = { 
+            has_starborn = yes 
+            not = { has_country_flag = STARBORN_OP_INIT }
+        }
+        
+    }
+    
+	effect = {
+        set_country_flag = STARBORN_OP_INIT
+        country_event = {
+            id =  starborn.90
+        }
 	}
 	
 	ai_weight = {

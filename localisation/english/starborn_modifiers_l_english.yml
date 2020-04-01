@@ -162,3 +162,16 @@
 
  starborn_scavenger_damaged:0 "Scavenger operations damaged"
  starborn_scavenger_damaged_desc:0 "An accident has damaged planetary scavenger operations"
+
+ starborn_zro_everywhere:0 "Zro Hallucinations"
+ starborn_zro_everywhere_desc:0 "Zro has spread through the habitat causing widespread hallucinations and irrational behaviour"
+
+
+ starborn_zro_cult_left:0 "Zro Cult"
+ starborn_zro_cult_left_desc:0 "There is a thriving cult that believes that enlightenment is found through group vision quests after taking large quantities of zro"
+
+ starborn_zro_cult_embraced:0 "Zro Religion"
+ starborn_zro_cult_embraced_desc:0 "The embraced religous view of the people is that enlightenment can be found by mass group visions brought on by zro consumption"
+
+ starborn_zro_cult_suppressed:0 "Cult Arrested"
+ starborn_zro_cult_suppressed_desc:0 "The leaders of the growing Zro cult have been arrested and Zro production is impacted while a detailed investigation tries to uncover their conspiritors in the temple"
