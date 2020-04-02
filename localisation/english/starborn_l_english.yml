@@ -23,8 +23,8 @@
  trait_starborn_negative_2:0 "Agoraphobic $trait_starborn_positive$"
  trait_starborn_negative_2_desc:0 "This species thrives in space!  Their immune systems struggle to cope with a natural biosphere, meanwhile the stress of so much open space has led to acute agoraphobia"
 
- trait_starborn_negative_3:0 "Soliatry $trait_starborn_positive$"
- trait_starborn_negative_3_desc:0 "This species thrives in space!  Their immune systems struggle to cope with a natural biosphere, and the vast open spaces of a planet has resulted in soliatry and antisocial behaviour"
+ trait_starborn_negative_3:0 "Solitary $trait_starborn_positive$"
+ trait_starborn_negative_3_desc:0 "This species thrives in space!  Their immune systems struggle to cope with a natural biosphere, and the vast open spaces of a planet has resulted in solitary and antisocial behaviour"
 
  requires_not_black_hole:0 "$TRIGGER_FAIL$$starborn_habitat$ cannot be built around a black hole, nobody wants to gaze into the abyss constantly"
  requires_no_unminable_sr:0 "$TRIGGER_FAIL$There appears to be valuable strategic resources here that our $starborn_habitat$ would destroy"
@@ -119,3 +119,6 @@
  starborn_titan_demon_army_desc:0 "Giant towering demons that crush everything in their path"
 
  mod_planet_jobs_sr_zro_produces_mult:0 "£sr_zro£ $sr_zro$ from £job£ Jobs"
+
+ starborn_lower_disease_chance:0 "Enhance Starborn Immune Systems"
+ starborn_lower_disease_chance_DESC:0 "Use gene tailoring to boost the immune systems of starborn populations to make them more resistant to planet based biohazards."

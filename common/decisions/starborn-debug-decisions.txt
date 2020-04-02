@@ -4,6 +4,7 @@ decision_starborn_debug_events = {
 	enactment_time = 0
 	
 	potential = {
+		always = no
 		owner = { has_starborn = yes }
 	}
 

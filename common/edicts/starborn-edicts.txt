@@ -52,6 +52,7 @@ starborn_enable_debug = {
     }
     
     potential = {
+        always = no
         owner = { 
             has_starborn = yes 
             not = { has_country_flag = STARBORN_EVENT_DEBUG }
@@ -104,6 +105,7 @@ starborn_op_start_system = {
     }
     
     potential = {
+        always = no
         owner = { 
             has_starborn = yes 
             not = { has_country_flag = STARBORN_OP_INIT }

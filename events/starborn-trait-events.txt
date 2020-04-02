@@ -36,9 +36,26 @@ planet_event = {
 				planet_event = {
 					id = starborn_traits.3
 				}
+				owner = {
+					country_event = {
+						id = starborn_traits.60
+						days = 10
+					}
+				}
 			}
 
-			10 = {
+			30 = {
+				# do nothing...
+				set_variable = { which = EventId value = 1 }
+				owner = { country_event = { id = starborn_traits.999 } }
+			}
+			100 = {
+				modifier = {
+					factor = 0
+					owner = {
+						NOT = { has_country_flag = starborn_disease_gene_engineered }
+					}
+				}
 				# do nothing...
 				set_variable = { which = EventId value = 1 }
 				owner = { country_event = { id = starborn_traits.999 } }
@@ -163,9 +180,27 @@ planet_event = {
 				planet_event = {
 					id = starborn_traits.11
 				}
+				owner = {
+					country_event = {
+						id = starborn_traits.60
+						days = 10
+					}
+				}
 			}
 
-			10 = {
+			30 = {
+				# do nothing...
+				set_variable = { which = EventId value = 10 }
+				owner = { country_event = { id = starborn_traits.999 } }
+			}
+
+			100 = {
+				modifier = {
+					factor = 0
+					owner = {
+						NOT = { has_country_flag = starborn_disease_gene_engineered }
+					}
+				}
 				# do nothing...
 				set_variable = { which = EventId value = 10 }
 				owner = { country_event = { id = starborn_traits.999 } }
@@ -338,6 +373,12 @@ planet_event = {
 				planet_event = {
 					id = starborn_traits.21
 				}
+				owner = {
+					country_event = {
+						id = starborn_traits.60
+						days = 10
+					}
+				}
 			}
 			1 = {
 				planet_event = {
@@ -345,7 +386,18 @@ planet_event = {
 				}
 			}
 
-			20 = {
+			50 = {
+				# do nothing...
+				set_variable = { which = EventId value = 20 }
+				owner = { country_event = { id = starborn_traits.999 } }
+			}
+			100 = {
+				modifier = {
+					factor = 0
+					owner = {
+						NOT = { has_country_flag = starborn_disease_gene_engineered }
+					}
+				}
 				# do nothing...
 				set_variable = { which = EventId value = 20 }
 				owner = { country_event = { id = starborn_traits.999 } }
@@ -472,7 +524,7 @@ planet_event = {
 				}
 			}
 
-			10 = {
+			40 = {
 				# do nothing...
 				set_variable = { which = EventId value = 30 }
 				owner = { country_event = { id = starborn_traits.999 } }
@@ -590,6 +642,16 @@ planet_event = {
 
 
 
+#All the Dimensional portal stuff in vanilla is here:
+#Colony.3.txt
+# planet_event = { #Dimensional portal
+# 	id = colony.3005
+# 	title = "colony.3005.name"
+# 	desc = "colony.3005.desc"
+# 	picture = GFX_evt_wormhole
+# 	location = ROOT
+# 	trackable = yes
+
 # dark matter lab go boom!
 planet_event = {
 	id = starborn_traits.40
@@ -633,13 +695,13 @@ planet_event = {
 					id = starborn_traits.44
 				}
 			}
-			1 = {
+			2 = {
 				planet_event = {
 					id = starborn_traits.45
 				}
 			}
 		
-			40 = {
+			75 = {
 				# do nothing...
 				set_variable = { which = EventId value = 40 }
 				owner = { country_event = { id = starborn_traits.999 } }
@@ -917,7 +979,7 @@ planet_event = {
 					id = starborn_traits.52
 				}
 			}
-			10 = {
+			50 = {
 				# do nothing...
 				set_variable = { which = EventId value = 50 }
 				owner = { country_event = { id = starborn_traits.999 } }
@@ -1008,6 +1070,70 @@ planet_event = {
 		}
 	}
 }
+
+
+
+
+
+
+
+
+# Genetically fix it
+
+country_event = {
+	id = starborn_traits.60
+	title = starborn_traits.60.name
+	desc = starborn_traits.60.desc
+	picture = GFX_evt_emergency_workers
+	is_triggered_only = yes
+	trigger = {
+		has_ascension_perk = ap_engineered_evolution
+		NOT = { has_country_flag = starborn_attempted_gene_engineering }
+	}
+
+	immediate = {
+		set_country_flag = starborn_attempted_gene_engineering
+	}
+
+	option = {
+		name = OK
+		enable_special_project = {
+			name = "starborn_lower_disease_chance"
+			location = capital_scope
+			owner = root
+		}
+	}
+}
+
+
+planet_event = {
+	id = starborn_traits.61
+	title = starborn_traits.61.name
+	desc = starborn_traits.61.desc
+	picture = GFX_evt_emergency_workers
+	is_triggered_only = yes
+
+	option = {
+		name = OK
+		hidden_effect = {
+			owner = {
+				set_country_flag = starborn_disease_gene_engineered
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 country_event = {

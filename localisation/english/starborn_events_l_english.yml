@@ -93,7 +93,7 @@
 
 
  starborn_traits.21.name:0 "Bipshere Contamination"
- starborn_traits.21.desc:0 "§Y[This.GetName] has reported a biological contamination outbreak originating from the food production sector.\n\nA microbe believed to occur on the local planet, where we are taking advantage of the biosphere for food production, has mutated and is spreading out of control.\n\nHarmless even to the starborn people in small amounts, the quantities found in the rapid spreading varient quickly become lethal to compromised immune systems.\n\nAt minimum a large portion of the current food crop will have to be destroyed to stop a large-scale incident."
+ starborn_traits.21.desc:0 "§Y[This.GetName]§! has reported a biological contamination outbreak originating from the food production sector.\n\nA microbe believed to occur on the local planet, where we are taking advantage of the biosphere for food production, has mutated and is spreading out of control.\n\nHarmless even to the starborn people in small amounts, the quantities found in the rapid spreading varient quickly become lethal to compromised immune systems.\n\nAt minimum a large portion of the current food crop will have to be destroyed to stop a large-scale incident."
  starborn_traits.21.option.a:0 "Send Emergency Medical Supplies. Stat!"
  starborn_traits.21.option.b:0 "Manage with what you have"
 
@@ -150,6 +150,16 @@
  starborn_traits.52.option.b:0 "Another harmless religion"
  starborn_traits.52.option.c:0 "Have the leader arrested and find their conspiritors"
 
+
+
+ starborn_traits.60.name:0 "Technological Solutions"
+ starborn_traits.60.desc:0 "Our mastery of genetics has improved substancially since we first began venturing out of the habitat and following recent incidents our scientists would like approval to work on a genetic solution to our peoples poor immune system.\n\nA special project has been prepared for your approval to try and improve matters"
+ starborn_traits.60.option.a:0 "Ok"
+
+ starborn_traits.61.name:0 "Immune Systems Engineered"
+ starborn_traits.61.desc:0 "Our scientists have succeeded in making sweeping alterations and improvements to the average starborn immune system.\n\nThe scientific community is attempting to caution people that the solution is not perfect, nothing we can do truely competes with generations of survival in a natural, hostile, biome, but the treatments rolled out will substancially bolster our peoples immune systems and result in far fewer outbreaks.\n\nThere is disappointment in the science fiction community that nobody appears to have gained super powers as a result of the treatment."
+ starborn_traits.61.option.a:0 EXCELLENT
+
  starborn_traits.999.name:0 "Debug"
  starborn_traits.999.desc:0 "Starborn Event §Y[FROM.EventId]§! triggered, but had no effect"
  starborn_traits.999.option.a:0 "Ok"
@@ -163,5 +173,5 @@
  starborn_traits.1000.option.30:0 "30 Scavenger accident"
  starborn_traits.1000.option.40:0 "40 Dark Matter Containment"
  starborn_traits.1000.option.45:0 "45 Demon Invasion"
- starborn_traits.1000.option.40:0 "50 Zro Temple"
+ starborn_traits.1000.option.50:0 "50 Zro Temple"
  starborn_traits.1000.option.nope:0 "None"

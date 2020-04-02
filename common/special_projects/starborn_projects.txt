@@ -1,0 +1,22 @@
+special_project = {
+	key = "starborn_lower_disease_chance"
+	cost = {
+		base = 500
+		scaled_modifier = {
+			limit = {
+			}
+			scope = this
+			add = 100
+			calc = pop_count
+		}
+	}
+	tech_department = society_technology
+	picture = GFX_evt_alien_planet
+	icon = "gfx/interface/icons/situation_log/situation_log_society.dds"
+	
+	event_scope = planet_event
+	
+	on_success = {
+        planet_event = { id = starborn_traits.61 days = 5 random = 5 }
+	}
+}
