@@ -80,6 +80,12 @@
  decision_starborn_debug_events:0 "Trigger Starborn Events"
  decision_starborn_debug_events_desc:0 "Open a menu to manually trigger one of the random starborn events for this planet"
 
+ edict_starborn_turn_off_events:0 "Disable Starborn Random Events"
+ edict_starborn_turn_off_events_desc:0 "This disables all the random events for starborn pops (Disease / Planet adaptation, district or building random occurances)"
+
+ edict_starborn_turn_on_events:0 "Enable Starborn Random Events"
+ edict_starborn_turn_on_events_desc:0 "Re-enable the starborn random events"
+
  decision_starborn_remove_mining:0 "Remove Mining Habitat Designation"
  decision_starborn_remove_mining_desc:0 "This will dismantle all §Y$district_hab_mining$§! and remove the mining habitat designator, it takes a short amount of time to allow cancellation in case of misclick, you may need to close and reopen the planet window for the change to show in the UI"
 

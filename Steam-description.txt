@@ -60,8 +60,7 @@ ViolentBeetle on Stellaris Modding Den discord gave me a great deal of help, wit
 
 [h1]Future[/h1]
 [list]
-[*] More events around habitability
-[*] More events generally
+[*] More Events
 [*] Stellaris Immortal Compatibility
 [/list]
 

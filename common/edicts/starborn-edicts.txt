@@ -109,8 +109,7 @@ starborn_op_start_system = {
         owner = { 
             has_starborn = yes 
             not = { has_country_flag = STARBORN_OP_INIT }
-        }
-        
+        }        
     }
     
 	effect = {
@@ -118,6 +117,57 @@ starborn_op_start_system = {
         country_event = {
             id =  starborn.90
         }
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+starborn_turn_off_events = {
+    length = 0
+    resources = {
+        category = edicts
+        cost = {
+            influence = 0
+        }
+    }
+    
+    potential = {
+        owner = { 
+            has_starborn = yes 
+            not = { has_country_flag = STARBORN_NO_EVENTS }
+        }        
+    }
+    
+	effect = {
+        set_country_flag = STARBORN_NO_EVENTS
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+
+starborn_turn_on_events = {
+    length = 0
+    resources = {
+        category = edicts
+        cost = {
+            influence = 0
+        }
+    }
+    
+    potential = {
+        owner = { 
+            has_starborn = yes 
+            has_country_flag = STARBORN_NO_EVENTS
+        }        
+    }
+    
+	effect = {
+        remove_country_flag = STARBORN_NO_EVENTS
 	}
 	
 	ai_weight = {
