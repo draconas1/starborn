@@ -15,7 +15,7 @@ starborn_system = {
 	}
 
 	usage = origin
-	flags = { empire_home_system }
+	flags = { empire_home_system egs_starborn egs_empire_home_system }
 
 	init_effect = {
 		every_neighbor_system = {
@@ -93,14 +93,14 @@ starborn_system = {
 			add_deposit = d_starborn_wasteland
 			add_deposit = d_starborn_wasteland
 		}
-		
+
 		moon = {
 			name = "Arc of Civilisation"      
 			class = pc_starborn_habitat_start
 			home_planet = yes
 			orbit_distance = 5
 			size = 16
-			flags = { megastructure habitat starborn_tomb_scavenging starborn_orbital_city }
+			flags = { megastructure habitat starborn_tomb_scavenging starborn_orbital_city egs_home_planet_marker }
 			deposit_blockers = none
 
 			init_effect = {

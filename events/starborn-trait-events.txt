@@ -15,6 +15,7 @@ planet_event = {
 	}
 
 	trigger = {
+		always = no
 		owner = {
 			is_country_type = default
 			is_regular_empire = yes
@@ -28,40 +29,29 @@ planet_event = {
 	}
 
 	immediate = {
-		random_list = {			
-			1 = {
-				modifier = {
-					factor = 3
-					has_gene_clinic = no
-				}
-				planet_event = {
-					id = starborn_traits.3
-				}
-				owner = {
-					country_event = {
-						id = starborn_traits.60
-						days = 10
-					}
-				}
-			}
+random_list = {			
+	1 = {
+		modifier = {
+			factor = 3
+			has_gene_clinic = no
+		}
+		planet_event = {
+			id = starborn_traits.3
+		}
+	}
 
-			30 = {
-				# do nothing...
-				set_variable = { which = EventId value = 1 }
-				owner = { country_event = { id = starborn_traits.999 } }
-			}
-			100 = {
-				modifier = {
-					factor = 0
-					owner = {
-						NOT = { has_country_flag = starborn_disease_gene_engineered }
-					}
-				}
-				# do nothing...
-				set_variable = { which = EventId value = 1 }
-				owner = { country_event = { id = starborn_traits.999 } }
+	30 = {
+		# do nothing...
+	}
+	100 = {
+		modifier = {
+			factor = 0
+			owner = {
+				NOT = { has_country_flag = starborn_disease_gene_engineered }
 			}
 		}
+	}
+}
 	}
 }
 
@@ -154,6 +144,7 @@ planet_event = {
 	}
 
 	trigger = {
+		always = no
 		owner = {
 			is_country_type = default
 			is_regular_empire = yes
@@ -354,6 +345,7 @@ planet_event = {
 	}
 
 	trigger = {
+		always = no
 		owner = {
 			is_country_type = default
 			is_regular_empire = yes
@@ -495,6 +487,7 @@ planet_event = {
 	}
 
 	trigger = {
+		always = no
 		owner = {
 			is_country_type = default
 			is_regular_empire = yes
@@ -669,6 +662,7 @@ planet_event = {
 	}
 
 	trigger = {
+		always = no
 		owner = {
 			is_country_type = default
 			is_regular_empire = yes
@@ -964,6 +958,7 @@ planet_event = {
 	}
 
 	trigger = {
+		always = no
 		owner = {
 			is_country_type = default
 			is_regular_empire = yes
