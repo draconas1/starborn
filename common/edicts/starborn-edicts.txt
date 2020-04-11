@@ -52,7 +52,7 @@ starborn_enable_debug = {
     }
     
     potential = {
-        always = no
+        starborn_debug_on = yes
         owner = { 
             has_starborn = yes 
             not = { has_country_flag = STARBORN_EVENT_DEBUG }
@@ -95,7 +95,7 @@ starborn_disable_debug = {
 	}
 }
 
-starborn_op_start_system = {
+starborn_debug_flag = {
     length = 0
     resources = {
         category = edicts
@@ -105,7 +105,34 @@ starborn_op_start_system = {
     }
     
     potential = {
-        always = no
+        starborn_debug_on = yes
+        owner = { 
+            has_starborn = yes 
+        }
+        
+    }
+    
+	effect = {
+        country_event = {
+            id = starborn_traits.1010
+        }
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+starborn_op_start_system = {
+    length = 0
+    resources = {
+        category = edicts
+        cost = {
+            influence = 0
+        }
+    }
+    
+    potential = {        
         owner = { 
             has_starborn = yes 
             not = { has_country_flag = STARBORN_OP_INIT }
@@ -116,8 +143,9 @@ starborn_op_start_system = {
         set_country_flag = STARBORN_OP_INIT
         country_event = {
             id =  starborn.90
-        }
-	}
+        }        
+    }
+    
 	
 	ai_weight = {
 		weight = 0

@@ -2,6 +2,4 @@
 off hab traits
 - decadent
 
-- monument on homeworld - to paradise and to triumph
-
 - robot builders

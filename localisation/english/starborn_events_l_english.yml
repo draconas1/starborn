@@ -81,8 +81,8 @@
  starborn_traits.3.option.b:0 "Let the disease run its course"
 
 
- starborn_traits.11.name:0 "Epidemic Strikes"
- starborn_traits.11.desc:0 "A new disease is spreading on §Y[This.GetName]§!, brought by one of the terrestial aliens to whom it is a minor irritant, it has proven incredibly dangerous to the starborn population.\n\nThe recycled air and close confines of the environment have caused the diease to spread incredibly quickly through the population"
+ starborn_traits.11.name:0 "Foreign Disease Outbreak"
+ starborn_traits.11.desc:0 "A new disease is spreading on §Y[This.GetName]§!, brought by one of the terrestial aliens to whom it is a minor irritant, it has proven incredibly dangerous to the starborn population.\n\nThe recycled air and close confines of the environment have caused the disease to spread incredibly quickly through the population"
  starborn_traits.11.option.a:0 "Send Emergency Medical Supplies. Stat!"
  starborn_traits.11.option.b:0 "Blame the Xenos and enforce strict separation"
  starborn_traits.11.option.c:0 "Let the station commander handle it"
@@ -175,3 +175,6 @@
  starborn_traits.1000.option.45:0 "45 Demon Invasion"
  starborn_traits.1000.option.50:0 "50 Zro Temple"
  starborn_traits.1000.option.nope:0 "None"
+
+ starborn_traits.1010.name:0 "Event Flag Status"
+ starborn_traits.1010.desc:0 "Why are you here player?\n\nAdjust the event blocking flags"

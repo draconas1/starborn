@@ -162,7 +162,6 @@ country_event = {
 	trigger = {
 			is_ai = no
 			has_starborn = yes
-			has_global_flag = starborn_op_init
 	}
 
 	immediate = {

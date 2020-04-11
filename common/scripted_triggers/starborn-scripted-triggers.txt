@@ -9,7 +9,7 @@ habitable_structure = {
 has_starborn = {
 	OR = {
 		has_origin = origin_starborn
-		has_country_flag = EGS_HOME_STARBORN
+		has_country_flag = EGS_START_STARBORN
 	}	
 }
 
@@ -69,4 +69,8 @@ starborn_can_place_hab = {
 		fail_text = "requires_no_orbital_station"
 		has_orbital_station = no
 	}
+}
+
+starborn_debug_on = {
+	always = no
 }

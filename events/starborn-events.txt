@@ -597,6 +597,9 @@ country_event = {
                                 random_system_planet = {
                                         limit = {
                                                 is_planet_class = pc_asteroid
+                                                not = {
+                                                        has_planet_flag = has_megastructure
+                                                }
                                         }
                                         add_deposit = d_alloys_5
                                 }
@@ -681,6 +684,9 @@ country_event = {
                                 }
                                
                         }
+                }
+                country_event = {
+                        id = starborn_init.7
                 }
         }
 }
