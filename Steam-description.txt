@@ -12,16 +12,16 @@ Create huge habitats that span solar systems - rather than manage 10 small habit
 [*] Start in unique habitat: the orbital city, in orbit around a tomb world, with unique districts that kept your civilisation alive when their world burned
 [*] Build habitats around almost any stellar body.
 [*] Your adapton to space means your habitats may get additional desposits, buildings or modifiers based on the body type and deposits such as asteroids - great for mining, molten planets - great for alloys, black holes: whole lot of physics research.
-[*] Habitat Satelite Complex megastructure lets you expand your habitats to encompass the entire system without having to manage all the individual planets.  Built it around a planet and one of your existing habitats gets a size boost and access to that planets resources.
+[*] Satellite Habitat Complex megastructure lets you expand your habitats to encompass the entire system without having to manage all the individual planets.  Built it around a planet and one of your existing habitats gets a size boost and access to that planets resources.
 [/list]
 [i]There are lots of other effects for different types of planets and the different orbital deposits, you'll need to discover them in play or read the spoiler post in discussion[/i]
 
 Federations DLC is not required as this is my own work that predates VoidTouched, it has been made voidtouched compatible for ease of playstyles. 
 
 [h1]Gameplay Notes[/h1]
-Remember that habitats cost alloys in maintenance!  Starborn builds will have a constant need for more alloy production,
+Remember that habitats cost alloys in maintenance!
 
-I do not adjust normal habitats so you will have the ability to build normal habitats if you buy the tech.  Those are completely vanilla and I suggest avoiding them, I've not taken them out to try to limit compatibility problems.
+I do not adjust normal habitats so you will have the ability to build normal habitats if you buy the tech, you probably don't want to build them and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2056951736]this addon mod[/url] will disable them for starborn empires.
 
 By using the Satelite Complex megastructure it is entirely possible to have a habitat that has too many district types to show on the default UI (with the right system you can easily have mining, energy, trade and research districts).  I strongly recommend a UI mod that allows for more districts, I use [url=https://steamcommunity.com/workshop/filedetails/?id=1623423360]UI Overhaul Dynamic[/url] 
 
@@ -42,6 +42,7 @@ So may have compatibility problems with any other mod that changes these, the sy
 [*] [url=https://steamcommunity.com/workshop/filedetails/?id=819148835]Planetary Diversity[/url]      Use !Starborn Compatibility Patch.  There is a note with details in the Discussion section
 [*] [url=https://steamcommunity.com/workshop/filedetails/?id=865040033]Guilli's Planet Modifiers[/url]   Completely compatible, [b]IMPORTANT[/b] See Note: [url=https://steamcommunity.com/workshop/filedetails/discussion/1743133825/1606022547910590708/]here[/url]
 [*] [url=https://steamcommunity.com/workshop/filedetails/?id=937289339]Real Space[/url]   Completely compatible, as of yet the new worlds do not have specific behaviour
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1999512770]Extra Galatic Cluster Start[/url]: Completely Compatible  
 [*] Stellaris Immortal: Compatibility coming soon.
 [/list]
 
