@@ -63,6 +63,7 @@ starborn_habitat = {
 		}
 		fromfrom.planet = {
 			set_planet_flag = has_megastructure
+			save_event_target_as = habitat_planet
 		}
 		remove_megastructure = fromfrom
 		from = { country_event =  { id = utopia.61 } }
@@ -127,6 +128,7 @@ starborn_habitat3 = {
 			
 			init_effect = {
 				starborn_hab_init_effect = yes
+				save_event_target_as = habitat_planet
 			}
 		}
 		fromfrom.planet = {
@@ -199,6 +201,7 @@ starborn_habitat4 = {
 		}
 		fromfrom.planet = {
 			set_planet_flag = has_megastructure
+			save_event_target_as = habitat_planet
 		}
 		remove_megastructure = fromfrom
 		from = { country_event =  { id = utopia.61 } }
@@ -267,6 +270,7 @@ starborn_habitat5 = {
 		}
 		fromfrom.planet = {
 			set_planet_flag = has_megastructure
+			save_event_target_as = habitat_planet
 		}
 		remove_megastructure = fromfrom
 		from = { country_event =  { id = utopia.61 } }
@@ -336,6 +340,7 @@ starborn_habitat6 = {
 		}
 		fromfrom.planet = {
 			set_planet_flag = has_megastructure
+			save_event_target_as = habitat_planet
 		}
 		remove_megastructure = fromfrom
 		from = { country_event =  { id = utopia.61 } }

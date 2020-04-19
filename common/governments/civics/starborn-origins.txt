@@ -7,8 +7,8 @@ origin_starborn = {
 	starting_colony = pc_starborn_habitat_start
 	habitability_preference = pc_starborn_habitat_start
 	preferred_planet_class_neighbor = no
-	initializer = starborn_system
-	#initializers = { starborn_system }
+	#initializer = starborn_system
+	initializers = { starborn_system }
 
 	playable = { host_has_dlc = "Utopia" }
 
