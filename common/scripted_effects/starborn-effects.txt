@@ -1,0 +1,6 @@
+remove_hab_size_flags = {
+	remove_country_flag = starborn_hab_size_3
+	remove_country_flag = starborn_hab_size_4
+	remove_country_flag = starborn_hab_size_5
+	remove_country_flag = starborn_hab_size_6
+}

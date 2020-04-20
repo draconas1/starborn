@@ -13,6 +13,20 @@ has_starborn = {
 	}	
 }
 
+has_retile = {
+	has_global_flag = retile_active
+}
+
+has_starborn_no_retile = {
+	has_starborn = yes
+	has_retile = no
+}
+
+has_starborn_retile = {
+	has_starborn = yes
+	has_retile = yes
+}
+
 has_negative_starborn_trait = {
 	OR = {
 		has_trait = trait_starborn_negative_1
@@ -32,6 +46,14 @@ has_gene_clinic = {
 	OR = {
 		has_building = building_hospital
 		has_building = building_clinic
+		AND = {
+			has_retile = yes
+			OR = {
+				has_building = building_clinic_1
+				has_building = building_clinic_2
+				has_building = building_clinic_3
+			}
+		}		
 	}
 }
 
@@ -64,10 +86,6 @@ starborn_can_place_hab = {
 			is_planet_class = pc_ringworld_seam_damaged
 			is_planet_class = pc_habitat
 		}
-	}
-	custom_tooltip = {
-		fail_text = "requires_no_orbital_station"
-		has_orbital_station = no
 	}
 }
 

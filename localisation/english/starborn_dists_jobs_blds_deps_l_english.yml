@@ -137,3 +137,12 @@
 
  d_starborn_refund_size_4:0 "$d_starborn_refund_size_2$"
  d_starborn_refund_size_4_desc:0 "$d_starborn_refund_size_2_desc$"
+
+ d_starborn_retile_scavenger:0 "Planetary Scavenger Module"
+ d_starborn_retile_scavenger_desc:0 "$district_starborn_starting_scavenger_desc$"
+
+ d_starborn_retile_starting_energy:0 "$district_starborn_starting_solar$"
+ d_starborn_retile_starting_energy_desc:0 "$district_starborn_starting_solar_desc$"
+
+ d_starborn_retile_starting_park:0 "$district_starborn_starting_preserve$"
+ d_starborn_retile_starting_park_desc:0 "$district_starborn_starting_preserve_desc$"

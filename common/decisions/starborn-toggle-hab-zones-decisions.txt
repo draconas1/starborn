@@ -4,7 +4,7 @@ decision_starborn_remove_mining = {
 		
 	potential = {
 		is_planet_class = pc_habitat
-		owner = { has_starborn = yes }
+		owner = { has_starborn_no_retile = yes }
 		has_planet_flag = mining_habitat
 	}
 
@@ -33,7 +33,7 @@ decision_starborn_readd_mining = {
 		
 	potential = {
 		is_planet_class = pc_habitat
-		owner = { has_starborn = yes }
+		owner = { has_starborn_no_retile = yes }
 		has_planet_flag = starborn_mining_removed
 	}
 
@@ -56,7 +56,7 @@ decision_starborn_remove_energy = {
 		
 	potential = {
 		is_planet_class = pc_habitat
-		owner = { has_starborn = yes }
+		owner = { has_starborn_no_retile = yes }
 		has_planet_flag = energy_habitat
 	}
 
@@ -85,7 +85,7 @@ decision_starborn_readd_energy = {
 		
 	potential = {
 		is_planet_class = pc_habitat
-		owner = { has_starborn = yes }
+		owner = { has_starborn_no_retile = yes }
 		has_planet_flag = starborn_energy_removed
 	}
 
@@ -108,7 +108,7 @@ decision_starborn_remove_research = {
 		
 	potential = {
 		is_planet_class = pc_habitat
-		owner = { has_starborn = yes }
+		owner = { has_starborn_no_retile = yes }
 		has_planet_flag = research_habitat
 	}
 
@@ -137,7 +137,7 @@ decision_starborn_readd_research = {
 		
 	potential = {
 		is_planet_class = pc_habitat
-		owner = { has_starborn = yes }
+		owner = { has_starborn_no_retile = yes }
 		has_planet_flag = starborn_research_removed
 	}
 
@@ -160,7 +160,7 @@ decision_starborn_remove_farming = {
 		
 	potential = {
 		is_planet_class = pc_habitat
-		owner = { has_starborn = yes }
+		owner = { has_starborn_no_retile = yes }
 		has_planet_flag = starborn_farming_habitat
 	}
 
@@ -189,7 +189,7 @@ decision_starborn_readd_farming = {
 		
 	potential = {
 		is_planet_class = pc_habitat
-		owner = { has_starborn = yes }
+		owner = { has_starborn_no_retile = yes }
 		has_planet_flag = starborn_farming_removed
 	}
 
@@ -201,4 +201,117 @@ decision_starborn_readd_farming = {
 	ai_weight = {
 		weight = 0
 	}
+}
+
+
+
+decision_starborn_retile_module_scavenger = {
+	owned_planets_only = yes
+
+	enactment_time = 500
+	resources = {
+		category = planets
+		cost = {
+			energy = 500
+		}
+	}
+	
+	potential = {
+		owner = {
+			has_starborn_retile = yes
+		}
+		OR = {
+			is_planet_class = pc_habitat
+			has_planet_flag = retile_modular_habitat
+		}
+	}
+
+	allow = {
+		hidden_trigger = { exists = owner }
+		if = {
+			limit = { hidden_trigger = { AND = {
+				owner = { has_ascension_perk = ap_voidborn }
+				owner = { has_starborn = yes }
+			} } }
+			custom_tooltip = {
+				fail_text = retile_module_limit_5_no
+				success_text = retile_module_limit_5_yes
+				check_variable = { which = module_count value < 5 }
+			}
+		} else_if = {
+			limit = { hidden_trigger = { OR = {
+				owner = { has_ascension_perk = ap_voidborn }
+				owner = { has_starborn = yes }
+			} } }
+			custom_tooltip = {
+				fail_text = retile_module_limit_4_no
+				success_text = retile_module_limit_4_yes
+				check_variable = { which = module_count value < 4 }
+			}
+		} else = {
+			custom_tooltip = {
+				fail_text = retile_module_limit_3_no
+				success_text = retile_module_limit_3_yes
+				check_variable = { which = module_count value < 3 }
+			}
+		}
+	}
+	
+	effect = {
+		if = {
+			limit = { hidden_trigger = {
+				check_variable = { which = module_count value < 5 }
+				AND = {
+					owner = { has_ascension_perk = ap_voidborn }
+					owner = { has_starborn = yes }
+				}
+			} }
+			add_deposit = d_starborn_retile_scavenger
+			hidden_effect = { change_variable = { which = module_count value = 1 } }
+		} else_if = {
+			limit = { hidden_trigger = {
+				check_variable = { which = module_count value < 4 }
+				OR = {
+					owner = { has_ascension_perk = ap_voidborn }
+					owner = { has_starborn = yes }
+				}
+			} }
+			add_deposit = d_starborn_retile_scavenger
+			hidden_effect = { change_variable = { which = module_count value = 1 } }
+		} else_if = {
+			limit = { hidden_trigger = {
+				check_variable = { which = module_count value < 3 }
+			} }
+			add_deposit = d_starborn_retile_scavenger
+			hidden_effect = { change_variable = { which = module_count value = 1 } }
+		}
+	}
+	
+	ai_weight = {
+		weight = -1
+	}
+}
+
+decision_starborn_retile_module_scavenger_remove = {
+	owned_planets_only = yes
+
+	potential = {
+		owner = {
+			has_starborn_retile = yes
+		}
+		OR = {
+			is_planet_class = pc_habitat
+			has_planet_flag = retile_modular_habitat
+		}
+		has_deposit = d_starborn_retile_scavenger
+	}
+	
+	effect = {
+		remove_deposit = d_starborn_retile_scavenger
+		hidden_effect = { change_variable = { which = module_count value = -1 } }
+	}
+	
+	ai_weight = {
+		weight = 0
+	}	
 }

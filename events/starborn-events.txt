@@ -49,16 +49,22 @@ planet_event = {
         immediate = {
                 if = {
                         limit = {
-                                planet_size = 3
+                                has_retile = yes
                         }
-                        add_deposit = d_starborn_refund_size_3
+                        switch = {
+                                trigger = planet_size
+                                3 = {  add_deposit = d_starborn_refund_size_3 }
+                                4 = {  add_deposit = d_starborn_refund_size_3 }
+                                5 = {  add_deposit = d_starborn_refund_size_4 }
+                                6 = {  add_deposit = d_starborn_refund_size_4 }
+                        }
                 }
-
-                if = {
-                        limit = {
-                                planet_size = 4
+                else = { 
+                        switch = {
+                                trigger = planet_size
+                                3 = {  add_deposit = d_starborn_refund_size_3 }
+                                4 = {  add_deposit = d_starborn_refund_size_4 }
                         }
-                        add_deposit = d_starborn_refund_size_4
                 }
         }
 }
@@ -152,6 +158,7 @@ planet_event = {
                         }
                         save_event_target_as = target_hab
                         remove_planet_flag = starborn_tomb_scavenging
+                        remove_deposit = d_starborn_retile_scavenger
                         while = {
                                 limit = {
                                         num_districts = {
@@ -286,6 +293,7 @@ planet_event = {
                         remove_planet_flag = starborn_farming_habitat
                         remove_modifier = starborn_farming_planet
                         set_planet_flag = commercial_habitat
+                        remove_deposit = d_starborn_retile_scavenger
                         
                         while = {
                                 limit = {
@@ -634,6 +642,19 @@ country_event = {
                                        reroll_planet = yes
                                 }
 
+                                random_system_planet = {
+                                        limit = {
+                                                is_star = no
+                                                has_deposit = no
+                                                habitable_structure = no
+                                                nor = {
+                                                        has_planet_flag = has_megastructure
+                                                        is_planet_class = pc_asteroid
+                                                }
+                                        }
+                                       change_pc = pc_nuked
+                                       reroll_planet = yes
+                                }
 
                                 random_system_planet = {
                                         limit = {
@@ -682,11 +703,53 @@ country_event = {
                                         }
                                         add_deposit = d_trade_value_10
                                 }
-                               
                         }
                 }
                 country_event = {
                         id = starborn_init.7
                 }
+        }
+}
+
+
+
+
+planet_event = {
+        id = starborn.100
+        hide_window = yes
+        is_triggered_only = yes
+        trigger = {
+                has_starborn_retile = yes
+        }
+        immediate = {
+                if = {
+                        limit = {
+                                has_planet_flag = starborn_farming_habitat
+                        }
+                        set_planet_flag = hydroponics_habitat
+                }
+                if = {
+                        limit = {
+                                AND = {
+                                        NOT = { has_planet_flag = mining_habitat }
+                                        NOT = { has_planet_flag = energy_habitat }
+                                        NOT = { has_planet_flag = research_habitat }
+                                        NOT = { has_planet_flag = commercial_habitat }
+                                        NOT = { has_planet_flag = starborn_tomb_scavenging }
+                                }
+                        }
+                        set_planet_flag = hydroponics_habitat
+                }
+                
+                if = {
+                        limit = {
+                                has_planet_flag = starborn_tomb_scavenging
+                        }
+                        add_deposit = d_starborn_retile_scavenger
+                        change_variable = { which = module_count value = 1 }
+                }
+
+                # apply pop density modifier
+                planet_event = { id = retile_pop.3000 days = 1 }
         }
 }

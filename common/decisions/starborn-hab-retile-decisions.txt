@@ -1,0 +1,126 @@
+decision_starborn_enlarge_hab_retile = {
+	owned_planets_only = yes
+	enactment_time = 300
+	resources = {
+		category = decisions		
+		cost = {
+			trigger = {
+				planet_size = 4
+			}
+            energy = 250
+            alloys = 250
+		}
+		cost = {
+			trigger = {
+				planet_size = 6
+			}
+            energy = 250
+            alloys = 500
+		}
+		cost = {
+			trigger = {
+				planet_size = 8
+			}
+            energy = 250
+            alloys = 500
+		}
+	}
+	
+	potential = {
+        is_planet_class = pc_habitat
+		planet_size < 10
+		owner = { has_starborn_retile = yes }
+	}
+
+	effect = {
+		custom_tooltip = decision_starborn_enlarge_hab_desc
+		if = {
+			limit = {
+				planet_size < 10
+			}
+			change_planet_size = 2
+			hidden_effect = {
+				remove_deposit = d_starborn_refund_size_3
+				remove_deposit = d_starborn_refund_size_4
+
+				if = {
+					limit = {
+						planet_size = 4
+					}
+					add_deposit = d_starborn_refund_size_3
+				}
+
+				if = {
+					limit = {
+						planet_size = 6
+					}
+					add_deposit = d_starborn_refund_size_4
+				}
+			}
+		}
+		else = {
+			owner = {
+				country_event = { id = starborn.2 }
+			}
+		}		
+	}
+	
+	# Same AI waiting as Mastery of nature, wonder if the AI ever uses that.
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			free_district_slots > 0
+		}
+	}
+}
+
+# Minimise micromanagement, fully enlarge the hab to 6.
+decision_starborn_fully_enlarge_hab_retile = {
+	owned_planets_only = yes
+	enactment_time = 1000
+	resources = {
+		category = decisions
+		cost = {
+			trigger = {
+				planet_size = 4
+			}
+            energy = 750
+            alloys = 1250
+		}
+		cost = {
+			trigger = {
+				planet_size = 6
+			}
+            energy = 500
+            alloys = 1000
+		}
+		cost = {
+			trigger = {
+				planet_size = 8
+			}
+            energy = 250
+            alloys = 500
+		}
+	}
+	
+	potential = {
+		is_planet_class = pc_habitat
+		planet_size < 10
+		owner = { has_starborn_retile = yes }
+	}
+	
+	effect = {
+		custom_tooltip = decision_starborn_fully_enlarge_hab_desc
+		set_planet_size = 10	
+		hidden_effect = {
+			remove_deposit = d_starborn_refund_size_3
+			remove_deposit = d_starborn_refund_size_4
+		}
+	}
+	
+	# AI will never use this.  
+	ai_weight = {
+		weight = 0
+	}
+}

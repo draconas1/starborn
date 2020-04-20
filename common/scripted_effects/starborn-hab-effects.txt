@@ -99,6 +99,10 @@ starborn_hab_init_effect = {
 
     starborn_hab_init_deposits = yes
     starborn_hab_init_modifiers = yes
+  
+    planet_event = {
+        id = starborn.100 # set retile
+    }
 }
 
 starborn_hab_init_deposits = {
@@ -387,6 +391,7 @@ starborn_hab_init_deposits = {
                 }
             }
         }
+
         set_planet_flag = starborn_tomb_scavenging
     }
 
@@ -487,6 +492,13 @@ starborn_hab_init_deposits = {
             OR = {
                 fromfrom.planet = { has_deposit = d_minerals_3 }
                 fromfrom.planet = { has_deposit = d_minerals_4 }
+                AND = {
+                    has_retile = yes
+                    OR = {
+                        fromfrom.planet = { has_deposit = d_minerals_asteroid }
+                        fromfrom.planet = { has_deposit = d_minerals_asteroid_small }
+                    }
+                }
             }
         }
         set_planet_flag = starborn_mining_4
@@ -497,6 +509,13 @@ starborn_hab_init_deposits = {
             OR = {
                 fromfrom.planet = { has_deposit = d_minerals_5 }
                 fromfrom.planet = { has_deposit = d_minerals_6 }
+                AND = {
+                    has_retile = yes
+                    OR = {
+                        fromfrom.planet = { has_deposit = d_minerals_moon }
+                        fromfrom.planet = { has_deposit = d_minerals_random }
+                    }
+                }
             }
         }
         set_planet_flag = starborn_mining_6
@@ -507,6 +526,12 @@ starborn_hab_init_deposits = {
             OR = {
                 fromfrom.planet = { has_deposit = d_minerals_7 }
                 fromfrom.planet = { has_deposit = d_minerals_8 }
+                AND = {
+                    has_retile = yes
+                    OR = {
+                        fromfrom.planet = { has_deposit = d_minerals_world }
+                    }
+                }
             }
         }
         set_planet_flag = starborn_mining_8
@@ -535,9 +560,14 @@ starborn_hab_init_deposits = {
     if = {
         limit = {
             OR = {
-
                 fromfrom.planet = { has_deposit = d_energy_3 }
                 fromfrom.planet = { has_deposit = d_energy_4 }
+                AND = {
+                    has_retile = yes
+                    OR = {
+                        fromfrom.planet = { has_deposit = d_energy_small }
+                    }
+                }
             }
         }
         set_planet_flag = starborn_energy_4
@@ -558,6 +588,12 @@ starborn_hab_init_deposits = {
             OR = {
                 fromfrom.planet = { has_deposit = d_energy_7 }
                 fromfrom.planet = { has_deposit = d_energy_8 }
+                AND = {
+                    has_retile = yes
+                    OR = {
+                        fromfrom.planet = { has_deposit = d_energy_medium }
+                    }
+                }
             }
         }
         set_planet_flag = starborn_energy_8
@@ -568,6 +604,12 @@ starborn_hab_init_deposits = {
             OR = {
                 fromfrom.planet = { has_deposit = d_energy_9 }
                 fromfrom.planet = { has_deposit = d_energy_10 }
+                AND = {
+                    has_retile = yes
+                    OR = {
+                        fromfrom.planet = { has_deposit = d_energy_large }
+                    }
+                }
             }
         }
         set_planet_flag = starborn_energy_10
@@ -651,6 +693,16 @@ starborn_hab_init_deposits = {
                             has_deposit = gpm_d_sun_energy_deposit
                         }
                     }
+
+                    AND = {
+                        has_retile = yes
+                        OR = {
+                            has_deposit = d_energy_small
+                            has_deposit = d_energy_medium
+                            has_deposit = d_energy_large
+                            has_deposit = d_energy_small
+                        }
+                    }
                 }
                 is_star = yes
             }
@@ -677,6 +729,17 @@ starborn_hab_init_deposits = {
                     has_deposit = d_minerals_8
                     has_deposit = d_minerals_9
                     has_deposit = d_minerals_10
+
+                    AND = {
+                        has_retile = yes
+                        OR = {
+                            has_deposit = d_minerals_asteroid_small
+                            has_deposit = d_minerals_asteroid
+                            has_deposit = d_minerals_random
+                            has_deposit = d_minerals_moon
+                            has_deposit = d_minerals_world
+                        }
+                    }
                 }
                 is_asteroid = yes
             }
@@ -701,6 +764,17 @@ starborn_hab_init_deposits = {
                     has_deposit = d_minerals_8
                     has_deposit = d_minerals_9
                     has_deposit = d_minerals_10
+
+                    AND = {
+                        has_retile = yes
+                        OR = {
+                            has_deposit = d_minerals_asteroid_small
+                            has_deposit = d_minerals_asteroid
+                            has_deposit = d_minerals_random
+                            has_deposit = d_minerals_moon
+                            has_deposit = d_minerals_world
+                        }
+                    }
                 }
                 is_planet_class = pc_molten
             }
@@ -721,6 +795,13 @@ starborn_hab_init_deposits = {
                     has_deposit = d_alloys_3
                     has_deposit = d_alloys_4
                     has_deposit = d_alloys_5
+
+                    AND = {
+                        has_retile = yes
+                        OR = {
+                            has_deposit = d_alloys_asteroid
+                        }
+                    }
                 }
                 is_asteroid = yes
             }
@@ -740,6 +821,13 @@ starborn_hab_init_deposits = {
                     has_deposit = d_alloys_3
                     has_deposit = d_alloys_4
                     has_deposit = d_alloys_5
+
+                    AND = {
+                        has_retile = yes
+                        OR = {
+                            has_deposit = d_alloys_asteroid
+                        }
+                    }
                 }
                 is_planet_class = pc_molten
             }
@@ -773,6 +861,13 @@ starborn_hab_init_deposits = {
                 OR = {
                     has_deposit = d_trade_value_3
                     has_deposit = d_trade_value_4
+
+                    AND = {
+                        has_retile = yes
+                        OR = {
+                            has_deposit = d_trade_value_small
+                        }
+                    }
                 }
             }
         }
@@ -803,6 +898,12 @@ starborn_hab_init_deposits = {
                 OR = {
                     has_deposit = d_trade_value_7
                     has_deposit = d_trade_value_8
+                    AND = {
+                        has_retile = yes
+                        OR = {
+                            has_deposit = d_trade_value_medium
+                        }
+                    }
                 }
             }
         }
@@ -822,6 +923,12 @@ starborn_hab_init_deposits = {
                         has_global_flag = has_guillis_planet_modifiers_mod
                         OR = {
                             has_deposit = gpm_d_trade_deposit
+                        }
+                    }
+                    AND = {
+                        has_retile = yes
+                        OR = {
+                            has_deposit = d_trade_value_large
                         }
                     }
                 }
@@ -872,6 +979,12 @@ starborn_hab_init_deposits = {
                 OR = {
                     has_deposit = d_physics_3
                     has_deposit = d_physics_4
+                    AND = {
+                        has_retile = yes
+                        OR = {
+                            has_deposit = d_physics_small
+                        }
+                    }
                 }
             }
         }
@@ -909,6 +1022,14 @@ starborn_hab_init_deposits = {
                 OR = {
                     has_deposit = d_physics_7
                     has_deposit = d_physics_8
+
+                    AND = {
+                        has_retile = yes
+                        OR = {
+                            has_deposit = d_physics_medium
+                            has_deposit = d_special_1
+                        }
+                    }
                 }
             }
         }
@@ -929,6 +1050,15 @@ starborn_hab_init_deposits = {
                         has_global_flag = has_guillis_planet_modifiers_mod
                         OR = {
                             has_deposit = gpm_d_pulsar_clock
+                        }
+                    }
+
+                    AND = {
+                        has_retile = yes
+                        OR = {
+                            has_deposit = d_physics_large
+                            has_deposit = d_special_3
+                            has_deposit = d_special_2
                         }
                     }
                 }
@@ -1004,6 +1134,13 @@ starborn_hab_init_deposits = {
                 OR = {
                     has_deposit = d_society_3
                     has_deposit = d_society_4
+
+                    AND = {
+                        has_retile = yes
+                        OR = {
+                            has_deposit = d_society_small
+                        }
+                    }
                 }
             }
         }
@@ -1042,6 +1179,13 @@ starborn_hab_init_deposits = {
                 OR = {
                     has_deposit = d_society_7
                     has_deposit = d_society_8
+
+                    AND = {
+                        has_retile = yes
+                        OR = {
+                            has_deposit = d_society_medium
+                        }
+                    }
                 }
             }
         }
@@ -1057,6 +1201,13 @@ starborn_hab_init_deposits = {
                 OR = {
                     has_deposit = d_society_9
                     has_deposit = d_society_10
+
+                    AND = {
+                        has_retile = yes
+                        OR = {
+                            has_deposit = d_society_large
+                        }
+                    }
                 }
             }
         }
@@ -1106,6 +1257,13 @@ starborn_hab_init_deposits = {
                 OR = {
                     has_deposit = d_engineering_3
                     has_deposit = d_engineering_4
+
+                    AND = {
+                        has_retile = yes
+                        OR = {
+                            has_deposit = d_engineering_small
+                        }
+                    }
                 }
             }
         }
@@ -1142,6 +1300,15 @@ starborn_hab_init_deposits = {
                 OR = {
                     has_deposit = d_engineering_7
                     has_deposit = d_engineering_8
+
+                    AND = {
+                        has_retile = yes
+                        OR = {
+                            has_deposit = d_engineering_medium
+                            has_deposit = d_special_1
+                            has_deposit = d_special_2
+                        }
+                    }
                 }
             }
         }
@@ -1157,6 +1324,14 @@ starborn_hab_init_deposits = {
                 OR = {
                     has_deposit = d_engineering_9
                     has_deposit = d_engineering_10
+
+                    AND = {
+                        has_retile = yes
+                        OR = {
+                            has_deposit = d_engineering_large
+                            has_deposit = d_special_3
+                        }
+                    }
                 }
             }
         }
@@ -1196,4 +1371,15 @@ starborn_hab_init_deposits = {
 }
 
 
-# gpm_d_unity_space_deposit_10
+starborn_edit_source_planet = {
+    if = {
+        limit = { has_research_station = yes }
+        random_research_station = { dismantle = yes }
+    }
+    if = {
+        limit = { has_mining_station = yes }
+        random_mining_station = { dismantle = yes }
+    }
+    set_planet_flag = has_megastructure
+    save_event_target_as = habitat_planet
+}

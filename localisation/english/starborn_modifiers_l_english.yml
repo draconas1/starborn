@@ -62,22 +62,6 @@
  starborn_engineering_neutron_star:0 "Neutron Star"
  starborn_engineering_neutron_star_desc:0 "Studying the $pc_neutron_star$ up close is a boon for our engineering research"
  
- decision_starborn_enlarge_hab:0 "Construct More Habitat"
- decision_starborn_enlarge_hab_desc:0 "We can construct new $pc_habitat$ sections such that it can support an additional district"
-
- decision_starborn_fully_enlarge_hab:0 "Fully Construct Habitat"
- decision_starborn_fully_enlarge_hab_desc:0 "The time for slow expansion is over, fully construct this $pc_habitat$ as far as our engineering abilities will let us"
-
-
- decision_starborn_increase_hab_district_1:0 "Optimise Habitat 1"
- decision_starborn_increase_hab_district_1_desc:0 "Improved construction techniques let us optimise the internal structure of the $pc_habitat$ such that it can support an additional district without requiring significant extra construction"
-
- decision_starborn_increase_hab_district_2:0 "Optimise Habitat"
- decision_starborn_increase_hab_district_2_desc:0 "$decision_starborn_increase_hab_district_1_desc$"
-
- decision_starborn_increase_hab_district_3:0 "Optimise Habitat with $tech_mega_engineering$"
- decision_starborn_increase_hab_district_3_desc:0 "Our knowledge of mega structure engineering lets us further optimise and enlarge $pc_habitat$ internal structures such that it can support additional districts"
-
  starborn_habitat_districts_1:0 "Optimise Habitat"
  starborn_habitat_districts_1_desc:0 "Enlarge and make better use of space in the $pc_habitat$"
 
@@ -86,31 +70,6 @@
 
  starborn_habitat_districts_3:0 "Optimised Habitat Structure"
  starborn_habitat_districts_3_desc:0 "Interior space of the habitat complex has been optimised as far as possible"
-
-
-
-
-
- decision_starborn_increase_starting_hab_district_1:0 "Enlarge $pc_starborn_habitat_start$"
- decision_starborn_increase_starting_hab_district_1_desc:0 "As our knowledge of starbase engineering improves, we can increase the size of our $pc_starborn_habitat_start$"
-
- decision_starborn_increase_starting_hab_district_2:0 "$decision_starborn_increase_starting_hab_district_1$"
- decision_starborn_increase_starting_hab_district_2_desc:0 "$decision_starborn_increase_starting_hab_district_1_desc$"
-
- decision_starborn_increase_starting_hab_district_3:0 "$decision_starborn_increase_starting_hab_district_1$"
- decision_starborn_increase_starting_hab_district_3_desc:0 "$decision_starborn_increase_starting_hab_district_1_desc$"
-
- decision_starborn_increase_starting_hab_district_4:0 "Enlarge $pc_starborn_habitat_start$"
- decision_starborn_increase_starting_hab_district_4_desc:0 "Our knowledge of mega structure engineering lets us build additions to the $pc_starborn_habitat_start$ once thought to be impossible"
-
- decision_starborn_increase_starting_hab_district_voidborn:0 "$pc_starborn_habitat_start$ embraces the void"
- decision_starborn_increase_starting_hab_district_voidborn_desc:0 "As the $civic_starborn$ become $ap_voidborn$ we have found new ways to enhance our $pc_starborn_habitat_start$"
-
- decision_starborn_increase_starting_hab_district_master_builders:0 "$pc_starborn_habitat_start$ is Master Built"
- decision_starborn_increase_starting_hab_district_master_builders_desc:0 "To Master Builders $pc_starborn_habitat_start$ projects throught be be the realm of science fiction are now possible"
-
- decision_starborn_increase_starting_hab_district_galatic_wonders:0 "The wonder of $pc_starborn_habitat_start$"
- decision_starborn_increase_starting_hab_district_galatic_wonders_desc:0 "What is the point of building Galatic Wonders if we cannot use that engineering knowledge to improve our $pc_starborn_habitat_start$"
 
  starborn_starting_habitat_districts_1:0 "Enlarge $pc_starborn_habitat_start$"
  starborn_starting_habitat_districts_1_desc:0 "Enlarge and make better use of space in the $pc_starborn_habitat_start$"

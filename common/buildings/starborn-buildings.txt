@@ -10,19 +10,33 @@ building_starborn_dark_matter_extractor = {
             has_deposit = d_hab_dark_matter_2
             has_deposit = d_hab_dark_matter_3
         }
-
+		exists = owner
         owner = {
-            has_starborn = yes
+			has_starborn = yes
+			is_regular_empire = yes
         }
 	}
 
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
+			has_retile = no
 		}
 		modifier = {
 			job_starborn_dark_matter_extractor_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_retile = yes
+		}
+		modifier = {
+			planet_researchers_sr_dark_matter_produces_add = 1
+			planet_researchers_energy_upkeep_add = @job_energy_normal
+			planet_researchers_consumer_goods_upkeep_add = @job_supplies_high
+			scholars_bio_food_upkeep_add = @living_standard_food_normal
+			scholars_lith_minerals_upkeep_add = @living_standard_food_normal
+			scholars_mech_energy_upkeep_add = @living_standard_food_normal
 		}
 	}
 	
@@ -63,18 +77,33 @@ building_starborn_living_metal_extractor = {
         OR = {
             has_deposit = d_hab_living_metal_1
         }
+        exists = owner
         owner = {
-            has_starborn = yes
+			has_starborn = yes
+			is_regular_empire = yes
         }
 	}
 
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
+			has_retile = no
 		}
 		modifier = {
 			job_starborn_living_metal_extractor_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_retile = yes
+		}
+		modifier = {
+			planet_researchers_sr_living_metal_produces_add = 1
+			planet_researchers_energy_upkeep_add = @job_energy_normal
+			planet_researchers_consumer_goods_upkeep_add = @job_supplies_high
+			scholars_bio_food_upkeep_add = @living_standard_food_normal
+			scholars_lith_minerals_upkeep_add = @living_standard_food_normal
+			scholars_mech_energy_upkeep_add = @living_standard_food_normal
 		}
 	}
 	
@@ -116,18 +145,33 @@ building_starborn_zro_extractor = {
             has_deposit = d_hab_zro_2
             has_deposit = d_hab_zro_3
         }
+        exists = owner
         owner = {
-            has_starborn = yes
+			has_starborn = yes
+			is_regular_empire = yes
         }
 	}
 
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
+			has_retile = no
 		}
 		modifier = {
 			job_starborn_zro_extractor_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_retile = yes
+		}
+		modifier = {
+			planet_researchers_sr_zro_produces_add = 1
+			planet_researchers_energy_upkeep_add = @job_energy_normal
+			planet_researchers_consumer_goods_upkeep_add = @job_supplies_high
+			scholars_bio_food_upkeep_add = @living_standard_food_normal
+			scholars_lith_minerals_upkeep_add = @living_standard_food_normal
+			scholars_mech_energy_upkeep_add = @living_standard_food_normal
 		}
 	}
 	
@@ -168,18 +212,33 @@ building_starborn_nanite_complex = {
         OR = {
             has_deposit = d_starborn_nanites
         }
+		exists = owner
         owner = {
-            has_starborn = yes
+			has_starborn = yes
+			is_regular_empire = yes
         }
 	}
 
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
+			has_retile = no
 		}
 		modifier = {
 			job_starborn_nanite_producer_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_retile = yes
+		}
+		modifier = {
+			planet_researchers_nanites_produces_add = 1
+			planet_researchers_energy_upkeep_add = @job_energy_normal
+			planet_researchers_consumer_goods_upkeep_add = @job_supplies_high
+			scholars_bio_food_upkeep_add = @living_standard_food_normal
+			scholars_lith_minerals_upkeep_add = @living_standard_food_normal
+			scholars_mech_energy_upkeep_add = @living_standard_food_normal
 		}
 	}
 	
@@ -309,7 +368,7 @@ building_starborn_mining_bay = {
 	}
 	
 	planet_modifier = {
-		planet_miners_minerals_produces_mult = 0.25
+		planet_jobs_minerals_produces_mult = 0.25
 	}
 	
 	resources = {
@@ -380,7 +439,7 @@ building_starborn_generator_complex = {
 	}
 	
 	planet_modifier = {
-		planet_technician_energy_produces_mult = 0.25
+		planet_jobs_energy_produces_mult = 0.25
 	}
 	
 	resources = {
@@ -444,8 +503,22 @@ building_starborn_habitation_dome = {
         }
 	}
 	
-	planet_modifier = {
-		planet_housing_add = 8
+	triggered_planet_modifier = {
+		potential = {
+			has_retile = no
+		}
+		modifier = {
+			planet_housing_add = 8
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_retile = yes
+		}
+		modifier = {
+			planet_housing_add = 4
+		}
 	}
 
 	
@@ -477,10 +550,27 @@ building_starborn_obelisk_nuked = {
         }
 	}
 	
-	planet_modifier = {
-		job_culture_worker_add = 4
+	planet_modifier = {		
 		planet_jobs_unity_produces_mult = 0.10
 		pop_ethic_pacifist_attraction_mult = 0.25
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_retile = no
+		}
+		modifier = {
+			job_culture_worker_add = 4
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_retile = yes
+		}
+		modifier = {
+			planet_researchers_unity_produces_add = 5
+		}
 	}
 
 	resources = {
@@ -508,10 +598,27 @@ building_starborn_obelisk_restored = {
         }
 	}
 	
-	planet_modifier = {
-		job_culture_worker_add = 6
+	planet_modifier = {		
 		planet_jobs_unity_produces_mult = 0.20
 		pop_government_ethic_attraction = 0.50	
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_retile = no
+		}
+		modifier = {
+			job_culture_worker_add = 6
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_retile = yes
+		}
+		modifier = {
+			planet_researchers_unity_produces_add = 7.5
+		}
 	}
 	
 	resources = {

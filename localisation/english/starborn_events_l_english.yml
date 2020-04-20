@@ -32,6 +32,10 @@
  starborn_menus.1.option.4:0 "§YSize 4§! Habitats cost 1000 £alloys£§Y$alloys$§!, 500 £energy£§Y$energy$§!, 900 days"
  starborn_menus.1.option.5:0 "§YSize 5§! Habitats cost 1500 £alloys£§Y$alloys$§!, 750 £energy£§Y$energy$§!, 1200 days"
  starborn_menus.1.option.6:0 "§YSize 6§! Habitats cost 2000 £alloys£§Y$alloys$§!, 1000 £energy£§Y$energy$§!, 1500 days"
+ starborn_menus.1.option.3.retile:0 "§YSize 4§! Habitats cost 500 £alloys£§Y$alloys$§!, 250 £energy£§Y$energy$§!, 600 days"
+ starborn_menus.1.option.4.retile:0 "§YSize 6§! Habitats cost 1000 £alloys£§Y$alloys$§!, 500 £energy£§Y$energy$§!, 900 days"
+ starborn_menus.1.option.5.retile:0 "§YSize 8§! Habitats cost 1500 £alloys£§Y$alloys$§!, 750 £energy£§Y$energy$§!, 1200 days"
+ starborn_menus.1.option.6.retile:0 "§YSize 10§! Habitats cost 2000 £alloys£§Y$alloys$§!, 1000 £energy£§Y$energy$§!, 1500 days"
 
  starborn_menus.2.name:0 "Set Auto Applied Habitat Enlargement"
  starborn_menus.2.desc:0 "Habitat enlargement decisions can be auto-applied at construction time.\n\n§YWhen a habitat finishes construction§!, if you have sufficient resources to pay for the enlargement, it will be automatically applied"

@@ -1,75 +1,5 @@
 # see README.txt for example
 
-starborn_habitat = {
-	entity = ""
-	construction_entity = "orbital_habitat_entity"
-	portrait = "GFX_megastructure_construction_background"
-	place_entity_on_planet_plane = yes
-	entity_offset = { x = -7 y = -7 }
-	build_time = 365
-
-	#for reasons that escape me and the folks on stellaris modding den the reosurces tag here ignores any cost with a trigger = element
-	# so i need to duplicate this out
-	resources = {
-        category = megastructures
-        cost = {
-			alloys = 250
-        }
-    }
-
-	construction_blocks_others = no
-
-	potential = {
-		has_starborn = yes
-		has_country_flag = starborn_hab_size_2
-	}
-
-	possible = {
-		exists = starbase
-		custom_tooltip = {
-			fail_text = "requires_inside_border"
-			is_inside_border = from
-		}
-	}
-
-	placement_rules = {
-		planet_possible = {
-			starborn_can_place_hab = yes
-		}
-	}
-
-	# root = system
-	# from = country	
-	ai_weight = {
-		factor = 0
-	}
-	
-	on_build_start = {}
-	on_build_cancel = {}
-	
-	on_build_complete = {
-		spawn_planet = {
-			class = "pc_habitat"
-			location = fromfrom.planet
-			orbit_location = yes
-			orbit_angle_offset = 45
-			orbit_distance_offset = 9.899
-			size = 2
-			has_ring = no
-			
-			init_effect = {
-				starborn_hab_init_effect = yes
-			}
-		}
-		fromfrom.planet = {
-			set_planet_flag = has_megastructure
-			save_event_target_as = habitat_planet
-		}
-		remove_megastructure = fromfrom
-		from = { country_event =  { id = utopia.61 } }
-	}
-}
-
 starborn_habitat3 = {
 	entity = ""
 	construction_entity = "orbital_habitat_entity"
@@ -128,11 +58,16 @@ starborn_habitat3 = {
 			
 			init_effect = {
 				starborn_hab_init_effect = yes
-				save_event_target_as = habitat_planet
+				if = {
+					limit = {
+						has_retile = yes
+					}
+					set_planet_size = 4
+				}
 			}
 		}
 		fromfrom.planet = {
-			set_planet_flag = has_megastructure
+			starborn_edit_source_planet = yes
 		}
 		remove_megastructure = fromfrom
 		from = { country_event =  { id = utopia.61 } }
@@ -197,11 +132,16 @@ starborn_habitat4 = {
 			
 			init_effect = {
 				starborn_hab_init_effect = yes
+				if = {
+					limit = {
+						has_retile = yes
+					}
+					set_planet_size = 6
+				}
 			}
 		}
 		fromfrom.planet = {
-			set_planet_flag = has_megastructure
-			save_event_target_as = habitat_planet
+			starborn_edit_source_planet = yes
 		}
 		remove_megastructure = fromfrom
 		from = { country_event =  { id = utopia.61 } }
@@ -266,11 +206,16 @@ starborn_habitat5 = {
 			
 			init_effect = {
 				starborn_hab_init_effect = yes
+				if = {
+					limit = {
+						has_retile = yes
+					}
+					set_planet_size = 8
+				}
 			}
 		}
 		fromfrom.planet = {
-			set_planet_flag = has_megastructure
-			save_event_target_as = habitat_planet
+			starborn_edit_source_planet = yes
 		}
 		remove_megastructure = fromfrom
 		from = { country_event =  { id = utopia.61 } }
@@ -336,11 +281,16 @@ starborn_habitat6 = {
 			
 			init_effect = {
 				starborn_hab_init_effect = yes
+				if = {
+					limit = {
+						has_retile = yes
+					}
+					set_planet_size = 10
+				}
 			}
 		}
 		fromfrom.planet = {
-			set_planet_flag = has_megastructure
-			save_event_target_as = habitat_planet
+			starborn_edit_source_planet = yes
 		}
 		remove_megastructure = fromfrom
 		from = { country_event =  { id = utopia.61 } }
@@ -400,7 +350,7 @@ starborn_habitat_expander = {
 	
 	on_build_complete = {
 		fromfrom.planet = {
-			set_planet_flag = has_megastructure
+			starborn_edit_source_planet = yes
 		}
 		random_system_planet = {
 			limit = {
