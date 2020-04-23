@@ -74,3 +74,11 @@ starborn_habitat_complex = {
 }
 
 
+starborn_habitat_complex_retile = {
+    planet_max_districts_add = 8
+    planet_crime_mult = 0.1
+	planet_amenities_mult = 0.05
+    icon = "gfx/interface/icons/planet_modifiers/pm_land_appropriated.dds"
+    icon_frame = 2
+}
+

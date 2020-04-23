@@ -66,6 +66,22 @@ planet_event = {
                                 4 = {  add_deposit = d_starborn_refund_size_4 }
                         }
                 }
+
+                if = {
+                        limit = {
+                                owner = {
+                                        has_ascension_perk = ap_voidborn
+                                }
+                                not = {
+                                        has_modifier = master_builders_habitats
+                                }
+                        }
+                        add_modifier = {
+                                modifier = master_builders_habitats
+                                days = -1
+                        }
+                }
+
         }
 }
 
@@ -248,7 +264,14 @@ country_event = {
 
         trigger = {
                 has_starborn = yes
-                has_ascension_perk = ap_arcology_project
+                is_regular_empire = yes
+                OR = {
+                        has_ascension_perk = ap_arcology_project
+                        AND = {
+                                has_retile = yes
+                                has_technology = tech_housing_3
+                        }                        	
+                }                
                 any_owned_planet = {
                         is_planet_class = pc_city
                         NOR = { 
@@ -293,7 +316,13 @@ planet_event = {
                         remove_planet_flag = starborn_farming_habitat
                         remove_modifier = starborn_farming_planet
                         set_planet_flag = commercial_habitat
-                        remove_deposit = d_starborn_retile_scavenger
+                        
+                        while = {
+                                limit = {
+                                        has_deposit = d_starborn_retile_scavenger
+                                }
+                                remove_deposit = d_starborn_retile_scavenger
+                        }
                         
                         while = {
                                 limit = {
@@ -332,11 +361,21 @@ planet_event = {
                                 }
                         }
 
-                        add_modifier = {
-                                modifier = starborn_pc_city_trade_value
-                                days = -1
+                        if = {
+                                limit = {
+                                        has_retile = yes
+                                }
+                                add_modifier = {
+                                        modifier = starborn_pc_city_trade_value_retile
+                                        days = -1
+                                }
                         }
-
+                        else = {
+                                add_modifier = {
+                                        modifier = starborn_pc_city_trade_value
+                                        days = -1
+                                }
+                        }
                 }
                 if = {
                         limit = {

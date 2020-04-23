@@ -90,6 +90,46 @@ starborn_pc_city_trade_value = {
 }
 
 
+
+starborn_trade_value_5_retile = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_resources.dds"
+    icon_frame = 1
+    trade_value_mult = 0.05
+}
+
+starborn_trade_value_10_retile = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_resources.dds"
+    icon_frame = 1
+    trade_value_mult = 0.1
+}
+
+starborn_trade_value_15_retile = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_resources.dds"
+    icon_frame = 1
+    trade_value_mult = 0.15
+}
+
+starborn_trade_value_20_retile = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_resources.dds"
+    icon_frame = 1
+    trade_value_mult = 0.20
+}
+
+starborn_trade_value_25_retile = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_resources.dds"
+    icon_frame = 1
+    trade_value_mult = 0.25
+}
+
+starborn_pc_city_trade_value_retile = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_resources.dds"
+    icon_frame = 1
+    trade_value_mult = 0.5
+}
+
+
+
+
 starborn_physics_5 = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_strong_magnetic_field.dds"
     icon_frame = 1

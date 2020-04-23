@@ -12,7 +12,8 @@ starborn_habitat3 = {
         category = megastructures
         cost = {
 			alloys = 500
-			energy = 250            
+			energy = 250
+			influence = 100
         }
     }
 
@@ -86,7 +87,8 @@ starborn_habitat4 = {
         category = megastructures
         cost = {
 			alloys = 1000
-			energy = 500            
+			energy = 500
+			influence = 100
         }
     }
 
@@ -160,7 +162,8 @@ starborn_habitat5 = {
         category = megastructures
         cost = {
 			alloys = 1500
-			energy = 750            
+			energy = 750
+			influence = 100
         }
     }
 
@@ -234,7 +237,8 @@ starborn_habitat6 = {
         category = megastructures
         cost = {
 			alloys = 2000
-			energy = 1000            
+			energy = 1000
+			influence = 100
         }
     }
 
@@ -309,7 +313,8 @@ starborn_habitat_expander = {
         category = megastructures
         cost = {
 			alloys = 2000
-			energy = 1000            
+			energy = 1000
+			influence = 150
         }
     }
 
@@ -356,9 +361,23 @@ starborn_habitat_expander = {
 			limit = {
 				has_planet_flag = starborn_hab_build_target
 			}
-			add_modifier = { 
-				modifier = starborn_habitat_complex 
-				days = -1 
+
+			if = {
+				limit = {
+					owner = {
+						has_retile = yes
+					}
+				}
+				add_modifier = { 
+					modifier = starborn_habitat_complex_retile
+					days = -1 
+				}
+			}
+			else = {
+				add_modifier = { 
+					modifier = starborn_habitat_complex 
+					days = -1 
+				}
 			}
 			
 			starborn_hab_init_deposits = yes

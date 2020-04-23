@@ -706,7 +706,7 @@ planet_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = starborn_traits.32.option.a
+		name = starborn_traits.33.option.a
 		owner = {
 			add_monthly_resource_mult = {
 				resource = alloys

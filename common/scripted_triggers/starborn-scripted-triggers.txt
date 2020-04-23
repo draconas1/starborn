@@ -6,11 +6,13 @@ habitable_structure = {
 	}
 }
 
+# note copy of this is in retile
 has_starborn = {
 	OR = {
 		has_origin = origin_starborn
 		has_country_flag = EGS_START_STARBORN
-	}	
+		has_country_flag = starborn_origin
+	}
 }
 
 has_retile = {

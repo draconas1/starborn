@@ -35,7 +35,7 @@ district_starborn_starting_hab_housing = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_maintenance_drone_add = 1
+			job_maintenance_drone_add = 2
 		}
 	}
 	

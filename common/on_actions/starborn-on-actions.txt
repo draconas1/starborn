@@ -31,7 +31,7 @@ on_yearly_pulse_country = {
 # Scope = Planet
 on_colonized = {
 	events = {
-		starborn.10 #add refund deposits to small habitats
+		starborn.10 # add refund deposits to small habitats & voidborn
 		starborn.30 # remove whole planet farming
 		starborn.60 # homeworld colonised
 	}

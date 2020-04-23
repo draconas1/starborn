@@ -28,3 +28,4 @@ event = {
 		set_global_flag = starborn_active
 	}
 }
+

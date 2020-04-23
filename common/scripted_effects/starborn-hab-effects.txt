@@ -839,120 +839,241 @@ starborn_hab_init_deposits = {
     }
 
     # Trade Value
-
     if = {
         limit = {
-            fromfrom.planet = {
-                OR = {
-                    has_deposit = d_trade_value_1
-                    has_deposit = d_trade_value_2
+            has_retile = yes
+        }
+        if = {
+            limit = {
+                fromfrom.planet = {
+                    OR = {
+                        has_deposit = d_trade_value_1
+                        has_deposit = d_trade_value_2
+                    }
                 }
             }
+            add_modifier = {
+                modifier = starborn_trade_value_5_retile
+                days = -1
+            }
         }
-        add_modifier = {
-            modifier = starborn_trade_value_5
-            days = -1
-        }
-    }
-
-    if = {
-        limit = {
-            fromfrom.planet = {
-                OR = {
-                    has_deposit = d_trade_value_3
-                    has_deposit = d_trade_value_4
-
-                    AND = {
-                        has_retile = yes
-                        OR = {
-                            has_deposit = d_trade_value_small
+    
+        if = {
+            limit = {
+                fromfrom.planet = {
+                    OR = {
+                        has_deposit = d_trade_value_3
+                        has_deposit = d_trade_value_4
+    
+                        AND = {
+                            has_retile = yes
+                            OR = {
+                                has_deposit = d_trade_value_small
+                            }
                         }
                     }
                 }
             }
-        }
-        add_modifier = {
-            modifier = starborn_trade_value_10
-            days = -1
-        }
-    }
-
-    if = {
-        limit = {
-            fromfrom.planet = {
-                OR = {
-                    has_deposit = d_trade_value_5
-                    has_deposit = d_trade_value_6
-                }
+            add_modifier = {
+                modifier = starborn_trade_value_10_retile
+                days = -1
             }
         }
-        add_modifier = {
-            modifier = starborn_trade_value_15
-            days = -1
+    
+        if = {
+            limit = {
+                fromfrom.planet = {
+                    OR = {
+                        has_deposit = d_trade_value_5
+                        has_deposit = d_trade_value_6
+                    }
+                }
+            }
+            add_modifier = {
+                modifier = starborn_trade_value_15_retile
+                days = -1
+            }
         }
-    }
-
-    if = {
-        limit = {
-            fromfrom.planet = {
-                OR = {
-                    has_deposit = d_trade_value_7
-                    has_deposit = d_trade_value_8
-                    AND = {
-                        has_retile = yes
-                        OR = {
-                            has_deposit = d_trade_value_medium
+    
+        if = {
+            limit = {
+                fromfrom.planet = {
+                    OR = {
+                        has_deposit = d_trade_value_7
+                        has_deposit = d_trade_value_8
+                        AND = {
+                            has_retile = yes
+                            OR = {
+                                has_deposit = d_trade_value_medium
+                            }
                         }
                     }
                 }
             }
+            add_modifier = {
+                modifier = starborn_trade_value_20_retile
+                days = -1
+            }
         }
-        add_modifier = {
-            modifier = starborn_trade_value_20
-            days = -1
-        }
-    }
-
-    if = {
-        limit = {
-            fromfrom.planet = {
-                OR = {
-                    has_deposit = d_trade_value_9
-                    has_deposit = d_trade_value_10
-                    AND = {
-                        has_global_flag = has_guillis_planet_modifiers_mod
-                        OR = {
-                            has_deposit = gpm_d_trade_deposit
+    
+        if = {
+            limit = {
+                fromfrom.planet = {
+                    OR = {
+                        has_deposit = d_trade_value_9
+                        has_deposit = d_trade_value_10
+                        AND = {
+                            has_global_flag = has_guillis_planet_modifiers_mod
+                            OR = {
+                                has_deposit = gpm_d_trade_deposit
+                            }
                         }
-                    }
-                    AND = {
-                        has_retile = yes
-                        OR = {
-                            has_deposit = d_trade_value_large
+                        AND = {
+                            has_retile = yes
+                            OR = {
+                                has_deposit = d_trade_value_large
+                            }
                         }
                     }
                 }
             }
+            add_modifier = {
+                modifier = starborn_trade_value_25_retile
+                days = -1
+            }
         }
-        add_modifier = {
-            modifier = starborn_trade_value_25
-            days = -1
+    
+        if = {
+            limit = {
+                fromfrom.planet = {
+                    OR = {
+                        is_planet_class = pc_city
+                    }
+                }
+            }
+            add_modifier = {
+                modifier = starborn_pc_city_trade_value_retile
+                days = -1
+            }
+        }
+    }
+    else = {
+        if = {
+            limit = {
+                fromfrom.planet = {
+                    OR = {
+                        has_deposit = d_trade_value_1
+                        has_deposit = d_trade_value_2
+                    }
+                }
+            }
+            add_modifier = {
+                modifier = starborn_trade_value_5
+                days = -1
+            }
+        }
+    
+        if = {
+            limit = {
+                fromfrom.planet = {
+                    OR = {
+                        has_deposit = d_trade_value_3
+                        has_deposit = d_trade_value_4
+    
+                        AND = {
+                            has_retile = yes
+                            OR = {
+                                has_deposit = d_trade_value_small
+                            }
+                        }
+                    }
+                }
+            }
+            add_modifier = {
+                modifier = starborn_trade_value_10
+                days = -1
+            }
+        }
+    
+        if = {
+            limit = {
+                fromfrom.planet = {
+                    OR = {
+                        has_deposit = d_trade_value_5
+                        has_deposit = d_trade_value_6
+                    }
+                }
+            }
+            add_modifier = {
+                modifier = starborn_trade_value_15
+                days = -1
+            }
+        }
+    
+        if = {
+            limit = {
+                fromfrom.planet = {
+                    OR = {
+                        has_deposit = d_trade_value_7
+                        has_deposit = d_trade_value_8
+                        AND = {
+                            has_retile = yes
+                            OR = {
+                                has_deposit = d_trade_value_medium
+                            }
+                        }
+                    }
+                }
+            }
+            add_modifier = {
+                modifier = starborn_trade_value_20
+                days = -1
+            }
+        }
+    
+        if = {
+            limit = {
+                fromfrom.planet = {
+                    OR = {
+                        has_deposit = d_trade_value_9
+                        has_deposit = d_trade_value_10
+                        AND = {
+                            has_global_flag = has_guillis_planet_modifiers_mod
+                            OR = {
+                                has_deposit = gpm_d_trade_deposit
+                            }
+                        }
+                        AND = {
+                            has_retile = yes
+                            OR = {
+                                has_deposit = d_trade_value_large
+                            }
+                        }
+                    }
+                }
+            }
+            add_modifier = {
+                modifier = starborn_trade_value_25
+                days = -1
+            }
+        }
+    
+        if = {
+            limit = {
+                fromfrom.planet = {
+                    OR = {
+                        is_planet_class = pc_city
+                    }
+                }
+            }
+            add_modifier = {
+                modifier = starborn_pc_city_trade_value
+                days = -1
+            }
         }
     }
 
-    if = {
-        limit = {
-            fromfrom.planet = {
-                OR = {
-                    is_planet_class = pc_city
-                }
-            }
-        }
-        add_modifier = {
-            modifier = starborn_pc_city_trade_value
-            days = -1
-        }
-    }
+    
 
     # Science
 
