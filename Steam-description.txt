@@ -42,8 +42,8 @@ So may have compatibility problems with any other mod that changes these, the sy
 [*] [url=https://steamcommunity.com/workshop/filedetails/?id=819148835]Planetary Diversity[/url]      Use !Starborn Compatibility Patch.  There is a note with details in the Discussion section
 [*] [url=https://steamcommunity.com/workshop/filedetails/?id=865040033]Guilli's Planet Modifiers[/url]   Completely compatible, [b]IMPORTANT[/b] See Note: [url=https://steamcommunity.com/workshop/filedetails/discussion/1743133825/1606022547910590708/]here[/url]
 [*] [url=https://steamcommunity.com/workshop/filedetails/?id=937289339]Real Space[/url]   Completely compatible, as of yet the new worlds do not have specific behaviour
-[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1999512770]Extra Galatic Cluster Start[/url]: Completely Compatible  
-[*] Stellaris Immortal: Compatibility coming soon.
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1999512770]Extra Galatic Cluster Start[/url]: Completely Compatible
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1891758612]Stellaris Immortal[/url]: Completely Compatible (ver 15.  Load starborn FIRST), no patches needed.
 [/list]
 
 If you have a mod that wants district compatibility, leave a comment and I will have a look.  IT is not compatible with District Overhaul. 
@@ -62,7 +62,6 @@ ViolentBeetle on Stellaris Modding Den discord gave me a great deal of help, wit
 [h1]Future[/h1]
 [list]
 [*] More Events
-[*] Stellaris Immortal Compatibility
 [/list]
 
 
