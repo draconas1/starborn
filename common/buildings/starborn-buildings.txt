@@ -210,7 +210,8 @@ building_starborn_nanite_complex = {
 	potential = {
         is_planet_class = pc_habitat
         OR = {
-            has_deposit = d_starborn_nanites
+			has_deposit = d_starborn_nanites
+			has_deposit = d_hab_nanites_1
         }
 		exists = owner
         owner = {

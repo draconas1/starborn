@@ -1,4 +1,5 @@
 starborn_show_hab_build_size = {
+    icon = "GFX_edict_type_policy"
     length = 0
     resources = {
 	    category = edicts
@@ -21,6 +22,7 @@ starborn_show_hab_build_size = {
 }
 
 starborn_show_hab_enlargment_size = {
+    icon = "GFX_edict_type_policy"
     length = 0
     resources = {
         category = edicts
@@ -43,6 +45,7 @@ starborn_show_hab_enlargment_size = {
 }
 
 starborn_enable_debug = {
+    icon = "GFX_edict_type_policy"
     length = 0
     resources = {
         category = edicts
@@ -70,6 +73,7 @@ starborn_enable_debug = {
 }
 
 starborn_disable_debug = {
+    icon = "GFX_edict_type_policy"
     length = 0
     resources = {
         category = edicts
@@ -96,6 +100,7 @@ starborn_disable_debug = {
 }
 
 starborn_debug_flag = {
+    icon = "GFX_edict_type_policy"
     length = 0
     resources = {
         category = edicts
@@ -124,6 +129,7 @@ starborn_debug_flag = {
 }
 
 starborn_op_start_system = {
+    icon = "GFX_edict_type_policy"
     length = 0
     resources = {
         category = edicts
@@ -153,6 +159,7 @@ starborn_op_start_system = {
 }
 
 starborn_turn_off_events = {
+    icon = "GFX_edict_type_policy"
     length = 0
     resources = {
         category = edicts
@@ -179,6 +186,7 @@ starborn_turn_off_events = {
 
 
 starborn_turn_on_events = {
+    icon = "GFX_edict_type_policy"
     length = 0
     resources = {
         category = edicts

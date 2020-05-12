@@ -3,7 +3,7 @@ starborn_hab_init_effect = {
 
     set_name = "HABITAT_PLANET_NAME"
     set_planet_entity = {
-        entity = "orbital_habitat_entity"
+        entity = "habitat_phase_01_entity"
         graphical_culture = fromfrom
     }
     surveyed = {
@@ -12,16 +12,7 @@ starborn_hab_init_effect = {
     }
     set_all_comms_surveyed = yes
     clear_blockers = yes
-    if = {
-        limit = {
-            from = { has_ascension_perk = ap_voidborn }
-            NOT = { has_modifier = master_builders_habitats }
-        }
-        add_modifier = {
-            modifier = master_builders_habitats
-            days = -1
-        }
-    }
+
     set_planet_flag = megastructure
     set_planet_flag = habitat
 
@@ -264,18 +255,21 @@ starborn_hab_init_deposits = {
             fromfrom.planet = { has_deposit = d_zro_deposit_1 }
         }
         add_deposit = d_hab_zro_1
+        set_planet_flag = research_habitat
     }
     if = {
         limit = {
             fromfrom.planet = { has_deposit = d_zro_deposit_2 }
         }
         add_deposit = d_hab_zro_2
+        set_planet_flag = research_habitat
     }
     if = {
         limit = {
             fromfrom.planet = { has_deposit = d_zro_deposit_3 }
         }
         add_deposit = d_hab_zro_3
+        set_planet_flag = research_habitat
     }
     if = {
         limit = {
@@ -283,6 +277,7 @@ starborn_hab_init_deposits = {
         }
         add_deposit = d_hab_zro_3
         add_deposit = d_hab_zro_1
+        set_planet_flag = research_habitat
     }
 
     if = {
@@ -291,6 +286,7 @@ starborn_hab_init_deposits = {
         }
         add_deposit = d_hab_zro_3
         add_deposit = d_hab_zro_2
+        set_planet_flag = research_habitat
     }
 
 
@@ -299,18 +295,21 @@ starborn_hab_init_deposits = {
             fromfrom.planet = { has_deposit = d_dark_matter_deposit_1 }
         }
         add_deposit = d_hab_dark_matter_1
+        set_planet_flag = research_habitat
     }
     if = {
         limit = {
             fromfrom.planet = { has_deposit = d_dark_matter_deposit_2 }
         }
         add_deposit = d_hab_dark_matter_2
+        set_planet_flag = research_habitat
     }
     if = {
         limit = {
             fromfrom.planet = { has_deposit = d_dark_matter_deposit_3 }
         }
         add_deposit = d_hab_dark_matter_3
+        set_planet_flag = research_habitat
     }
 
     if = {
@@ -318,6 +317,7 @@ starborn_hab_init_deposits = {
             fromfrom.planet = { has_deposit = d_living_metal_deposit }
         }
         add_deposit = d_hab_living_metal_1
+        set_planet_flag = research_habitat
     }
 
     if = {
@@ -354,6 +354,14 @@ starborn_hab_init_deposits = {
         }
         add_deposit = d_hab_alloy_5
         set_planet_flag = mining_habitat
+    }
+
+    if = {
+        limit = {
+            fromfrom.planet = { has_deposit = d_nanites_deposit }
+        }
+        add_deposit = d_hab_nanites_1
+        set_planet_flag = research_habitat
     }
 
 # END VANILLA
@@ -455,12 +463,12 @@ starborn_hab_init_deposits = {
         limit = {
             fromfrom.planet = {
                 OR = {
-                    has_deposit = d_nanites_deposit
                     is_planet_class = pc_gray_goo
                 }
             }
         }
-        add_deposit = d_starborn_nanites
+        add_deposit = d_hab_nanites_1
+        set_planet_flag = research_habitat
     }
 
     # if = {

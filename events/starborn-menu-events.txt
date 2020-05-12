@@ -7,16 +7,6 @@ country_event = {
 	picture = GFX_evt_colony_settlement
 	is_triggered_only = yes
 	option = {
-		name = "starborn_menus.1.option.3"
-		trigger = {
-			has_retile = no
-		}
-		hidden_effect = {
-			remove_hab_size_flags = yes
-			set_country_flag = starborn_hab_size_3			
-		}
-	}
-	option = {
 		name = "starborn_menus.1.option.4"
 		trigger = {
 			has_retile = no
@@ -31,6 +21,9 @@ country_event = {
 		trigger = {
 			has_retile = no
 		}
+		allow = {
+			has_technology = tech_habitat_2
+		}
 		hidden_effect = {
 			remove_hab_size_flags = yes
 			set_country_flag = starborn_hab_size_5
@@ -41,24 +34,15 @@ country_event = {
 		trigger = {
 			has_retile = no
 		}
+		allow = {
+			has_technology = tech_habitat_3
+		}
 		hidden_effect = {
 			remove_hab_size_flags = yes
 			set_country_flag = starborn_hab_size_6
 		}
 	}
 
-
-
-	option = {
-		name = "starborn_menus.1.option.3.retile"
-		trigger = {
-			has_retile = yes
-		}
-		hidden_effect = {
-			remove_hab_size_flags = yes
-			set_country_flag = starborn_hab_size_3			
-		}
-	}
 	option = {
 		name = "starborn_menus.1.option.4.retile"
 		trigger = {

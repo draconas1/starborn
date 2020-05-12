@@ -577,6 +577,7 @@ pop_event = {
                                 has_trait = trait_starborn_positive
                                 from = {
                                         habitable_structure = no
+                                        NOT = { is_planet_class = pc_starborn_habitat_start }
                                 }
                         }
                         random_list = {
@@ -758,7 +759,9 @@ planet_event = {
         hide_window = yes
         is_triggered_only = yes
         trigger = {
-                has_starborn_retile = yes
+                fromfrom = { 
+                        has_starborn_retile = yes
+                }
         }
         immediate = {
                 if = {
@@ -790,5 +793,45 @@ planet_event = {
 
                 # apply pop density modifier
                 planet_event = { id = retile_pop.3000 days = 1 }
+        }
+}
+
+# Check if starborn starting hab is habitable structure.
+country_event = {
+        id = starborn.110
+        fire_only_once = yes
+        hide_window = yes
+        mean_time_to_happen = {
+                days = 1
+        }
+        trigger = {
+                has_starborn = yes
+        }
+
+        immediate = {
+                random_planet = {
+                        limit = {
+                                is_planet_class = pc_starborn_habitat_start
+                        }
+                        if = {
+                                limit = { 
+                                        habitable_structure = no
+                                }
+                                country_event = {
+                                        id =  starborn.111
+                                }
+                        }
+                }
+        }
+}
+
+country_event = {
+        id = starborn.111
+        is_triggered_only = yes
+        title = starborn.111.name
+        desc = starborn.111.desc
+        picture = GFX_evt_synth_sabotage
+        option = {
+                name = OK
         }
 }

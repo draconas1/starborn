@@ -2,10 +2,13 @@
 
  origin_starborn:0 "Starborn"
  origin_starborn_desc:0 "This civilisation starts in an enormous orbital city above the ruins of their homeworld.  They are skilled at orbital construction, but generations of living in artifical environments have made the natural ecosystems of planets undesirable to their physiology"
- origin_tooltip_starborn_effects:0 "- Starting world is an §Y$pc_starborn_habitat_start$§! in orbit of a §Y$pc_nuked$§!.\n- Build §Y$starborn_habitat$§!s immediately and modularly.\n- §Y$starborn_habitat$§!s have different districts or bonuses depending on the planet or orbital deposits they are built around.\n- Pops suffer additional penalties and events if living on terrestrial planets"
+ origin_tooltip_starborn_effects:0 "- Starting world is an §Y$pc_starborn_habitat_start$§! in orbit of a §Y$pc_nuked$§!.\n- Build §Y$starborn_habitat$§!s immediately and modularly.\n- §Y$starborn_habitat$§!s have different districts or bonuses depending on the planet or orbital deposits they are built around.\n- Pops suffer additional penalties and events if living on terrestrial planets\nChoice of start system: normal or Sol"
 
- starborn_op_system_NAME:0 "Starborn OP"
- starborn_op_system_DESC:0 "While they may be born among the stars, the $origin_starborn$ wondered why they would ever leave their home system, as it provided them with everything they could ever want"
+ starborn_system_NAME:0 "Starborn"
+ starborn_system_DESC:0 "Standard Initaliser system for starborn.  Orbital city and 2 prototype habitats ready for colonisation."
+
+ starborn_sol_system_NAME:0 "Starborn Sol"
+ starborn_sol_system_DESC:0 "Sol system for starborn.  Things went a bit wrong on planet earth."
 
  pc_starborn_habitat_start:0 "Orbital City"
  pc_starborn_habitat_start_desc:0 "It was the crowning glory of our technological achievement, that became the arc that saved our civilisation"

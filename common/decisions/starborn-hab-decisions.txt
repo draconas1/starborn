@@ -1,128 +1,108 @@
-# enlarge the habitat by 1 step.
-decision_starborn_enlarge_hab = {
+
+# Advanced Habitat
+decision_upgrade_habitat = {
 	owned_planets_only = yes
-	enactment_time = 300
-	resources = {
-		category = decisions		
-		cost = {
-			trigger = {
-				planet_size = 3
-			}
-            energy = 250
-            alloys = 250
-		}
-		cost = {
-			trigger = {
-				planet_size = 4
-			}
-            energy = 250
-            alloys = 500
-		}
-		cost = {
-			trigger = {
-				planet_size = 5
-			}
-            energy = 250
-            alloys = 500
-		}
-	}
-	
-	potential = {
-        is_planet_class = pc_habitat
-		planet_size < 6
-		owner = { has_starborn_no_retile = yes }
-	}
+	icon = decision_satellite_in_orbit
 
-	effect = {
-		custom_tooltip = decision_starborn_enlarge_hab_desc
-		if = {
-			limit = {
-				planet_size < 6
-			}
-			change_planet_size = 1
-			hidden_effect = {
-				remove_deposit = d_starborn_refund_size_3
-				remove_deposit = d_starborn_refund_size_4
-
-				if = {
-					limit = {
-						planet_size = 3
-					}
-					add_deposit = d_starborn_refund_size_3
-				}
-
-				if = {
-					limit = {
-						planet_size = 4
-					}
-					add_deposit = d_starborn_refund_size_4
-				}
-			}
-		}
-		else = {
-			owner = {
-				country_event = { id = starborn.2 }
-			}
-		}		
-	}
-	
-	# Same AI waiting as Mastery of nature, wonder if the AI ever uses that.
-	ai_weight = {
-		weight = 1
-		modifier = {
-			factor = 0
-			free_district_slots > 0
-		}
-	}
-}
-
-# Minimise micromanagement, fully enlarge the hab to 6.
-decision_starborn_fully_enlarge_hab = {
-	owned_planets_only = yes
-	enactment_time = 1000
+	enactment_time = 720
 	resources = {
 		category = decisions
 		cost = {
-			trigger = {
-				planet_size = 3
-			}
-            energy = 750
-            alloys = 1250
-		}
-		cost = {
-			trigger = {
-				planet_size = 4
-			}
-            energy = 500
-            alloys = 1000
-		}
-		cost = {
-			trigger = {
-				planet_size = 5
-			}
-            energy = 250
-            alloys = 500
+			alloys = 1000
 		}
 	}
-	
+
 	potential = {
 		is_planet_class = pc_habitat
-		planet_size < 6
-		owner = { has_starborn_no_retile = yes }
+		NOT = { has_planet_flag = advanced_habitat }
+		exists = owner
+		owner = {
+			has_technology = tech_habitat_2
+		}
 	}
-	
+
+	allow = {
+		free_district_slots = 0
+	}
+
 	effect = {
-		custom_tooltip = decision_starborn_fully_enlarge_hab_desc
-		set_planet_size = 6	
 		hidden_effect = {
 			remove_deposit = d_starborn_refund_size_3
 			remove_deposit = d_starborn_refund_size_4
 		}
+		hidden_effect = {
+			set_planet_entity = {
+				entity = "habitat_phase_02_entity"
+				graphical_culture = owner
+			}
+			set_planet_flag = advanced_habitat
+		}
+		set_planet_size = 6
+
+		if = {
+			limit = {
+				owner = {
+					has_ascension_perk = ap_voidborn
+					NOT = { has_technology = tech_habitat_3 }
+					NOT = { has_tech_option = tech_habitat_3 }
+				}
+			}
+			owner = {
+				add_research_option = tech_habitat_3
+			}
+		}
 	}
-	
-	# AI will never use this.  
+
 	ai_weight = {
-		weight = 0
+		weight = 1
+	}
+}
+
+decision_upgrade_habitat_2 = {
+	owned_planets_only = yes
+	icon = decision_satellite_in_orbit
+
+	enactment_time = 1440
+	resources = {
+		category = decisions
+		cost = {
+			alloys = 1500
+		}
+	}
+
+	potential = {
+		is_planet_class = pc_habitat
+		has_planet_flag = advanced_habitat
+		NOT = { has_planet_flag = advanced_habitat_2 }
+		exists = owner
+		owner = {
+			has_technology = tech_habitat_3
+		}
+	}
+
+	allow = {
+		free_district_slots = 0
+		has_major_upgraded_capital = yes
+	}
+
+	effect = {
+		hidden_effect = {
+			remove_deposit = d_starborn_refund_size_3
+			remove_deposit = d_starborn_refund_size_4
+		}
+		hidden_effect = {
+			set_planet_entity = {
+				entity = "habitat_phase_03_entity"
+				graphical_culture = owner
+			}
+
+			set_planet_flag = advanced_habitat_2
+		}
+		set_planet_size = 8
+	}
+
+	ai_weight = {
+		weight = 1
 	}
 }
 
@@ -159,11 +139,7 @@ decision_starborn_increase_hab_district_2 = {
 	}
 	
 	ai_weight = {
-		weight = 1
-		modifier = {
-			factor = 0
-			free_district_slots > 0
-		}
+		weight = 0
 	}
 }
 
@@ -199,11 +175,7 @@ decision_starborn_increase_hab_district_3 = {
 	}
 	
 	ai_weight = {
-		weight = 1
-		modifier = {
-			factor = 0
-			free_district_slots > 0
-		}
+		weight = 0
 	}
 }
 
@@ -226,7 +198,7 @@ decision_starborn_complex_target = {
 	}
 
 	allow = {
-		planet_size >= 6
+		planet_size >= 8
 		custom_tooltip = decision_starborn_complex_target_must_be_full_size
 	}
 	

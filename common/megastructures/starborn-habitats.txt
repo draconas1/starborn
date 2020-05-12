@@ -1,87 +1,12 @@
 # see README.txt for example
 
-starborn_habitat3 = {
-	entity = ""
-	construction_entity = "orbital_habitat_entity"
-	portrait = "GFX_megastructure_construction_background"
-	place_entity_on_planet_plane = yes
-	entity_offset = { x = -7 y = -7 }
-	build_time = 600
-
-	resources = {
-        category = megastructures
-        cost = {
-			alloys = 500
-			energy = 250
-			influence = 100
-        }
-    }
-
-	construction_blocks_others = no
-
-	potential = {
-		has_starborn = yes
-		has_country_flag = starborn_hab_size_3
-	}
-
-	possible = {
-		exists = starbase
-		custom_tooltip = {
-			fail_text = "requires_inside_border"
-			is_inside_border = from
-		}
-	}
-
-	placement_rules = {
-		planet_possible = {
-			starborn_can_place_hab = yes
-		}
-	}
-
-	# root = system
-	# from = country	
-	ai_weight = {
-		factor = 0
-	}
-	
-	on_build_start = {}
-	on_build_cancel = {}
-	
-	on_build_complete = {
-		spawn_planet = {
-			class = "pc_habitat"
-			location = fromfrom.planet
-			orbit_location = yes
-			orbit_angle_offset = 45
-			orbit_distance_offset = 9.899
-			size = 3
-			has_ring = no
-			
-			init_effect = {
-				starborn_hab_init_effect = yes
-				if = {
-					limit = {
-						has_retile = yes
-					}
-					set_planet_size = 4
-				}
-			}
-		}
-		fromfrom.planet = {
-			starborn_edit_source_planet = yes
-		}
-		remove_megastructure = fromfrom
-		from = { country_event =  { id = utopia.61 } }
-	}
-}
-
 starborn_habitat4 = {
 	entity = ""
-	construction_entity = "orbital_habitat_entity"
+	construction_entity = "habitat_phase_01_entity"
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = yes
 	entity_offset = { x = -7 y = -7 }
-	build_time = 900
+	build_time = 1000
 
 	resources = {
         category = megastructures
@@ -134,6 +59,7 @@ starborn_habitat4 = {
 			
 			init_effect = {
 				starborn_hab_init_effect = yes
+				
 				if = {
 					limit = {
 						has_retile = yes
@@ -152,16 +78,16 @@ starborn_habitat4 = {
 
 starborn_habitat5 = {
 	entity = ""
-	construction_entity = "orbital_habitat_entity"
+	construction_entity = "habitat_phase_02_entity"
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = yes
 	entity_offset = { x = -7 y = -7 }
-	build_time = 1200
+	build_time = 1500
 
 	resources = {
         category = megastructures
         cost = {
-			alloys = 1500
+			alloys = 1750
 			energy = 750
 			influence = 100
         }
@@ -204,11 +130,16 @@ starborn_habitat5 = {
 			orbit_location = yes
 			orbit_angle_offset = 45
 			orbit_distance_offset = 9.899
-			size = 5
+			size = 6
 			has_ring = no
 			
 			init_effect = {
 				starborn_hab_init_effect = yes
+				set_planet_entity = {
+					entity = "habitat_phase_02_entity"
+					graphical_culture = owner
+				}
+				set_planet_flag = advanced_habitat
 				if = {
 					limit = {
 						has_retile = yes
@@ -227,16 +158,16 @@ starborn_habitat5 = {
 
 starborn_habitat6 = {
 	entity = ""
-	construction_entity = "orbital_habitat_entity"
+	construction_entity = "habitat_phase_03_entity"
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = yes
 	entity_offset = { x = -7 y = -7 }
-	build_time = 1500
+	build_time = 2000
 
 	resources = {
         category = megastructures
         cost = {
-			alloys = 2000
+			alloys = 3000
 			energy = 1000
 			influence = 100
         }
@@ -280,11 +211,17 @@ starborn_habitat6 = {
 			orbit_location = yes
 			orbit_angle_offset = 45
 			orbit_distance_offset = 9.899
-			size = 6
+			size = 8
 			has_ring = no
 			
 			init_effect = {
 				starborn_hab_init_effect = yes
+				set_planet_entity = {
+					entity = "habitat_phase_03_entity"
+					graphical_culture = owner
+				}
+	
+				set_planet_flag = advanced_habitat_2
 				if = {
 					limit = {
 						has_retile = yes
@@ -302,8 +239,8 @@ starborn_habitat6 = {
 }
 
 starborn_habitat_expander = {
-	entity = "orbital_habitat_entity"
-	construction_entity = "orbital_habitat_entity"
+	entity = "habitat_phase_03_entity"
+	construction_entity = "habitat_phase_03_entity"
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = yes
 	entity_offset = { x = -7 y = -7 }
@@ -312,7 +249,7 @@ starborn_habitat_expander = {
 	resources = {
         category = megastructures
         cost = {
-			alloys = 2000
+			alloys = 3000
 			energy = 1000
 			influence = 150
         }

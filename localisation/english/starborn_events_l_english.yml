@@ -27,15 +27,12 @@
 
  starborn_menus.1.name:0 "Set Habitat Build Size"
  starborn_menus.1.desc:0 "As the game progresses, you can opt to increase the initial cost of your habitats to improve their starting size and reduce your micromanagement."
- starborn_menus.1.option.2:0 "§YSize 2§! Habitats cost 250 £alloys£§Y$alloys$§!, 365 days"
- starborn_menus.1.option.3:0 "§YSize 3§! Habitats cost 500 £alloys£§Y$alloys$§!, 250 £energy£§Y$energy$§!, 600 days"
- starborn_menus.1.option.4:0 "§YSize 4§! Habitats cost 1000 £alloys£§Y$alloys$§!, 500 £energy£§Y$energy$§!, 900 days"
- starborn_menus.1.option.5:0 "§YSize 5§! Habitats cost 1500 £alloys£§Y$alloys$§!, 750 £energy£§Y$energy$§!, 1200 days"
- starborn_menus.1.option.6:0 "§YSize 6§! Habitats cost 2000 £alloys£§Y$alloys$§!, 1000 £energy£§Y$energy$§!, 1500 days"
- starborn_menus.1.option.3.retile:0 "§YSize 4§! Habitats cost 500 £alloys£§Y$alloys$§!, 250 £energy£§Y$energy$§!, 600 days"
- starborn_menus.1.option.4.retile:0 "§YSize 6§! Habitats cost 1000 £alloys£§Y$alloys$§!, 500 £energy£§Y$energy$§!, 900 days"
- starborn_menus.1.option.5.retile:0 "§YSize 8§! Habitats cost 1500 £alloys£§Y$alloys$§!, 750 £energy£§Y$energy$§!, 1200 days"
- starborn_menus.1.option.6.retile:0 "§YSize 10§! Habitats cost 2000 £alloys£§Y$alloys$§!, 1000 £energy£§Y$energy$§!, 1500 days"
+ starborn_menus.1.option.4:0 "§YSize 4§! Habitats cost 1000 £alloys£§Y$alloys$§!, 500 £energy£§Y$energy$§!, 1000 days"
+ starborn_menus.1.option.5:0 "§YSize 6§! Habitats cost 1750 £alloys£§Y$alloys$§!, 750 £energy£§Y$energy$§!, 1500 days"
+ starborn_menus.1.option.6:0 "§YSize 8§! Habitats cost 3000 £alloys£§Y$alloys$§!, 1000 £energy£§Y$energy$§!, 2000 days"
+ starborn_menus.1.option.4.retile:0 "§YSize 6§! Habitats cost 1000 £alloys£§Y$alloys$§!, 500 £energy£§Y$energy$§!, 1000 days"
+ starborn_menus.1.option.5.retile:0 "§YSize 8§! Habitats cost 1750 £alloys£§Y$alloys$§!, 750 £energy£§Y$energy$§!, 1500 days"
+ starborn_menus.1.option.6.retile:0 "§YSize 10§! Habitats cost 3000 £alloys£§Y$alloys$§!, 1000 £energy£§Y$energy$§!, 2000 days"
 
  starborn_menus.2.name:0 "Set Auto Applied Habitat Enlargement"
  starborn_menus.2.desc:0 "Habitat enlargement decisions can be auto-applied at construction time.\n\n§YWhen a habitat finishes construction§!, if you have sufficient resources to pay for the enlargement, it will be automatically applied"
@@ -78,6 +75,12 @@
  starborn.71.name:0 "A Triumph of a People"
  starborn.71.desc:0 "The final act of restoring §Y[src_planet.GetName]§! was a grand ceremony at the §Y$building_starborn_obelisk_nuked$§!.  It has been rededicated and now will stand not only as a monument and a reminder of what we lost, but as a monument of how far we have come as a people."
  starborn.71.option.a:0 "To the stars"
+
+
+ starborn.111.name:0 "WARNING"
+ starborn.111.desc:0 "§Y$pc_starborn_habitat_start$§! does not register correctly as a habitable structure.\n\nThis usually indicates a mod conflict and will result in unpredictable behaviour\n\nCheck the starborn workshop page for the 'Habitable Structures Patch'"
+
+
 
  starborn_traits.3.name:0 "Epidemic Strikes"
  starborn_traits.3.desc:0 "A pathogen on §Y[This.GetName]§! has proven disproportionately lethal to the Starborn peoples weakened immune system.  It is spreading rapidly through the population and will cause significant deaths without emergency medical intervention"
@@ -162,7 +165,7 @@
 
  starborn_traits.61.name:0 "Immune Systems Engineered"
  starborn_traits.61.desc:0 "Our scientists have succeeded in making sweeping alterations and improvements to the average starborn immune system.\n\nThe scientific community is attempting to caution people that the solution is not perfect, nothing we can do truely competes with generations of survival in a natural, hostile, biome, but the treatments rolled out will substancially bolster our peoples immune systems and result in far fewer outbreaks.\n\nThere is disappointment in the science fiction community that nobody appears to have gained super powers as a result of the treatment."
- starborn_traits.61.option.a:0 EXCELLENT
+ starborn_traits.61.option.a:0 "$EXCELLENT$"
 
  starborn_traits.999.name:0 "Debug"
  starborn_traits.999.desc:0 "Starborn Event §Y[FROM.EventId]§! triggered, but had no effect"

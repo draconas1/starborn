@@ -40,7 +40,7 @@ starborn_system = {
 			class = pc_habitat
 			orbit_angle = { min = 90 max = 270 }
 			orbit_distance = 5
-			size = 3
+			size = 4
 			flags = { megastructure habitat energy_habitat starborn_energy_6 starborn_start_solar_hab }
 			deposit_blockers = none
 			init_effect = {
@@ -144,7 +144,7 @@ starborn_system = {
 			class = pc_habitat
 			orbit_angle = { min = 90 max = 270 }
 			orbit_distance = 5
-			size = 3
+			size = 4
 			flags = { megastructure habitat mining_habitat starborn_mining_6 starborn_start_mining_hab }
 			init_effect = {
 				add_modifier = { modifier = starborn_asteroid_minerals days = -1 }

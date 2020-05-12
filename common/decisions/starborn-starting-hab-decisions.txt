@@ -28,11 +28,7 @@ decision_starborn_increase_starting_hab_district_1 = {
 	}
 	
 	ai_weight = {
-		weight = 1
-		modifier = {
-			factor = 0
-			free_district_slots > 0
-		}
+		weight = 0
 	}
 }
 
@@ -66,11 +62,7 @@ decision_starborn_increase_starting_hab_district_2 = {
 	}
 	
 	ai_weight = {
-		weight = 1
-		modifier = {
-			factor = 0
-			free_district_slots > 0
-		}
+		weight = 0
 	}
 }
 
@@ -104,11 +96,7 @@ decision_starborn_increase_starting_hab_district_3 = {
 	}
 	
 	ai_weight = {
-		weight = 1
-		modifier = {
-			factor = 0
-			free_district_slots > 0
-		}
+		weight = 0
 	}
 }
 
@@ -142,11 +130,7 @@ decision_starborn_increase_starting_hab_district_4 = {
 	}
 	
 	ai_weight = {
-		weight = 1
-		modifier = {
-			factor = 0
-			free_district_slots > 0
-		}
+		weight = 0
 	}
 }
 
@@ -179,11 +163,7 @@ decision_starborn_increase_starting_hab_district_voidborn = {
 	}
 	
 	ai_weight = {
-		weight = 1
-		modifier = {
-			factor = 0
-			free_district_slots > 0
-		}
+		weight = 0
 	}
 }
 

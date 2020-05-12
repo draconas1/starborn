@@ -14,7 +14,7 @@ country_event = {
 	immediate = {
 		save_event_target_as = starborn_country
 		set_country_flag = starborn_origin
-		set_country_flag = starborn_hab_size_3
+		set_country_flag = starborn_hab_size_4
 
 		# we live in a space station, we understand how hydroponics work
 		give_technology = { 
@@ -117,7 +117,7 @@ country_event = {
 			}
 
 			#mining habitat
-			random_system_planet = { 
+			random_system_planet = {
 				limit = {
 					has_planet_flag = starborn_start_mining_hab
 				}
@@ -142,7 +142,7 @@ country_event = {
 					is_planet_class = pc_habitat
 				}
 				set_planet_entity = {
-					entity = "orbital_habitat_entity"
+					entity = "habitat_phase_01_entity"
 					graphical_culture = event_target:starborn_country
 				}
 			}
@@ -229,6 +229,20 @@ planet_event = {
 
 	immediate = {
 		set_name = "Arc of Civilisation"
+		solar_system = {
+			if = {
+				limit = {
+					has_star_flag = sol_system
+				}
+				set_name = NAME_Sol
+				random_system_planet = {
+					limit = {
+						is_star = yes
+					}
+					set_name = NAME_Sol
+				}
+			}
+		}
 		clear_blockers = yes
 		if = {
 			limit = {
@@ -248,23 +262,22 @@ planet_event = {
 			add_district = district_starborn_starting_solar
 			add_district = district_starborn_starting_solar
 
-
 			if = {
 				limit = {
 					owner = {
-						country_uses_food = yes
+						is_lithoid_empire = yes
 					}
 				}
-				add_district = district_starborn_starting_preserve
-				add_district = district_starborn_starting_preserve
-				add_district = district_starborn_starting_preserve
+				add_district = district_starborn_starting_scavenger
+				add_district = district_starborn_starting_scavenger
+				add_district = district_starborn_starting_scavenger
+				add_district = district_starborn_starting_solar
+				add_district = district_starborn_starting_solar
 			}
 			else = {
-				add_district = district_starborn_starting_scavenger
-				add_district = district_starborn_starting_scavenger
-				add_district = district_starborn_starting_scavenger
-				add_district = district_starborn_starting_solar
-				add_district = district_starborn_starting_solar
+				add_district = district_starborn_starting_preserve
+				add_district = district_starborn_starting_preserve
+				add_district = district_starborn_starting_preserve
 			}
 		}		
 	}

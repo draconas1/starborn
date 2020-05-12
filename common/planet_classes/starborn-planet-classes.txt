@@ -37,4 +37,5 @@ pc_starborn_habitat_start = {
 
 	is_artificial_planet = yes
 	default_planet_selection = yes
+	district_set = starborn_start
 }
