@@ -4,7 +4,7 @@ tags={
 	"Overhaul"
 }
 picture="thumbnail.png"
-dependencies={
+"dependencies"={
 }
 supported_version="2.7.*"
 path="D:/Users/Draconas/Documents/Paradox Interactive/Stellaris/mod/starborn"

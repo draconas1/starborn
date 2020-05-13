@@ -12,6 +12,7 @@ Create huge habitats that span solar systems - rather than manage 10 small habit
 [*] Start in unique habitat: the orbital city, in orbit around a tomb world, with unique districts that kept your civilisation alive when their world burned
 [*] Build habitats around almost any stellar body.
 [*] Your adapton to space means your habitats may get additional desposits, buildings or modifiers based on the body type and deposits such as asteroids - great for mining, molten planets - great for alloys, black holes: whole lot of physics research.
+[*] Edict to change the size habitats are built at to reduce late game micromanagement
 [*] Satellite Habitat Complex megastructure lets you expand your habitats to encompass the entire system without having to manage all the individual planets.  Built it around a planet and one of your existing habitats gets a size boost and access to that planets resources.
 [/list]
 [i]There are lots of other effects for different types of planets and the different orbital deposits, you'll need to discover them in play or read the spoiler post in discussion[/i]
@@ -19,43 +20,40 @@ Create huge habitats that span solar systems - rather than manage 10 small habit
 Federations DLC is not required as this is my own work that predates VoidTouched, it has been made voidtouched compatible for ease of playstyles. 
 
 [h1]Gameplay Notes[/h1]
-Remember that habitats cost alloys in maintenance!
+Remember that habitats cost alloys in maintenance!  You get a small refund on size 4 habitats.  It is cheaper to build habitats at max size using the edict menu than it is to build them at small size then scale up with the decision, that is by design.
 
-I do not adjust normal habitats so you will have the ability to build normal habitats if you buy the tech, you probably don't want to build them and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2056951736]this addon mod[/url] will disable them for starborn empires.
+I do not adjust normal habitats so you will have the ability to build normal habitats, you probably don't want to build them and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2056951736]this addon mod[/url] will disable them for starborn empires.
 
 By using the Satelite Complex megastructure it is entirely possible to have a habitat that has too many district types to show on the default UI (with the right system you can easily have mining, energy, trade and research districts).  I strongly recommend a UI mod that allows for more districts, I use [url=https://steamcommunity.com/workshop/filedetails/?id=1623423360]UI Overhaul Dynamic[/url] 
-
-You can try to "cheat" by enacting the fully enlarge habitat decisions and also the construct more habitat decision at once, because there is not an easy way to immediately deactivate one decision based on another being selected (and in progress).  Go on, try it, I dare you.
 
 [h1]Compatibility[/h1]
 This mod makes changes to:
 [list]
-[*] City District (placement rules only)
 [*] habitable_structure scripted trigger
+[*] Vanilla "expand habitat" decisions
 [/list]
-So may have compatibility problems with any other mod that changes these, the symptom is seeing regular planet districts for the orbital city instead of its special ones.  A patch can be avoided by using one of the UI overhaul mods that gives a bigger planet district view.
+
 
 [b]Specific Compatibility:[/b]
 [list]
 [*] [url=https://steamcommunity.com/workshop/filedetails/?id=1121692237]Gigastructural Engineering[/url]    Use: !habitable Structures Patch
-[*] [url=https://steamcommunity.com/workshop/filedetails/?id=1624127196]Dyson Swarm[/url]      Use: !Starborn Compatibility Patch & !habitable Structures Patch.  There is a note with details in the Discussion section
+[*] [url=https://steamcommunity.com/workshop/filedetails/?id=1624127196]Dyson Swarm[/url]      Use:  !habitable Structures Patch.  There is a note with details in the Discussion section
 [*] [url=https://steamcommunity.com/workshop/filedetails/?id=819148835]Planetary Diversity[/url]      Use !Starborn Compatibility Patch.  There is a note with details in the Discussion section
-[*] [url=https://steamcommunity.com/workshop/filedetails/?id=865040033]Guilli's Planet Modifiers[/url]   Completely compatible, [b]IMPORTANT[/b] See Note: [url=https://steamcommunity.com/workshop/filedetails/discussion/1743133825/1606022547910590708/]here[/url]
-[*] [url=https://steamcommunity.com/workshop/filedetails/?id=937289339]Real Space[/url]   Completely compatible, as of yet the new worlds do not have specific behaviour
-[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1999512770]Extra Galatic Cluster Start[/url]: Completely Compatible
-[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1891758612]Stellaris Immortal[/url]: Completely Compatible (ver 15.  Load starborn FIRST), no patches needed.
+[*] [url=https://steamcommunity.com/workshop/filedetails/?id=865040033]Guilli's Planet Modifiers[/url] Completely compatible, [b]IMPORTANT[/b] See Note: [url=https://steamcommunity.com/workshop/filedetails/discussion/1743133825/1606022547910590708/]here[/url]
+[*] [url=https://steamcommunity.com/workshop/filedetails/?id=937289339]Real Space[/url] Completely compatible, as of yet the new worlds do not have specific behaviour
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1999512770]Extra Galactic Cluster Start[/url]: Completely Compatible
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1891758612]Stellaris Immortal[/url]: SI is not yet 2.7 compatible.  When SI releases a 2.7 version Starborn will update.
 [/list]
 
-If you have a mod that wants district compatibility, leave a comment and I will have a look.  IT is not compatible with District Overhaul. 
+If you have a mod that wants district compatibility, leave a comment and I will have a look.  It is not compatible with District Overhaul. 
 
 [b]Compatibility Patches:[/b]
 [list]
 [*] [url=https://steamcommunity.com/workshop/filedetails/?id=1636492142]!habitable Structures Patch[/url] - for any updates to the habitable structures
-[*] [url=https://steamcommunity.com/workshop/filedetails/?id=1891845676]!Starborn Compatibility Patch[/url] - does not include habitable structures patching, as it relies on the above mod
 [/list]
 
 [h1]Credit and Thanks[/h1]
-The Orbital City ring is from [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1121692237]Gigastructures[/url]  and the nature preserve and scavenger districts were inspired by similar ones from their mod.
+The Orbital City ring is from [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1121692237]Gigastructures[/url] and the nature preserve and scavenger districts were inspired by similar ones from their mod.
 The building art for come from CGM Planets.
 ViolentBeetle on Stellaris Modding Den discord gave me a great deal of help, without which I never would have been able to do the planet and habitat linking
 
@@ -64,7 +62,6 @@ ViolentBeetle on Stellaris Modding Den discord gave me a great deal of help, wit
 [*] More Events
 [/list]
 
-
 [h1]Localisation[/h1]
 Currently English only
 
@@ -72,7 +69,7 @@ If you would like to help translate into your language, the English language fil
 https://github.com/draconas1/starborn/tree/master/localisation/english if you are familiar with git then feel free to fork and create a pull request when you are done.  If you have no idea how to use github the don't worry: download the file, and upload your localised version to pastebin or similar and let me know in the comments and I will handle the rest.
 
 [h1]Past Versions[/h1]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2022586532]2.5 version[/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2094438707]2.6.3 version[/url]
 
 [b]Please Rate and Subscribe as it helps others find the mods[/b]
 [img]https://i.imgur.com/fVVaDCS.gif[/img]
