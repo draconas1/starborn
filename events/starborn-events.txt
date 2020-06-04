@@ -66,22 +66,6 @@ planet_event = {
                                 4 = {  add_deposit = d_starborn_refund_size_4 }
                         }
                 }
-
-                if = {
-                        limit = {
-                                owner = {
-                                        has_ascension_perk = ap_voidborn
-                                }
-                                not = {
-                                        has_modifier = master_builders_habitats
-                                }
-                        }
-                        add_modifier = {
-                                modifier = master_builders_habitats
-                                days = -1
-                        }
-                }
-
         }
 }
 
