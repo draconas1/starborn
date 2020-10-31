@@ -116,30 +116,16 @@
  decision_starborn_readd_farming:0 "Restore Farming Habitat Designation"
  decision_starborn_readd_farming_desc:0 "This will designate the habitat for farming and allow the construction of §Y$district_starborn_surface_farming$§!, you may need to close and reopen the planet window for the change to show in the UI"
 
- decision_starborn_retile_module_scavenger:0 "Construct Scavenger Module"
- decision_starborn_retile_module_scavenger_desc:0 ""
- decision_starborn_retile_module_scavenger_remove:0 "Dismantle Scavenger Module"
- decision_starborn_retile_module_scavenger_remove_desc:0 ""
-
  decision_starborn_complex_target:0 "Designate as Multi-Planet Habitat Complex"
  decision_starborn_complex_target_desc:0 "This will remove the designation from any other habitat in the system"
  decision_starborn_complex_target_must_be_full_size:0 "The habitat must be enlarged to full size before it can manage §Y$starborn_habitat_expander_plural$§!"
  decision_starborn_complex_target_tooltip:0 "Specify that §Y$starborn_habitat_expander_plural$§! in this system will be controlled by this habitat.  Constructed §Y$starborn_habitat_expander_plural$§! will add to this habitats maximum districts and allow access to the special districts for their planet type."
-
- decision_starborn_complex_target_retile:0 "$decision_starborn_complex_target$"
- decision_starborn_complex_target_retile_desc:0 "$decision_starborn_complex_target_desc$"
 
  decision_starborn_enlarge_hab:0 "Construct More Habitat"
  decision_starborn_enlarge_hab_desc:0 "We can construct new $pc_habitat$ sections such that it can support an additional district"
 
  decision_starborn_fully_enlarge_hab:0 "Fully Construct Habitat"
  decision_starborn_fully_enlarge_hab_desc:0 "The time for slow expansion is over, fully construct this $pc_habitat$ as far as our engineering abilities will let us"
-
- decision_starborn_enlarge_hab_retile:0 "$decision_starborn_enlarge_hab$"
- decision_starborn_enlarge_hab_retile_desc:0 "$decision_starborn_enlarge_hab_desc$"
-
- decision_starborn_fully_enlarge_hab_retile:0 "$decision_starborn_fully_enlarge_hab$"
- decision_starborn_fully_enlarge_hab_retile_desc:0 "$decision_starborn_fully_enlarge_hab_desc$"
 
  decision_starborn_increase_hab_district_1:0 "Optimise Habitat 1"
  decision_starborn_increase_hab_district_1_desc:0 "Improved construction techniques let us optimise the internal structure of the $pc_habitat$ such that it can support an additional district without requiring significant extra construction"

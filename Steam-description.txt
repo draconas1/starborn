@@ -31,18 +31,18 @@ This mod makes changes to:
 [list]
 [*] habitable_structure scripted trigger
 [*] Vanilla "expand habitat" decisions
+[*] Adjusts the final Worm in Waiting event to not do stupid things to the Oribtal City.
 [/list]
-
 
 [b]Specific Compatibility:[/b]
 [list]
-[*] [url=https://steamcommunity.com/workshop/filedetails/?id=1121692237]Gigastructural Engineering[/url]    Use: !habitable Structures Patch
-[*] [url=https://steamcommunity.com/workshop/filedetails/?id=1624127196]Dyson Swarm[/url]      Use:  !habitable Structures Patch.  There is a note with details in the Discussion section
-[*] [url=https://steamcommunity.com/workshop/filedetails/?id=819148835]Planetary Diversity[/url]      Use !Starborn Compatibility Patch.  There is a note with details in the Discussion section
-[*] [url=https://steamcommunity.com/workshop/filedetails/?id=865040033]Guilli's Planet Modifiers[/url] Completely compatible, [b]IMPORTANT[/b] See Note: [url=https://steamcommunity.com/workshop/filedetails/discussion/1743133825/1606022547910590708/]here[/url]
-[*] [url=https://steamcommunity.com/workshop/filedetails/?id=937289339]Real Space[/url] Completely compatible, as of yet the new worlds do not have specific behaviour
-[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1999512770]Extra Galactic Cluster Start[/url]: Completely Compatible
-[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1891758612]Stellaris Immortal[/url]: SI is not yet 2.7 compatible.  When SI releases a 2.7 version Starborn will update.
+[*] [url=https://steamcommunity.com/workshop/filedetails/?id=1121692237]Gigastructural Engineering[/url]: Use [b]!habitable Structures Patch[/b]
+[*] [url=https://steamcommunity.com/workshop/filedetails/?id=1624127196]Dyson Swarm[/url]: Use [b]!habitable Structures Patch.[/b]  There is a note with details in the Discussion section
+[*] [url=https://steamcommunity.com/workshop/filedetails/?id=819148835]Planetary Diversity[/url]: Completely compatible.  There is a note with details in the Discussion section
+[*] [url=https://steamcommunity.com/workshop/filedetails/?id=865040033]Guilli's Planet Modifiers[/url]: Completely compatible, [b]IMPORTANT[/b] See Note: [url=https://steamcommunity.com/workshop/filedetails/discussion/1743133825/1606022547910590708/]here[/url]
+[*] [url=https://steamcommunity.com/workshop/filedetails/?id=937289339]Real Space[/url]: Completely compatible, as of yet the new worlds do not have specific behaviour
+[*] [url=https://steamcommunity.com/workshop/filedetails/?id=1999512770]Extra Galactic Cluster Start[/url]: Completely compatible
+[*] [url=https://steamcommunity.com/workshop/filedetails/?id=1961367151]Void Dwellers Expanded[/url]: Completely compatible
 [/list]
 
 If you have a mod that wants district compatibility, leave a comment and I will have a look.  It is not compatible with District Overhaul. 
@@ -56,11 +56,6 @@ If you have a mod that wants district compatibility, leave a comment and I will 
 The Orbital City ring is from [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1121692237]Gigastructures[/url] and the nature preserve and scavenger districts were inspired by similar ones from their mod.
 The building art for come from CGM Planets.
 ViolentBeetle on Stellaris Modding Den discord gave me a great deal of help, without which I never would have been able to do the planet and habitat linking
-
-[h1]Future[/h1]
-[list]
-[*] More Events
-[/list]
 
 [h1]Localisation[/h1]
 Currently English only

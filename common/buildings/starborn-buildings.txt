@@ -18,25 +18,8 @@ building_starborn_dark_matter_extractor = {
 	}
 
 	triggered_planet_modifier = {
-		potential = {
-			has_retile = no
-		}
 		modifier = {
 			job_starborn_dark_matter_extractor_add = 1
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			has_retile = yes
-		}
-		modifier = {
-			planet_researchers_sr_dark_matter_produces_add = 1
-			planet_researchers_energy_upkeep_add = @job_energy_normal
-			planet_researchers_consumer_goods_upkeep_add = @job_supplies_high
-			scholars_bio_food_upkeep_add = @living_standard_food_normal
-			scholars_lith_minerals_upkeep_add = @living_standard_food_normal
-			scholars_mech_energy_upkeep_add = @living_standard_food_normal
 		}
 	}
 	
@@ -85,25 +68,8 @@ building_starborn_living_metal_extractor = {
 	}
 
 	triggered_planet_modifier = {
-		potential = {
-			has_retile = no
-		}
 		modifier = {
 			job_starborn_living_metal_extractor_add = 1
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			has_retile = yes
-		}
-		modifier = {
-			planet_researchers_sr_living_metal_produces_add = 1
-			planet_researchers_energy_upkeep_add = @job_energy_normal
-			planet_researchers_consumer_goods_upkeep_add = @job_supplies_high
-			scholars_bio_food_upkeep_add = @living_standard_food_normal
-			scholars_lith_minerals_upkeep_add = @living_standard_food_normal
-			scholars_mech_energy_upkeep_add = @living_standard_food_normal
 		}
 	}
 	
@@ -153,28 +119,11 @@ building_starborn_zro_extractor = {
 	}
 
 	triggered_planet_modifier = {
-		potential = {
-			has_retile = no
-		}
 		modifier = {
 			job_starborn_zro_extractor_add = 1
 		}
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			has_retile = yes
-		}
-		modifier = {
-			planet_researchers_sr_zro_produces_add = 1
-			planet_researchers_energy_upkeep_add = @job_energy_normal
-			planet_researchers_consumer_goods_upkeep_add = @job_supplies_high
-			scholars_bio_food_upkeep_add = @living_standard_food_normal
-			scholars_lith_minerals_upkeep_add = @living_standard_food_normal
-			scholars_mech_energy_upkeep_add = @living_standard_food_normal
-		}
-	}
-	
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -221,25 +170,8 @@ building_starborn_nanite_complex = {
 	}
 
 	triggered_planet_modifier = {
-		potential = {
-			has_retile = no
-		}
 		modifier = {
 			job_starborn_nanite_producer_add = 1
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			has_retile = yes
-		}
-		modifier = {
-			planet_researchers_nanites_produces_add = 1
-			planet_researchers_energy_upkeep_add = @job_energy_normal
-			planet_researchers_consumer_goods_upkeep_add = @job_supplies_high
-			scholars_bio_food_upkeep_add = @living_standard_food_normal
-			scholars_lith_minerals_upkeep_add = @living_standard_food_normal
-			scholars_mech_energy_upkeep_add = @living_standard_food_normal
 		}
 	}
 	
@@ -505,23 +437,10 @@ building_starborn_habitation_dome = {
 	}
 	
 	triggered_planet_modifier = {
-		potential = {
-			has_retile = no
-		}
 		modifier = {
 			planet_housing_add = 8
 		}
 	}
-
-	triggered_planet_modifier = {
-		potential = {
-			has_retile = yes
-		}
-		modifier = {
-			planet_housing_add = 4
-		}
-	}
-
 	
 	resources = {
 		category = planet_buildings
@@ -557,20 +476,8 @@ building_starborn_obelisk_nuked = {
 	}
 
 	triggered_planet_modifier = {
-		potential = {
-			has_retile = no
-		}
 		modifier = {
 			job_culture_worker_add = 4
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			has_retile = yes
-		}
-		modifier = {
-			planet_researchers_unity_produces_add = 5
 		}
 	}
 
@@ -605,23 +512,11 @@ building_starborn_obelisk_restored = {
 	}
 
 	triggered_planet_modifier = {
-		potential = {
-			has_retile = no
-		}
 		modifier = {
 			job_culture_worker_add = 6
 		}
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			has_retile = yes
-		}
-		modifier = {
-			planet_researchers_unity_produces_add = 7.5
-		}
-	}
-	
 	resources = {
 		category = planet_buildings
 		cost = {

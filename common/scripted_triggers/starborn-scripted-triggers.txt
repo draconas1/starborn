@@ -16,12 +16,11 @@ has_starborn = {
 }
 
 has_retile = {
-	has_global_flag = retile_active
+	always = no
 }
 
 has_starborn_no_retile = {
 	has_starborn = yes
-	has_retile = no
 }
 
 has_starborn_retile = {
@@ -48,14 +47,6 @@ has_gene_clinic = {
 	OR = {
 		has_building = building_hospital
 		has_building = building_clinic
-		AND = {
-			has_retile = yes
-			OR = {
-				has_building = building_clinic_1
-				has_building = building_clinic_2
-				has_building = building_clinic_3
-			}
-		}		
 	}
 }
 
