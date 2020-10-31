@@ -59,13 +59,6 @@ starborn_habitat4 = {
 			
 			init_effect = {
 				starborn_hab_init_effect = yes
-				
-				if = {
-					limit = {
-						has_retile = yes
-					}
-					set_planet_size = 6
-				}
 			}
 		}
 		fromfrom.planet = {
@@ -140,12 +133,6 @@ starborn_habitat5 = {
 					graphical_culture = owner
 				}
 				set_planet_flag = advanced_habitat
-				if = {
-					limit = {
-						has_retile = yes
-					}
-					set_planet_size = 8
-				}
 			}
 		}
 		fromfrom.planet = {
@@ -222,12 +209,6 @@ starborn_habitat6 = {
 				}
 	
 				set_planet_flag = advanced_habitat_2
-				if = {
-					limit = {
-						has_retile = yes
-					}
-					set_planet_size = 10
-				}
 			}
 		}
 		fromfrom.planet = {
@@ -259,6 +240,7 @@ starborn_habitat_expander = {
 
 	potential = {
 		has_starborn = yes
+		has_technology = tech_habitat_3
 	}
 
 	possible = {
@@ -299,22 +281,9 @@ starborn_habitat_expander = {
 				has_planet_flag = starborn_hab_build_target
 			}
 
-			if = {
-				limit = {
-					owner = {
-						has_retile = yes
-					}
-				}
-				add_modifier = { 
-					modifier = starborn_habitat_complex_retile
-					days = -1 
-				}
-			}
-			else = {
-				add_modifier = { 
-					modifier = starborn_habitat_complex 
-					days = -1 
-				}
+			add_modifier = { 
+				modifier = starborn_habitat_complex 
+				days = -1 
 			}
 			
 			starborn_hab_init_deposits = yes

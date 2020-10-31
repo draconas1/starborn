@@ -147,10 +147,6 @@ country_event = {
 				}
 			}
 		}
-		country_event = {
-			id = starborn_init.10
-			days = 1
-		}
 	}
 }
 
@@ -171,19 +167,6 @@ country_event = {
 
 	option = {
 		name = "starborn_init.3.option.a"
-		hidden_effect = {
-			if = {
-				limit = {
-					has_retile = yes
-					has_country_flag = startborn_no_retile
-				}
-				capital_scope = {
-					planet_event = {
-						id = starborn_init.9
-					}
-				}
-			}			
-		}
 	}
 }
 
@@ -244,105 +227,33 @@ planet_event = {
 			}
 		}
 		clear_blockers = yes
-		if = {
-			limit = {
-				has_retile = no
-			}
-			owner = { 
-				set_country_flag = startborn_no_retile
-			}
-			remove_all_districts = yes			
-			add_district = district_starborn_starting_hab_housing
-			add_district = district_starborn_starting_hab_housing
-			add_district = district_starborn_starting_hab_housing
-			add_district = district_starborn_starting_scavenger
-			add_district = district_starborn_starting_scavenger
-			add_district = district_starborn_starting_scavenger
-			add_district = district_starborn_starting_solar
-			add_district = district_starborn_starting_solar
-			add_district = district_starborn_starting_solar
+		remove_all_districts = yes			
+		add_district = district_starborn_starting_hab_housing
+		add_district = district_starborn_starting_hab_housing
+		add_district = district_starborn_starting_hab_housing
+		add_district = district_starborn_starting_scavenger
+		add_district = district_starborn_starting_scavenger
+		add_district = district_starborn_starting_scavenger
+		add_district = district_starborn_starting_solar
+		add_district = district_starborn_starting_solar
+		add_district = district_starborn_starting_solar
 
-			if = {
-				limit = {
-					owner = {
-						is_lithoid_empire = yes
-					}
-				}
-				add_district = district_starborn_starting_scavenger
-				add_district = district_starborn_starting_scavenger
-				add_district = district_starborn_starting_scavenger
-				add_district = district_starborn_starting_solar
-				add_district = district_starborn_starting_solar
-			}
-			else = {
-				add_district = district_starborn_starting_preserve
-				add_district = district_starborn_starting_preserve
-				add_district = district_starborn_starting_preserve
-			}
-		}		
-	}
-}
-
-#9. Deal with Starting world - the orbital city - Stellaris imortal
-#Remedial event as there are reliability problems with the global flag being set.
-planet_event = {
-	id = starborn_init.9
-	hide_window = yes
-	is_triggered_only = yes
-
-	trigger = {
-		owner = {
-			has_starborn_retile = yes
-		}
-	}
-
-	immediate = {
-		set_name = "Arc of Civilisation"
-		clear_blockers = yes
-		remove_all_districts = yes
-		generate_start_buildings_and_districts = yes
-		add_deposit = d_starborn_retile_scavenger
-		add_deposit = d_starborn_retile_starting_energy		
-
-		add_deposit = d_starborn_retile_scavenger
-		add_deposit = d_starborn_retile_starting_energy
-		
 		if = {
 			limit = {
 				owner = {
-					is_lithoid_empire = no
+					is_lithoid_empire = yes
 				}
 			}
-			add_deposit = d_starborn_retile_starting_park
+			add_district = district_starborn_starting_scavenger
+			add_district = district_starborn_starting_scavenger
+			add_district = district_starborn_starting_scavenger
+			add_district = district_starborn_starting_solar
+			add_district = district_starborn_starting_solar
 		}
 		else = {
-			add_deposit = d_starborn_retile_scavenger
-		}
-	}
-}
-
-
-#10 retile deposits
-country_event = {
-	id = starborn_init.10
-	hide_window = yes
-	is_triggered_only = yes
-
-	trigger = {
-			is_ai = no
-			has_starborn_retile = yes
-	}
-
-	immediate = {
-		event_target:asteroid_hab = {
-			add_deposit = retile_module_mine
-			change_variable = { which = module_count value = 1 }
-			set_planet_size = 6
-		}
-		event_target:star_hab = {
-			add_deposit = retile_module_generator
-			change_variable = { which = module_count value = 1 }
-			set_planet_size = 6
+			add_district = district_starborn_starting_preserve
+			add_district = district_starborn_starting_preserve
+			add_district = district_starborn_starting_preserve
 		}
 	}
 }
