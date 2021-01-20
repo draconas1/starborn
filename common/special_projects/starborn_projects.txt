@@ -20,3 +20,27 @@ special_project = {
         planet_event = { id = starborn_traits.61 days = 5 random = 5 }
 	}
 }
+
+
+special_project = {
+	key = "starborn_gene_edit_out"
+	cost = {
+		base = 100
+		scaled_modifier = {
+			limit = {
+			}
+			scope = this
+			add = 150
+			calc = pop_count
+		}
+	}
+	tech_department = society_technology
+	picture = GFX_evt_alien_planet
+	icon = "gfx/interface/icons/situation_log/situation_log_society.dds"
+	
+	event_scope = planet_event
+	
+	on_success = {
+        planet_event = { id = starborn_traits.71 }
+	}
+}

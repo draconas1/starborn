@@ -495,31 +495,45 @@ pop_event = {
                                 species = this
                                 add_trait = trait_starborn_positive
                         }
-                        if = {
-                                limit = { has_trait = trait_starborn_negative_1 }
-                                modify_species = {
-                                        species = this
-                                        remove_trait = trait_starborn_negative_1
+                        starborn_remove_negative_traits = yes              
+                }
+                else_if = {
+                        limit = {
+                                has_trait = trait_starborn_positive
+                                has_trait = trait_cybernetic
+                                from = {
+                                        habitable_structure = no
+                                        NOT = { is_planet_class = pc_starborn_habitat_start }
                                 }
                         }
-                        if = {
-                                limit = { has_trait = trait_starborn_negative_2 }
-                                modify_species = {
-                                        species = this
-                                        remove_trait = trait_starborn_negative_2
-                                }
-                        }
-                        if = {
-                                limit = { has_trait = trait_starborn_negative_3 }
-                                modify_species = {
-                                        species = this
-                                        remove_trait = trait_starborn_negative_3
-                                }
+                        modify_species = {
+                                species = this
+                                remove_trait = trait_starborn_positive
+                                add_trait = trait_starborn_cyber_negative
                         }
                 }
                 else_if = {
                         limit = {
                                 has_trait = trait_starborn_positive
+                                has_trait = trait_psionic
+                                from = {
+                                        habitable_structure = no
+                                        NOT = { is_planet_class = pc_starborn_habitat_start }
+                                }
+                        }
+                        modify_species = {
+                                species = this
+                                remove_trait = trait_starborn_positive
+                                add_trait = trait_starborn_psi_negative
+                        }
+                }
+                else_if = {
+                        limit = {
+                                has_trait = trait_starborn_positive
+                                NOR = {
+                                        has_trait = trait_cybernetic
+                                        has_trait = trait_psionic
+                                }
                                 from = {
                                         habitable_structure = no
                                         NOT = { is_planet_class = pc_starborn_habitat_start }
@@ -566,7 +580,6 @@ pop_event = {
                                         }
                                 }
                         }
-                        
                 }
         }
 }
@@ -737,5 +750,32 @@ country_event = {
         picture = GFX_evt_synth_sabotage
         option = {
                 name = OK
+        }
+}
+
+country_event = {
+        id = starborn.112
+        is_triggered_only = yes
+        hide_window = yes
+        trigger = {
+                has_starborn = yes
+        }
+
+        immediate = {
+                random_planet = {
+                        limit = {
+                                is_planet_class = pc_starborn_habitat_start
+                        }
+                        if = {
+                                limit = { 
+                                        habitable_structure = no
+                                }
+                                owner = {
+                                        country_event = {
+                                                id =  starborn.111
+                                        }
+                                }
+                        }
+                }
         }
 }

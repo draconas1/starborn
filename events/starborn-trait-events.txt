@@ -1246,20 +1246,20 @@ planet_event = {
 
 
 # Genetically fix it
-
+# With base gene engineering
 country_event = {
 	id = starborn_traits.60
 	title = starborn_traits.60.name
 	desc = starborn_traits.60.desc
 	picture = GFX_evt_emergency_workers
 	is_triggered_only = yes
+	fire_only_once = yes
 	trigger = {
+		has_starborn = yes
 		has_ascension_perk = ap_engineered_evolution
-		NOT = { has_country_flag = starborn_attempted_gene_engineering }
-	}
-
-	immediate = {
-		set_country_flag = starborn_attempted_gene_engineering
+		NOT = {
+			has_technology = tech_genetic_resequencing
+		}
 	}
 
 	option = {
@@ -1279,7 +1279,6 @@ planet_event = {
 	desc = starborn_traits.61.desc
 	picture = GFX_evt_emergency_workers
 	is_triggered_only = yes
-
 	option = {
 		name = OK
 		hidden_effect = {
@@ -1287,6 +1286,73 @@ planet_event = {
 				set_country_flag = starborn_disease_gene_engineered
 			}
 		}
+	}
+}
+
+
+#With genetic mastery
+country_event = {
+	id = starborn_traits.70
+	title = starborn_traits.70.name
+	desc = starborn_traits.70.desc
+	picture = GFX_evt_emergency_workers
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		has_starborn = yes
+		has_ascension_perk = ap_evolutionary_mastery
+		has_technology = tech_genetic_resequencing
+	}
+
+	option = {
+		name = OK
+		enable_special_project = {
+			name = "starborn_gene_edit_out"
+			location = capital_scope
+			owner = root
+		}
+		abort_special_project = {
+			type = starborn_lower_disease_chance
+			location = capital_scope
+		}
+	}
+}
+
+
+planet_event = {
+	id = starborn_traits.71
+	title = starborn_traits.71.name
+	desc = starborn_traits.71.desc
+	picture = GFX_evt_emergency_workers
+	is_triggered_only = yes
+
+	immediate = {
+		owner = {
+			every_owned_pop = {
+				limit = {
+					OR = {
+						has_trait = trait_starborn_positive
+						has_trait = trait_starborn_negative_1
+						has_trait = trait_starborn_negative_2
+						has_trait = trait_starborn_negative_3
+						has_trait = trait_starborn_cyber_negative
+						has_trait = trait_starborn_psi_negative
+					}
+				}
+				modify_species = {
+					species = this
+					add_trait = trait_starborn_gene_positive
+				}
+				starborn_remove_negative_traits = yes
+				starborn_remove_trait = {
+					trait = trait_starborn_positive
+				}
+			}
+		}
+	}
+
+	option = {
+		name = starborn_traits.71.option.a
 	}
 }
 

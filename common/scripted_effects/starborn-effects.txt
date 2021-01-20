@@ -4,3 +4,31 @@ remove_hab_size_flags = {
 	remove_country_flag = starborn_hab_size_5
 	remove_country_flag = starborn_hab_size_6
 }
+
+starborn_remove_trait = {
+	if = {
+		limit = { has_trait = $trait$ }
+		modify_species = {
+			species = this
+			remove_trait = $trait$
+		}
+	}
+}
+
+starborn_remove_negative_traits = {
+	starborn_remove_trait = {
+		trait = trait_starborn_negative_1
+	}
+	starborn_remove_trait = {
+		trait = trait_starborn_negative_2
+	}
+	starborn_remove_trait = {
+		trait = trait_starborn_negative_3
+	}
+	starborn_remove_trait = {
+		trait = trait_starborn_cyber_negative
+	}
+	starborn_remove_trait = {
+		trait = trait_starborn_psi_negative
+	}
+}
