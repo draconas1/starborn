@@ -27,6 +27,15 @@ on_yearly_pulse_country = {
 	}
 }
 
+
+# this = country
+on_five_year_pulse_country = {
+	events = {
+		 starborn_traits.60
+		 starborn_traits.70
+	}
+}
+
 # A planet has been colonized.
 # Scope = Planet
 on_colonized = {

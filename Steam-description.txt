@@ -11,9 +11,10 @@ Create huge habitats that span solar systems - rather than manage 10 small habit
 [list]
 [*] Start in unique habitat: the orbital city, in orbit around a tomb world, with unique districts that kept your civilisation alive when their world burned
 [*] Build habitats around almost any stellar body.
-[*] Your adapton to space means your habitats may get additional desposits, buildings or modifiers based on the body type and deposits such as asteroids - great for mining, molten planets - great for alloys, black holes: whole lot of physics research.
+[*] Your adaption to space means your habitats may get additional deposits, buildings or modifiers based on the body type and deposits such as asteroids - great for mining, molten planets - great for alloys, black holes: whole lot of physics research.
 [*] Edict to change the size habitats are built at to reduce late game micromanagement
 [*] Satellite Habitat Complex megastructure lets you expand your habitats to encompass the entire system without having to manage all the individual planets.  Built it around a planet and one of your existing habitats gets a size boost and access to that planets resources.
+[*] Negative Starborn trait can be managed via all 3 ascension perks, and "solved" with Genetic Mastery
 [/list]
 [i]There are lots of other effects for different types of planets and the different orbital deposits, you'll need to discover them in play or read the spoiler post in discussion[/i]
 
@@ -24,7 +25,7 @@ Remember that habitats cost alloys in maintenance!  You get a small refund on si
 
 I do not adjust normal habitats so you will have the ability to build normal habitats, you probably don't want to build them and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2056951736]this addon mod[/url] will disable them for starborn empires.
 
-By using the Satelite Complex megastructure it is entirely possible to have a habitat that has too many district types to show on the default UI (with the right system you can easily have mining, energy, trade and research districts).  I strongly recommend a UI mod that allows for more districts, I use [url=https://steamcommunity.com/workshop/filedetails/?id=1623423360]UI Overhaul Dynamic[/url] 
+By using the Satellite Complex megastructure it is entirely possible to have a habitat that has too many district types to show on the default UI (with the right system you can easily have mining, energy, trade and research districts).  I strongly recommend a UI mod that allows for more districts, I use [url=https://steamcommunity.com/workshop/filedetails/?id=1623423360]UI Overhaul Dynamic[/url]
 
 [h1]Compatibility[/h1]
 This mod makes changes to:
@@ -70,3 +71,6 @@ https://github.com/draconas1/starborn/tree/master/localisation/english if you ar
 [img]https://i.imgur.com/fVVaDCS.gif[/img]
 
 [url=https://discordapp.com/invite/CMjnnET][img]https://i.imgur.com/4Und3QN.png[/img][/url]
+
+[h1]Troubleshooting[/h1]
+The starborn edicts, habitats and bonuses only apply if you take the Starborn Origin.  If you take another origin they will be locked to you.

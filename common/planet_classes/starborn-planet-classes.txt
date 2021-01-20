@@ -1,8 +1,8 @@
 pc_starborn_habitat_start = {
 	entity = "giga_orbital_habitat_entity"
-	picture = pc_starborn_habitat_start
+	picture = pc_habitat
 	tile_set = pc_continental
-	icon_frame = 21
+	icon_frame = 22
 	habitat = yes
 
 	atmosphere_color 		= hsv { 0.0 0.0 1.0 }		

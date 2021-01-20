@@ -157,12 +157,20 @@
 
 
  starborn_traits.60.name:0 "Technological Solutions"
- starborn_traits.60.desc:0 "Our mastery of genetics has improved substancially since we first began venturing out of the habitat and following recent incidents our scientists would like approval to work on a genetic solution to our peoples poor immune system.\n\nA special project has been prepared for your approval to try and improve matters"
+ starborn_traits.60.desc:0 "Our mastery of genetics has improved substancially since we first began venturing out of the habitat and our scientists would like approval to work on a genetic solution to our peoples poor immune system.\n\nA special project has been prepared for your approval to try and improve matters"
  starborn_traits.60.option.a:0 "Ok"
 
  starborn_traits.61.name:0 "Immune Systems Engineered"
  starborn_traits.61.desc:0 "Our scientists have succeeded in making sweeping alterations and improvements to the average starborn immune system.\n\nThe scientific community is attempting to caution people that the solution is not perfect, nothing we can do truely competes with generations of survival in a natural, hostile, biome, but the treatments rolled out will substancially bolster our peoples immune systems and result in far fewer outbreaks.\n\nThere is disappointment in the science fiction community that nobody appears to have gained super powers as a result of the treatment."
  starborn_traits.61.option.a:0 "$EXCELLENT$"
+
+ starborn_traits.70.name:0 "Genetic Mastery"
+ starborn_traits.70.desc:0 "We now have complete mastery of what it means to be a sapient creature.  Our scientists wish for approval to solve our peoples issues with planets and natural biospheres once and for all.\n\nA special project has been prepared for your approval to try and improve matters"
+ starborn_traits.70.option.a:0 "Ok"
+
+ starborn_traits.71.name:0 "Starborn Reborn"
+ starborn_traits.71.desc:0 "We have uplifted the genes of every member of our empire, from immune systems to bone density to physcological outlook, we can survive on plants as well as the next species.  Better even.  \nOur scientists once said that nothing we could do would compete with generations of survival in a natural, hostile, biome.\n\nThey were wrong."
+ starborn_traits.71.option.a:0 "$EXCELLENT$"
 
  starborn_traits.999.name:0 "Debug"
  starborn_traits.999.desc:0 "Starborn Event §Y[FROM.EventId]§! triggered, but had no effect"
