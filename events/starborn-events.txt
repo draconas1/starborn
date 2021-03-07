@@ -476,14 +476,42 @@ country_event = {
 pop_event = {
         id = starborn.80
         hide_window = yes
-
         is_triggered_only = yes
-
         immediate = {
+                # If super gene engineered then stop
                 if = {
+                        limit = {
+                                has_trait = trait_starborn_gene_positive
+                        }
+                }
+                # else if regular starborn / a negative and has the super starborn country flag
+                # this usually is pops that were in the process of growing when the project triggered
+                else_if = {
+                        limit = { 
+                                owner = { has_country_flag = starborn_super_gene_engineered }
+                                OR = { 
+                                        has_negative_starborn_trait = yes
+                                        has_trait = trait_starborn_positive
+                                }
+                        }
+                        starborn_remove_negative_traits = yes
+                        starborn_remove_trait = {
+                                trait = trait_starborn_positive
+                        }
+                        modify_species = {
+                                species = this
+                                add_trait = trait_starborn_gene_positive
+                        }
+                }
+                # else if has starborn hab preference and is on a habitat, remove negative starborn traits and replace with positive
+                # note that non starborn hab preference pops will not switch back to positive
+                else_if = {
                         limit = { 
                                 has_trait = trait_pc_starborn_habitat_start_preference
-                                NOT = { has_trait = trait_starborn_positive }
+                                NOR = { 
+                                        has_trait = trait_starborn_positive
+                                        has_trait = trait_starborn_gene_positive
+                                }
                                 from = { 
                                         OR = { 
                                                 is_planet_class = pc_habitat 
@@ -491,12 +519,26 @@ pop_event = {
                                         }
                                 }
                         }
-                        modify_species = {
-                                species = this
-                                add_trait = trait_starborn_positive
+                        if = {
+                                limit = {
+                                        owner = {
+                                                has_country_flag = starborn_super_gene_engineered
+                                        }
+                                }
+                                modify_species = {
+                                        species = this
+                                        add_trait = trait_starborn_gene_positive
+                                }
+                        }
+                        else = {
+                                modify_species = {
+                                        species = this
+                                        add_trait = trait_starborn_positive
+                                }
                         }
                         starborn_remove_negative_traits = yes              
                 }
+                # Else penalties for living on non habitat if cybernetic
                 else_if = {
                         limit = {
                                 has_trait = trait_starborn_positive
@@ -512,6 +554,7 @@ pop_event = {
                                 add_trait = trait_starborn_cyber_negative
                         }
                 }
+                # else penalties for living on non habitat if psionic
                 else_if = {
                         limit = {
                                 has_trait = trait_starborn_positive
@@ -527,6 +570,7 @@ pop_event = {
                                 add_trait = trait_starborn_psi_negative
                         }
                 }
+                 # else penalties for living on non habitat
                 else_if = {
                         limit = {
                                 has_trait = trait_starborn_positive
@@ -551,7 +595,7 @@ pop_event = {
                                                 }
                                         }
                                         modifier = {
-                                                factor = 0.5
+                                                factor = 0.2
                                                 planet = {
                                                         or = {
                                                                 planet_size < 10

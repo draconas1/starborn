@@ -80,25 +80,6 @@ planet_event = {
 					value >= 500
 				}
 			}
-
-			# owner = {
-			# 	is_country_type = default
-			# 	has_technology = "tech_gene_tailoring"
-			# 	is_same_species = ROOT
-			# 	NOR = {
-			# 		has_country_flag = pop_modification
-			# 		has_ethic = ethic_gestalt_consciousness
-			# 	}
-			# 	ROOT = {
-			# 		planet = {
-			# 			is_ideal_planet_class = {
-			# 				who = PREVPREV
-			# 				status = no
-			# 			}
-			# 			controller = { is_same_value = PREVPREVPREV }
-			# 		}
-			# 	}
-			# }
 		}
 		owner = {
 			add_resource = {
@@ -1328,26 +1309,10 @@ planet_event = {
 
 	immediate = {
 		owner = {
-			every_owned_pop = {
-				limit = {
-					OR = {
-						has_trait = trait_starborn_positive
-						has_trait = trait_starborn_negative_1
-						has_trait = trait_starborn_negative_2
-						has_trait = trait_starborn_negative_3
-						has_trait = trait_starborn_cyber_negative
-						has_trait = trait_starborn_psi_negative
-					}
-				}
-				modify_species = {
-					species = this
-					add_trait = trait_starborn_gene_positive
-				}
-				starborn_remove_negative_traits = yes
-				starborn_remove_trait = {
-					trait = trait_starborn_positive
-				}
-			}
+			set_country_flag = starborn_super_gene_engineered
+			country_event = { id = starborn_traits.72 } 
+			# Try again a few days after because sometimes it misses a pop
+			country_event = { id = starborn_traits.72 days = 10 }
 		}
 	}
 
@@ -1356,7 +1321,34 @@ planet_event = {
 	}
 }
 
+country_event = {
+	id = starborn_traits.72
+	hide_window = yes
+	is_triggered_only = yes
 
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				OR = {
+					has_trait = trait_starborn_positive
+					has_trait = trait_starborn_negative_1
+					has_trait = trait_starborn_negative_2
+					has_trait = trait_starborn_negative_3
+					has_trait = trait_starborn_cyber_negative
+					has_trait = trait_starborn_psi_negative
+				}
+			}
+			starborn_remove_negative_traits = yes
+			starborn_remove_trait = {
+				trait = trait_starborn_positive
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_starborn_gene_positive
+			}
+		}
+	}
+}
 
 
 

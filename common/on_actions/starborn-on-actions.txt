@@ -31,8 +31,8 @@ on_yearly_pulse_country = {
 # this = country
 on_five_year_pulse_country = {
 	events = {
-		 starborn_traits.60
-		 starborn_traits.70
+		 starborn_traits.60 # check if we should have gene engineering project
+		 starborn_traits.70 # check if we should have genetic ascension project
 	}
 }
 
@@ -61,7 +61,7 @@ on_terraforming_complete = {
 # From = planet
 on_pop_added = {
 	events = {
-		starborn.80
+		starborn.80 # apply starborn traits
 	}
 }
 

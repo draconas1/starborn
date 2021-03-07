@@ -33,9 +33,13 @@ has_negative_starborn_trait = {
 		has_trait = trait_starborn_negative_1
 		has_trait = trait_starborn_negative_2
 		has_trait = trait_starborn_negative_3
+		has_trait = trait_starborn_cyber_negative
+		has_trait = trait_starborn_psi_negative
 	}
 }
 
+# diliberately does not include super gene engineered
+# as this is the trigger for all the negative trait events
 is_starborn_pop = {
 	OR = {
 		has_negative_starborn_trait = yes
