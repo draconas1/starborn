@@ -191,7 +191,6 @@ decision_starborn_complex_target = {
 	
 	potential = {
 		owner = { 
-			has_starborn_no_retile = yes 
 			has_technology = tech_habitat_3
 		}
 		is_planet_class = pc_habitat	

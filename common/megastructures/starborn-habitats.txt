@@ -239,7 +239,6 @@ starborn_habitat_expander = {
 	construction_blocks_others = no
 
 	potential = {
-		has_starborn = yes
 		has_technology = tech_habitat_3
 	}
 

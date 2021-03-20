@@ -74,3 +74,5 @@ https://github.com/draconas1/starborn/tree/master/localisation/english if you ar
 
 [h1]Troubleshooting[/h1]
 The starborn edicts, habitats and bonuses only apply if you take the Starborn Origin.  If you take another origin they will be locked to you.
+
+The Satellite habitat complex is available to everyone and unlocks with Tier 3 habitat tech.

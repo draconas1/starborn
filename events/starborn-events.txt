@@ -487,7 +487,8 @@ pop_event = {
                 # else if regular starborn / a negative and has the super starborn country flag
                 # this usually is pops that were in the process of growing when the project triggered
                 else_if = {
-                        limit = { 
+                        limit = {
+                                exists = owner
                                 owner = { has_country_flag = starborn_super_gene_engineered }
                                 OR = { 
                                         has_negative_starborn_trait = yes
@@ -521,6 +522,7 @@ pop_event = {
                         }
                         if = {
                                 limit = {
+                                        exists = owner
                                         owner = {
                                                 has_country_flag = starborn_super_gene_engineered
                                         }
