@@ -9,7 +9,7 @@ starborn_habitat4 = {
 	build_time = 1000
 
 	resources = {
-        category = megastructures
+        category = megastructures_habitat
         cost = {
 			alloys = 1000
 			energy = 500
@@ -78,7 +78,7 @@ starborn_habitat5 = {
 	build_time = 1500
 
 	resources = {
-        category = megastructures
+        category = megastructures_habitat
         cost = {
 			alloys = 1750
 			energy = 750
@@ -152,7 +152,7 @@ starborn_habitat6 = {
 	build_time = 2000
 
 	resources = {
-        category = megastructures
+        category = megastructures_habitat
         cost = {
 			alloys = 3000
 			energy = 1000

@@ -90,7 +90,7 @@ planet_event = {
 
         immediate = {
                 save_event_target_as = src_planet
-                random_planet = {
+                random_galaxy_planet = {
                         limit = {
                                 has_planet_flag = habitat_of@prev
                                 has_planet_flag = starborn_farming_habitat
@@ -137,7 +137,7 @@ planet_event = {
 
         immediate = {
                 save_event_target_as = src_planet
-                random_planet = {
+                random_galaxy_planet = {
                         limit = {
                                 has_planet_flag = habitat_of@root
                                 has_planet_flag = starborn_tomb_scavenging
@@ -270,7 +270,7 @@ planet_event = {
         immediate = {
                 set_planet_flag = starborn_citied
                 save_event_target_as = src_planet
-                random_planet = {
+                random_galaxy_planet = {
                         limit = {
                                 has_planet_flag = habitat_of@root
                         }
@@ -770,7 +770,7 @@ country_event = {
         }
 
         immediate = {
-                random_planet = {
+                random_galaxy_planet = {
                         limit = {
                                 is_planet_class = pc_starborn_habitat_start
                         }
@@ -808,7 +808,7 @@ country_event = {
         }
 
         immediate = {
-                random_planet = {
+                random_galaxy_planet = {
                         limit = {
                                 is_planet_class = pc_starborn_habitat_start
                         }

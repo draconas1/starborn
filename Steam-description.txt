@@ -33,6 +33,7 @@ This mod makes changes to:
 [*] habitable_structure scripted trigger
 [*] Vanilla "expand habitat" decisions
 [*] Adjusts the final Worm in Waiting event to not do stupid things to the Oribtal City.
+[*] All traditions that have void dweller swaps
 [/list]
 
 [b]Specific Compatibility:[/b]
@@ -65,7 +66,7 @@ If you would like to help translate into your language, the English language fil
 https://github.com/draconas1/starborn/tree/master/localisation/english if you are familiar with git then feel free to fork and create a pull request when you are done.  If you have no idea how to use github the don't worry: download the file, and upload your localised version to pastebin or similar and let me know in the comments and I will handle the rest.
 
 [h1]Past Versions[/h1]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2094438707]2.6.3 version[/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2455181641]2.8 version[/url]
 
 [b]Please Rate and Subscribe as it helps others find the mods[/b]
 [img]https://i.imgur.com/fVVaDCS.gif[/img]

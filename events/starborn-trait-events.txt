@@ -25,7 +25,7 @@ planet_event = {
 		}
 		colonizeable_planet = yes
 		habitable_structure = no
-		any_pop = {
+		any_owned_pop = {
 			has_negative_starborn_trait = yes
 		}
 	}
@@ -109,7 +109,7 @@ planet_event = {
 				days = 360
 			}
 		}
-		random_pop = {
+		random_owned_pop = {
 			limit = {
 				has_negative_starborn_trait = yes
 			}
@@ -155,10 +155,10 @@ planet_event = {
 			}
 		}
 		habitable_structure = yes
-		any_pop = {
+		any_owned_pop = {
 			is_starborn_pop = yes
 		}
-		any_pop = {
+		any_owned_pop = {
 			is_robot_pop = no
 			NOR = {
 				has_trait = trait_pc_habitat_preference
@@ -225,7 +225,7 @@ planet_event = {
 				consumer_goods = -1000
 			}
 		}
-		random_pop = {
+		random_owned_pop = {
 			limit = {
 				is_starborn_pop = yes
 			}
@@ -251,7 +251,7 @@ planet_event = {
 						has_ethic = ethic_xenophobe
 					}
 				}
-				any_pop = {
+				any_owned_pop = {
 					is_starborn_pop = yes
 					OR = { 
 						has_ethic = ethic_fanatic_xenophobe
@@ -260,7 +260,7 @@ planet_event = {
 				}
 			}
 		}
-		random_pop = {
+		random_owned_pop = {
 			limit = {
 				is_starborn_pop = yes
 			}
@@ -285,13 +285,13 @@ planet_event = {
 			modifier = starborn_xenophobe_100
 			days = 1000
 		}
-		random_pop = {
+		random_owned_pop = {
 			limit = {
 				is_starborn_pop = yes
 			}
 			kill_pop = yes
 		}
-		random_pop = {
+		random_owned_pop = {
 			limit = {
 				is_starborn_pop = yes
 			}
@@ -325,7 +325,7 @@ planet_event = {
 
 	option = {
 		name = starborn_traits.12.option.a
-		random_pop = {
+		random_owned_pop = {
 			limit = {
 				is_robot_pop = no
 				is_starborn_pop = no
@@ -361,7 +361,7 @@ planet_event = {
 			NOT = { has_country_flag = STARBORN_NO_EVENTS }
 		}
 		habitable_structure = yes
-		any_pop = {
+		any_owned_pop = {
 			is_starborn_pop = yes
 		}
 		has_modifier = starborn_farming_planet
@@ -445,7 +445,7 @@ planet_event = {
 	
 	option = {
 		name = starborn_traits.21.option.b
-		random_pop = {
+		random_owned_pop = {
 			limit = {
 				is_starborn_pop = yes
 			}
@@ -522,7 +522,7 @@ planet_event = {
 	}
 
 	immediate = {
-		random_planet = {
+		random_galaxy_planet = {
 			limit = {
 				has_planet_flag = planet_of@prev
 			}
@@ -581,7 +581,7 @@ planet_event = {
 				}
 			}
 		}
-		random_pop = {
+		random_owned_pop = {
 			limit = {
 				is_starborn_pop = yes
 			}
@@ -596,7 +596,7 @@ planet_event = {
 	
 	option = {
 		name = starborn_traits.31.option.b
-		random_pop = {
+		random_owned_pop = {
 			limit = {
 				is_starborn_pop = yes
 			}
@@ -811,7 +811,7 @@ planet_event = {
 	option = {
 		name = starborn_traits.41.option.a
 		remove_building = building_starborn_dark_matter_extractor
-		random_pop = {
+		random_owned_pop = {
 			limit = {
 				has_job = starborn_dark_matter_extractor
 			}
@@ -842,7 +842,7 @@ planet_event = {
 		name = starborn_traits.41.option.a
 		add_planet_devastation = 25
 		remove_building = building_starborn_dark_matter_extractor
-		random_pop = {
+		random_owned_pop = {
 			limit = {
 				has_job = starborn_dark_matter_extractor
 			}
@@ -873,16 +873,16 @@ planet_event = {
 		name = starborn_traits.41.option.a		
 		add_planet_devastation = 75
 		remove_building = building_starborn_dark_matter_extractor
-		random_pop = {
+		random_owned_pop = {
 			limit = {
 				has_job = starborn_dark_matter_extractor
 			}
 			kill_pop = yes
 		}		
-		random_pop = {
+		random_owned_pop = {
 			kill_pop = yes
 		}
-		random_pop = {
+		random_owned_pop = {
 			kill_pop = yes
 		}
 	}
@@ -1197,7 +1197,7 @@ planet_event = {
 	option = {
 		name = starborn_traits.52.option.c
 		allow = {
-			any_pop = {
+			any_owned_pop = {
 				has_job = enforcer
 			}
 		}

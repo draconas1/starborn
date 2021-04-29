@@ -233,11 +233,12 @@ planet_event = {
 		add_district = district_starborn_starting_hab_housing
 		add_district = district_starborn_starting_scavenger
 		add_district = district_starborn_starting_scavenger
-		add_district = district_starborn_starting_scavenger
 		add_district = district_starborn_starting_solar
 		add_district = district_starborn_starting_solar
 		add_district = district_starborn_starting_solar
-
+		add_district = district_starborn_hab_industrial
+		add_district = district_starborn_hab_industrial
+		
 		if = {
 			limit = {
 				owner = {
@@ -255,5 +256,11 @@ planet_event = {
 			add_district = district_starborn_starting_preserve
 			add_district = district_starborn_starting_preserve
 		}
+
+		every_owned_pop = {
+			unemploy_pop = yes
+			clear_pop_category = yes
+		}
+		check_planet_employment = yes
 	}
 }

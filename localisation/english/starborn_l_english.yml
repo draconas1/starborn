@@ -13,6 +13,7 @@
  pc_starborn_habitat_start:0 "Orbital City"
  pc_starborn_habitat_start_desc:0 "It was the crowning glory of our technological achievement, that became the arc that saved our civilisation"
  mod_pc_starborn_habitat_start_habitability:0 "$pc_starborn_habitat_start$"
+ pc_starborn_habitat_start_adj:0 "ADJ"
 
  trait_pc_starborn_habitat_start_preference:0 "$pc_starborn_habitat_start$ Preference"
  trait_pc_starborn_habitat_start_preference_desc:0 "We've lived on the Orbital City for so long our bodies are no longer adapted for natural biomes"

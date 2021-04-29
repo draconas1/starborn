@@ -88,6 +88,10 @@
  district_starborn_hab_commercial_plural:0 "$district_hab_commercial_plural$"
  district_starborn_hab_commercial_desc:0 "$district_hab_commercial_desc$"
 
+ district_starborn_hab_industrial:0 "$district_hab_industrial$"
+ district_starborn_hab_industrial_plural:0 "$district_hab_industrial_plural$"
+ district_starborn_hab_industrial_desc:0 "$district_hab_industrial_desc$"
+
  building_starborn_dark_matter_extractor:0 "Dark Matter Generator"
  building_starborn_dark_matter_extractor_desc:0 "This facility uses gravitational lensing to allow brave researchers to generate $sr_dark_matter$.  Due to $sr_dark_matter$s tendency to explode on contact with regular matter, the facility is extensively shielded and as far from anything of value as possible.  It is not a place for those of a nervous disposition."
  mod_building_starborn_dark_matter_extractor_max:0 "§Y$building_starborn_dark_matter_extractor$§!"

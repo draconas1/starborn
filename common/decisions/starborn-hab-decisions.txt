@@ -208,7 +208,7 @@ decision_starborn_complex_target = {
 		custom_tooltip = decision_starborn_complex_target_tooltip
 		hidden_effect = {
 			solar_system = {
-				every_planet = {
+				every_system_planet = {
 					remove_planet_flag = starborn_hab_build_target
 				}
 			}
