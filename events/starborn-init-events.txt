@@ -43,8 +43,9 @@ country_event = {
 				}
 				
 				save_event_target_as = origin
-				random_mining_station = {
-					dismantle = yes
+				if = {
+					limit = { has_mining_station = yes }
+					mining_station = { dismantle = yes }
 				}
 			}
 
@@ -77,8 +78,9 @@ country_event = {
 				}
 				
 				save_event_target_as = star_spawn
-				random_mining_station = {
-					dismantle = yes
+				if = {
+					limit = { has_mining_station = yes }
+					mining_station = { dismantle = yes }
 				}
 			}
 
@@ -111,8 +113,9 @@ country_event = {
 				}
 				
 				save_event_target_as = asteroid_spawn
-				random_mining_station = {
-					dismantle = yes
+				if = {
+					limit = { has_mining_station = yes }
+					mining_station = { dismantle = yes }
 				}
 			}
 
@@ -225,6 +228,14 @@ planet_event = {
 					set_name = NAME_Sol
 				}
 			}
+		}
+		set_planet_entity = {
+			entity = "habitat_phase_03_entity"
+			graphical_culture = owner
+		}
+		add_modifier = {
+			modifier = starborn_startup_fix
+			days = 1
 		}
 		clear_blockers = yes
 		remove_all_districts = yes			

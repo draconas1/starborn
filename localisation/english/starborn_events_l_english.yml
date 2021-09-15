@@ -132,7 +132,7 @@
  starborn_traits.45.name:0 "Hellgate Opens"
  starborn_traits.45.desc:0 "There has been a catastropic accident in the $building_starborn_dark_matter_extractor$ on §Y[This.GetName]§!.  Something went wrong with the dark matter lens and it has accidently opened a dimensional portal.\n\nTo Hell.\n\nOops\n\nDemons are pouring through the rift and attacking"
  starborn_traits.45.option.a:0 "Oops?!"
-
+ starborn_traits.45.option.a.tooltip:0 "Demons are killing everyone!"
 
  starborn_traits.46.name:0 "[From.From.GetName] Overrun"
  starborn_traits.46.desc:0 "Our armies have failed to hold §Y[From.From.GetName]§! and rampaging demons are slaughtering the population"
@@ -190,3 +190,12 @@
 
  starborn_traits.1010.name:0 "Event Flag Status"
  starborn_traits.1010.desc:0 "Why are you here player?\n\nAdjust the event blocking flags"
+
+ starborn_traits.1010.starborn_no_bad_planet_bio.on:0 "starborn_traits.1010.starborn_no_bad_planet_bio.on"
+ starborn_traits.1010.starborn_no_bad_planet_bio.off:0 "starborn_traits.1010.starborn_no_bad_planet_bio.off"
+ starborn_traits.1010.starborn_no_bad_hab_bio.on:0 "starborn_traits.1010.starborn_no_bad_hab_bio.on"
+ starborn_traits.1010.starborn_no_bad_hab_bio.off:0 "starborn_traits.1010.starborn_no_bad_hab_bio.off"
+ starborn_traits.1010.starborn_no_bad_hab_salvage.on:0 "starborn_traits.1010.starborn_no_bad_hab_salvage.on"
+ starborn_traits.1010.starborn_no_bad_hab_salvage.off:0 "starborn_traits.1010.starborn_no_bad_hab_salvage.off"
+ starborn_traits.1010.starborn_no_bad_hab_sr.on:0 "starborn_traits.1010.starborn_no_bad_hab_sr.on"
+ starborn_traits.1010.starborn_no_bad_hab_sr.off:0 "starborn_traits.1010.starborn_no_bad_hab_sr.off"

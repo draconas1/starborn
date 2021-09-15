@@ -6,7 +6,6 @@ starborn_demon_army = {
 	health = 2.0
 	has_morale = no
 	time = 100
-	icon_frame = 8
 	has_species = no
 
 	resources = {
@@ -30,7 +29,6 @@ starborn_titan_demon_army = {
 	health = 8.0
 	has_morale = no
 	time = 100
-	icon_frame = 8
 	has_species = no
 
 	resources = {

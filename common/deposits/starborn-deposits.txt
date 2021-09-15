@@ -1,8 +1,7 @@
 d_starborn_refund_size_3 = {
 	icon = "unused/d_space_walk"
-	is_for_colonizeable = yes
 	category = deposit_cat_rare
-	
+	is_for_colonizable = yes
 	potential = {
 		can_have_habitable_deposits = yes
 		is_planet_class = pc_habitat
@@ -22,9 +21,8 @@ d_starborn_refund_size_3 = {
 
 d_starborn_refund_size_4 = {
 	icon = "unused/d_space_walk"
-	is_for_colonizeable = yes
 	category = deposit_cat_rare
-	
+	is_for_colonizable = yes
 	potential = {
 		can_have_habitable_deposits = yes
 		is_planet_class = pc_habitat
@@ -44,9 +42,8 @@ d_starborn_refund_size_4 = {
 
 d_starborn_nanites = {
 	icon = "unused/d_space_walk"
-	is_for_colonizeable = yes
 	category = deposit_cat_rare
-
+	is_for_colonizable = yes
 	potential = {
 		can_have_habitable_deposits = yes
 		is_planet_class = pc_habitat

@@ -63,6 +63,9 @@
  starborn_engineering_neutron_star:0 "Neutron Star"
  starborn_engineering_neutron_star_desc:0 "Studying the $pc_neutron_star$ up close is a boon for our engineering research"
  
+ starborn_startup_fix:0 "Building Fix"
+ starborn_startup_fix_desc:0 "I exist purely to work around startup issues, please ignore me"
+
  starborn_habitat_districts_1:0 "Optimise Habitat"
  starborn_habitat_districts_1_desc:0 "Enlarge and make better use of space in the $pc_habitat$"
 

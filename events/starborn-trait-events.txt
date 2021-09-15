@@ -23,7 +23,7 @@ planet_event = {
 				has_country_flag = starborn_no_bad_planet_bio
 			}
 		}
-		colonizeable_planet = yes
+		colonizable_planet = yes
 		habitable_structure = no
 		any_owned_pop = {
 			has_negative_starborn_trait = yes
@@ -937,23 +937,23 @@ planet_event = {
 			}
 			create_army = {
 				name = "Demonic Cannonfodder"
-				owner = last_created
-				species = last_created
+				owner = last_created_country
+				species = last_created_species
 				type = "starborn_demon_army"
 			}
 		}
 
 		create_army = {
 			name = "Hells Titans"
-			owner = last_created
-			species = last_created
+			owner = last_created_country
+			species = last_created_species
 			type = "starborn_titan_demon_army"
 		}
 	}
 	
 	option = {
 		name = starborn_traits.45.option.a
-		custom_tooltip = "Demons are killing everyone!"
+		custom_tooltip = starborn_traits.45.option.a.tooltip
 	}
 
 	after = {

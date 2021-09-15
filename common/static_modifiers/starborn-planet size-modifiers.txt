@@ -11,6 +11,12 @@
 # 8 = Machine Worlds(Orange)
 # 9 = Fallen Empires (Pink-Purple)
 
+starborn_startup_fix = {
+	planet_max_buildings_add = 3
+    icon = "gfx/interface/icons/planet_modifiers/pm_satellite_in_orbit.dds"
+    icon_frame = 1
+}
+
 starborn_habitat_districts_2 = {
 	planet_max_districts_add = 2
     icon = "gfx/interface/icons/planet_modifiers/pm_satellite_in_orbit.dds"

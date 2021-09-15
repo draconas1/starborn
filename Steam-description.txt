@@ -1,4 +1,4 @@
-[h1]Starborn: the Improved Voidtouched Habitat Start[/h1]
+[h1]Starborn: the Improved Voidtouched Habitat Start (3.1)[/h1]
 The Mod that did Voidtouched before PDX did.
 
 Start on a unique habitat - the Orbital City, built above the ruins of your original homeworld.  Build habitats almost anywhere that gain special bonuses and modifiers based on the planet and deposits they are around.  Your species adapted to life on habitats now cannot live on planets anymore, not that you care, who needs to search for habitatable planets when all of the void is habitable to you?  
@@ -33,7 +33,6 @@ This mod makes changes to:
 [*] habitable_structure scripted trigger
 [*] Vanilla "expand habitat" decisions
 [*] Adjusts the final Worm in Waiting event to not do stupid things to the Oribtal City.
-[*] All traditions that have void dweller swaps
 [/list]
 
 [b]Specific Compatibility:[/b]
@@ -47,15 +46,13 @@ This mod makes changes to:
 [*] [url=https://steamcommunity.com/workshop/filedetails/?id=1961367151]Void Dwellers Expanded[/url]: Completely compatible
 [/list]
 
-If you have a mod that wants district compatibility, leave a comment and I will have a look.  It is not compatible with District Overhaul. 
-
 [b]Compatibility Patches:[/b]
 [list]
 [*] [url=https://steamcommunity.com/workshop/filedetails/?id=1636492142]!habitable Structures Patch[/url] - for any updates to the habitable structures
 [/list]
 
 [h1]Credit and Thanks[/h1]
-The Orbital City ring is from [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1121692237]Gigastructures[/url] and the nature preserve and scavenger districts were inspired by similar ones from their mod.
+The nature preserve and scavenger districts were inspired by similar ones from [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1121692237]Gigastructures[/url].
 The building art for come from CGM Planets.
 ViolentBeetle on Stellaris Modding Den discord gave me a great deal of help, without which I never would have been able to do the planet and habitat linking
 
@@ -67,6 +64,14 @@ https://github.com/draconas1/starborn/tree/master/localisation/english if you ar
 
 [h1]Past Versions[/h1]
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2455181641]2.8 version[/url]
+
+[h1]My Other Mods[/h1]
+[list]
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1999512770]Extra Galactic Cluster Start[/url]: Start in an isolated cluster outside the galaxy.
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2288046502]Planetary Population Restrictions[/url]: Stop certain species breeding where you don't want them.
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2562023076]Station Solar System Exploitation[/url]: Starbase enhancements for mining, research and planet production.
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2548902172]Assimilate Robots[/url]: Synthetic empires can assimilate robots into Synths
+[/list]
 
 [b]Please Rate and Subscribe as it helps others find the mods[/b]
 [img]https://i.imgur.com/fVVaDCS.gif[/img]
