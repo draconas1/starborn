@@ -7,16 +7,22 @@ Build habitats modulally - as you empire starts and resources are a premium you 
 
 Create huge habitats that span solar systems - rather than manage 10 small habitats in 1 system, manage a single habitat that spreads across the available planets in the system.
 
-[h1]Features[/h1]
+[h1]Origin Features[/h1]
 [list]
 [*] Start in unique habitat: the orbital city, in orbit around a tomb world, with unique districts that kept your civilisation alive when their world burned
 [*] Build habitats around almost any stellar body.
 [*] Your adaption to space means your habitats may get additional deposits, buildings or modifiers based on the body type and deposits such as asteroids - great for mining, molten planets - great for alloys, black holes: whole lot of physics research.
 [*] Edict to change the size habitats are built at to reduce late game micromanagement
-[*] Satellite Habitat Complex megastructure lets you expand your habitats to encompass the entire system without having to manage all the individual planets.  Built it around a planet and one of your existing habitats gets a size boost and access to that planets resources.
 [*] Negative Starborn trait can be managed via all 3 ascension perks, and "solved" with Genetic Mastery
 [/list]
 [i]There are lots of other effects for different types of planets and the different orbital deposits, you'll need to discover them in play or read the spoiler post in discussion[/i]
+
+[h1]All players Features[/h1]
+(these are avilable to all players regardless of taking the origin)
+[list]
+[*] Satellite Habitat Complex megastructure lets you expand your habitats to encompass the entire system without having to manage all the individual planets.  Built it around a planet and one of your existing habitats gets a size boost and access to that planets resources.
+[*] Ability to build vanilla size 6 and size 8 habitats directly once you have the tech (will show as additional megastructures).
+[/list]
 
 Federations DLC is not required as this is my own work that predates VoidTouched, it has been made voidtouched compatible for ease of playstyles. 
 
@@ -81,4 +87,6 @@ https://github.com/draconas1/starborn/tree/master/localisation/english if you ar
 [h1]Troubleshooting[/h1]
 The starborn edicts, habitats and bonuses only apply if you take the Starborn Origin.  If you take another origin they will be locked to you.
 
-The Satellite habitat complex is available to everyone and unlocks with Tier 3 habitat tech.
+The Satellite habitat complex is available to everyone and unlocks with Tier 3 habitat tech.  
+
+Additionally non-starborn players will see 2 new habitat megastrucutre options when they unlock the right tech: advanced habitats and advanced habitat worlds.  These are vanilla habitats built directly at size 6 and 8 respectively (and cost the same as if you had upgraded via decisions)
