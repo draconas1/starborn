@@ -1,11 +1,3 @@
-habitable_structure = {
-	OR = {
-		is_planet_class = pc_starborn_habitat_start
-		is_planet_class = pc_ringworld_habitable
-		is_planet_class = pc_habitat
-	}
-}
-
 # note copy of this is in retile
 has_starborn = {
 	OR = {

@@ -43,7 +43,7 @@ This mod makes changes to:
 
 [b]Specific Compatibility:[/b]
 [list]
-[*] [url=https://steamcommunity.com/workshop/filedetails/?id=1121692237]Gigastructural Engineering[/url]: Use [b]!habitable Structures Patch[/b]
+[*] [url=https://steamcommunity.com/workshop/filedetails/?id=1121692237]Gigastructural Engineering[/url]: Completely compatible
 [*] [url=https://steamcommunity.com/workshop/filedetails/?id=1624127196]Dyson Swarm[/url]: Use [b]!habitable Structures Patch.[/b]  There is a note with details in the Discussion section
 [*] [url=https://steamcommunity.com/workshop/filedetails/?id=819148835]Planetary Diversity[/url]: Completely compatible.  There is a note with details in the Discussion section
 [*] [url=https://steamcommunity.com/workshop/filedetails/?id=865040033]Guilli's Planet Modifiers[/url]: Completely compatible, [b]IMPORTANT[/b] See Note: [url=https://steamcommunity.com/workshop/filedetails/discussion/1743133825/1606022547910590708/]here[/url]
@@ -54,7 +54,7 @@ This mod makes changes to:
 
 [b]Compatibility Patches:[/b]
 [list]
-[*] [url=https://steamcommunity.com/workshop/filedetails/?id=1636492142]!habitable Structures Patch[/url] - for any updates to the habitable structures
+[*] [url=https://steamcommunity.com/workshop/filedetails/?id=1636492142]!habitable Structures Patch[/url] - is no longer needed for Gigastructures or this mod.  Older mods may still need it.
 [/list]
 
 [h1]Credit and Thanks[/h1]
@@ -76,7 +76,7 @@ https://github.com/draconas1/starborn/tree/master/localisation/english if you ar
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1999512770]Extra Galactic Cluster Start[/url]: Start in an isolated cluster outside the galaxy.
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2288046502]Planetary Population Restrictions[/url]: Stop certain species breeding where you don't want them.
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2562023076]Station Solar System Exploitation[/url]: Starbase enhancements for mining, research and planet production.
-[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2548902172]Assimilate Robots[/url]: Synthetic empires can assimilate robots into Synths
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2548902172]Robot QoL: auto-resettle and assimilate[/url]: Synthetic empires can assimilate robots into Synths & robots can auto-resettle
 [/list]
 
 [b]Please Rate and Subscribe as it helps others find the mods[/b]

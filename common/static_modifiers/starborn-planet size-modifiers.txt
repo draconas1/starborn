@@ -55,6 +55,7 @@ starborn_starting_habitat_districts_4 = {
 
 starborn_starting_habitat_districts_voidborn = {
 	planet_max_districts_add = 2
+    planet_max_buildings_add = 2
     icon = "gfx/interface/icons/planet_modifiers/pm_dyson_sphere.dds"
     icon_frame = 1
 }
