@@ -1,4 +1,4 @@
-[h1]Starborn: the Improved Voidtouched Habitat Start (3.1)[/h1]
+[h1]Starborn: the Improved Voidtouched Habitat Start (3.2)[/h1]
 The Mod that did Voidtouched before PDX did.
 
 Start on a unique habitat - the Orbital City, built above the ruins of your original homeworld.  Build habitats almost anywhere that gain special bonuses and modifiers based on the planet and deposits they are around.  Your species adapted to life on habitats now cannot live on planets anymore, not that you care, who needs to search for habitatable planets when all of the void is habitable to you?  
@@ -36,7 +36,6 @@ By using the Satellite Complex megastructure it is entirely possible to have a h
 [h1]Compatibility[/h1]
 This mod makes changes to:
 [list]
-[*] habitable_structure scripted trigger
 [*] Vanilla "expand habitat" decisions
 [*] Adjusts the final Worm in Waiting event to not do stupid things to the Oribtal City.
 [/list]

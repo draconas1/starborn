@@ -97,7 +97,6 @@ country_event = {
 				event_target:star_hab = {
 					set_planet_flag = habitat_of@prev
 				}
-				set_planet_flag = planet_of@star_hab
 			}
 
 			event_target:star_hab = {

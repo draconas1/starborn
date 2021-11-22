@@ -10,9 +10,7 @@ starborn_tombworld_scavenger = {
 		is_being_assimilated = no
 	}
 	
-	possible = {
-		worker_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_worker_job
 	
 	resources = {
 		category = planet_miners
@@ -103,9 +101,7 @@ starborn_preserve_ranger = {
 		is_being_assimilated = no
 	}
 
-	possible = {
-		worker_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_worker_job
 	
 	resources = {
 		category = planet_farmers
@@ -192,9 +188,10 @@ starborn_solar_technician = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_worker_job
+
 	possible = {
 		hidden_trigger = { exists = owner }
-		worker_job_check_trigger = yes
 		owner = { 
 			is_gestalt = no
 			is_fallen_empire_spiritualist = no
@@ -273,9 +270,7 @@ starborn_nanite_producer = {
 		is_being_assimilated = no
 	}
 
-	possible = {
-		complex_specialist_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_specialist_job
 	
 	resources = {
 		category = planet_researchers
@@ -366,9 +361,7 @@ starborn_dark_matter_extractor = {
 		is_being_assimilated = no
 	}
 
-	possible = {
-		complex_specialist_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_specialist_job
 	
 	resources = {
 		category = planet_researchers
@@ -458,9 +451,7 @@ starborn_living_metal_extractor = {
 		is_being_assimilated = no
 	}
 
-	possible = {
-		complex_specialist_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_specialist_job
 	
 	resources = {
 		category = planet_researchers
@@ -550,9 +541,7 @@ starborn_zro_extractor = {
 		is_being_assimilated = no
 	}
 
-	possible = {
-		complex_specialist_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_specialist_job
 	
 	resources = {
 		category = planet_researchers
