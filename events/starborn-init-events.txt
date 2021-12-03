@@ -18,8 +18,8 @@ country_event = {
 
 		# we live in a space station, we understand how hydroponics work
 		give_technology = { 
-				message = no 
-				tech = tech_hydroponics 
+			message = no 
+			tech = tech_hydroponics 
 		}
 
 		# Say hello to voidborn AP.
@@ -44,8 +44,10 @@ country_event = {
 				
 				save_event_target_as = origin
 				if = {
-					limit = { has_mining_station = yes }
-					mining_station = { dismantle = yes }
+					limit = { has_orbital_station = yes }
+					orbital_station = {
+						dismantle = yes
+					}
 				}
 			}
 
@@ -79,8 +81,10 @@ country_event = {
 				
 				save_event_target_as = star_spawn
 				if = {
-					limit = { has_mining_station = yes }
-					mining_station = { dismantle = yes }
+					limit = { has_orbital_station = yes }
+					orbital_station = {
+						dismantle = yes
+					}
 				}
 			}
 
@@ -113,8 +117,10 @@ country_event = {
 				
 				save_event_target_as = asteroid_spawn
 				if = {
-					limit = { has_mining_station = yes }
-					mining_station = { dismantle = yes }
+					limit = { has_orbital_station = yes }
+					orbital_station = {
+						dismantle = yes
+					}
 				}
 			}
 
@@ -272,5 +278,29 @@ planet_event = {
 			clear_pop_category = yes
 		}
 		check_planet_employment = yes
+	}
+}
+
+
+# Central Crystal Events worked for starborn
+event = {
+	id = starborn_init.9
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		host_has_dlc = Federations
+		any_country = {
+			is_ai = no
+			has_starborn = yes
+		}
+	}
+
+	immediate = {
+		random = {
+			chance = 10
+			set_global_flag = central_crystal_flag
+		}
 	}
 }

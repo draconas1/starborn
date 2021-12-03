@@ -14,11 +14,12 @@ Create huge habitats that span solar systems - rather than manage 10 small habit
 [*] Your adaption to space means your habitats may get additional deposits, buildings or modifiers based on the body type and deposits such as asteroids - great for mining, molten planets - great for alloys, black holes: whole lot of physics research.
 [*] Edict to change the size habitats are built at to reduce late game micromanagement
 [*] Negative Starborn trait can be managed via all 3 ascension perks, and "solved" with Genetic Mastery
+[*] Can trigger the "crystalline empire" enclave if you have Federations.  The enclave will spawn if you enact the OP decision.
 [/list]
 [i]There are lots of other effects for different types of planets and the different orbital deposits, you'll need to discover them in play or read the spoiler post in discussion[/i]
 
 [h1]All players Features[/h1]
-(these are avilable to all players regardless of taking the origin)
+(these are available to all players regardless of taking the origin)
 [list]
 [*] Satellite Habitat Complex megastructure lets you expand your habitats to encompass the entire system without having to manage all the individual planets.  Built it around a planet and one of your existing habitats gets a size boost and access to that planets resources.
 [*] Ability to build vanilla size 6 and size 8 habitats directly once you have the tech (will show as additional megastructures).

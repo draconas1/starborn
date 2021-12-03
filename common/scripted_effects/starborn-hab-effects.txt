@@ -1332,12 +1332,10 @@ starborn_hab_init_deposits = {
 
 starborn_edit_source_planet = {
     if = {
-        limit = { has_research_station = yes }
-        research_station = { dismantle = yes }
-    }
-    if = {
-        limit = { has_mining_station = yes }
-        mining_station = { dismantle = yes }
+        limit = { has_orbital_station = yes }
+        orbital_station = {
+            dismantle = yes
+        }
     }
     set_planet_flag = has_megastructure
     save_event_target_as = habitat_planet

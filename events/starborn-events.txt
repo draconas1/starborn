@@ -630,6 +630,7 @@ pop_event = {
         }
 }
 
+# Make start system OP
 country_event = {
         id = starborn.90
         hide_window = yes
@@ -637,6 +638,24 @@ country_event = {
         immediate = {
                 capital_star = {
                         solar_system = {
+                                # clear existing deposits
+                                every_system_planet = {
+                                        limit = {
+                                                habitable_structure = no
+                                                colonizable_planet = no
+
+                                        }
+                                        print_scope_effect = yes                                        
+                                        if = {
+                                                limit = { has_orbital_station = yes }
+                                                orbital_station = {
+                                                        dismantle = yes
+                                                }
+                                        }
+                                        every_deposit = {
+                                                remove_deposit = yes
+                                        }
+                                }
                                 random_system_planet = {
                                         limit = {
                                                 is_planet_class = pc_gas_giant
@@ -644,6 +663,16 @@ country_event = {
                                         add_deposit = d_society_10
                                         add_deposit = d_engineering_10
                                         add_deposit = d_physics_10
+                                }
+                                random_system_planet = {
+                                        limit = {
+                                                starborn_suitable_for_deposit = yes
+                                                NOT = {
+                                                        is_planet_class = pc_asteroid
+                                                }
+                                        }
+                                        add_deposit = d_energy_7
+                                        create_mining_station = { owner = root }
                                 }
                                 
                                 random_system_planet = {
@@ -655,15 +684,23 @@ country_event = {
                                         }
                                         add_deposit = d_alloys_5
                                 }
+
+                                random_system_planet = {
+                                        limit = {
+                                                starborn_suitable_for_deposit = yes
+                                                not = {
+                                                        has_planet_flag = has_megastructure
+                                                }
+                                        }
+                                        add_deposit = d_minerals_7
+                                        create_mining_station = { owner = root }
+                                }
                                 
                                 random_system_planet = {
                                         limit = {
-                                                is_star = no
-                                                has_deposit = no
-                                                habitable_structure = no
-                                                nor = {
-                                                        has_planet_flag = has_megastructure
-                                                        is_planet_class = pc_asteroid                                                        
+                                                starborn_suitable_for_deposit = yes
+                                                NOT = {
+                                                        is_planet_class = pc_asteroid
                                                 }
                                         }
                                         add_deposit = d_dark_matter_deposit_3
@@ -674,11 +711,9 @@ country_event = {
 
                                 random_system_planet = {
                                         limit = {
-                                                is_star = no
-                                                has_deposit = no
-                                                habitable_structure = no
-                                                nor = {
-                                                        has_planet_flag = has_megastructure
+                                                is_moon = no
+                                                starborn_suitable_for_deposit = yes
+                                                NOT = {
                                                         is_planet_class = pc_asteroid
                                                 }
                                         }
@@ -688,72 +723,191 @@ country_event = {
 
                                 random_system_planet = {
                                         limit = {
-                                                is_star = no
-                                                has_deposit = no
-                                                habitable_structure = no
-                                                nor = {
-                                                        has_planet_flag = has_megastructure
-                                                        is_planet_class = pc_asteroid
-                                                }
-                                        }
-                                       change_pc = pc_nuked
-                                       reroll_planet = yes
-                                }
-
-                                random_system_planet = {
-                                        limit = {
-                                                is_star = no
-                                                has_deposit = no
-                                                habitable_structure = no
-                                                nor = {
-                                                        has_planet_flag = has_megastructure
-                                                }
+                                                starborn_suitable_for_deposit = yes
                                         }
                                         add_deposit = d_exotic_gases_5
                                 }
 
                                 random_system_planet = {
                                         limit = {
-                                                is_star = no
-                                                has_deposit = no
-                                                habitable_structure = no
-                                                nor = {
-                                                        has_planet_flag = has_megastructure
-                                                }
+                                                starborn_suitable_for_deposit = yes
                                         }
                                         add_deposit = d_rare_crystals_5
                                 }
 
                                 random_system_planet = {
                                         limit = {
-                                                is_star = no
-                                                has_deposit = no
-                                                habitable_structure = no
-                                                nor = {
-                                                        has_planet_flag = has_megastructure
-                                                }
+                                                starborn_suitable_for_deposit = yes
                                         }
                                         add_deposit = d_volatile_motes_5
                                 }
 
                                 random_system_planet = {
                                         limit = {
-                                                is_star = no
-                                                has_deposit = no
-                                                habitable_structure = no
-                                                nor = {
-                                                        has_planet_flag = has_megastructure
-                                                }
+                                                starborn_suitable_for_deposit = yes
                                         }
                                         add_deposit = d_trade_value_10
+                                }
+
+                                random_system_planet = {
+                                        limit = {
+                                                starborn_suitable_for_deposit = yes
+                                        }
+                                        add_deposit = d_minerals_4
+                                }
+
+                                random_system_planet = {
+                                        limit = {
+                                                starborn_suitable_for_deposit = yes
+                                        }
+                                        add_deposit = d_energy_5
+                                }
+
+                                random_system_planet = {
+                                        limit = {
+                                                starborn_suitable_for_deposit = yes
+                                        }
+                                        add_deposit = d_engineering_4
+                                        create_research_station = { owner = root }
                                 }
                         }
                 }
                 country_event = {
                         id = starborn_init.7
                 }
+                country_event = {
+                        id = starborn.91
+                        days = 1
+                }
         }
 }
+
+country_event = {
+        id = starborn.91
+        hide_window = yes
+        is_triggered_only = yes
+        trigger = {
+		host_has_dlc = Federations #must have federations DLC for this
+	}
+        immediate = {
+                remove_global_flag = central_crystal_flag # stop normal spawn event from firing
+                # set flags such that wormholes can be explored
+                set_country_flag = encountered_first_wormhole
+	        add_seen_bypass_type = wormhole
+                if = {
+			limit = {
+				galaxy_size = tiny
+			}
+			no_scope = {
+				# makes system positions originate from galactic core
+				spawn_system = {
+					min_distance >= 40
+					max_distance <= 40
+					min_orientation_angle = 90
+					max_orientation_angle = 90
+					initializer = central_crystal_init_01
+					hyperlane = no
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				galaxy_size = small
+			}
+			no_scope = {
+				# makes system positions originate from galactic core
+				spawn_system = {
+					min_distance >= 60
+					max_distance <= 60
+					min_orientation_angle = 90
+					max_orientation_angle = 90
+					initializer = central_crystal_init_01
+					hyperlane = no
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				galaxy_size = medium
+			}
+			no_scope = {
+				# makes system positions originate from galactic core
+				spawn_system = {
+					min_distance >= 80
+					max_distance <= 80
+					min_orientation_angle = 90
+					max_orientation_angle = 90
+					initializer = central_crystal_init_01
+					hyperlane = no
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				galaxy_size = large
+			}
+			no_scope = {
+				# makes system positions originate from galactic core
+				spawn_system = {
+					min_distance >= 90
+					max_distance <= 90
+					min_orientation_angle = 90
+					max_orientation_angle = 90
+					initializer = central_crystal_init_01
+					hyperlane = no
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				galaxy_size = huge
+			}
+			no_scope = {
+				# makes system positions originate from galactic core
+				spawn_system = {
+					min_distance >= 95
+					max_distance <= 95
+					min_orientation_angle = 90
+					max_orientation_angle = 90
+					initializer = central_crystal_init_01
+					hyperlane = no
+				}
+			}
+		}
+
+                capital_star = {
+                        solar_system = {
+                                save_event_target_as = starborn_capital
+                        }
+                }
+                event_target:the_outer_gate = {                                
+                        event_target:starborn_capital = {
+                                prev = {
+                                        spawn_natural_wormhole = {
+                                                bypass_type = wormhole
+                                                random_pos = no
+                                                orbit_angle = 360
+                                        }
+                                }
+                                spawn_natural_wormhole = {
+                                        bypass_type = wormhole
+                                        random_pos = no
+                                        orbit_angle = 360
+                                }
+                                link_wormholes = prev
+                        }
+                }
+                every_playable_country = {
+			country_event = {
+				id = central.5
+			}
+		}
+        }
+}
+
+
+
+
 
 
 

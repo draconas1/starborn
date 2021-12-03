@@ -81,3 +81,13 @@ starborn_can_place_hab = {
 starborn_debug_on = {
 	always = no
 }
+
+starborn_suitable_for_deposit = {
+	is_star = no
+	has_deposit = no
+	habitable_structure = no
+	colonizable_planet = no
+	NOT = {
+		has_planet_flag = has_megastructure
+	}
+}

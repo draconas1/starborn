@@ -3,6 +3,7 @@ on_game_start = {
 	events = {
 		starborn_flags.1 # set global flag for patches
 		starborn_flags.2 # set global flag if there is a starborn player
+		starborn_init.9 # Central crystal enclave
 	}
 }
 
