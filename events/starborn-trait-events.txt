@@ -25,6 +25,9 @@ planet_event = {
 		}
 		colonizable_planet = yes
 		habitable_structure = no
+		count_owned_pop = {
+			count > 1
+		}
 		any_owned_pop = {
 			has_negative_starborn_trait = yes
 		}
