@@ -130,7 +130,7 @@ starborn_habitat5 = {
 				starborn_hab_init_effect = yes
 				set_planet_entity = {
 					entity = "habitat_phase_02_entity"
-					graphical_culture = owner
+					graphical_culture = fromfrom
 				}
 				set_planet_flag = advanced_habitat
 			}
@@ -205,7 +205,7 @@ starborn_habitat6 = {
 				starborn_hab_init_effect = yes
 				set_planet_entity = {
 					entity = "habitat_phase_03_entity"
-					graphical_culture = owner
+					graphical_culture = fromfrom
 				}
 	
 				set_planet_flag = advanced_habitat_2
