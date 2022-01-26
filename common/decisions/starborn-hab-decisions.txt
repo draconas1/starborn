@@ -43,8 +43,10 @@ decision_upgrade_habitat = {
 			limit = {
 				owner = {
 					has_ascension_perk = ap_voidborn
-					NOT = { has_technology = tech_habitat_3 }
-					NOT = { has_tech_option = tech_habitat_3 }
+					NOR = {
+						has_technology = tech_habitat_3
+						has_tech_option = tech_habitat_3
+					}
 				}
 			}
 			owner = {

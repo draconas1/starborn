@@ -47,7 +47,7 @@ starborn_vanilla_habitat_big = {
 			}
 			custom_tooltip = {
 				fail_text = "requires_no_anomaly"
-				NOT = { has_anomaly = yes }
+				has_anomaly = no
 			}
 			custom_tooltip = {
 				fail_text = "requires_no_existing_megastructure"
@@ -479,7 +479,7 @@ starborn_vanilla_habitat_very_big = {
 			}
 			custom_tooltip = {
 				fail_text = "requires_no_anomaly"
-				NOT = { has_anomaly = yes }
+				has_anomaly = no
 			}
 			custom_tooltip = {
 				fail_text = "requires_no_existing_megastructure"
