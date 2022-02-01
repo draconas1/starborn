@@ -80,6 +80,15 @@ starborn_vanilla_habitat_big = {
 				fail_text = "requires_not_star"
 				is_star = no
 			}
+			if = {
+				limit = { 
+					from = { is_ai = yes }
+				}
+				or = {
+					has_deposit_for = shipclass_mining_station
+	 				has_deposit_for = shipclass_research_station
+				}
+			}
 		} # use these for all non-star megastructures
 	}
 
@@ -511,6 +520,15 @@ starborn_vanilla_habitat_very_big = {
 			custom_tooltip = {
 				fail_text = "requires_not_star"
 				is_star = no
+			}
+			if = {
+				limit = { 
+					from = { is_ai = yes }
+				}
+				or = {
+					has_deposit_for = shipclass_mining_station
+	 				has_deposit_for = shipclass_research_station
+				}
 			}
 		} # use these for all non-star megastructures
 	}

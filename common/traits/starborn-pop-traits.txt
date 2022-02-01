@@ -1,7 +1,15 @@
 trait_starborn_positive = {
 	icon = "gfx/interface/icons/traits/trait_void_dweller_positive.dds"
 	initial = no
-	modification = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	species_possible_remove = {
+		always = no
+	}
 	randomized = no
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	sorting_priority = 30
@@ -22,7 +30,15 @@ trait_starborn_positive = {
 trait_starborn_negative_1 = {
 	icon = "gfx/interface/icons/traits/trait_robot_luxurious.dds"
 	initial = no
-	modification = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
 	randomized = no
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	sorting_priority = 30
@@ -41,7 +57,15 @@ trait_starborn_negative_1 = {
 trait_starborn_negative_2 = {
 	icon = "gfx/interface/icons/traits/trait_robot_luxurious.dds"
 	initial = no
-	modification = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
 	randomized = no
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	sorting_priority = 30
@@ -60,7 +84,15 @@ trait_starborn_negative_2 = {
 trait_starborn_negative_3 = {
 	icon = "gfx/interface/icons/traits/trait_robot_luxurious.dds"
 	initial = no
-	modification = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
 	randomized = no
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	sorting_priority = 30
@@ -79,7 +111,15 @@ trait_starborn_negative_3 = {
 trait_starborn_gene_positive = {
 	icon = "gfx/interface/icons/traits/trait_void_dweller_positive.dds"
 	initial = no
-	modification = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	species_possible_remove = {
+		always = no
+	}
 	randomized = no
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	sorting_priority = 30
@@ -96,7 +136,15 @@ trait_starborn_gene_positive = {
 trait_starborn_cyber_negative = {
 	icon = "gfx/interface/icons/traits/trait_robot_luxurious.dds"
 	initial = no
-	modification = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
 	randomized = no
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	sorting_priority = 30
@@ -114,7 +162,15 @@ trait_starborn_cyber_negative = {
 trait_starborn_psi_negative = {
 	icon = "gfx/interface/icons/traits/trait_robot_luxurious.dds"
 	initial = no
-	modification = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
 	randomized = no
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	sorting_priority = 30

@@ -1,6 +1,22 @@
 trait_pc_starborn_habitat_start_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_ring_preference.dds"
-	modification = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	species_possible_remove = {
+		NOR = { 
+			has_trait = trait_starborn_positive
+			has_trait = trait_starborn_negative_1 
+			has_trait = trait_starborn_negative_2 
+			has_trait = trait_starborn_negative_3 
+			has_trait = trait_starborn_gene_positive 
+			has_trait = trait_starborn_cyber_negative 
+			has_trait = trait_starborn_psi_negative 
+		}
+	}
 	randomized = no
 	initial = no
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }

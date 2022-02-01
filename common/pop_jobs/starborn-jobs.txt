@@ -8,6 +8,7 @@ starborn_tombworld_scavenger = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
+		is_sapient = yes
 	}
 	
 	possible_precalc = can_fill_worker_job
@@ -99,6 +100,7 @@ starborn_preserve_ranger = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
+		is_sapient = yes
 	}
 
 	possible_precalc = can_fill_worker_job
@@ -186,6 +188,7 @@ starborn_solar_technician = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
+		is_sapient = yes
 	}
 
 	possible_precalc = can_fill_worker_job
@@ -268,6 +271,7 @@ starborn_nanite_producer = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
+		is_sapient = yes
 	}
 
 	possible_precalc = can_fill_specialist_job
@@ -359,6 +363,7 @@ starborn_dark_matter_extractor = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
+		is_sapient = yes
 	}
 
 	possible_precalc = can_fill_specialist_job
@@ -449,6 +454,7 @@ starborn_living_metal_extractor = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
+		is_sapient = yes
 	}
 
 	possible_precalc = can_fill_specialist_job
@@ -539,6 +545,7 @@ starborn_zro_extractor = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
+		is_sapient = yes
 	}
 
 	possible_precalc = can_fill_specialist_job

@@ -277,7 +277,12 @@ planet_event = {
 			unemploy_pop = yes
 			clear_pop_category = yes
 		}
-		check_planet_employment = yes
+
+		every_owned_pop = {
+			root = {
+				check_planet_employment = yes
+			}
+		}
 	}
 }
 
