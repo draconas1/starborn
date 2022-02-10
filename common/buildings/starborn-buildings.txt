@@ -471,18 +471,48 @@ building_starborn_obelisk_nuked = {
 	}
 	
 	planet_modifier = {		
-		planet_jobs_unity_produces_mult = 0.10
+		planet_jobs_unity_produces_mult = 0.15
 		pop_ethic_pacifist_attraction_mult = 0.25
 	}
 
+	#Jobs
 	triggered_planet_modifier = {
-		modifier = {
-			job_culture_worker_add = 4
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
 		}
+		job_death_chronicler_add = @b2_jobs
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		text = "job_death_chronicler_effect_desc"
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		job_chronicle_drone_add = @b2_jobs
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = "job_chronicle_drone_effect_desc"
 	}
 
 	resources = {
 		category = planet_buildings
+		produces = {
+			trigger = { exists = owner }
+			unity = 2
+			multiplier = owner.trigger:num_ascension_perks
+		}
 		cost = {
 			minerals = 500
 		}
@@ -511,14 +541,43 @@ building_starborn_obelisk_restored = {
 		pop_government_ethic_attraction = 0.50	
 	}
 
+	#Jobs
 	triggered_planet_modifier = {
-		modifier = {
-			job_culture_worker_add = 6
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
 		}
+		job_death_chronicler_add = @b3_jobs
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		text = "job_death_chronicler_effect_desc"
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		job_chronicle_drone_add = @b3_jobs
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = "job_chronicle_drone_effect_desc"
 	}
 
 	resources = {
 		category = planet_buildings
+		produces = {
+			trigger = { exists = owner }
+			unity = 3
+			multiplier = owner.trigger:num_ascension_perks
+		}
 		cost = {
 			minerals = 500
 		}

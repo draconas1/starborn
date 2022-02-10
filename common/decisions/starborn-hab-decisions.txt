@@ -8,7 +8,24 @@ decision_upgrade_habitat = {
 	resources = {
 		category = decisions
 		cost = {
+			trigger = {
+				owner = {
+					NOT = {
+						has_active_tradition = tr_expansion_finish_void
+					}
+				}
+			}
+			influence = 25
 			alloys = 1000
+		}
+		cost = {
+			trigger = {
+				owner = {
+					has_active_tradition = tr_expansion_finish_void
+				}
+			}
+			influence = 20
+			alloys = 800
 		}
 	}
 
@@ -66,7 +83,24 @@ decision_upgrade_habitat_2 = {
 	resources = {
 		category = decisions
 		cost = {
+			trigger = {
+				owner = {
+					NOT = {
+						has_active_tradition = tr_expansion_finish_void
+					}
+				}
+			}
+			influence = 50
 			alloys = 1500
+		}
+		cost = {
+			trigger = {
+				owner = {
+					has_active_tradition = tr_expansion_finish_void
+				}
+			}
+			influence = 40
+			alloys = 1200
 		}
 	}
 

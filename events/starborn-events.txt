@@ -217,9 +217,9 @@ country_event = {
                 name = "starborn.42.option.a"
                 add_monthly_resource_mult = {
                         resource = unity
-                        value = @tier4unityreward
-                        min = @tier4unitymin
-                        max = @tier4unitymax
+                        value = @tier5unityreward
+                        min = @tier5unitymin
+                        max = @tier5unitymax
                 }
         }
 }
@@ -418,9 +418,9 @@ country_event = {
                 name = "starborn.61.option.a"
                 add_monthly_resource_mult = {
                         resource = unity
-                        value = @tier2unityreward
-                        min = @tier2unitymin
-                        max = @tier2unitymax
+                        value = @tier3unityreward
+                        min = @tier3unitymin
+                        max = @tier3unitymax
                 }
         }
 }
@@ -467,6 +467,12 @@ country_event = {
 
         option = {
                 name = EXCELLENT
+                add_monthly_resource_mult = {
+                        resource = unity
+                        value = @tier4unityreward
+                        min = @tier4unitymin
+                        max = @tier4unitymax
+                }
         }
 }
 
