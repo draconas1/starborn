@@ -1415,9 +1415,6 @@ country_event = {
 		has_country_flag = STARBORN_EVENT_DEBUG
 	}
 
-	immediate = {
-		set_variable = { which = EventId value = owner }
-	}
 	option = {
 		name = OK
 	}
