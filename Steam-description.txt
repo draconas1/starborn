@@ -38,6 +38,7 @@ By using the Satellite Complex megastructure it is entirely possible to have a h
 This mod makes changes to:
 [list]
 [*] Vanilla "expand habitat" decisions
+[*] All void-dweller tradition swaps (only the swapped stages) to count starborn as void dwellers.
 [*] Adjusts the final Worm in Waiting event to not do stupid things to the Oribtal City.
 [/list]
 

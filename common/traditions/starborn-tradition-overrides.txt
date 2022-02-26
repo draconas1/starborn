@@ -1,0 +1,120 @@
+tr_expansion_finish = {
+	modifier = {
+		planet_non_artificial_max_districts_add = 1
+		ascension_perks_add = 1
+	}
+
+	tradition_swap = {
+		name = tr_expansion_finish_void
+		inherit_name = yes
+		inherit_icon = yes
+		trigger = {
+			OR = {
+				has_origin = origin_void_dwellers
+				has_starborn = yes
+			}
+		}
+		modifier = {
+			megastructures_habitat_cost_mult = -0.20
+			ascension_perks_add = 1
+		}
+		weight = {
+			factor = 1
+		}
+	}
+}
+
+tr_prosperity_public_works = {
+	possible = {
+		has_tradition = tr_prosperity_sct
+	}
+
+	tradition_swap = {
+		name = tr_prosperity_extended_hives
+		inherit_icon = yes
+		trigger = {
+			is_hive_empire = yes
+		}
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_prosperity_optimized_nexus
+		trigger = {
+			is_machine_empire = yes
+		}
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_prosperity_void_works
+		inherit_icon = yes
+
+		# Effects are implemented in 00_capital_buildings.txt
+
+		trigger = {
+			OR = {
+				has_origin = origin_void_dwellers
+				has_starborn = yes
+			}
+		}
+		weight = {
+			factor = 1
+		}
+	}
+
+	ai_weight = {
+		factor = 5000
+	}
+}
+
+
+tr_domination_adopt = {
+	modifier = {
+		deposit_blockers_cost_mult = -0.33
+	}
+
+	tradition_swap = {
+		name = tr_domination_adopt_void
+		inherit_name = yes
+		inherit_icon = yes
+		trigger = {
+			OR = {
+				has_origin = origin_void_dwellers
+				has_starborn = yes
+			}
+		}
+		# Effects are implemented in 00_capital_buildings.txt
+		weight = {
+			factor = 1
+		}
+	}
+}
+
+tr_adaptability_finish = {
+	modifier = {
+		ascension_perks_add = 1
+	}
+
+	tradition_swap = {
+		name = tr_adaptability_void_finish
+		inherit_icon = yes
+		inherit_name = yes
+		trigger = {
+			OR = {
+				has_origin = origin_void_dwellers
+				has_starborn = yes
+			}
+		}
+		modifier = {
+			ascension_perks_add = 1
+		}
+		weight = {
+			factor = 1
+		}
+	}
+}
