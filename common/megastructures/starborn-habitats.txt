@@ -208,6 +208,7 @@ starborn_habitat6 = {
 					graphical_culture = fromfrom
 				}
 	
+				set_planet_flag = advanced_habitat
 				set_planet_flag = advanced_habitat_2
 			}
 		}
