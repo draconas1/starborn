@@ -17,7 +17,7 @@ starborn_habitat4 = {
         }
     }
 
-	construction_blocks_others = no
+	construction_blocks_and_blocked_by = none
 
 	potential = {
 		has_starborn = yes
@@ -86,7 +86,7 @@ starborn_habitat5 = {
         }
     }
 
-	construction_blocks_others = no
+	construction_blocks_and_blocked_by = none
 
 	potential = {
 		has_starborn = yes
@@ -160,7 +160,7 @@ starborn_habitat6 = {
         }
     }
 
-	construction_blocks_others = no
+	construction_blocks_and_blocked_by = none
 
 	potential = {
 		has_starborn = yes
@@ -237,7 +237,7 @@ starborn_habitat_expander = {
         }
     }
 
-	construction_blocks_others = no
+	construction_blocks_and_blocked_by = none
 
 	potential = {
 		has_technology = tech_habitat_3
