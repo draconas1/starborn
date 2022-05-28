@@ -44,7 +44,7 @@ This mod makes changes to:
 
 [b]Specific Compatibility:[/b]
 [list]
-[*] [url=https://steamcommunity.com/workshop/filedetails/?id=1121692237]Gigastructural Engineering[/url]: Completely compatible
+[*] [url=https://steamcommunity.com/workshop/filedetails/?id=1121692237]Gigastructural Engineering[/url]: Completely compatible.   There is a note with details in the Discussion section
 [*] [url=https://steamcommunity.com/workshop/filedetails/?id=1624127196]Dyson Swarm[/url]: Use [b]!habitable Structures Patch.[/b]  There is a note with details in the Discussion section
 [*] [url=https://steamcommunity.com/workshop/filedetails/?id=819148835]Planetary Diversity[/url]: Completely compatible.  There is a note with details in the Discussion section
 [*] [url=https://steamcommunity.com/workshop/filedetails/?id=865040033]Guilli's Planet Modifiers[/url]: Completely compatible, [b]IMPORTANT[/b] See Note: [url=https://steamcommunity.com/workshop/filedetails/discussion/1743133825/1606022547910590708/]here[/url]

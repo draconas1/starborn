@@ -155,6 +155,35 @@ country_event = {
 				}
 			}
 		}
+
+		# Giga Alt megastructure build compatibility  Runs a few days after start as the giga menu option needs to be completed.
+		country_event = {
+			id = starborn_init.2
+			days = 30
+		}
+	}
+}
+
+# giga supertensiles.  
+country_event = {
+	id = starborn_init.2
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_global_flag = giga_buildcap_j  #giga_002_menu.txt
+	}
+
+	# common\scripted_effects\giga_alternate_mega_build_effects.txt  giga_amb_apply_initial_country_modifiers
+	immediate = {
+		capital_scope = {
+			if = {
+				limit = {
+					NOT = { has_deposit = d_giga_amb_start_bonus }
+				}
+				add_deposit = d_giga_amb_start_bonus				
+			}			
+		}
+		add_research_option = giga_tech_amb_supertensiles
 	}
 }
 
@@ -168,10 +197,10 @@ country_event = {
 	picture = GFX_evt_colony_settlement
 	is_triggered_only = yes
 
-		trigger = {
-				is_ai = no
-				has_starborn = yes
-		}
+	trigger = {
+			is_ai = no
+			has_starborn = yes
+	}
 
 	option = {
 		name = "starborn_init.3.option.a"

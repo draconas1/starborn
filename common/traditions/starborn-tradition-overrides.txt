@@ -22,6 +22,21 @@ tr_expansion_finish = {
 			factor = 1
 		}
 	}
+
+	# GIGA: frameworld
+	tradition_swap = {
+		name = tr_expansion_finish_giga_frameworld
+		inherit_name = yes
+		inherit_icon = yes
+		trigger = {
+			has_origin = origin_frameworld
+		}
+		modifier = {
+			frameworld_outposts_cost_mult = -0.2
+			ascension_perks_add = 1
+		}
+		weight = { factor = 1 }
+	}
 }
 
 tr_prosperity_public_works = {

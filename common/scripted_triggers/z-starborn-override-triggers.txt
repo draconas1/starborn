@@ -1,0 +1,11 @@
+
+# common\scripted_triggers\giga_amb_triggers.txt  - make starborn compat with gigas megastructure boost.  
+# does this country have an origin which needs an initial boost
+giga_has_amb_important_origin = {
+	or = {
+		has_origin = origin_void_dwellers
+		has_origin = origin_frameworld
+		has_origin = origin_incohesive
+		has_starborn = yes
+	}
+}
