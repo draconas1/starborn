@@ -1,0 +1,201 @@
+﻿l_russian:
+ START_SCREEN_STARBORN:0 "$START_SCREEN_STARBORN_1$$START_SCREEN_STARBORN_2$$START_SCREEN_STARBORN_3$$START_SCREEN_STARBORN_4$$START_SCREEN_STARBORN_5$$START_SCREEN_STARBORN_6$$START_SCREEN_STARBORN_7$$START_SCREEN_STARBORN_8$"
+ START_SCREEN_STARBORN_1:0 "Our civilisation was outgrowing its cradle and reaching for the stars. We had begun our conquest of our solar system and were poised on the brink of hyperlane travel.\n\n"
+ START_SCREEN_STARBORN_2:0 "To celebrate our brilliance we built a gigantic orbital city above our homeworld.  A feat of engineering and international cooperation never before seen.\n\n"
+ START_SCREEN_STARBORN_3:0 "But Pride Comes Before A Fall\n\n"
+ START_SCREEN_STARBORN_4:0 "We do not know who fired the first shot, or why it escalated so quickly to armageddon, but a simmering border skirmish turned into global thermonuclear war in the space of a day\n\n"
+ START_SCREEN_STARBORN_5:0 "The planet was ravaged, civilisation collapsed, the only ones that survived were our ancestors orbiting above in their city.\n\n"
+ START_SCREEN_STARBORN_6:0 "Life for our forefathers was hard. The city had not been designed to be the new cradle of life and drastic changes were needed quickly, several times we were nearly snuffed out by accidents, civil unrest and dispair.  They persevered, survived, prospered and now we reap the rewards of their sacrifice and are ready once again to venture out into the black.\n\n"
+ START_SCREEN_STARBORN_7:0 "The first new $pc_habitat$s have been constructed around the richest resources in our solar system and are ready for their first colonists.\n\n"
+ START_SCREEN_STARBORN_8:0 "But it is not without cost.  Our people have spent so long living in our artifical city with its recycled air and carefully controlled environment that our immune systems have weakened and our bodies changed such that planetary environments are hostile to us, we can no longer live on natures cradles.\n\n   We must make our own homes among the stars."
+
+
+ starborn.2.name:0 "Habitat Construction Scam"
+ starborn.2.desc:0 "It seems that at the same time as ordering the 'full construction' of the $pc_habitat$ from our regular engineers, our government also contracted 'Derek Trotters Honest Builders' to further enlarge the structure, 'what do those experts know about maximums?'\n\nIt seems this may have been an error and that Derek Trotter has dissappeared along with all the resources he was supplied to do the job.\n\nThe habitat is the same 'maximum size' as our experts predicted"
+ starborn.2.option.a:0 "Next time we should listen to the experts"
+
+ starborn_init.3.name:0 "$origin_starborn$"
+ starborn_init.3.desc:0 "While our people can no longer live on planets, our $pc_habitat$s are a lot more flexible than those of species who adopted the void, rather than being born to it.\n\nWe have already constructed the first ones in suitable locations in our home system.$starborn_init.3.desc0$$starborn_init.3.desc1$$starborn_init.3.desc2$$starborn_init.3.desc3$$starborn_init.3.desc4$$starborn_init.3.desc5$"
+ starborn_init.3.desc0:0 "\n\nWe can build habitats around almost all types of stellar body: stars, planets and asteroids where normal civilisations wouldn't dare"
+ starborn_init.3.desc1:0 "\n§YEnergy and Mineral Deposists§! allow us to gather resources, and can be made more effective by putting them around particular types of stars, planets or asteroids"
+ starborn_init.3.desc2:0 "\n§YHabitable Worlds§! will let us use the biosphere to farm for £food£ §Y$food$§!.  Just probably not on $pc_nuked$s"
+ starborn_init.3.desc3:0 "\n\nOther types of planet and orbital deposits will give us different effects, that we will have to experiment to find out."
+ starborn_init.3.desc4:0 "\n\nWhile our $pc_habitat$s may start small, you can order them expanded via the decision §Y$decision_starborn_enlarge_hab$§!\nRemember each $pc_habitat$ requires £alloys£§Y$alloys$§! in upkeep!"
+ starborn_init.3.desc5:0 "\n\nYou can adjust the starting size (and cost) of $pc_habitat$ from the edicts menu"
+ starborn_init.3.option.a:0 "Into the Void"
+
+
+ starborn_menus.1.name:0 "Set Habitat Build Size"
+ starborn_menus.1.desc:0 "As the game progresses, you can opt to increase the initial cost of your habitats to improve their starting size and reduce your micromanagement."
+ starborn_menus.1.option.4:0 "§YSize 4§! Habitats cost 1000 £alloys£§Y$alloys$§!, 500 £energy£§Y$energy$§!, 1000 days"
+ starborn_menus.1.option.5:0 "§YSize 6§! Habitats cost 1750 £alloys£§Y$alloys$§!, 750 £energy£§Y$energy$§!, 1500 days"
+ starborn_menus.1.option.6:0 "§YSize 8§! Habitats cost 3000 £alloys£§Y$alloys$§!, 1000 £energy£§Y$energy$§!, 2000 days"
+
+ starborn_menus.2.name:0 "Set Auto Applied Habitat Enlargement"
+ starborn_menus.2.desc:0 "Habitat enlargement decisions can be auto-applied at construction time.\n\n§YWhen a habitat finishes construction§!, if you have sufficient resources to pay for the enlargement, it will be automatically applied"
+ starborn_menus.2.option.0:0 "No extra enlargement"
+ starborn_menus.2.option.1:0 "Apply §Y$decision_starborn_increase_hab_district_1$§! Costs 250 £alloys£§Y$alloys$§!, 250 £energy£§Y$energy$§!"
+ starborn_menus.2.option.2:0 "Apply §Y$decision_starborn_increase_hab_district_2$§! Costs 750 £alloys£§Y$alloys$§!, 1000 £energy£§Y$energy$§!"
+ starborn_menus.2.option.3:0 "Apply §Y$decision_starborn_increase_hab_district_3$§! Costs 1500 £alloys£§Y$alloys$§!, 2000 £energy£§Y$energy$§!"
+
+ starborn.6.name:0 "Habitat Enlargement Failed"
+ starborn.6.desc:0 "There were insufficient funds in the treasury to automatically enlarge §Y[From.From.From.Planet.GetName]§!. You can still do it manually from the planet decisions screen"
+ starborn.6.option.a:0 "Darn"
+
+ starborn.20.name:0 "[From.From.From.Planet.GetName] $starborn_habitat_expander_plural$ Complete"
+ starborn.20.desc:0 "We have completed construction of the $starborn_habitat_expander_plural$, [target.GetName] now has access to [From.From.From.Planet.GetName]s resources, though the complexities of management across the system negate any of the special efficiences our people often get from direct exploitation"
+ 
+ starborn.31.name:0 "Whole Biosphere farming stopped"
+ starborn.31.desc:0 "With the colonisation of §Y[src_planet.GetName]§! the farmers in the §Y[target.GetName]§! can no longer use the entire biosphere for food production"
+ starborn.31.option.a:0 "A small loss"
+
+ starborn.41.name:0 "Scavenger Districts Dismantled"
+ starborn.41.desc:0 "With the completion of the terraforming of [src_planet.GetName]§! the the ruins that blighted the planets surface have all been removed.  The §Y$district_starborn_starting_scavenger_plural$§! of §Y[target_hab.GetName]§! have been converted into §Y$district_starborn_surface_farming_plural$§!"
+ starborn.41.option.a:0 "A great day"
+
+ starborn.42.name:0 "Homeworld Reclaimed!"
+ starborn.42.desc:0 "With the completion of the terraforming of [src_planet.GetName]§! we have finally undone the damage our ancestors inflicted and reclaimed our birth world as a cradle of life. No longer will we pick over the bones of our former civilisation and the §Y$district_starborn_starting_scavenger_plural$§! have been converted into §Y$district_starborn_surface_farming_plural$§!"
+ starborn.42.option.a:0 "A great day"
+
+ starborn.52.name:0 "Orbital Trade Hub"
+ starborn.52.desc:0 "With §Y[src_planet.GetName]§! becoming an enormous city §Y[target_hab.GetName]§! has needed to adapt as it can no longer access the natural resources of the planet.  A vast increase in trade value is already being seen."
+ starborn.52.option.a:0 "A great day"
+
+ starborn.53.name:0 "The Great City"
+ starborn.53.desc:0 "Our former home of §Y[src_planet.GetName]§! becoming an enormous city and completing its recovery since our ancestors wrecked it so long ago §Y[target_hab.GetName]§! no longer harvests the raw materials of the planet and the space has been reconfigured to take advantage of the increased trade opportunities"
+ starborn.53.option.a:0 "A great day"
+
+ starborn.61.name:0 "To Reclaim Paradise"
+ starborn.61.desc:0 "Establishing a colony on §Y[src_planet.GetName]§! is an important social milestone for our people.  There is a swell of pride that we once again set foot upon the world of our ancestors and call it ours.\n\nBut it is a dark place, filled with memories and gaves.  Our archetects have designed a new building, the §Y$building_starborn_obelisk_nuked$§!,  for the planet to commerate our return and remind us what our ancestors destroyed"
+ starborn.61.option.a:0 "A great day"
+
+ starborn.71.name:0 "A Triumph of a People"
+ starborn.71.desc:0 "The final act of restoring §Y[src_planet.GetName]§! was a grand ceremony at the §Y$building_starborn_obelisk_nuked$§!.  It has been rededicated and now will stand not only as a monument and a reminder of what we lost, but as a monument of how far we have come as a people."
+ starborn.71.option.a:0 "To the stars"
+
+
+ starborn.111.name:0 "WARNING"
+ starborn.111.desc:0 "§Y$pc_starborn_habitat_start$§! does not register correctly as a habitable structure.\n\nThis usually indicates a mod conflict and will result in unpredictable behaviour\n\nCheck the starborn workshop page for the 'Habitable Structures Patch'"
+
+
+
+ starborn_traits.3.name:0 "Epidemic Strikes"
+ starborn_traits.3.desc:0 "A pathogen on §Y[This.GetName]§! has proven disproportionately lethal to the Starborn peoples weakened immune system.  It is spreading rapidly through the population and will cause significant deaths without emergency medical intervention"
+ starborn_traits.3.option.a:0 "Send Emergency Medical Supplies. Stat!"
+ starborn_traits.3.option.b:0 "Let the disease run its course"
+
+
+ starborn_traits.11.name:0 "Foreign Disease Outbreak"
+ starborn_traits.11.desc:0 "A new disease is spreading on §Y[This.GetName]§!, brought by one of the terrestial aliens to whom it is a minor irritant, it has proven incredibly dangerous to the starborn population.\n\nThe recycled air and close confines of the environment have caused the disease to spread incredibly quickly through the population"
+ starborn_traits.11.option.a:0 "Send Emergency Medical Supplies. Stat!"
+ starborn_traits.11.option.b:0 "Blame the Xenos and enforce strict separation"
+ starborn_traits.11.option.c:0 "Let the station commander handle it"
+
+ starborn_traits.12.name:0 "Xenos Spaced!"
+ starborn_traits.12.desc:0 "The epidemic on §Y[This.GetName]§! has caused widespread anti-xeno tensions on the structure.  Members of the starborn population took matters into their own hands and caused a large scale depressurisation event in a zone that had been designated for the xeno population following our separation rules.\n\nA large number of the xeno population were killed, some of the starborn population were unfortunate enough to be in the zone and also died, but their numbers are not statistically significant"
+ starborn_traits.12.option.a:0 "Oh Well"
+
+
+ starborn_traits.21.name:0 "Bipshere Contamination"
+ starborn_traits.21.desc:0 "§Y[This.GetName]§! has reported a biological contamination outbreak originating from the food production sector.\n\nA microbe believed to occur on the local planet, where we are taking advantage of the biosphere for food production, has mutated and is spreading out of control.\n\nHarmless even to the starborn people in small amounts, the quantities found in the rapid spreading varient quickly become lethal to compromised immune systems.\n\nAt minimum a large portion of the current food crop will have to be destroyed to stop a large-scale incident."
+ starborn_traits.21.option.a:0 "Send Emergency Medical Supplies. Stat!"
+ starborn_traits.21.option.b:0 "Manage with what you have"
+
+ starborn_traits.22.name:0 "Exciting New Bacteria Found"
+ starborn_traits.22.desc:0 "Regular quality checks on the foodstuffs created on §Y[This.GetName]§! using the planets biosphere discovered a new form of bacterial lifeform.  After the contiminated produce was discarded a sample was sent for analysis and our biologists are very excited about some of its characteristics, which do not conform to established models.\n\nSome new papers have been published and food production continues with updated quantine procedures."
+ starborn_traits.22.option.a:0 "Excellent"
+
+ starborn_traits.31.name:0 "Devestation"
+ starborn_traits.31.desc:0 "A massive explosion has levelled one of the ruined cities of §Y[planet_target.GetName]§! where our teams from §Y[This.GetName]§! were scavenging.\n\nRescue attempts have managed to locate very few survivors from the outskirts, given the devestation it is believed that all who were further in have been lost.\n\nPreliminary investigations believe that a team must have triggered an unexploded munition that set off a chain reaction and ended up detonating some form of fission device.  We are examining satelite images and sensor results, but whether it was a weapon or perhaps an ancient reactor or science facility will likely never be known.\n\nThe number deaths have caused widespread dissatisfaction among the scavengers who are demanding additional hazard pay"
+ starborn_traits.31.option.a:0 "Compensate the families and pay a hazard bonus"
+ starborn_traits.31.option.b:0 "They know the risks and we pay well already"
+
+ starborn_traits.32.name:0 "Scavenging Accident"
+ starborn_traits.32.desc:0 "The scavenger team on §Y[planet_target.GetName]§! discovered a massive fuel store hidden beneath the city they were exploring.  Unfortunately this store had been damaged and had been slowly leaking highly combustable fuel into the sewers and pipeworks of the city, over the centuries it had effectively saturated half the city.\n\nDoubly unfortunate that this was discovered by one of the team igniting some of it by accident, that in turn ignited it all\n\nAt the first sign of spreading fire our teams commenced emergency evacuation so nobody was killed, but our entire scavenging operation in that region was destroyed by the explosion when the main tank ignited"
+ starborn_traits.32.option.a:0 "Send supplies to repair as fast as possible"
+ starborn_traits.32.option.b:0 "Get back to operations when you can"
+
+ starborn_traits.33.name:0 "Alloy Cache Found"
+ starborn_traits.33.desc:0 "The scavenger team on §Y[planet_target.GetName]§! has discovered a large underground military supply base.  The base was clearly intended as a large scale material and vehicle storage, but appears to have suffered a missile strike to its main entrance in the early stages of the war, burying it under thousands of tons of rock.  Examining the base logs showed that the surviving personel evacuated the base using smaller entrances to continue their war efforts.  Their intention was to unbury the entrance once the war was over and make use of the contents, the effort to do so immiedately being inpractical in the middle of the hostilities.\n\nWhile little use to us in and of themselves, the supplies and machinery within the base are easy to refine into a large cache of high grade alloys"
+ starborn_traits.33.option.a:0 "Waste not, want not"
+
+
+ starborn_traits.41.name:0 "Dark Matter Explosion"
+ starborn_traits.41.desc:0 "There has been a catastropic accident in the $building_starborn_dark_matter_extractor$ on §Y[This.GetName]§!.  The containment field around the main dark matter lenses failed resulting in a colossal explosion."
+ starborn_traits.41.desc1:0 "$starborn_traits.41.desc$\n\nFortunately the researchers were able to evacuate in time but the entire section of the habitat around the buidling was utterly destroyed, not even ruins remain."
+ starborn_traits.41.desc2:0 "$starborn_traits.41.desc$\n\nThe entire section of the habitat around the buidling was utterly destroyed, not even ruins remain.  All the lab workers were killed by the blast and subsequent decompression."
+ starborn_traits.41.desc3:0 "$starborn_traits.41.desc$\n\nThe blast was larger than all but the worst prediction models and has destroyed the lab without trace and caused severe damage to the surrounding habitat.  All those who were in or near the lab at the time were killed."
+ starborn_traits.41.desc4:0 "$starborn_traits.41.desc$\n\nThe blast ripped through the habitat causing massive devestation, and combined with the depresuration of substancial quantities of the habitat has resulted in significant loss of life."
+ starborn_traits.41.option.a:0 "Bother"
+
+
+ starborn_traits.45.name:0 "Hellgate Opens"
+ starborn_traits.45.desc:0 "There has been a catastropic accident in the $building_starborn_dark_matter_extractor$ on §Y[This.GetName]§!.  Something went wrong with the dark matter lens and it has accidently opened a dimensional portal.\n\nTo Hell.\n\nOops\n\nDemons are pouring through the rift and attacking"
+ starborn_traits.45.option.a:0 "Oops?!"
+ starborn_traits.45.option.a.tooltip:0 "Demons are killing everyone!"
+
+ starborn_traits.46.name:0 "[From.From.GetName] Overrun"
+ starborn_traits.46.desc:0 "Our armies have failed to hold §Y[From.From.GetName]§! and rampaging demons are slaughtering the population"
+ starborn_traits.46.option.a:0 "$TERRIBLE$"
+
+ starborn_traits.47.name:0 "[From.From.GetName] Reclaimed"
+ starborn_traits.47.desc:0 "Our armies brave forces have managed to reclaim §Y[From.From.GetName]§! from the demonic horde.\n\nThe commander reports that the portal has been sealed, upon reading the report we understand this to be by blowing the entire section of the hab with the portal into bits.\n\nWith the exception of a lone end of the universe survivalist who liked hiding in maintenance crawlways, the survivors are overjoyed with gratitude."
+ starborn_traits.47.option.a:0 "Guess you really can't please everyone"
+
+
+ starborn_traits.51.name:0 "Zro Leakage"
+ starborn_traits.51.desc:0 "There has been an incident in the $building_starborn_zro_extractor$ in §Y[This.GetName]§! one of the acolytes managed to cause a full scale rupture of highly concentrated zro gas that leaked into the habitats air filtration system.\n\nThe resultant exposure is causing mood swings, irrational behaviour and mass halucinations and religious visions\n\nThe head of the $building_starborn_zro_extractor$ is unhelpfully pointing out §M'this is why zro is not for the uninitiated'§!"
+ starborn_traits.51.option.a:0 "Deploy emergency decontamination"
+ starborn_traits.51.option.b:0 "It will resolve in time"
+
+ starborn_traits.52.name:0 "New Cult rising on [This.GetName]"
+ starborn_traits.52.desc:0 "We have received disturbing reports from §Y[This.GetName]§!: one of the accolytes from the $building_starborn_zro_extractor$ has been leading a cult in their spare time.  Using zro they syphoned from the temple to induce religous visions their cult has swelled to the point that they have gone public and now claim to be a new messiah and zro the key to enlightenment.\n\nThe cult already has a lot of members and guided mass hallucinations under the effect of zro are serving to indoctrinate new members rapidly.\n\nWhile offically the $job_starborn_zro_extractor_plural$ condem this, the cults seemingly steady supply of zro indicates that there is some level of unoffical support and approval"
+ starborn_traits.52.option.a:0 "Embrace the new messiah and Zro enlightenment"
+ starborn_traits.52.option.b:0 "Another harmless religion"
+ starborn_traits.52.option.c:0 "Have the leader arrested and find their conspiritors"
+
+
+
+ starborn_traits.60.name:0 "Technological Solutions"
+ starborn_traits.60.desc:0 "Our mastery of genetics has improved substancially since we first began venturing out of the habitat and our scientists would like approval to work on a genetic solution to our peoples poor immune system.\n\nA special project has been prepared for your approval to try and improve matters"
+ starborn_traits.60.option.a:0 "Ok"
+
+ starborn_traits.61.name:0 "Immune Systems Engineered"
+ starborn_traits.61.desc:0 "Our scientists have succeeded in making sweeping alterations and improvements to the average starborn immune system.\n\nThe scientific community is attempting to caution people that the solution is not perfect, nothing we can do truely competes with generations of survival in a natural, hostile, biome, but the treatments rolled out will substancially bolster our peoples immune systems and result in far fewer outbreaks.\n\nThere is disappointment in the science fiction community that nobody appears to have gained super powers as a result of the treatment."
+ starborn_traits.61.option.a:0 "$EXCELLENT$"
+
+ starborn_traits.70.name:0 "Genetic Mastery"
+ starborn_traits.70.desc:0 "We now have complete mastery of what it means to be a sapient creature.  Our scientists wish for approval to solve our peoples issues with planets and natural biospheres once and for all.\n\nA special project has been prepared for your approval to try and improve matters"
+ starborn_traits.70.option.a:0 "Ok"
+
+ starborn_traits.71.name:0 "Starborn Reborn"
+ starborn_traits.71.desc:0 "We have uplifted the genes of every member of our empire, from immune systems to bone density to physcological outlook, we can survive on plants as well as the next species.  Better even.  \nOur scientists once said that nothing we could do would compete with generations of survival in a natural, hostile, biome.\n\nThey were wrong."
+ starborn_traits.71.option.a:0 "$EXCELLENT$"
+
+ starborn_traits.999.name:0 "Debug"
+ starborn_traits.999.desc:0 "Starborn Event §Y[FROM.EventId]§! triggered, but had no effect"
+ starborn_traits.999.option.a:0 "Ok"
+
+
+ starborn_traits.1000.name:0 "Debug"
+ starborn_traits.1000.desc:0 "Trigger an event for this planet.  Warning they are all awful.\n\nWhy are you here player?\n\nNote even if the event is enabled here it may not trigger, the allow trigger here is very loose.  E.g. triggering scavenger problems on a farming habitat will just do nothing"
+ starborn_traits.1000.option.1:0 "1 Planetary epidemic"
+ starborn_traits.1000.option.10:0 "10 Xeno caused epidemic"
+ starborn_traits.1000.option.20:0 "20 Farming contamination"
+ starborn_traits.1000.option.30:0 "30 Scavenger accident"
+ starborn_traits.1000.option.40:0 "40 Dark Matter Containment"
+ starborn_traits.1000.option.45:0 "45 Demon Invasion"
+ starborn_traits.1000.option.50:0 "50 Zro Temple"
+ starborn_traits.1000.option.nope:0 "None"
+
+ starborn_traits.1010.name:0 "Event Flag Status"
+ starborn_traits.1010.desc:0 "Why are you here player?\n\nAdjust the event blocking flags"
+
+ starborn_traits.1010.starborn_no_bad_planet_bio.on:0 "starborn_traits.1010.starborn_no_bad_planet_bio.on"
+ starborn_traits.1010.starborn_no_bad_planet_bio.off:0 "starborn_traits.1010.starborn_no_bad_planet_bio.off"
+ starborn_traits.1010.starborn_no_bad_hab_bio.on:0 "starborn_traits.1010.starborn_no_bad_hab_bio.on"
+ starborn_traits.1010.starborn_no_bad_hab_bio.off:0 "starborn_traits.1010.starborn_no_bad_hab_bio.off"
+ starborn_traits.1010.starborn_no_bad_hab_salvage.on:0 "starborn_traits.1010.starborn_no_bad_hab_salvage.on"
+ starborn_traits.1010.starborn_no_bad_hab_salvage.off:0 "starborn_traits.1010.starborn_no_bad_hab_salvage.off"
+ starborn_traits.1010.starborn_no_bad_hab_sr.on:0 "starborn_traits.1010.starborn_no_bad_hab_sr.on"
+ starborn_traits.1010.starborn_no_bad_hab_sr.off:0 "starborn_traits.1010.starborn_no_bad_hab_sr.off"

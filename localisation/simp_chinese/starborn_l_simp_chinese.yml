@@ -1,0 +1,201 @@
+﻿l_simp_chinese:
+
+ origin_starborn:0 "Starborn"
+ origin_starborn_desc:0 "This civilisation starts in an enormous orbital city above the ruins of their homeworld.  They are skilled at orbital construction, but generations of living in artifical environments have made the natural ecosystems of planets undesirable to their physiology"
+ origin_tooltip_starborn_effects:0 "- Starting world is an §Y$pc_starborn_habitat_start$§! in orbit of a §Y$pc_nuked$§!.\n- Build §Y$starborn_habitat$§!s immediately and modularly.\n- §Y$starborn_habitat$§!s have different districts or bonuses depending on the planet or orbital deposits they are built around.\n- Pops suffer additional penalties and events if living on terrestrial planets\nChoice of start system: normal or Sol"
+
+ starborn_system_NAME:0 "Starborn"
+ starborn_system_DESC:0 "Standard Initaliser system for starborn.  Orbital city and 2 prototype habitats ready for colonisation."
+
+ starborn_sol_system_NAME:0 "Starborn Sol"
+ starborn_sol_system_DESC:0 "Sol system for starborn.  Things went a bit wrong on planet earth."
+
+ pc_starborn_habitat_start:0 "Orbital City"
+ pc_starborn_habitat_start_desc:0 "It was the crowning glory of our technological achievement, that became the arc that saved our civilisation"
+ mod_pc_starborn_habitat_start_habitability:0 "$pc_starborn_habitat_start$"
+ pc_starborn_habitat_start_adj:0 "ADJ"
+
+ trait_pc_starborn_habitat_start_preference:0 "$pc_starborn_habitat_start$ Preference"
+ trait_pc_starborn_habitat_start_preference_desc:0 "We've lived on the Orbital City for so long our bodies are no longer adapted for natural biomes"
+
+ trait_starborn_positive:0 "Starborn"
+ trait_starborn_positive_desc:0 "This species thrives in space, and has fully adapted to the slightly cramped life in orbital facilities"
+
+ trait_starborn_gene_positive:0 "Superior Starborn"
+ trait_starborn_gene_positive_desc:0 "Superior genetic engineering allows this species to thrive both in the slightly cramped life of orbital facilities and the vast expanses of planets"
+
+ trait_starborn_negative_1:0 "Gravity crushed $trait_starborn_positive$"
+ trait_starborn_negative_1_desc:0 "This species thrives in space!  Their immune systems struggle to cope with a natural biosphere while their bodies struggle with the punishment of a full planets gravity"
+
+ trait_starborn_negative_2:0 "Agoraphobic $trait_starborn_positive$"
+ trait_starborn_negative_2_desc:0 "This species thrives in space!  Their immune systems struggle to cope with a natural biosphere, meanwhile the stress of so much open space has led to acute agoraphobia"
+
+ trait_starborn_negative_3:0 "Solitary $trait_starborn_positive$"
+ trait_starborn_negative_3_desc:0 "This species thrives in space!  Their immune systems struggle to cope with a natural biosphere, and the vast open spaces of a planet has resulted in solitary and antisocial behaviour"
+
+ trait_starborn_cyber_negative:0 "Planetbound cyborg $trait_starborn_positive$"
+ trait_starborn_cyber_negative_desc:0 "This species thrives in space!  By relying on more powerful exoskeletons and cyborg parts they can compensate for many of the physical problems, but still suffer some of the psychological effects"
+
+ trait_starborn_psi_negative:0 "Planetbound $trait_starborn_positive$"
+ trait_starborn_psi_negative_desc:0 "This species thrives in space!  By relying on regular doses of zro their mental powers can compensate for many of the psychological effects, but still suffers some physical problems with living planetside"
+
+ requires_not_black_hole:0 "$TRIGGER_FAIL$$starborn_habitat$ cannot be built around a black hole, nobody wants to gaze into the abyss constantly"
+ requires_no_unminable_sr:0 "$TRIGGER_FAIL$There appears to be valuable strategic resources here that our $starborn_habitat$ would destroy"
+
+ starborn_vanilla_habitat_big_MEGASTRUCTURE_DETAILS:1  "A large §Y$pc_habitat$§! built with §Y$tech_habitat_2$§!"
+ starborn_vanilla_habitat_big_CONSTRUCTION_INFO_DELAYED:2 "$habitat_0_CONSTRUCTION_INFO_DELAYED$"
+ starborn_vanilla_habitat_big:0 "Advanced Habitat"
+ starborn_vanilla_habitat_big_DESC:0 "A §Y$habitat_0$§! but built at the size allowed by §Y$tech_habitat_2$§!"
+
+ starborn_vanilla_habitat_very_big_MEGASTRUCTURE_DETAILS:1  "A large §Y$pc_habitat$§! built with §Y$tech_habitat_3$§!"
+ starborn_vanilla_habitat_very_big_CONSTRUCTION_INFO_DELAYED:2 "$habitat_0_CONSTRUCTION_INFO_DELAYED$"
+ starborn_vanilla_habitat_very_big:0 "Advanced Habitat World"
+ starborn_vanilla_habitat_very_big_DESC:0 "A §Y$habitat_0$§! but built at the size allowed by §Y$tech_habitat_3$§!"
+
+ starborn_habitat_MEGASTRUCTURE_DETAILS:1 "A §Y$starborn_habitat$§! is a new orbital habitat to allow our people to expand"
+ starborn_habitat_CONSTRUCTION_INFO_DELAYED:2 "$starborn_habitat_DESC$"
+ starborn_habitat:0 "Starborn Orbital Habitat"
+ starborn_habitat_DESC:0 "A Habitation station in orbit of a star, planet, moon or large asteroid.  Capable of housing a number of our §HPops§! and §HBuildings§! while also allowing us to take advantage of the natural features of the parent body."
+
+ starborn_habitat3_MEGASTRUCTURE_DETAILS:1 "$starborn_habitat_MEGASTRUCTURE_DETAILS$"
+ starborn_habitat3_CONSTRUCTION_INFO_DELAYED:2 "$starborn_habitat_CONSTRUCTION_INFO_DELAYED$"
+ starborn_habitat3:0 "$starborn_habitat$"
+ starborn_habitat3_DESC:0 "$starborn_habitat_DESC$"
+
+ starborn_habitat4_MEGASTRUCTURE_DETAILS:1 "$starborn_habitat_MEGASTRUCTURE_DETAILS$"
+ starborn_habitat4_CONSTRUCTION_INFO_DELAYED:2 "$starborn_habitat_CONSTRUCTION_INFO_DELAYED$"
+ starborn_habitat4:0 "$starborn_habitat$"
+ starborn_habitat4_DESC:0 "$starborn_habitat_DESC$"
+
+ starborn_habitat5_MEGASTRUCTURE_DETAILS:1 "$starborn_habitat_MEGASTRUCTURE_DETAILS$"
+ starborn_habitat5_CONSTRUCTION_INFO_DELAYED:2 "$starborn_habitat_CONSTRUCTION_INFO_DELAYED$"
+ starborn_habitat5:0 "$starborn_habitat$"
+ starborn_habitat5_DESC:0 "$starborn_habitat_DESC$"
+
+ starborn_habitat6_MEGASTRUCTURE_DETAILS:1 "$starborn_habitat_MEGASTRUCTURE_DETAILS$"
+ starborn_habitat6_CONSTRUCTION_INFO_DELAYED:2 "$starborn_habitat_CONSTRUCTION_INFO_DELAYED$"
+ starborn_habitat6:0 "$starborn_habitat$"
+ starborn_habitat6_DESC:0 "$starborn_habitat_DESC$"
+
+ starborn_habitat_expander_MEGASTRUCTURE_DETAILS:1 "A §Y$starborn_habitat_expander$§! is an offshoot of one of our existing habitats above another planetary body in system"
+ starborn_habitat_expander_CONSTRUCTION_INFO_DELAYED:2 "$starborn_habitat_expander_DESC$ and can be built around any stellar body"
+ starborn_habitat_expander:0 "Satellite Habitat Complex"
+ starborn_habitat_expander_plural:0 "Satellite Habitat Complexes"
+ starborn_habitat_expander_DESC:0 "An expansion of one of our habitats around another body in system.  This effectively expands the existing habitat, while allowing for exploitation of the resources of the new body"
+ requires_habitat_target:0 "$TRIGGER_FAIL$ You must select a §Y$starborn_habitat$§! in this system using the §Y$decision_starborn_complex_target$§! planetary decision that will gain the benefits of the §Y$starborn_habitat_expander$§!"
+ requires_only_1_habitat_target:0 "$TRIGGER_FAIL$ More than 1 §Y$starborn_habitat$§! in this system has been designated as the §Y$decision_starborn_complex_target$§!"
+
+ edict_starborn_show_hab_build_size:0 "Set Habitat Construction Size"
+ edict_starborn_show_hab_build_size_desc:0 "Adjust how large (and how expensive) we build the inital habitat as our economy grows"
+
+ edict_starborn_show_hab_enlargment_size:0 "Set Auto-Habitat Enlargement"
+ edict_starborn_show_hab_enlargment_size_desc:0 "Adjust if we automatically apply habitat enlargment decisions"
+
+ edict_starborn_enable_debug:0 "Starborn: Enable Debug event"
+ edict_starborn_enable_debug_desc:0 "Enables starborn debug events popping up.  You probably want to leave this off."
+
+ edict_starborn_disable_debug:0 "Starborn: Disable Debug event"
+ edict_starborn_disable_debug_desc:0 "Disables starborn debug event popup.  You probably want to leave it disabled."
+ 
+ edict_starborn_op_start_system:0 "Make Start System OP"
+ edict_starborn_op_start_system_desc:0 "Deploys a lot of orbital resources in to the start system for you to build habitats on"
+
+ decision_starborn_debug_events:0 "Trigger Starborn Events"
+ decision_starborn_debug_events_desc:0 "Open a menu to manually trigger one of the random starborn events for this planet"
+
+ edict_starborn_turn_off_events:0 "Disable Starborn Random Events"
+ edict_starborn_turn_off_events_desc:0 "This disables all the random events for starborn pops (Disease / Planet adaptation, district or building random occurances)"
+
+ edict_starborn_turn_on_events:0 "Enable Starborn Random Events"
+ edict_starborn_turn_on_events_desc:0 "Re-enable the starborn random events"
+
+ edict_starborn_debug_flag:0 "Event Lockout Menu"
+ edict_starborn_debug_flag_desc:0 "Manage Event Lockout Flags"
+
+ decision_starborn_remove_mining:0 "Remove Mining Habitat Designation"
+ decision_starborn_remove_mining_desc:0 "This will dismantle all §Y$district_hab_mining$§! and remove the mining habitat designator, it takes a short amount of time to allow cancellation in case of misclick, you may need to close and reopen the planet window for the change to show in the UI"
+
+ decision_starborn_readd_mining:0 "Restore Mining Habitat Designation"
+ decision_starborn_readd_mining_desc:0 "This will designate the habitat for mining and allow the construction of §Y$district_hab_mining$§!, you may need to close and reopen the planet window for the change to show in the UI"
+
+ decision_starborn_remove_energy:0 "Remove Energy Habitat Designation"
+ decision_starborn_remove_energy_desc:0 "This will dismantle all §Y$district_hab_energy$§! and remove the energy habitat designator, it takes a short amount of time to allow cancellation in case of misclick, you may need to close and reopen the planet window for the change to show in the UI"
+
+ decision_starborn_readd_energy:0 "Restore Energy Habitat Designation"
+ decision_starborn_readd_energy_desc:0 "This will designate the habitat for energy creation and allow the construction of §Y$district_hab_energy$§!, you may need to close and reopen the planet window for the change to show in the UI"
+
+ decision_starborn_remove_research:0 "Remove Science Habitat Designation"
+ decision_starborn_remove_research_desc:0 "This will dismantle all §Y$district_hab_science$§! and remove the science habitat designator, it takes a short amount of time to allow cancellation in case of misclick, you may need to close and reopen the planet window for the change to show in the UI"
+
+ decision_starborn_readd_research:0 "Restore Science Habitat Designation"
+ decision_starborn_readd_research_desc:0 "This will designate the habitat for science and allow the construction of §Y$district_hab_science$§!, you may need to close and reopen the planet window for the change to show in the UI"
+
+ decision_starborn_remove_farming:0 "Remove Farming Habitat Designation"
+ decision_starborn_remove_farming_desc:0 "This will dismantle all §Y$district_starborn_surface_farming$§! and remove the farming habitat designator, it takes a short amount of time to allow cancellation in case of misclick, you may need to close and reopen the planet window for the change to show in the UI"
+
+ decision_starborn_readd_farming:0 "Restore Farming Habitat Designation"
+ decision_starborn_readd_farming_desc:0 "This will designate the habitat for farming and allow the construction of §Y$district_starborn_surface_farming$§!, you may need to close and reopen the planet window for the change to show in the UI"
+
+ decision_starborn_complex_target:0 "Designate as Multi-Planet Habitat Complex"
+ decision_starborn_complex_target_desc:0 "This will remove the designation from any other habitat in the system"
+ decision_starborn_complex_target_must_be_full_size:0 "The habitat must be enlarged to full size before it can manage §Y$starborn_habitat_expander_plural$§!"
+ decision_starborn_complex_target_tooltip:0 "Specify that §Y$starborn_habitat_expander_plural$§! in this system will be controlled by this habitat.  Constructed §Y$starborn_habitat_expander_plural$§! will add to this habitats maximum districts and allow access to the special districts for their planet type."
+
+ decision_starborn_enlarge_hab:0 "Construct More Habitat"
+ decision_starborn_enlarge_hab_desc:0 "We can construct new $pc_habitat$ sections such that it can support an additional district"
+
+ decision_starborn_fully_enlarge_hab:0 "Fully Construct Habitat"
+ decision_starborn_fully_enlarge_hab_desc:0 "The time for slow expansion is over, fully construct this $pc_habitat$ as far as our engineering abilities will let us"
+
+ decision_starborn_increase_hab_district_1:0 "Optimise Habitat 1"
+ decision_starborn_increase_hab_district_1_desc:0 "Improved construction techniques let us optimise the internal structure of the $pc_habitat$ such that it can support an additional district without requiring significant extra construction"
+
+ decision_starborn_increase_hab_district_2:0 "Optimise Habitat"
+ decision_starborn_increase_hab_district_2_desc:0 "$decision_starborn_increase_hab_district_1_desc$"
+
+ decision_starborn_increase_hab_district_3:0 "Optimise Habitat with $tech_mega_engineering$"
+ decision_starborn_increase_hab_district_3_desc:0 "Our knowledge of mega structure engineering lets us further optimise and enlarge $pc_habitat$ internal structures such that it can support additional districts"
+
+ decision_starborn_increase_starting_hab_district_1:0 "Enlarge $pc_starborn_habitat_start$"
+ decision_starborn_increase_starting_hab_district_1_desc:0 "As our knowledge of starbase engineering improves, we can increase the size of our $pc_starborn_habitat_start$"
+
+ decision_starborn_increase_starting_hab_district_2:0 "$decision_starborn_increase_starting_hab_district_1$"
+ decision_starborn_increase_starting_hab_district_2_desc:0 "$decision_starborn_increase_starting_hab_district_1_desc$"
+
+ decision_starborn_increase_starting_hab_district_3:0 "$decision_starborn_increase_starting_hab_district_1$"
+ decision_starborn_increase_starting_hab_district_3_desc:0 "$decision_starborn_increase_starting_hab_district_1_desc$"
+
+ decision_starborn_increase_starting_hab_district_4:0 "Enlarge $pc_starborn_habitat_start$"
+ decision_starborn_increase_starting_hab_district_4_desc:0 "Our knowledge of mega structure engineering lets us build additions to the $pc_starborn_habitat_start$ once thought to be impossible"
+
+ decision_starborn_increase_starting_hab_district_voidborn:0 "$pc_starborn_habitat_start$ embraces the void"
+ decision_starborn_increase_starting_hab_district_voidborn_desc:0 "As the $origin_starborn$ become $ap_voidborn$ we have found new ways to enhance our $pc_starborn_habitat_start$"
+
+ decision_starborn_increase_starting_hab_district_master_builders:0 "$pc_starborn_habitat_start$ is Master Built"
+ decision_starborn_increase_starting_hab_district_master_builders_desc:0 "To Master Builders $pc_starborn_habitat_start$ projects throught be be the realm of science fiction are now possible"
+
+ decision_starborn_increase_starting_hab_district_galatic_wonders:0 "The wonder of $pc_starborn_habitat_start$"
+ decision_starborn_increase_starting_hab_district_galatic_wonders_desc:0 "What is the point of building Galatic Wonders if we cannot use that engineering knowledge to improve our $pc_starborn_habitat_start$"
+
+ starborn_demon_army:0 "Demonic Army"
+ starborn_demon_army.desc:0 "This army appears to be made up of literal demons, from our ancient myths of hell.  Most are roughly human sized monsters with claws that can rend steel and throw balls of fire, but some are towering giants that can smash an armoured vehicle with a single swing"
+
+ starborn_demon_army:0 "Demonic Army"
+ starborn_demon_army_desc:0 "This army appears to be made up of literal demons, from our ancient myths of hell.  Most are roughly human sized monsters with claws that can rend steel and throw balls of fire, but some are towering giants that can smash an armoured vehicle with a single swing"
+
+ starborn_titan_demon_army:0 "Demonic Titan Army"
+ starborn_titan_demon_army_desc:0 "Giant towering demons that crush everything in their path"
+
+ mod_planet_jobs_sr_zro_produces_mult:0 "£sr_zro£ $sr_zro$ from £job£ Jobs"
+
+ starborn_lower_disease_chance:0 "Enhance Starborn Immune Systems"
+ starborn_lower_disease_chance_DESC:0 "Use gene tailoring to boost the immune systems of starborn populations to make them more resistant to planet based biohazards."
+
+ starborn_gene_edit_out:0 "Perfect the Starborn Condition"
+ starborn_gene_edit_out_DESC:0 "It is time we used our mastery of genetics to fix our peoples problems with natural biospheres"
+
+ mod_planet_researchers_sr_zro_produces_add:0 "£sr_zro£ $sr_zro$ from £job_researcher£ $job_researcher_plural$"
+ mod_planet_researchers_sr_dark_matter_produces_add:0 "£sr_dark_matter£ $sr_dark_matter$ from £job_researcher£ $job_researcher_plural$"
+ mod_planet_researchers_sr_living_metal_produces_add:0 "£sr_living_metal£ $sr_living_metal$ from £job_researcher£ $job_researcher_plural$"
+ mod_planet_researchers_nanites_produces_add:0 "£nanites£ $nanites$ from £job_researcher£ $job_researcher_plural$"
+
