@@ -282,9 +282,11 @@ starborn_habitat_expander = {
 			}
 
 			add_modifier = { 
-				modifier = starborn_habitat_complex 
+				modifier = starborn_habitat_complex_blank 
 				days = -1 
 			}
+
+			add_deposit = d_starborn_habitat_complex
 			
 			starborn_hab_init_deposits = yes
 			save_event_target_as = target

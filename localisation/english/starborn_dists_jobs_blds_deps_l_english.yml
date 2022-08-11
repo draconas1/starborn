@@ -141,3 +141,6 @@
 
  d_starborn_refund_size_4:0 "$d_starborn_refund_size_2$"
  d_starborn_refund_size_4_desc:0 "$d_starborn_refund_size_2_desc$"
+
+ d_starborn_habitat_complex:0 "$starborn_habitat_complex$"
+ d_starborn_habitat_complex_desc:0 "$starborn_habitat_complex_desc$"

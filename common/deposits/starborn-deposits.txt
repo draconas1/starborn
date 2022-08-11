@@ -60,3 +60,24 @@ d_starborn_nanites = {
 		weight = 0
 	}
 }
+
+d_starborn_habitat_complex = {
+	icon = "unused/d_satellite_in_orbit"
+	category = deposit_cat_rare
+	is_for_colonizable = yes
+
+	potential = { 
+		can_have_habitable_deposits = yes
+		is_planet_class = pc_habitat
+	}
+
+	planet_modifier = {
+		planet_max_districts_add = 6
+		planet_crime_mult = 0.1
+		planet_amenities_mult = -0.05
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
