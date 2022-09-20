@@ -4,6 +4,6 @@ tags={
 	"Overhaul"
 }
 picture="thumbnail.png"
-supported_version="3.4.*"
+supported_version="3.5.*"
 path="D:/Users/Draconas/Documents/Paradox Interactive/Stellaris/mod/starborn"
 remote_file_id="1743133825"

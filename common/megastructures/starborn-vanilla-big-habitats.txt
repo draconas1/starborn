@@ -4,6 +4,7 @@ starborn_vanilla_habitat_big = {
 	entity = ""
 	construction_entity = "habitat_phase_01_entity"
 	portrait = "GFX_megastructure_construction_background"
+	show_galactic_map_icon = no
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -7 y = -7 }
 	build_time = 2500
@@ -119,18 +120,8 @@ starborn_vanilla_habitat_big = {
 		}
 		modifier = {
 			factor = 2
-			any_neighbor_system = {
-				exists = owner
-				is_same_value = owner.capital_scope.solar_system
-			}
-		}
-
-		modifier = {
-			factor = 0.1
-			any_neighbor_system = {
-				exists = owner
-				owner = { NOT = { is_same_value = from } }
-			}
+			exists = sector
+			sector = { has_sector_type = core_sector }
 		}
 	}
 
@@ -148,7 +139,10 @@ starborn_vanilla_habitat_big = {
 			has_ring = no
 
 			init_effect = {
-				set_name = "HABITAT_PLANET_NAME"
+				set_name = {
+					key = HABITAT_PLANET_NAME
+					variable_string = "[FROM.from.planet.GetName]"
+				}
 				#CHANGED
 				set_planet_entity = {
 					entity = "habitat_phase_02_entity"
@@ -445,6 +439,7 @@ starborn_vanilla_habitat_very_big = {
 	entity = ""
 	construction_entity = "habitat_phase_01_entity"
 	portrait = "GFX_megastructure_construction_background"
+	show_galactic_map_icon = no
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -7 y = -7 }
 	build_time = 4000
@@ -560,18 +555,8 @@ starborn_vanilla_habitat_very_big = {
 		}
 		modifier = {
 			factor = 2
-			any_neighbor_system = {
-				exists = owner
-				is_same_value = owner.capital_scope.solar_system
-			}
-		}
-
-		modifier = {
-			factor = 0.1
-			any_neighbor_system = {
-				exists = owner
-				owner = { NOT = { is_same_value = from } }
-			}
+			exists = sector
+			sector = { has_sector_type = core_sector }
 		}
 	}
 
@@ -589,7 +574,10 @@ starborn_vanilla_habitat_very_big = {
 			has_ring = no
 
 			init_effect = {
-				set_name = "HABITAT_PLANET_NAME"
+				set_name = {
+					key = HABITAT_PLANET_NAME
+					variable_string = "[FROM.from.planet.GetName]"
+				}
 				#CHANGED
 				set_planet_entity = {
 					entity = "habitat_phase_03_entity"
