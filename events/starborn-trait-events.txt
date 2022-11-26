@@ -1240,10 +1240,7 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		has_starborn = yes
-		has_ascension_perk = ap_engineered_evolution
-		NOT = {
-			has_technology = tech_genetic_resequencing
-		}
+		has_tradition = tr_genetics_adopt
 	}
 
 	option = {
@@ -1284,8 +1281,7 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		has_starborn = yes
-		has_ascension_perk = ap_evolutionary_mastery
-		has_technology = tech_genetic_resequencing
+		has_tradition = tr_genetics_finish
 	}
 
 	option = {

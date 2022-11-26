@@ -1,4 +1,4 @@
-[h1]Starborn: the Improved Voidtouched Habitat Start (3.5)[/h1]
+[h1]Starborn: the Improved Voidtouched Habitat Start (3.6)[/h1]
 The Mod that did Voidtouched before PDX did.
 
 Start on a unique habitat - the Orbital City, built above the ruins of your original homeworld.  Build habitats almost anywhere that gain special bonuses and modifiers based on the planet and deposits they are around.  Your species adapted to life on habitats now cannot live on planets anymore, not that you care, who needs to search for habitatable planets when all of the void is habitable to you?  
@@ -64,8 +64,6 @@ The building art for come from CGM Planets.
 ViolentBeetle on Stellaris Modding Den discord gave me a great deal of help, without which I never would have been able to do the planet and habitat linking
 
 [h1]Localisation[/h1]
-Currently English only
-
 If you would like to help translate into your language, the English language files are at
 https://github.com/draconas1/starborn/tree/master/localisation/english if you are familiar with git then feel free to fork and create a pull request when you are done.  If you have no idea how to use github the don't worry: download the file, and upload your localised version to pastebin or similar and let me know in the comments and I will handle the rest.
 
@@ -90,4 +88,4 @@ The starborn edicts, habitats and bonuses only apply if you take the Starborn Or
 
 The Satellite habitat complex is available to everyone and unlocks with Tier 3 habitat tech.  
 
-Additionally non-starborn players will see 2 new habitat megastrucutre options when they unlock the right tech: advanced habitats and advanced habitat worlds.  These are vanilla habitats built directly at size 6 and 8 respectively (and cost the same as if you had upgraded via decisions)
+Additionally non-starborn players will see 2 new habitat megastructure options when they unlock the right tech: advanced habitats and advanced habitat worlds.  These are vanilla habitats built directly at size 6 and 8 respectively (and cost the same as if you had upgraded via decisions)

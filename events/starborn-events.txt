@@ -677,7 +677,7 @@ country_event = {
                                                         is_planet_class = pc_asteroid
                                                 }
                                         }
-                                        add_deposit = d_energy_7
+                                        add_deposit = d_energy_10
                                         create_mining_station = { owner = root }
                                 }
                                 
@@ -688,7 +688,7 @@ country_event = {
                                                         has_planet_flag = has_megastructure
                                                 }
                                         }
-                                        add_deposit = d_alloys_5
+                                        add_deposit = d_alloys_25
                                 }
 
                                 random_system_planet = {
@@ -698,7 +698,7 @@ country_event = {
                                                         has_planet_flag = has_megastructure
                                                 }
                                         }
-                                        add_deposit = d_minerals_7
+                                        add_deposit = d_minerals_10
                                         create_mining_station = { owner = root }
                                 }
                                 
@@ -709,10 +709,28 @@ country_event = {
                                                         is_planet_class = pc_asteroid
                                                 }
                                         }
-                                        add_deposit = d_dark_matter_deposit_3
-                                        add_deposit = d_zro_deposit_5
-                                        add_deposit = d_living_metal_deposit
                                         add_deposit = d_nanites_deposit
+                                }
+
+                                random_system_planet = {
+                                        limit = {
+                                                starborn_suitable_for_deposit = yes
+                                                NOT = {
+                                                        is_planet_class = pc_asteroid
+                                                }
+                                        }
+                                        add_deposit = d_living_metal_deposit
+                                        add_deposit = d_zro_deposit_5                                        
+                                }
+
+                                random_system_planet = {
+                                        limit = {
+                                                starborn_suitable_for_deposit = yes
+                                                NOT = {
+                                                        is_planet_class = pc_asteroid
+                                                }
+                                        }
+                                        add_deposit = d_dark_matter_deposit_10
                                 }
 
                                 random_system_planet = {
@@ -773,7 +791,7 @@ country_event = {
                                         limit = {
                                                 starborn_suitable_for_deposit = yes
                                         }
-                                        add_deposit = d_engineering_4
+                                        add_deposit = d_engineering_5
                                         create_research_station = { owner = root }
                                 }
                         }

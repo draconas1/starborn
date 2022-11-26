@@ -6,6 +6,7 @@ starborn_habitat4 = {
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	show_galactic_map_icon = no
+	show_in_outliner = no
 	entity_offset = { x = -7 y = -7 }
 	build_time = 1000
 
@@ -76,6 +77,7 @@ starborn_habitat5 = {
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	show_galactic_map_icon = no
+	show_in_outliner = no
 	entity_offset = { x = -7 y = -7 }
 	build_time = 1500
 
@@ -151,6 +153,7 @@ starborn_habitat6 = {
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	show_galactic_map_icon = no
+	show_in_outliner = no
 	entity_offset = { x = -7 y = -7 }
 	build_time = 2000
 
@@ -227,8 +230,9 @@ starborn_habitat_expander = {
 	entity = "habitat_phase_03_entity"
 	construction_entity = "habitat_phase_03_entity"
 	portrait = "GFX_megastructure_construction_background"
-	place_entity_on_planet_plane = yes
+	place_entity_on_planet_plane = no
 	show_galactic_map_icon = no
+	show_in_outliner = no
 	entity_offset = { x = -7 y = -7 }
 	build_time = 1500
 

@@ -4,8 +4,9 @@ starborn_vanilla_habitat_big = {
 	entity = ""
 	construction_entity = "habitat_phase_01_entity"
 	portrait = "GFX_megastructure_construction_background"
-	show_galactic_map_icon = no
 	place_entity_on_planet_plane = no
+	show_galactic_map_icon = no
+	show_in_outliner = no
 	entity_offset = { x = -7 y = -7 }
 	build_time = 2500
 
@@ -16,8 +17,7 @@ starborn_vanilla_habitat_big = {
 			influence = 150
 		}
 	}
-	construction_blocks_others = no
-	construction_blocked_by_others = no
+	construction_blocks_and_blocked_by = none
 
 	potential = {
 		OR = {
@@ -161,9 +161,29 @@ starborn_vanilla_habitat_big = {
 				set_planet_flag = megastructure
 				set_planet_flag = habitat
 
-				
-
 				if = {
+					limit = {
+						fromfrom.planet = {
+							OR = {
+								has_deposit_for = shipclass_research_station
+								has_deposit = d_zro_deposit_1
+								has_deposit = d_zro_deposit_2
+								has_deposit = d_zro_deposit_3
+								has_deposit = d_zro_deposit_4
+								has_deposit = d_zro_deposit_5
+								has_deposit = d_dark_matter_deposit_1
+								has_deposit = d_dark_matter_deposit_2
+								has_deposit = d_dark_matter_deposit_3
+								has_deposit = d_dark_matter_deposit_10
+								has_deposit = d_living_metal_deposit
+								has_deposit = d_nanites_deposit
+							}
+						}
+					}
+					set_planet_flag = research_habitat
+				}
+
+				else_if = {
 					limit = {
 						fromfrom.planet = {
 							OR = {
@@ -177,13 +197,20 @@ starborn_vanilla_habitat_big = {
 								has_deposit = d_minerals_8
 								has_deposit = d_minerals_9
 								has_deposit = d_minerals_10
+								has_deposit = d_alloys_1
+								has_deposit = d_alloys_2
+								has_deposit = d_alloys_3
+								has_deposit = d_alloys_4
+								has_deposit = d_alloys_5
+								has_deposit = d_alloys_10
+								has_deposit = d_alloys_25
 							}
 						}
 					}
 					set_planet_flag = mining_habitat
 				}
 
-				if = {
+				else_if = {
 					limit = {
 						fromfrom.planet = {
 							OR = {
@@ -201,31 +228,6 @@ starborn_vanilla_habitat_big = {
 						}
 					}
 					set_planet_flag = energy_habitat
-				}
-
-				if = {
-					limit = { fromfrom.planet = { has_deposit_for = shipclass_research_station } }
-					set_planet_flag = research_habitat
-				}
-
-				if = {
-					limit = {
-						fromfrom.planet = {
-							OR = {
-								has_deposit = d_trade_value_1
-								has_deposit = d_trade_value_2
-								has_deposit = d_trade_value_3
-								has_deposit = d_trade_value_4
-								has_deposit = d_trade_value_5
-								has_deposit = d_trade_value_6
-								has_deposit = d_trade_value_7
-								has_deposit = d_trade_value_8
-								has_deposit = d_trade_value_9
-								has_deposit = d_trade_value_10
-							}
-						}
-					}
-					set_planet_flag = commercial_habitat
 				}
 
 				if = {
@@ -326,21 +328,30 @@ starborn_vanilla_habitat_big = {
 						fromfrom.planet = { has_deposit = d_zro_deposit_1 }
 					}
 					add_deposit = d_hab_zro_1
-					set_planet_flag = research_habitat
 				}
 				if = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_zro_deposit_2 }
 					}
 					add_deposit = d_hab_zro_2
-					set_planet_flag = research_habitat
 				}
 				if = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_zro_deposit_3 }
 					}
 					add_deposit = d_hab_zro_3
-					set_planet_flag = research_habitat
+				}
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_zro_deposit_4 }
+					}
+					add_deposit = d_hab_zro_4
+				}
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_zro_deposit_5 }
+					}
+					add_deposit = d_hab_zro_5
 				}
 
 				if = {
@@ -348,21 +359,24 @@ starborn_vanilla_habitat_big = {
 						fromfrom.planet = { has_deposit = d_dark_matter_deposit_1 }
 					}
 					add_deposit = d_hab_dark_matter_1
-					set_planet_flag = research_habitat
 				}
 				if = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_dark_matter_deposit_2 }
 					}
 					add_deposit = d_hab_dark_matter_2
-					set_planet_flag = research_habitat
 				}
 				if = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_dark_matter_deposit_3 }
 					}
 					add_deposit = d_hab_dark_matter_3
-					set_planet_flag = research_habitat
+				}
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_dark_matter_deposit_10 }
+					}
+					add_deposit = d_hab_dark_matter_10
 				}
 
 				if = {
@@ -370,7 +384,6 @@ starborn_vanilla_habitat_big = {
 						fromfrom.planet = { has_deposit = d_living_metal_deposit }
 					}
 					add_deposit = d_hab_living_metal_1
-					set_planet_flag = research_habitat
 				}
 
 				if = {
@@ -378,35 +391,42 @@ starborn_vanilla_habitat_big = {
 						fromfrom.planet = { has_deposit = d_alloys_1 }
 					}
 					add_deposit = d_hab_alloy_1
-					set_planet_flag = mining_habitat
 				}
 				if = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_alloys_2 }
 					}
 					add_deposit = d_hab_alloy_2
-					set_planet_flag = mining_habitat
 				}
 				if = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_alloys_3 }
 					}
 					add_deposit = d_hab_alloy_3
-					set_planet_flag = mining_habitat
 				}
 				if = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_alloys_4 }
 					}
 					add_deposit = d_hab_alloy_4
-					set_planet_flag = mining_habitat
 				}
 				if = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_alloys_5 }
 					}
 					add_deposit = d_hab_alloy_5
-					set_planet_flag = mining_habitat
+				}
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_alloys_10 }
+					}
+					add_deposit = d_hab_alloy_10
+				}
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_alloys_25 }
+					}
+					add_deposit = d_hab_alloy_25
 				}
 
 				if = {
@@ -414,7 +434,6 @@ starborn_vanilla_habitat_big = {
 						fromfrom.planet = { has_deposit = d_nanites_deposit }
 					}
 					add_deposit = d_hab_nanites_1
-					set_planet_flag = research_habitat
 				}
 			}
 		}
@@ -451,8 +470,7 @@ starborn_vanilla_habitat_very_big = {
 			influence = 150
 		}
 	}
-	construction_blocks_others = no
-	construction_blocked_by_others = no
+	construction_blocks_and_blocked_by = none
 
 	potential = {
 		OR = {
@@ -597,9 +615,29 @@ starborn_vanilla_habitat_very_big = {
 				set_planet_flag = megastructure
 				set_planet_flag = habitat
 
-				
-
 				if = {
+					limit = {
+						fromfrom.planet = {
+							OR = {
+								has_deposit_for = shipclass_research_station
+								has_deposit = d_zro_deposit_1
+								has_deposit = d_zro_deposit_2
+								has_deposit = d_zro_deposit_3
+								has_deposit = d_zro_deposit_4
+								has_deposit = d_zro_deposit_5
+								has_deposit = d_dark_matter_deposit_1
+								has_deposit = d_dark_matter_deposit_2
+								has_deposit = d_dark_matter_deposit_3
+								has_deposit = d_dark_matter_deposit_10
+								has_deposit = d_living_metal_deposit
+								has_deposit = d_nanites_deposit
+							}
+						}
+					}
+					set_planet_flag = research_habitat
+				}
+
+				else_if = {
 					limit = {
 						fromfrom.planet = {
 							OR = {
@@ -613,13 +651,20 @@ starborn_vanilla_habitat_very_big = {
 								has_deposit = d_minerals_8
 								has_deposit = d_minerals_9
 								has_deposit = d_minerals_10
+								has_deposit = d_alloys_1
+								has_deposit = d_alloys_2
+								has_deposit = d_alloys_3
+								has_deposit = d_alloys_4
+								has_deposit = d_alloys_5
+								has_deposit = d_alloys_10
+								has_deposit = d_alloys_25
 							}
 						}
 					}
 					set_planet_flag = mining_habitat
 				}
 
-				if = {
+				else_if = {
 					limit = {
 						fromfrom.planet = {
 							OR = {
@@ -637,31 +682,6 @@ starborn_vanilla_habitat_very_big = {
 						}
 					}
 					set_planet_flag = energy_habitat
-				}
-
-				if = {
-					limit = { fromfrom.planet = { has_deposit_for = shipclass_research_station } }
-					set_planet_flag = research_habitat
-				}
-
-				if = {
-					limit = {
-						fromfrom.planet = {
-							OR = {
-								has_deposit = d_trade_value_1
-								has_deposit = d_trade_value_2
-								has_deposit = d_trade_value_3
-								has_deposit = d_trade_value_4
-								has_deposit = d_trade_value_5
-								has_deposit = d_trade_value_6
-								has_deposit = d_trade_value_7
-								has_deposit = d_trade_value_8
-								has_deposit = d_trade_value_9
-								has_deposit = d_trade_value_10
-							}
-						}
-					}
-					set_planet_flag = commercial_habitat
 				}
 
 				if = {
@@ -762,21 +782,30 @@ starborn_vanilla_habitat_very_big = {
 						fromfrom.planet = { has_deposit = d_zro_deposit_1 }
 					}
 					add_deposit = d_hab_zro_1
-					set_planet_flag = research_habitat
 				}
 				if = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_zro_deposit_2 }
 					}
 					add_deposit = d_hab_zro_2
-					set_planet_flag = research_habitat
 				}
 				if = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_zro_deposit_3 }
 					}
 					add_deposit = d_hab_zro_3
-					set_planet_flag = research_habitat
+				}
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_zro_deposit_4 }
+					}
+					add_deposit = d_hab_zro_4
+				}
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_zro_deposit_5 }
+					}
+					add_deposit = d_hab_zro_5
 				}
 
 				if = {
@@ -784,21 +813,24 @@ starborn_vanilla_habitat_very_big = {
 						fromfrom.planet = { has_deposit = d_dark_matter_deposit_1 }
 					}
 					add_deposit = d_hab_dark_matter_1
-					set_planet_flag = research_habitat
 				}
 				if = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_dark_matter_deposit_2 }
 					}
 					add_deposit = d_hab_dark_matter_2
-					set_planet_flag = research_habitat
 				}
 				if = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_dark_matter_deposit_3 }
 					}
 					add_deposit = d_hab_dark_matter_3
-					set_planet_flag = research_habitat
+				}
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_dark_matter_deposit_10 }
+					}
+					add_deposit = d_hab_dark_matter_10
 				}
 
 				if = {
@@ -806,7 +838,6 @@ starborn_vanilla_habitat_very_big = {
 						fromfrom.planet = { has_deposit = d_living_metal_deposit }
 					}
 					add_deposit = d_hab_living_metal_1
-					set_planet_flag = research_habitat
 				}
 
 				if = {
@@ -814,35 +845,42 @@ starborn_vanilla_habitat_very_big = {
 						fromfrom.planet = { has_deposit = d_alloys_1 }
 					}
 					add_deposit = d_hab_alloy_1
-					set_planet_flag = mining_habitat
 				}
 				if = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_alloys_2 }
 					}
 					add_deposit = d_hab_alloy_2
-					set_planet_flag = mining_habitat
 				}
 				if = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_alloys_3 }
 					}
 					add_deposit = d_hab_alloy_3
-					set_planet_flag = mining_habitat
 				}
 				if = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_alloys_4 }
 					}
 					add_deposit = d_hab_alloy_4
-					set_planet_flag = mining_habitat
 				}
 				if = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_alloys_5 }
 					}
 					add_deposit = d_hab_alloy_5
-					set_planet_flag = mining_habitat
+				}
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_alloys_10 }
+					}
+					add_deposit = d_hab_alloy_10
+				}
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_alloys_25 }
+					}
+					add_deposit = d_hab_alloy_25
 				}
 
 				if = {
@@ -850,7 +888,6 @@ starborn_vanilla_habitat_very_big = {
 						fromfrom.planet = { has_deposit = d_nanites_deposit }
 					}
 					add_deposit = d_hab_nanites_1
-					set_planet_flag = research_habitat
 				}
 			}
 		}

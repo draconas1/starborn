@@ -9,6 +9,7 @@ building_starborn_dark_matter_extractor = {
             has_deposit = d_hab_dark_matter_1
             has_deposit = d_hab_dark_matter_2
             has_deposit = d_hab_dark_matter_3
+			has_deposit = d_dark_matter_deposit_10
         }
 		exists = owner
         owner = {
@@ -18,6 +19,15 @@ building_starborn_dark_matter_extractor = {
 	}
 
 	triggered_planet_modifier = {
+		modifier = {
+			job_starborn_dark_matter_extractor_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_deposit = d_dark_matter_deposit_10
+		}
 		modifier = {
 			job_starborn_dark_matter_extractor_add = 1
 		}
@@ -110,6 +120,8 @@ building_starborn_zro_extractor = {
             has_deposit = d_hab_zro_1
             has_deposit = d_hab_zro_2
             has_deposit = d_hab_zro_3
+			has_deposit = d_hab_zro_4
+			has_deposit = d_hab_zro_5
         }
         exists = owner
         owner = {
@@ -119,6 +131,16 @@ building_starborn_zro_extractor = {
 	}
 
 	triggered_planet_modifier = {
+		modifier = {
+			job_starborn_zro_extractor_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_deposit = d_hab_zro_4
+			has_deposit = d_hab_zro_5
+		}
 		modifier = {
 			job_starborn_zro_extractor_add = 1
 		}
@@ -208,6 +230,8 @@ building_starborn_alloy_foundry = {
 			has_deposit = d_hab_alloy_3
 			has_deposit = d_hab_alloy_4
             has_deposit = d_hab_alloy_5
+			has_deposit = d_hab_alloy_10
+			has_deposit = d_hab_alloy_25
         }
         owner = {
             has_starborn = yes
@@ -262,6 +286,22 @@ building_starborn_alloy_foundry = {
 				}
 			}
 			alloys = 25
+		}
+		produces = {
+			trigger = {
+				planet = {
+					has_deposit = d_hab_alloy_10
+				}
+			}
+			alloys = 50
+		}
+		produces = {
+			trigger = {
+				planet = {
+					has_deposit = d_hab_alloy_25
+				}
+			}
+			alloys = 125
 		}
 		upkeep = {
 			energy = 5
