@@ -43,9 +43,11 @@ tr_prosperity_public_works = {
 	possible = {
 		has_tradition = tr_prosperity_sct
 	}
+	custom_tooltip = tr_prosperity_public_works_desc
 
 	tradition_swap = {
 		name = tr_prosperity_extended_hives
+		custom_tooltip = tr_prosperity_extended_hives_desc
 		inherit_icon = yes
 		trigger = {
 			is_hive_empire = yes
@@ -57,6 +59,7 @@ tr_prosperity_public_works = {
 
 	tradition_swap = {
 		name = tr_prosperity_optimized_nexus
+		custom_tooltip = tr_prosperity_optimized_nexus_desc
 		trigger = {
 			is_machine_empire = yes
 		}
@@ -68,6 +71,7 @@ tr_prosperity_public_works = {
 	tradition_swap = {
 		name = tr_prosperity_void_works
 		inherit_icon = yes
+		custom_tooltip = tr_prosperity_void_works_desc
 
 		# Effects are implemented in 00_capital_buildings.txt
 
@@ -97,6 +101,7 @@ tr_domination_adopt = {
 		name = tr_domination_adopt_void
 		inherit_name = yes
 		inherit_icon = yes
+		custom_tooltip = tr_domination_adopt_void_desc
 		trigger = {
 			OR = {
 				has_origin = origin_void_dwellers
