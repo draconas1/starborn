@@ -75,7 +75,6 @@ https://github.com/draconas1/starborn/tree/master/localisation/english if you ar
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1999512770]Extra Galactic Cluster Start[/url]: Start in an isolated cluster outside the galaxy.
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2288046502]Planetary Population Restrictions[/url]: Stop certain species breeding where you don't want them.
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2562023076]Station Solar System Exploitation[/url]: Starbase enhancements for mining, research and planet production.
-[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2548902172]Robot QoL: auto-resettle and assimilate[/url]: Synthetic empires can assimilate robots into Synths & robots can auto-resettle
 [/list]
 
 [b]Please Rate and Subscribe as it helps others find the mods[/b]
