@@ -76,6 +76,20 @@ starborn_can_place_hab = {
 			is_planet_class = pc_habitat
 		}
 	}
+	custom_tooltip = {
+		fail_text = "requires_no_orbital_debris"
+		NOR = {
+			has_planet_flag = has_orbital_debris
+		}
+	}
+	custom_tooltip = {
+		fail_text = "requires_not_solarpunk"
+		NOT = {
+			solar_system = {
+				has_star_flag = solarpunk_system_02
+			}
+		}
+	}
 }
 
 starborn_debug_on = {

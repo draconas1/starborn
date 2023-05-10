@@ -17,7 +17,7 @@ foreach($folderName in $($languages.keys)){
     $targetDirectory = $sourceDirectory.Replace("english", $folderName)
 
     #Delete Existing Language Files
-    Remove-Item -Recurse -Force $targetDirectory
+    Remove-Item -Recurse -Force -ErrorAction SilentlyContinue $targetDirectory
 
     #Copy English Files
     Copy-Item $sourceDirectory $targetDirectory -recurse
